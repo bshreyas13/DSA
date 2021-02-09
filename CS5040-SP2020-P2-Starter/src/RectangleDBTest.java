@@ -17,7 +17,7 @@ public class RectangleDBTest extends TestCase {
      */
     public void testRInit() {
         RectangleDB manager = new RectangleDB();
-        assertNotNull(manager);
+        System.out.println(manager);
         RectangleDB.main(null);
     }
 }
