@@ -38,6 +38,7 @@ public class RectangleDB {
     public static void main(String[] args) {
         // This is the main file for the program
     	
+    	//String filePath ="C:\\Users\\shrey\\OneDrive - Virginia Tech\\Documents\\Study Material\\Spring 21\\DSA_Files\\SyntaxTest.txt";
     	String filePath = args[0];
     	Parser p = new Parser();
     	p.Read(filePath);
