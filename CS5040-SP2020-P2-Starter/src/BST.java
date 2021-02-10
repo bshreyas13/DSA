@@ -1,7 +1,7 @@
 /**
  * Stub for binary search tree class
  * 
- * @author {Your Name Here}
+ * @author Shreyas
  * @param <T> the generic type; extends Comparable
  */
 

@@ -1,41 +1,49 @@
+
 import java.io.File;
 import java.util.Scanner;
 import java.util.*;
-
+/**
+ * 
+ * @author shreyas
+ *
+ */
 public class Parser {
+	List<String> cmdLine;
+	List<List<String>> cmds;
 	/**
 	 * 
 	 * @param path to the command-file (input) 
 	 */
-	public void Read(String path){
+
+	public Parser(String path){
 	try {
 		
 
         File f = new File(path);
 
-        System.out.println("::::"+f.exists());
+        //System.out.println("::::"+f.exists());
 
         Scanner sc = new Scanner(f);
-
-        Scanner scancmd;//Declare two scanners one to read the file and one to read the text pulled from the file
         
-        String cmd = null;
-        
-        List<String> rectangle = new ArrayList<>();
+        cmds = new ArrayList<>();
         
         while(sc.hasNextLine()){//While we have text to read
            String line = sc.nextLine();//Get our next line
            String[] chars = line.split(" ");
-           scancmd = new Scanner(line);//Create a scanner from this line
            //System.out.println(chars.length);
+           cmdLine = new ArrayList<>();
            for (int i=0 ; i<chars.length; i++) {             
         	   //System.out.println (line.isEmpty());
-        	   if (chars[i].isEmpty()==false) {
-        	   rectangle.add(chars[i]);
+        	   if (chars[i].trim().isEmpty()==false) {
+        	   cmdLine.add(chars[i]);
         	   //System.out.println(chars[i]);
+        	   }   
            }
-           }
-        }System.out.println(rectangle);
+           
+           if (cmdLine.isEmpty()==false) {
+        	   cmds.add(cmdLine);
+           }   
+        }
 
      } 
     catch (Exception e) {

@@ -29,18 +29,23 @@
 // during the discussion. I have violated neither the spirit nor
 // letter of this restriction.
 
-
+import java.util.*;
 public class RectangleDB {
     /**
      * @param args
      *     Command line parameters
      */
     public static void main(String[] args) {
-        // This is the main file for the program
-    	
+        // This is the main file for the program  	
     	String filePath = args[0];
-    	Parser p = new Parser();
-    	p.Read(filePath);
+    	Parser p = new Parser(filePath);
+    	
+    	List<List<String>> cmdsList = p.cmds;
+    	List<String> c = cmdsList.get(11);
+    	
+    	for (int i =0 ; i<cmdsList.size() ; i++) {
+    		System.out.println(cmdsList.get(i)); 
+    	}
     }
 }
  
