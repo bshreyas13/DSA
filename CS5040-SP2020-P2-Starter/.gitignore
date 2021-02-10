@@ -5,7 +5,6 @@
 Thumbs.db
 /bin/
 *.class
-*.jar
 *.war
 *.ear
 hs_error_pid*

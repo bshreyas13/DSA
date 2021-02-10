@@ -38,11 +38,8 @@ public class RectangleDB {
     public static void main(String[] args) {
         // This is the main file for the program  	
     	String filePath = args[0];
-    	Parser p = new Parser(filePath);
-    	
-    	List<List<String>> cmdsList = p.cmds;
-    	List<String> c = cmdsList.get(11);
-    	
+    	Parser read = new Parser(filePath);   	
+    	List<List<String>> cmdsList = read.cmds; 	
     	for (int i =0 ; i<cmdsList.size() ; i++) {
     		System.out.println(cmdsList.get(i)); 
     	}
