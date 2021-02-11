@@ -5,7 +5,7 @@
 /**
  * The class containing the main method.
  *
- * @author {Your Name Here}
+ * @author {shreyas and Veera}
  * @version {Put Something Here}
  */
 
@@ -36,17 +36,21 @@ public class RectangleDB {
      *     Command line parameters
      */
     public static void main(String[] args) {
-        // This is the main file for the program  	
+        // This is the main file for the program
     	String filePath = args[0];
-    	Parser read = new Parser(filePath);   	
-    	List<List<String>> cmdsList = read.cmds; 	
+    	Parser read = new Parser(filePath);
+    	List<List<String>> cmdsList = read.cmds;
     	for (int i =0 ; i<cmdsList.size() ; i++) {
+<<<<<<< HEAD
     	System.out.println(cmdsList.get(i));
     	//List<String> line = cmdsList.get(i);
     	//Rectangle 	r = new Rectangle(line.get(1),Integer.parseInt(line.get(2)),Integer.parseInt(line.get(3)),Integer.parseInt(line.get(4)),Integer.parseInt(line.get(5)));
     	//System.out.println(r.y);
     	//break;
+=======
+    		System.out.println(cmdsList.get(i));
+>>>>>>> 07973d64f2191a54398d66af4b40bc47acf751f1
     	}
     }
 }
- 
+
