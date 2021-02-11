@@ -17,7 +17,7 @@ class Rectangle {
     	return x;
     }
     public int getY() {
-    	return y;
+    	return Y;
     }
 
     private String name;
@@ -36,6 +36,6 @@ class Rectangle {
 
     @Override
     public String toString() {
-        return "("+ getName() + ","+ getX()+","+getY()+","+ getLength() + ","+ getHeight()+")";
+        return "name is:"+ getName() + ", length="+ getLength() + ", height="+ getHeight();
     }
 }

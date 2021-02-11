@@ -21,7 +21,4 @@ public class Node<T extends Comparable<T>> {
     	left = null;
     	right = null;
     }
-    public void CompareTo() {
-    	
-    }
 }
