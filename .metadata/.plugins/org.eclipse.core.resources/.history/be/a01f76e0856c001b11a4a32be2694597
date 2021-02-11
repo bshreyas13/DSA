@@ -17,10 +17,16 @@ public class Parser {
 
 	public Parser(String path){
 	try {
+		
+
         File f = new File(path);
+
         //System.out.println("::::"+f.exists());
-        Scanner sc = new Scanner(f);      
-        cmds = new ArrayList<>();      
+
+        Scanner sc = new Scanner(f);
+        
+        cmds = new ArrayList<>();
+        
         while(sc.hasNextLine()){//While we have text to read
            String line = sc.nextLine();//Get our next line
            String[] chars = line.split(" ");
