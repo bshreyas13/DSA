@@ -40,16 +40,13 @@ public class RectangleDB {
     	String filePath = args[0];
     	Parser read = new Parser(filePath);
     	List<List<String>> cmdsList = read.cmds;
-    	
-    	/* Code for testing compare 
     	List<String> line1 = cmdsList.get(0);
     	List<String> line2 = cmdsList.get(1);		
     	Rectangle r1 = new Rectangle(line1.get(1),Integer.parseInt(line1.get(2)),Integer.parseInt(line1.get(3)),Integer.parseInt(line1.get(4)),Integer.parseInt(line1.get(5)));
     	Rectangle r2 = new Rectangle(line2.get(1),Integer.parseInt(line2.get(2)),Integer.parseInt(line2.get(3)),Integer.parseInt(line2.get(4)),Integer.parseInt(line2.get(5)));
     	int test = Rectangle.compare(r1,r2);
     	System.out.println(test);
-		*/
-    	
+
     	for (int i =0 ; i<2 ; i++) {
     	System.out.println(cmdsList.get(i));
     	List<String> line = cmdsList.get(i);

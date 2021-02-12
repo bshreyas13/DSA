@@ -19,7 +19,7 @@ class Rectangle {
     public int getY() {
     	return y;
     }
-    public static int compare(Rectangle r1 , Rectangle r2 ) {
+    public int compare(Rectangle r1 , Rectangle r2 ) {
     	String r1Name = r1.getName();
     	String r2Name = r2.getName();
     	int out ;
