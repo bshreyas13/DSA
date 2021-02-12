@@ -6,8 +6,7 @@
  */
 
 public class Node<T extends Comparable<T>> {
-	Rectangle value;
-	Node<T> node;
+	T value;
 	Node<T> left;
 	Node<T> right;
     /**
@@ -16,7 +15,7 @@ public class Node<T extends Comparable<T>> {
      * @param value
      *            the value
      */
-    public Node(Rectangle value) {
+    public Node(T value) {
     	
     	this.value =value;
     	left = null;
@@ -26,11 +25,11 @@ public class Node<T extends Comparable<T>> {
     	
     }
     public Rectangle getRectangle() {
-        return value;
+        return rectangle;
     }
 
     public void setRectangle(Rectangle rectangle) {
-        this.value = rectangle;
+        this.rectangle = rectangle;
         setLeft(null);
         setRight(null);
     }
@@ -39,7 +38,7 @@ public class Node<T extends Comparable<T>> {
         return node;
     }
 
-    public void setNode(Node<T> node) {
+    public void setNode(Node node) {
         this.node = node;
     }
 
@@ -47,7 +46,7 @@ public class Node<T extends Comparable<T>> {
         return left;
     }
 
-    public void setLeft(Node<T> left) {
+    public void setLeft(Node left) {
         this.left = left;
     }
 
@@ -55,7 +54,7 @@ public class Node<T extends Comparable<T>> {
         return right;
     }
 
-    public void setRight(Node<T> right) {
+    public void setRight(Node right) {
         this.right = right;
     }
 
