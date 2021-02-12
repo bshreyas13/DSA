@@ -16,15 +16,12 @@ public class Node<T extends Comparable<T>> {
      * @param value
      *            the value
      */
-	/*
     public Node(Rectangle value) {
     	
     	this.value =value;
     	left = null;
     	right = null;
     }
-    */
-	
     public void CompareTo() {
     	
     }
@@ -32,7 +29,7 @@ public class Node<T extends Comparable<T>> {
         return value;
     }
 
-    public void setValue(Rectangle rectangle) {
+    public void setRectangle(Rectangle rectangle) {
         this.value = rectangle;
         setLeft(null);
         setRight(null);
