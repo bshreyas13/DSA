@@ -46,7 +46,7 @@ public class RectangleDB {
     	List<String> line = cmdsList.get(i);
     	Rectangle 	r = new Rectangle(line.get(1),Integer.parseInt(line.get(2)),Integer.parseInt(line.get(3)),Integer.parseInt(line.get(4)),Integer.parseInt(line.get(5)));
     	System.out.println(r);
-    	break;
+    	
 
     	}
     }

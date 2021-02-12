@@ -19,13 +19,6 @@ class Rectangle {
     public int getY() {
     	return y;
     }
-    public int compare(Rectangle r1 , Rectangle r2 ) {
-    	String r1Name = r1.getName();
-    	String r2Name = r1.getName();
-    	int out ;
-    	out = r1Name.compareTo(r2Name);
-    	return out; 
-    }
 
     private String name;
     private int length;
