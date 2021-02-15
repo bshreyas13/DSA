@@ -1,0 +1,7 @@
+Invalid Rectangle dimensions
+Invalid Rectangle dimensions
+Invalid Rectangle dimensions
+Invalid Rectangle dimensions
+Invalid Rectangle dimensions
+Index 5 out of bounds for length 5
+Index 5 out of bounds for length 5

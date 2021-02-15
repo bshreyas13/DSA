@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Test the BST function (you should throw this away for your project)
  *
- * @author {bshreyas and veerad}
+ * @author {shreyasb and veerad}
  * @version
  */
 public class BSTTest extends student.TestCase {

@@ -1,7 +1,7 @@
 /**
  * Stub for Node class
  *
- * @author {bshreyas and veerad}
+ * @author {shreyasb and veerad}
  */
 
 public class Node<K extends Comparable<K>, V> {

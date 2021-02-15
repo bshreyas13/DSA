@@ -1,7 +1,7 @@
 /**
  * Stub for binary search tree class
  *
- * @author {bshreyas and veerad}
+ * @author {shreyasb and veerad}
  */
 
 public class BST<K extends Comparable<K>, V extends Shape> {

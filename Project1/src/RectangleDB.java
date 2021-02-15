@@ -22,7 +22,7 @@
 // letter of this restriction.
 
 /**
- * @author {bshreyas and veerad}
+ * @author {shreyasb and veerad}
  *
  */
 public class RectangleDB {
