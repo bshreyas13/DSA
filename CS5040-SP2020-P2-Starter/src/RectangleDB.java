@@ -1,4 +1,5 @@
-/**`
+/**
+ * `
  * {Project Description Here}
  */
 // On my honor:
@@ -22,20 +23,23 @@
 // letter of this restriction.
 
 /**
- * @author {bshreyas and veerad}
+ * @author {shreyasb and veerad}
+ * @version 2021-2-15
  *
  */
 public class RectangleDB {
-	/**
-	 * @param args Command line parameters
-	 */
-	public static void main(String[] args) {
-		try {
-			Parser.parse(args[0]);
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
+    /**
+     * @param args
+     *            Command line parameters
+     */
+    public static void main(String[] args) {
+        try {
+            Parser.parse(args[0]);
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        }
 
-	}
+    }
 
 }
