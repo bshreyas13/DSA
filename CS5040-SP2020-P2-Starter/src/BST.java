@@ -4,17 +4,15 @@
  * 
  * @author {shreyasb and veerad}
  * @version 2021-2-15
- * @param <K>
- *            Key type
  * @param <V>
  *            Value type
  */
-public class BST<K extends Comparable<K>, V extends Shape> {
+public class BST<V extends Shape> {
 
     /**
      * Root node of the BST.
      */
-    private Node<K, V> root;
+    private Node<V> root;
 
     /**
      * Default constructor
@@ -25,48 +23,84 @@ public class BST<K extends Comparable<K>, V extends Shape> {
 
 
     /**
-     * @param key
-     *            The name of the key, which used to insert in BST
-     * @param val
-     *            The value associated with the key
+     * 
+     * @param node
+     *            New node to be inserted
+     * @return
+     *         true if inserted false otherwise
      */
-    public void insert(K key, V val) {
-        if (val.isShapeValid()) {
-            root = insert(root, key, val);
+    public boolean insert(Node<V> node) {
+        if (node != null && node.isValid()) {
+           // V value = searchByKey(node.getKey());
+            if(isNodeFound(root, node)) {
+                root = insert(root, node);
+                return true;
+            }
+//            if (value == null || !value.isShapeEquals(node.getValue())) {
+//                root = insert(root, node);
+//                return true;
+//            }
         }
+        return false;
     }
 
+    /**
+     * 
+     * @param node
+     *            New node to be inserted
+     * @param value 
+     *           input value from command
+     *            
+     * @return
+     *         true if inserted false otherwise
+     */
+    public boolean isNodeFound(Node<V> root, Node<V> node) {
+        if (node == null || !node.isValid()) {
+            return false;
+        }
+        if(root == null) {
+            return true;
+        }
+        if ( root.getKey().equals(node.getKey()) && root.getValue().isShapeEquals(
+            node.getValue())) {
+            return false;
+        }
+        return isNodeFound(node.getLeft(), node) && isNodeFound(node
+            .getRight(), node);
+    }
 
     /**
      * Inserts a node in the BST
      * 
-     * @param node
+     * @param parent
      *            The tree node
-     * @param key
-     *            Key used to insert the node
-     * @param value
-     *            value associated with the node
+     * @param node
+     *            New node to be inserted
      * @return
-     *         The newly inserted node
+     *         the root node at each iteration
      */
-    private Node<K, V> insert(Node<K, V> node, K key, V value) {
-        if (node == null) {
-            return new Node<K, V>(key, value, 1);
+    private Node<V> insert(Node<V> parent, Node<V> node) {
+        if (parent == null) {
+            if (node.isValid()) {
+                node.setSize(1);
+                return node;
+            }
+            else {
+                return null;
+            }
         }
 
-        int difference = key.compareTo(node.getKey());
-        if (difference < 0) {
-            node.setLeft(insert(node.getLeft(), key, value));
+
+        int difference = node.getKey().compareTo(parent.getKey());
+        if (difference <= 0) {
+            parent.setLeft(insert(parent.getLeft(), node));
         }
         else if (difference > 0) {
-            node.setRight(insert(node.getRight(), key, value));
+            parent.setRight(insert(parent.getRight(), node));
         }
-        else {
-            node.setValue(value);
-        }
-        node.setSize(1 + size(node.getLeft()) + size(node.getRight()));
+        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
 
-        return node;
+        return parent;
     }
 
 
@@ -76,10 +110,9 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @param key
      *            Key used to remove node from tree
      */
-    public void remove(K key) {
+    public void remove(String key) {
         root = remove(root, key);
     }
-
 
     /**
      * Remove the node from tree associated with key
@@ -91,17 +124,21 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @return
      *         The node used to traverse recursively
      */
-    private Node<K, V> remove(Node<K, V> node, K key) {
+    private Node<V> remove(Node<V> node, String key) {
         if (node == null) {
             return null;
         }
+
         int difference = key.compareTo(node.getKey());
+
         if (difference < 0) {
             node.setLeft(remove(node.getLeft(), key));
         }
+
         else if (difference > 0) {
             node.setRight(remove(node.getRight(), key));
         }
+
         else {
             if (node.getRight() == null) {
                 return node.getLeft();
@@ -109,15 +146,16 @@ public class BST<K extends Comparable<K>, V extends Shape> {
             if (node.getLeft() == null) {
                 return node.getRight();
             }
-            Node<K, V> t = node;
+            Node<V> t = node;
             node = findMinimumInRightSubTree(t.getRight());
             node.setRight(deleteMinimum(t.getRight()));
             node.setLeft(t.getLeft());
         }
+
         node.setSize(size(node.getLeft()) + size(node.getRight()) + 1);
         return node;
     }
-
+   
 
     /**
      * Search BST for specific rectangle
@@ -145,7 +183,7 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      *            contains the information of the intersections
      */
     private void inOrderForIntersection(
-        Node<K, V> node,
+        Node<V> node,
         V value,
         StringBuilder sb) {
         if (node == null) {
@@ -181,7 +219,7 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @param sb
      *            Contains the information after each iteration
      */
-    private void traverseEachNode(Node<K, V> node, StringBuilder sb) {
+    private void traverseEachNode(Node<V> node, StringBuilder sb) {
         if (node == null) {
             return;
         }
@@ -200,7 +238,7 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * 
      *         The value found
      */
-    public V searchByKey(K key) {
+    public MyList<V> searchByKey(String key) {
         return inOrderForSearchByKey(root, key);
     }
 
@@ -215,17 +253,29 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @return
      *         The value associated with key
      */
-    private V inOrderForSearchByKey(Node<K, V> node, K key) {
-        if (node == null) {
-            return null;
+    private MyList<V> inOrderForSearchByKey(Node<V> node, String key) {
+    	MyList<V> list = new MyList<V>();
+    	if (node == null) {
+            return list;
         }
         inOrderForSearchByKey(node.getLeft(), key);
+        
         if (node.getKey().equals(key)) {
-            return node.getValue();
+        	 list.add(node.getValue());
+        	 //System.out.println(list);
         }
         inOrderForSearchByKey(node.getRight(), key);
-        return null;
+        return list;
     }
+    /**
+     * Traverse tree with and search with given key
+     * 
+     * @param key
+     *            The key name
+     * @return
+     * 
+     *         The value found
+     */
 
 
     /**
@@ -247,12 +297,12 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @param shape
      *            If this value matches, the node will be removed.
      */
-    private void inOrderForShape(Node<K, V> node, Shape shape) {
+    private void inOrderForShape(Node<V> node, Shape shape) {
         if (node == null) {
             return;
         }
         inOrderForShape(node.getLeft(), shape);
-        if (node.getValue().isShapeEquals(shape)) {
+        if (node.isValid() && node.getValue().isShapeEquals(shape)) {
             remove(node.getKey());
         }
         inOrderForShape(node.getRight(), shape);
@@ -268,7 +318,7 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @return
      *         Returns the left minimum node
      */
-    private Node<K, V> findMinimumInRightSubTree(Node<K, V> x) {
+    private Node<V> findMinimumInRightSubTree(Node<V> x) {
         if (x.getLeft() == null) {
             return x;
         }
@@ -286,7 +336,7 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @return
      *         The node with update left node
      */
-    private Node<K, V> deleteMinimum(Node<K, V> x) {
+    private Node<V> deleteMinimum(Node<V> x) {
         if (x.getLeft() == null) {
             return x.getRight();
         }
@@ -304,7 +354,7 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @return
      *         Size of the node
      */
-    private int size(Node<K, V> node) {
+    private int size(Node<V> node) {
         if (node == null) {
             return 0;
         }
@@ -322,7 +372,7 @@ public class BST<K extends Comparable<K>, V extends Shape> {
      * @param sb
      *            StringBuilder which will hold the path while tree traversal
      */
-    private void inOrder(Node<K, V> node, StringBuilder sb) {
+    private void inOrder(Node<V> node, StringBuilder sb) {
         if (node == null) {
             return;
         }
@@ -342,8 +392,16 @@ public class BST<K extends Comparable<K>, V extends Shape> {
     public String dump() {
         StringBuilder sb = new StringBuilder();
         sb.append("BST dump:" + System.lineSeparator());
-        inOrder(root, sb);
-        sb.append(String.format("BST size is: %d", root.getSize()));
+        if (root != null) {
+            inOrder(root, sb);
+        }
+        else {
+            sb.append("Node has depth 0, Value (null)" + System
+                .lineSeparator());
+        }
+        sb.append(String.format("BST size is: %d", (root != null
+            ? root.getSize()
+            : 0)));
         return sb.toString();
     }
 }

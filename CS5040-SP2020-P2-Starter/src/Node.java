@@ -4,20 +4,20 @@
  * 
  * @author {shreyasb and veerad}
  * @version 2021-2-15
- * @param <K>
- *            The Node type
+ * 
  * @param <V>
- *            The value type
+ * 
+ *            Any value which extends Shape
  */
-public class Node<K extends Comparable<K>, V> {
+public class Node<V extends Shape> {
 
     /**
      * Private fields
      */
-    private K key;
+    private String key;
     private V value;
-    private Node<K, V> left;
-    private Node<K, V> right;
+    private Node<V> left;
+    private Node<V> right;
     private int size;
 
     /**
@@ -27,16 +27,25 @@ public class Node<K extends Comparable<K>, V> {
      *            Key of the node
      * @param value
      *            Value of the node
-     * @param size
-     *            The node size with all its children
      */
-    public Node(K key, V value, int size) {
-        this.setKey(key);
-        this.setValue(value);
-        this.setSize(size);
+    public Node(String key, V value) {
+        this.key = key;
+        this.value = value;
     }
 
 
+    /**
+     * Verify this node is valid
+     * 
+     * @return
+     *         true if valid false otherwise
+     */
+    public boolean isValid() {
+        boolean isKeyValid = (key != null && key.length() > 0 && Character
+            .isLetter(key.charAt(0)) && key.matches("[a-zA-Z0-9_]+"));
+        return isKeyValid && value.isShapeValid();
+    }
+ 
     /**
      * String representation of node
      */
@@ -52,19 +61,8 @@ public class Node<K extends Comparable<K>, V> {
      * @return
      *         Returns the key
      */
-    public K getKey() {
+    public String getKey() {
         return key;
-    }
-
-
-    /**
-     * Set key
-     * 
-     * @param key
-     *            The key value
-     */
-    public void setKey(K key) {
-        this.key = key;
     }
 
 
@@ -80,23 +78,12 @@ public class Node<K extends Comparable<K>, V> {
 
 
     /**
-     * Set value
-     * 
-     * @param value
-     *            Value
-     */
-    public void setValue(V value) {
-        this.value = value;
-    }
-
-
-    /**
      * Returns the left node of current node
      * 
      * @return
      *         The left node
      */
-    public Node<K, V> getLeft() {
+    public Node<V> getLeft() {
         return left;
     }
 
@@ -107,7 +94,7 @@ public class Node<K extends Comparable<K>, V> {
      * @param left
      *            Left node
      */
-    public void setLeft(Node<K, V> left) {
+    public void setLeft(Node<V> left) {
         this.left = left;
     }
 
@@ -118,7 +105,7 @@ public class Node<K extends Comparable<K>, V> {
      * @return
      *         The Right node
      */
-    public Node<K, V> getRight() {
+    public Node<V> getRight() {
         return right;
     }
 
@@ -129,7 +116,7 @@ public class Node<K extends Comparable<K>, V> {
      * @param right
      *            The right node
      */
-    public void setRight(Node<K, V> right) {
+    public void setRight(Node<V> right) {
         this.right = right;
     }
 
@@ -154,5 +141,10 @@ public class Node<K extends Comparable<K>, V> {
     public void setSize(int size) {
         this.size = size;
     }
-
+    /**
+     * 
+     * @param str 
+     * @return true or false based on number of alphabet
+     */
+ 
 }

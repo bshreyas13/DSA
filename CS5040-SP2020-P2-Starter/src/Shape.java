@@ -1,6 +1,6 @@
 
 /**
- * @author nagendradurgada and bshreyas
+ * @author {shreyasb and veerad}
  * @version 2012-2-15
  */
 public interface Shape {

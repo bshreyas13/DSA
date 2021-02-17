@@ -1,1 +1,12 @@
-Rectangle accepted: (r_r, 1, 20, 3, 4)Rectangle rejected: (rec, 7, -8, 1, 3)Rectangle rejected: (virtual_rec0, 1, 1, 0, 0)Rectangle rejected: (virtual_REC0, 0, 0, 11, 0)Rectangle rejected: (inExistRec_0, 1, 1, -1, -2)Index 5 out of bounds for length 5Index 5 out of bounds for length 5
+Rectangle rejected: (r_r, -1, -20, 3, 4)Rectangle rejected: (rec, 7, -8, 1, 3)Rectangle rejected: (virtual_rec0, 1, 1, 0, 0)Rectangle rejected: (virtual_REC0, 0, 0, 11, 0)Rectangle rejected: (inExistRec_0, 1, 1, -1, -2)BST dump:
+Node has depth 0, Value (null)
+BST size is: 0Rectangle found: r_r,nullRectangle removed: (r_r)Rectangle removed: (1, 1, 0, 0)Rectangle accepted: (rec, 1, 2, 20, 10)Rectangle accepted: (r1, 3, 1, 10, 10)Rectangle rejected: (r2, 1024, 1024, 1, 1)Rectangle rejected: (r3, 1, 1024, 5, 5)Rectangle accepted: (r4, 0, 0, 1023, 1023)Rectangle rejected: (s1, -1, -1, 100, 100)Rectangle accepted: (s2, 5, 10, 10, 100)Rectangle found: s2,nullRectangle removed: (s2)Rectangle removed: (s1)Rectangle accepted: (sample, 2, 1, 10, 15)Rectangle found: r1,nullBST dump:
+Node has depth 2, Value (3, 1, 10, 10)
+Node has depth 1, Value (0, 0, 1023, 1023)
+Node has depth 4, Value (1, 2, 20, 10)
+Node has depth 1, Value (2, 1, 10, 15)
+BST size is: 4Rectangle removed: (3, 1, 10, 10)BST dump:
+Node has depth 1, Value (0, 0, 1023, 1023)
+Node has depth 3, Value (1, 2, 20, 10)
+Node has depth 1, Value (2, 1, 10, 15)
+BST size is: 3r4,rec,sample,Rectangle rejected: (rec, 1, 2, 20, 10)Rectangle accepted: (rec, 1, 1, 12, 15)Rectangle accepted: (rec, 1, 1, 12, 15)Rectangle removed: (rec)Rectangle found: rec,nullr4,rec,sample,

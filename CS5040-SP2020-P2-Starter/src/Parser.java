@@ -10,8 +10,8 @@ import java.util.Scanner;
  */
 public class Parser {
 
-    private static BST<String, Rect> bst = new BST<String, Rect>();
-    private static File outFile;
+	  private static BST<Rect> bst = new BST<Rect>();
+	    private static File outFile;
 
     /**
      * Parse the input file for commands
@@ -66,20 +66,101 @@ public class Parser {
                 case "regionsearch":
                     processRegionSearch(cps);
                     break;
+                case "remove":
+                	processRemove(cps);
+                	break;
+                case "search":
+                	processSearch(cps);
+                	break;
+                case "intersections":
+                	processIntersections(cps);
+                	break;
                 default:
                     break;
             }
         }
     }
+    /**
+     * Process intersections command
+     * @param cps
+     */
+    private static void processIntersections(String[] cps) {
+    	String output = "";
+        try {
+            output += bst.searchForIntersections();
+        }
+        catch (Exception ex) {
+            output += ex.getMessage();
+        }
+        if (output.length()>0) {
+        	writeToOutput(output);
+        }
 
+    }
+    
+    /**
+     * Process remove command
+     * @param cps
+     */
+    private static void processSearch(String[] cps) {
+        String name = cps[1];
+        boolean isValue = name.chars().allMatch( Character::isDigit );
+        if (isValue== true) {
+        	Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
+                    cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
+        	bst.removeAllByShape(rect);
+        	
+        	String output = String.format(
+                    "Rectangle removed: %s", rect);
+            //System.out.println(output);
+            writeToOutput(output);
 
+        }
+        
+        else {
+        MyList<Rect> rect = bst.searchByKey(name);
+        String output = String.format(
+                "Rectangle found: %s,%s", name,rect);
+        //System.out.println(output);
+        writeToOutput(output);
+        }
+    }
+
+    /**
+     * Process remove command
+     * @param cps
+     */
+    private static void processRemove(String[] cps) {
+        String name = cps[1];
+        boolean isValue = name.chars().allMatch( Character::isDigit );
+        if (isValue== true) {
+        	Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
+                    cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
+        	bst.removeAllByShape(rect);
+        	
+        	String output = String.format(
+                    "Rectangle removed: %s", rect);
+            //System.out.println(output);
+            writeToOutput(output);
+
+        }
+        
+        else {
+        bst.remove(name);
+        String output = String.format(
+                "Rectangle removed: (%s)", name);
+        //System.out.println(output);
+        writeToOutput(output);
+        }
+    }
     /**
      * Process dump command
      * 
      */
     private static void processDump() {
         String output = bst.dump();
-        System.out.println(output);
+        //System.out.println(output);
+        writeToOutput(output);
     }
 
 
@@ -90,16 +171,18 @@ public class Parser {
      *            Region search command with params
      */
     private static void processRegionSearch(String[] cps) {
-        String output = "";
+    	String output = "";
         try {
-            Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
-                cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
-            bst.searchByRegion(rect);
+            Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
+                cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
+            output += bst.searchByRegion(rect);
         }
         catch (Exception ex) {
-            output = ex.getMessage();
+            output += ex.getMessage();
         }
-        writeToOutput(output);
+        if (output.length()>0) {
+        	writeToOutput(output);
+        }
 
     }
 
@@ -116,8 +199,8 @@ public class Parser {
             String name = cps[1];
             Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
                 cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
-            if (rect.isShapeValid()) {
-                bst.insert(name, rect);
+            boolean status = bst.insert(new Node<Rect>(name, rect));
+            if (status) {
                 output = String.format(
                     "Rectangle accepted: (%s, %s, %s, %s, %s)", name, rect.x,
                     rect.y, rect.width, rect.height);

@@ -56,7 +56,7 @@ public class Rect extends Rectangle implements Shape {
      *         true if valid false otherwise
      */
     public boolean isShapeValid() {
-        return (x > 0 & y > 0 & width > 0 & height > 0) && (x < 1024
+        return (x >= 0 & y >= 0 & width > 0 & height > 0) && (x < 1024
             && y < 1024) && ((x + width) <= 1024) && ((y + height) <= 1024);
     }
 

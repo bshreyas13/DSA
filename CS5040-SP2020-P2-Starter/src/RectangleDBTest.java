@@ -15,10 +15,10 @@ public class RectangleDBTest extends TestCase {
     /**
      * Get code coverage of the class declaration.
      */
-    public void testRInit() {
-        RectangleDB manager = new RectangleDB();
-        System.out.println(manager);
-        String[] f = {"SyntaxTest.txt"};
+    public void testRInit() {   
+        String[] f = {"TestCases.txt"};
         RectangleDB.main(f);
+        RectangleDB manager = new RectangleDB();
+        assertNotNull(manager);
     }
 }
