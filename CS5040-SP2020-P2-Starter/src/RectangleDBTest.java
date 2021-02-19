@@ -1,8 +1,8 @@
 import student.TestCase;
 
 /**
- * @author {Your Name Here}
- * @version {Put Something Here}
+ * @author bshreyas and veerad
+ * @version 02-18-2021
  */
 public class RectangleDBTest extends TestCase {
     /**
@@ -12,13 +12,16 @@ public class RectangleDBTest extends TestCase {
         // Nothing Here
     }
 
+
     /**
      * Get code coverage of the class declaration.
      */
-    public void testRInit() {   
-        String[] f = {"TestCases.txt"};
+    public void testRInit() {
+        String[] f = { "RemoveTest.txt" };
         RectangleDB.main(f);
         RectangleDB manager = new RectangleDB();
+        Parser parserTest = new Parser();
+        assertNotNull(parserTest);
         assertNotNull(manager);
     }
 }

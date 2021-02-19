@@ -1,3 +1,4 @@
+import java.awt.Rectangle;
 
 /**
  * Represents a node in BST
@@ -5,20 +6,41 @@
  * @author {shreyasb and veerad}
  * @version 2021-2-15
  * 
- * @param <V>
- * 
- *            Any value which extends Shape
  */
-public class Node<V extends Shape> {
+public class Node implements Comparable<Node> {
 
     /**
      * Private fields
      */
     private String key;
-    private V value;
-    private Node<V> left;
-    private Node<V> right;
+    private Rectangle value;
+    private Node left;
+    private Node right;
     private int size;
+    private int depth;
+
+    /**
+     * Constructor
+     * 
+     * @param key
+     *            key
+     * @param x
+     *            x
+     * @param y
+     *            y
+     * @param width
+     *            width
+     * @param height
+     *            height
+     * @return
+     *         Node built
+     */
+    public static Node build(String key, int x, int y, int width, int height) {
+        Rectangle value = new Rectangle(x, y, width, height);
+        return new Node(key, value);
+
+    }
+
 
     /**
      * Instantiates a new node.
@@ -28,7 +50,7 @@ public class Node<V extends Shape> {
      * @param value
      *            Value of the node
      */
-    public Node(String key, V value) {
+    private Node(String key, Rectangle value) {
         this.key = key;
         this.value = value;
     }
@@ -41,91 +63,132 @@ public class Node<V extends Shape> {
      *         true if valid false otherwise
      */
     public boolean isValid() {
-        boolean isKeyValid = (key != null && key.length() > 0 && Character
-            .isLetter(key.charAt(0)) && key.matches("[a-zA-Z0-9_]+"));
-        return isKeyValid && value.isShapeValid();
+        return isKeyValid() && isValueValid();
     }
- 
+
+
     /**
-     * String representation of node
+     * Verify the key is valid
+     * 
+     * @return
+     *         true if valid, false otherwise
+     */
+    public boolean isKeyValid() {
+        return (key != null && key.length() > 0 && Character.isLetter(key
+            .charAt(0)) && key.matches("[a-zA-Z0-9_]+"));
+    }
+
+
+    /**
+     * Verify the value is valid
+     * 
+     * @return
+     *         true if valid, false otherwise
+     */
+    public boolean isValueValid() {
+        return (value.x >= 0 & value.y >= 0 & value.width > 0
+            & value.height > 0) && (value.x < 1024 && value.y < 1024)
+            && ((value.x + value.width) <= 1024) && ((value.y
+                + value.height) <= 1024);
+    }
+
+
+    /**
+     * String representation
+     * 
+     * @return
+     *         String value of node
      */
     @Override
     public String toString() {
-        return String.format("%s", key, value);
+        return String.format("(%s, %d, %d, %d, %d)", key, value.x, value.y,
+            value.width, value.height);
     }
 
 
     /**
-     * Get key value
+     * Used for key comparison
      * 
+     * @param name
+     *            key name
      * @return
-     *         Returns the key
+     *         string comparison result
      */
-    public String getKey() {
-        return key;
+    public int compareKey(String name) {
+        return name.compareTo(key);
     }
 
 
     /**
-     * Get value
-     * 
-     * @return
-     *         Value
+     * Used for node comparison
      */
-    public V getValue() {
-        return value;
+    @Override
+    public int compareTo(Node other) {
+        int c = key.compareTo(other.key);
+        if (c != 0) {
+            return c;
+        }
+        c = Integer.compare(value.x, other.value.x);
+        if (c != 0) {
+            return c;
+        }
+        c = Integer.compare(value.y, other.value.y);
+        if (c != 0) {
+            return c;
+        }
+        c = Integer.compare(value.width, other.value.width);
+        if (c != 0) {
+            return c;
+        }
+        return Integer.compare(value.height, other.value.height);
     }
 
 
     /**
-     * Returns the left node of current node
-     * 
-     * @return
-     *         The left node
+     * @return the left
      */
-    public Node<V> getLeft() {
+    public Node getLeft() {
         return left;
     }
 
 
     /**
-     * Sets the left node to current node
      * 
-     * @param left
-     *            Left node
+     * @return the key
      */
-    public void setLeft(Node<V> left) {
+    public String getKey() {
+        return this.key;
+    }
+
+
+    /**
+     * @param left
+     *            the left to set
+     */
+    public void setLeft(Node left) {
         this.left = left;
     }
 
 
     /**
-     * Returns the right node
-     * 
-     * @return
-     *         The Right node
+     * @return the right
      */
-    public Node<V> getRight() {
+    public Node getRight() {
         return right;
     }
 
 
     /**
-     * Set the right node
-     * 
      * @param right
-     *            The right node
+     *            the right to set
      */
-    public void setRight(Node<V> right) {
+    public void setRight(Node right) {
         this.right = right;
     }
 
 
     /**
-     * Returns the size of node
-     * 
-     * @return
-     *         The node size
+     * @return the size
      */
     public int getSize() {
         return size;
@@ -133,18 +196,28 @@ public class Node<V extends Shape> {
 
 
     /**
-     * Set node size
-     * 
      * @param size
-     *            The node size
+     *            the size to set
      */
     public void setSize(int size) {
         this.size = size;
     }
+
+
     /**
-     * 
-     * @param str 
-     * @return true or false based on number of alphabet
+     * @return the depth
      */
- 
+    public int getDepth() {
+        return depth;
+    }
+
+
+    /**
+     * @param depth
+     *            the depth to set
+     */
+    public void setDepth(int depth) {
+        this.depth = depth;
+    }
+
 }

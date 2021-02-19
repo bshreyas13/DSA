@@ -4,15 +4,18 @@
  * 
  * @author {shreyasb and veerad}
  * @version 2021-2-15
- * @param <V>
- *            Value type
  */
-public class BST<V extends Shape> {
+public class BST {
 
     /**
      * Root node of the BST.
      */
-    private Node<V> root;
+    private Node root;
+
+    /**
+     * Searchstatus
+     */
+    private boolean searchStatus;
 
     /**
      * Default constructor
@@ -29,45 +32,33 @@ public class BST<V extends Shape> {
      * @return
      *         true if inserted false otherwise
      */
-    public boolean insert(Node<V> node) {
-        if (node != null && node.isValid()) {
-           // V value = searchByKey(node.getKey());
-            if(isNodeFound(root, node)) {
-                root = insert(root, node);
-                return true;
-            }
-//            if (value == null || !value.isShapeEquals(node.getValue())) {
-//                root = insert(root, node);
-//                return true;
-//            }
+    public boolean insert(Node node) {
+        if (searchByNode(root, node) == null) {
+            root = insert(root, node);
+            updateDepth(root, 0);
+            return true;
         }
+
         return false;
     }
 
+
     /**
+     * Calculate node depth
      * 
      * @param node
-     *            New node to be inserted
-     * @param value 
-     *           input value from command
-     *            
-     * @return
-     *         true if inserted false otherwise
+     *            node to calculate
+     * @param depth
+     *            depth of node
      */
-    public boolean isNodeFound(Node<V> root, Node<V> node) {
-        if (node == null || !node.isValid()) {
-            return false;
+    void updateDepth(Node node, int depth) {
+        if (node != null) {
+            node.setDepth(depth);
+            updateDepth(node.getLeft(), depth + 1);
+            updateDepth(node.getRight(), depth + 1);
         }
-        if(root == null) {
-            return true;
-        }
-        if ( root.getKey().equals(node.getKey()) && root.getValue().isShapeEquals(
-            node.getValue())) {
-            return false;
-        }
-        return isNodeFound(node.getLeft(), node) && isNodeFound(node
-            .getRight(), node);
     }
+
 
     /**
      * Inserts a node in the BST
@@ -79,40 +70,47 @@ public class BST<V extends Shape> {
      * @return
      *         the root node at each iteration
      */
-    private Node<V> insert(Node<V> parent, Node<V> node) {
+    private Node insert(Node parent, Node node) {
         if (parent == null) {
-            if (node.isValid()) {
-                node.setSize(1);
-                return node;
-            }
-            else {
-                return null;
-            }
+            node.setSize(1);
+            return node;
         }
-
-
-        int difference = node.getKey().compareTo(parent.getKey());
-        if (difference <= 0) {
+        int c = node.compareTo(parent);
+        if (c < 0) {
             parent.setLeft(insert(parent.getLeft(), node));
         }
-        else if (difference > 0) {
+        else if (c > 0) {
             parent.setRight(insert(parent.getRight(), node));
         }
-        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
-
+        parent.setSize((1 + (parent.getLeft() == null
+            ? 0
+            : parent.getLeft().getSize()) + (parent.getRight() == null
+                ? 0
+                : parent.getRight().getSize())));
         return parent;
     }
 
 
-    /**
-     * Remove the node from the BST
-     * 
-     * @param key
-     *            Key used to remove node from tree
-     */
-    public void remove(String key) {
-        root = remove(root, key);
+    public boolean remove(String key) {
+
+        searchKey(key);
+        //System.out.println(isSearchStatus());
+        if (isSearchStatus() == true) {
+            root = remove(root, key);
+            updateDepth(root,0);
+            return true;
+        }
+
+        return false;
     }
+
+
+    /**
+     * 
+     * @param root
+     * @param key
+     * @return
+     */
 
     /**
      * Remove the node from tree associated with key
@@ -124,7 +122,7 @@ public class BST<V extends Shape> {
      * @return
      *         The node used to traverse recursively
      */
-    private Node<V> remove(Node<V> node, String key) {
+    private Node remove(Node node, String key) {
         if (node == null) {
             return null;
         }
@@ -146,7 +144,7 @@ public class BST<V extends Shape> {
             if (node.getLeft() == null) {
                 return node.getRight();
             }
-            Node<V> t = node;
+            Node t = node;
             node = findMinimumInRightSubTree(t.getRight());
             node.setRight(deleteMinimum(t.getRight()));
             node.setLeft(t.getLeft());
@@ -158,158 +156,6 @@ public class BST<V extends Shape> {
    
 
     /**
-     * Search BST for specific rectangle
-     * 
-     * @param value
-     *            The rectangle used to search the for region match
-     * @return
-     *         String contains matched information
-     */
-    public String searchByRegion(V value) {
-        StringBuilder sb = new StringBuilder();
-        inOrderForIntersection(root, value, sb);
-        return sb.toString();
-    }
-
-
-    /**
-     * Iterate tree to search for intersections
-     * 
-     * @param node
-     *            The node to begin search
-     * @param value
-     *            The value used to search intersection
-     * @param sb
-     *            contains the information of the intersections
-     */
-    private void inOrderForIntersection(
-        Node<V> node,
-        V value,
-        StringBuilder sb) {
-        if (node == null) {
-            return;
-        }
-        inOrderForIntersection(node.getLeft(), value, sb);
-        if (node.getValue().shapeIntersects(value) && !sb.toString().contains(
-            node.toString())) {
-            sb.append(String.format("%s,", node));
-        }
-        inOrderForIntersection(node.getRight(), value, sb);
-    }
-
-
-    /**
-     * Search for intersections in BST
-     * 
-     * @return
-     *         String containing the information of intersections
-     */
-    public String searchForIntersections() {
-        StringBuilder sb = new StringBuilder();
-        traverseEachNode(root, sb);
-        return sb.toString();
-    }
-
-
-    /**
-     * This methods used for search intersections
-     * 
-     * @param node
-     *            Current node in traversal
-     * @param sb
-     *            Contains the information after each iteration
-     */
-    private void traverseEachNode(Node<V> node, StringBuilder sb) {
-        if (node == null) {
-            return;
-        }
-        traverseEachNode(node.getLeft(), sb);
-        inOrderForIntersection(node, node.getValue(), sb);
-        traverseEachNode(node.getRight(), sb);
-    }
-
-
-    /**
-     * Traverse tree with and search with given key
-     * 
-     * @param key
-     *            The key name
-     * @return
-     * 
-     *         The value found
-     */
-    public MyList<V> searchByKey(String key) {
-        return inOrderForSearchByKey(root, key);
-    }
-
-
-    /**
-     * Associated method for {@link #searchByKey(Comparable)}
-     * 
-     * @param node
-     *            The current node at each iteration
-     * @param key
-     *            The key value
-     * @return
-     *         The value associated with key
-     */
-    private MyList<V> inOrderForSearchByKey(Node<V> node, String key) {
-    	MyList<V> list = new MyList<V>();
-    	if (node == null) {
-            return list;
-        }
-        inOrderForSearchByKey(node.getLeft(), key);
-        
-        if (node.getKey().equals(key)) {
-        	 list.add(node.getValue());
-        	 //System.out.println(list);
-        }
-        inOrderForSearchByKey(node.getRight(), key);
-        return list;
-    }
-    /**
-     * Traverse tree with and search with given key
-     * 
-     * @param key
-     *            The key name
-     * @return
-     * 
-     *         The value found
-     */
-
-
-    /**
-     * Remove the values by matched Shape
-     * 
-     * @param shape
-     *            The shape value
-     */
-    public void removeAllByShape(Shape shape) {
-        inOrderForShape(root, shape);
-    }
-
-
-    /**
-     * Associated method to {@link #removeAllByShape(Shape)}
-     * 
-     * @param node
-     *            The node at current iteration
-     * @param shape
-     *            If this value matches, the node will be removed.
-     */
-    private void inOrderForShape(Node<V> node, Shape shape) {
-        if (node == null) {
-            return;
-        }
-        inOrderForShape(node.getLeft(), shape);
-        if (node.isValid() && node.getValue().isShapeEquals(shape)) {
-            remove(node.getKey());
-        }
-        inOrderForShape(node.getRight(), shape);
-    }
-
-
-    /**
      * While deleting the node from tree, this method will be used to identify
      * the minimum value in the right sub tree
      * 
@@ -318,7 +164,7 @@ public class BST<V extends Shape> {
      * @return
      *         Returns the left minimum node
      */
-    private Node<V> findMinimumInRightSubTree(Node<V> x) {
+    private Node findMinimumInRightSubTree(Node x) {
         if (x.getLeft() == null) {
             return x;
         }
@@ -336,7 +182,7 @@ public class BST<V extends Shape> {
      * @return
      *         The node with update left node
      */
-    private Node<V> deleteMinimum(Node<V> x) {
+    private Node deleteMinimum(Node x) {
         if (x.getLeft() == null) {
             return x.getRight();
         }
@@ -345,7 +191,10 @@ public class BST<V extends Shape> {
         return x;
     }
 
-
+    public void searchKey(String name) {
+        setSearchStatus(false);
+        searchKey(root, name);
+    }
     /**
      * Returns the size of the node
      * 
@@ -354,7 +203,7 @@ public class BST<V extends Shape> {
      * @return
      *         Size of the node
      */
-    private int size(Node<V> node) {
+    private int size(Node node) {
         if (node == null) {
             return 0;
         }
@@ -362,24 +211,94 @@ public class BST<V extends Shape> {
             return node.getSize();
         }
     }
+    /**
+     * Associated method for
+     * 
+     * @param node
+     *            The current node at each iteration
+     * @param name
+     *            name of the key
+     * @return
+     *         
+     */
+    private int searchKey(Node node, String name) {
+        int count = 0 ;
+        if (node == null) {
+            return count;
+        }
+        int c = node.compareKey(name);
+        if (c == 0) {
+            setSearchStatus(true);
+            count++;
+            return count;
+        }
+        if (c < 0) {
+            return searchKey(node.getLeft(), name);
+        }
+        return searchKey(node.getRight(), name);
+    }
 
 
     /**
-     * Traverse tree in order
+     * Associated method for {@link #searchByKey(Comparable)}
+     * 
+     * @param parent
+     *            The current node at each iteration
+     * @param child
+     *            The node value to be searched
+     * @return
+     *         The node if found already
+     */
+    private Node searchByNode(Node parent, Node child) {
+        if (parent == null) {
+            return null;
+        }
+        int c = child.compareTo(parent);
+        if (c == 0) {
+            return parent;
+        }
+        if (c < 0) {
+            return searchByNode(parent.getLeft(), child);
+        }
+        return searchByNode(parent.getRight(), child);
+    }
+
+
+    /**
+     * search by name
+     * 
+     * @param name
+     *            The node key
+     */
+    public void searchByKey(String name) {
+        setSearchStatus(false);
+        searchByKey(root, name);
+    }
+
+
+    /**
+     * Associated method for
      * 
      * @param node
-     *            The node to start
-     * @param sb
-     *            StringBuilder which will hold the path while tree traversal
+     *            The current node at each iteration
+     * @param name
+     *            name of the key
+     * @return
+     *         The node if found already
      */
-    private void inOrder(Node<V> node, StringBuilder sb) {
+    private Node searchByKey(Node node, String name) {
         if (node == null) {
-            return;
+            return null;
         }
-        inOrder(node.getLeft(), sb);
-        sb.append(String.format("Node has depth %d, Value %s%s", node.getSize(),
-            node.getValue().toString(), System.lineSeparator()));
-        inOrder(node.getRight(), sb);
+        int c = node.compareKey(name);
+        if (c == 0) {
+            System.out.println(String.format("Rectangle found: %s", node));
+            setSearchStatus(true);
+        }
+        if (c < 0) {
+            return searchByKey(node.getLeft(), name);
+        }
+        return searchByKey(node.getRight(), name);
     }
 
 
@@ -387,21 +306,55 @@ public class BST<V extends Shape> {
      * Display tree in-order
      * 
      * @return
-     *         String contains the path of nodes with in-order tree traversal
+     *         status contains the path of nodes with in-order tree traversal
      */
-    public String dump() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("BST dump:" + System.lineSeparator());
+    public boolean dump() {
+        System.out.println("BST dump:");
         if (root != null) {
-            inOrder(root, sb);
+            inOrder(root);
         }
         else {
-            sb.append("Node has depth 0, Value (null)" + System
-                .lineSeparator());
+            System.out.println("Node has depth 0, Value (null)");
         }
-        sb.append(String.format("BST size is: %d", (root != null
+        System.out.println(String.format("BST size is: %d", (root != null
             ? root.getSize()
             : 0)));
-        return sb.toString();
+        return true;
     }
+
+
+    /**
+     * Utility method for in order traversal
+     * 
+     * @param node
+     *            The start node
+     * 
+     */
+    private void inOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+        inOrder(node.getLeft());
+        System.out.println(String.format("Node has depth %d, Value %s", node
+            .getDepth(), node));
+        inOrder(node.getRight());
+    }
+
+
+    /**
+     * @return the searchStatus
+     */
+    public boolean isSearchStatus() {
+        return searchStatus;
+    }
+
+
+    /**
+     * @param searchStatus
+     *            the searchStatus to set
+     */
+    public void setSearchStatus(boolean searchStatus) {
+        this.searchStatus = searchStatus;
+    }
+
 }

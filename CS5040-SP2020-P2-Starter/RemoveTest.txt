@@ -1,0 +1,14 @@
+
+
+dump
+insert a 1 0 2 4
+inset a2 2 2 34 35
+insert b 4 3 6 1
+
+insert b 2 2 10 12
+insert c 2 5     123 6
+
+dump
+
+remove b
+dump

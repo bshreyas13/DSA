@@ -10,6 +10,7 @@ insert inExistRec_0 1 1 -1 -2
 
 intersections
 
+insert  1rec 1 2 3 4
 dump
 
 search r_r
@@ -23,13 +24,15 @@ regionsearch   -5 -5 20 20
 insert rec    1  2  20 10
 insert r1 3 1 10 10
 
-insert r2 1024 1024 1 1
+insert r2 1022 1022 1 1
 
 insert r3 1 1024 5 5 
 
-insert r4 0 0 1023 1023
+insert r4 0 0 1023 1024
 
-insert s1 -1 -1 100 100
+insert s1 -1 -1 0 100
+
+insert s1 1 1 0 0
 
 insert s2     5 10 10 100 120
 
@@ -43,11 +46,13 @@ insert sample 2 1 10 15
 
 search       r1
 
+
+
 dump
 
 remove 3 1 10 10
 
-
+insert Z 1 1 30 40
 dump
 
 intersections
@@ -59,10 +64,15 @@ insert rec 1 1 12 15
 
 insert rec 1 1 12 15
 
+search rec
 remove rec
 
 
-search rec
-
 regionsearch 1 1 100 100
 
+dump
+insert a 1 0 2 4
+inset a2 2 2 34 35
+insert b 4 3 6 1
+insert c 2 5     123 6
+dump
