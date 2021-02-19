@@ -114,10 +114,13 @@ public class Parser {
                     .parseInt(cps[2]), Integer.parseInt(cps[3]), Integer
                         .parseInt(cps[4]));
                 boolean valueOut = bst.removeByValue(rect);
+                
                 if (isValue && !valueOut) {
                     System.out.println(String.format(
                         "Rectangle rejected: (%s, %s, %s, %s)", rect.x, rect.y,
                         rect.width, rect.height));
+                    //bst.clear();
+                    System.out.flush();
                 }
             }
             else {
@@ -125,6 +128,8 @@ public class Parser {
                 if (!isValue && !keyOut) {
                     System.out.println(String.format("Rectangle rejected: %s",
                         key));
+                    //bst.clear();
+                    System.out.flush();
                 }
             }
 

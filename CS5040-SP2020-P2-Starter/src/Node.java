@@ -120,12 +120,12 @@ public class Node implements Comparable<Node> {
 
 
     /**
-     * Used for key comparison
      * 
-     * @param name
-     *            key name
-     * @return
-     *         string comparison result
+     * @param dims
+     *            rectangle 1
+     * @param root
+     *            rectangle 2
+     * @return 0 if equal
      */
     public int compareValue(Rectangle dims, Rectangle root) {
         return compareVal(root, dims);

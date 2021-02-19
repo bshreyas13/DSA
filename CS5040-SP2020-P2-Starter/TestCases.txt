@@ -46,7 +46,7 @@ insert sample 2 1 10 15
 
 search       r1
 
-
+insert z 1 1 30 40
 
 dump
 
@@ -54,7 +54,8 @@ remove 1 2 20 10
 
 remove 3 1 10 10 
 
-insert Z 1 1 30 40
+
+insert ZZ 1 2 10 10
 dump
 
 intersections
@@ -78,6 +79,7 @@ insert a2 2 2 34 35
 insert b 4 3 6 1
 insert c 2 5     123 6
 dump
+search a 
 remove 1 0 2 4
 remove 2 2 34 35 
 
@@ -85,4 +87,16 @@ dump
 
 remove 200 200 10 10
 
+search a 
+
 remove 2 34 2 35
+
+
+
+insert a 1 0 2 4
+
+insert a 0 0 2 4 
+
+dump
+
+search a

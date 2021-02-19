@@ -32,6 +32,15 @@ public class BST {
 
 
     /**
+     * Clears tree
+     */
+    public void clear() {
+        root.setSize(0);
+        root = null;
+    }
+
+
+    /**
      * 
      * @param node
      *            New node to be inserted
@@ -173,9 +182,14 @@ public class BST {
                 return node.getRight();
             }
             Node t = node;
+            // System.out.println(t.getRight());
             node = findMinimumInRightSubTree(t.getRight());
+            // System.out.println(node);
+            // System.out.println(deleteMinimum(t.getRight()));
             node.setRight(deleteMinimum(t.getRight()));
+            // updateDepth(node,node.getDepth());
             node.setLeft(t.getLeft());
+            // System.out.println(node.getRight());
         }
 
         node.setSize(size(node.getLeft()) + size(node.getRight()) + 1);
@@ -339,18 +353,29 @@ public class BST {
      *         The node if found already
      */
     private Node searchByKey(Node node, String name) {
+
         if (node == null) {
             return null;
         }
-        int c = node.compareKey(name);
-        if (c == 0) {
+
+        searchByKey(node.getLeft(), name);
+        // System.out.println(node);
+        if (node.getKey().equals(name)) {
             System.out.println(String.format("Rectangle found: %s", node));
             setSearchStatus(true);
+            if (node.getRight() != null && node.getRight().getKey().equals(
+                name)) {
+                System.out.println(String.format("Rectangle found: %s", node
+                    .getRight()));
+                setSearchStatus(true);
+                return node;
+            }
+
+            return node;
         }
-        if (c < 0) {
-            return searchByKey(node.getLeft(), name);
-        }
-        return searchByKey(node.getRight(), name);
+        searchByKey(node.getRight(), name);
+
+        return null;
     }
 
 
@@ -402,7 +427,7 @@ public class BST {
      */
     private String inOrderTraverse(Node node, Rectangle val) {
         if (node == null) {
-            return "";
+            return null;
         }
         inOrderTraverse(node.getLeft(), val);
         int c = node.compareValue(node.getValue(), val);
