@@ -1,3 +1,4 @@
+import java.awt.Rectangle;
 
 /**
  * Represents the BST
@@ -16,6 +17,11 @@ public class BST {
      * Searchstatus
      */
     private boolean searchStatus;
+
+    /**
+     * Key for given value
+     */
+    private String searchKey;
 
     /**
      * Default constructor
@@ -91,13 +97,20 @@ public class BST {
     }
 
 
-    public boolean remove(String key) {
+    /**
+     * 
+     * @param key
+     *            name of rectangle to remove
+     * @return
+     *         true if node remove false otherwise
+     */
+    public boolean removeByKey(String key) {
 
         searchKey(key);
-        //System.out.println(isSearchStatus());
-        if (isSearchStatus() == true) {
+        // System.out.println(isSearchStatus());
+        if (isSearchStatus()) {
             root = remove(root, key);
-            updateDepth(root,0);
+            updateDepth(root, 0);
             return true;
         }
 
@@ -107,10 +120,25 @@ public class BST {
 
     /**
      * 
-     * @param root
-     * @param key
+     * @param value
+     *            the x,y,w,h values
      * @return
+     *         true if node remove false otherwise
      */
+    public boolean removeByValue(Rectangle value) {
+
+        String key = searchValue(value);
+        // System.out.println(key);
+        if (key != null) {
+            root = remove(root, key);
+            updateDepth(root, 0);
+            setSearchKey(null);
+            return true;
+        }
+
+        return false;
+    }
+
 
     /**
      * Remove the node from tree associated with key
@@ -153,7 +181,7 @@ public class BST {
         node.setSize(size(node.getLeft()) + size(node.getRight()) + 1);
         return node;
     }
-   
+
 
     /**
      * While deleting the node from tree, this method will be used to identify
@@ -191,10 +219,60 @@ public class BST {
         return x;
     }
 
+
+    /**
+     * Checks if key exists
+     * 
+     * @param name
+     *            name of the rectangle
+     */
     public void searchKey(String name) {
         setSearchStatus(false);
         searchKey(root, name);
     }
+
+
+    /**
+     * Checks if Value exists
+     * 
+     * @param value
+     */
+    private String searchValue(Rectangle value) {
+        setSearchStatus(false);
+        inOrderTraverse(root, value);
+        // System.out.println(isSearchKey());
+        return isSearchKey();
+    }
+
+
+    /**
+     * Associated method for Remove
+     * 
+     * @param node
+     *            The current node at each iteration
+     * @param name
+     *            name of the key
+     * @return
+     *         count of search occurrences
+     */
+    private int searchKey(Node node, String name) {
+        int count = 0;
+        if (node == null) {
+            return count;
+        }
+        int c = node.compareKey(name);
+        if (c == 0) {
+            setSearchStatus(true);
+            count++;
+            return count;
+        }
+        if (c < 0) {
+            return searchKey(node.getLeft(), name);
+        }
+        return searchKey(node.getRight(), name);
+    }
+
+
     /**
      * Returns the size of the node
      * 
@@ -210,32 +288,6 @@ public class BST {
         else {
             return node.getSize();
         }
-    }
-    /**
-     * Associated method for
-     * 
-     * @param node
-     *            The current node at each iteration
-     * @param name
-     *            name of the key
-     * @return
-     *         
-     */
-    private int searchKey(Node node, String name) {
-        int count = 0 ;
-        if (node == null) {
-            return count;
-        }
-        int c = node.compareKey(name);
-        if (c == 0) {
-            setSearchStatus(true);
-            count++;
-            return count;
-        }
-        if (c < 0) {
-            return searchKey(node.getLeft(), name);
-        }
-        return searchKey(node.getRight(), name);
     }
 
 
@@ -342,10 +394,52 @@ public class BST {
 
 
     /**
+     * Utility method for in order traversal
+     * 
+     * @param node
+     *            The start node
+     * 
+     */
+    private String inOrderTraverse(Node node, Rectangle val) {
+        if (node == null) {
+            return "";
+        }
+        inOrderTraverse(node.getLeft(), val);
+        int c = node.compareValue(node.getValue(), val);
+        if (c == 0) {
+            setSearchKey(node.getKey());
+
+            return node.getKey();
+        }
+        inOrderTraverse(node.getRight(), val);
+        return null;
+    }
+
+
+    /**
      * @return the searchStatus
      */
     public boolean isSearchStatus() {
         return searchStatus;
+    }
+
+
+    /**
+     * @return the searchKey
+     */
+    public String isSearchKey() {
+        return searchKey;
+    }
+
+
+    /**
+     * 
+     * @param searchKey
+     *            Key corresponding to value
+     * 
+     */
+    public void setSearchKey(String searchKey) {
+        this.searchKey = searchKey;
     }
 
 

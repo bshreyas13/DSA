@@ -1,5 +1,6 @@
 import java.io.File;
 import java.util.Scanner;
+import java.awt.Rectangle;
 
 /**
  * 
@@ -67,6 +68,7 @@ public class Parser {
                     break;
                 case "remove":
                     processRemove(cps);
+                    break;
                 default:
                     break;
             }
@@ -75,7 +77,7 @@ public class Parser {
 
 
     /**
-     * Process dump command
+     * Process search command
      * 
      */
     private static void processSearch(String[] cps) {
@@ -96,21 +98,41 @@ public class Parser {
         bst.dump();
     }
 
+
+    /**
+     * Process remove command
+     * 
+     * @param cps
+     */
     private static void processRemove(String[] cps) {
         try {
             String key = cps[1];
-            
-            if ( bst.remove(key)==false) {
-                System.out.println(String.format("Rectangle rejected: %s",
-                    key));
+            boolean isValue = key.chars().allMatch(Character::isDigit);
+            // System.out.println(isValue);
+            if (isValue == true) {
+                Rectangle rect = new Rectangle(Integer.parseInt(cps[1]), Integer
+                    .parseInt(cps[2]), Integer.parseInt(cps[3]), Integer
+                        .parseInt(cps[4]));
+                boolean valueOut = bst.removeByValue(rect);
+                if (isValue && !valueOut) {
+                    System.out.println(String.format(
+                        "Rectangle rejected: (%s, %s, %s, %s)", rect.x, rect.y,
+                        rect.width, rect.height));
+                }
             }
-   
+            else {
+                boolean keyOut = bst.removeByKey(key);
+                if (!isValue && !keyOut) {
+                    System.out.println(String.format("Rectangle rejected: %s",
+                        key));
+                }
+            }
+
         }
         catch (Exception ex) {
             ex.printStackTrace();
         }
     }
-
 
 
     /**

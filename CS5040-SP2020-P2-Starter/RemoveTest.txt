@@ -8,7 +8,22 @@ insert b 4 3 6 1
 insert b 2 2 10 12
 insert c 2 5     123 6
 
+insert r1 3 1 10 10 
+insert r1 12 12  2 2 
+insert q -1 -1 0 0 
 dump
 
+remove 2 2 10 12
+
 remove b
+
+remove 1 0 2 4
+
+remove 3 1 10 10 
+
+
+
+remove 12 12 2 2 
+
+
 dump

@@ -17,7 +17,7 @@ public class RectangleDBTest extends TestCase {
      * Get code coverage of the class declaration.
      */
     public void testRInit() {
-        String[] f = { "RemoveTest.txt" };
+        String[] f = { "TestCases.txt" };
         RectangleDB.main(f);
         RectangleDB manager = new RectangleDB();
         Parser parserTest = new Parser();

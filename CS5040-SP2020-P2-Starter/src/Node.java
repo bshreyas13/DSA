@@ -120,6 +120,19 @@ public class Node implements Comparable<Node> {
 
 
     /**
+     * Used for key comparison
+     * 
+     * @param name
+     *            key name
+     * @return
+     *         string comparison result
+     */
+    public int compareValue(Rectangle dims, Rectangle root) {
+        return compareVal(root, dims);
+    }
+
+
+    /**
      * Used for node comparison
      */
     @Override
@@ -145,6 +158,33 @@ public class Node implements Comparable<Node> {
 
 
     /**
+     * 
+     * @param value
+     *            rectangle 1
+     * @param other
+     *            rectangle 2
+     * @return 0 if equal
+     */
+
+    private int compareVal(Rectangle value, Rectangle other) {
+
+        int c = Integer.compare(value.x, other.x);
+        if (c != 0) {
+            return c;
+        }
+        c = Integer.compare(value.y, other.y);
+        if (c != 0) {
+            return c;
+        }
+        c = Integer.compare(value.width, other.width);
+        if (c != 0) {
+            return c;
+        }
+        return Integer.compare(value.height, other.height);
+    }
+
+
+    /**
      * @return the left
      */
     public Node getLeft() {
@@ -158,6 +198,15 @@ public class Node implements Comparable<Node> {
      */
     public String getKey() {
         return this.key;
+    }
+
+
+    /**
+     * 
+     * @return the value(Rectangle)
+     */
+    public Rectangle getValue() {
+        return this.value;
     }
 
 
