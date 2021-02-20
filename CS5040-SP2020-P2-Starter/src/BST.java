@@ -17,15 +17,7 @@ public class BST<V extends Shape> {
      * node removed status
      */
     private boolean nodeRemoved;
-    /**
-     * Searchstatus
-     */
-    private boolean searchStatus;
 
-    /**
-     * Key for given value
-     */
-    private String searchKey;
 
     /**
      * check for node exists while inserting
@@ -45,26 +37,14 @@ public class BST<V extends Shape> {
     }
 
 
+    /**
+     * To clear List elements
+     */
     public void purgeList() {
         allNodes = new MyList<Node<V>>();
     }
 
 
-    /**
-     * @return the searchStatus
-     */
-    public boolean isSearchStatus() {
-        return searchStatus;
-    }
-
-
-    /**
-     * @param searchStatus
-     *            the searchStatus to set
-     */
-    public void setSearchStatus(boolean searchStatus) {
-        this.searchStatus = searchStatus;
-    }
 
 
     /**
@@ -410,9 +390,7 @@ public class BST<V extends Shape> {
      * 
      * @param key
      *            The key name
-     * @return
      * 
-     *         The value found
      */
     public void searchByKey(String key) {
         // setSearchStatus(false);
@@ -437,14 +415,13 @@ public class BST<V extends Shape> {
     }
 
 
-
     /**
      * Iterate tree to get all nodes
      * 
      * @param node
      *            The node to begin search
-     * @param value
-     *            The value used to search
+     * @param key
+     *            The key used to search
      * 
      */
     private void inOrderSearch(Node<V> node, String key) {
