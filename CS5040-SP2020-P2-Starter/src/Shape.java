@@ -33,4 +33,17 @@ public interface Shape {
      *         true if equals false otherwise
      */
     boolean isShapeEquals(Shape other);
+
+
+
+    /**
+     * Verifies the two shapes equal or not
+     * 
+     * @param other
+     *            other shape to compare
+     * @return
+     *         true if equals false otherwise
+     */
+    int shapeCompareTo(Shape other);
+
 }

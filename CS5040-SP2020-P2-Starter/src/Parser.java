@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
@@ -54,23 +53,26 @@ public class Parser {
      * @param line
      */
     private static void processCommand(String line) {
-        String[] cps = line.split(" ");
-        if (cps != null && cps.length > 0) {
-            switch (cps[0]) {
+        String[] params = line.split(" ");
+        if (params != null && params.length > 0) {
+            switch (params[0]) {
                 case "insert":
-                    processInsert(cps);
+                    processInsert(params);
+                    break;
+                case "remove":
+                    processRemove(params);
+                    break;
+                case "regionsearch":
+                    processRegionSearch(params);
+                    break;
+                case "intersections":
+                    processIntersections();
+                    break;
+                case "search":
+                    processSearch(params);
                     break;
                 case "dump":
                     processDump();
-                    break;
-                case "remove":
-                    processRemove(cps);
-                    break;
-                case "regionsearch":
-                    processRegionSearch(cps);
-                    break;
-                case "search":
-                    processSearch(cps);
                     break;
                 default:
                     break;
@@ -80,15 +82,18 @@ public class Parser {
 
 
     /**
-     * Process search command
-     * 
+     * search
      */
-    private static void processSearch(String[] cps) {
-        bst.search(cps[1]);
-        if (!bst.isSearchStatus()) {
-            System.out.println(String.format("Rectangle not found: %s",
-                cps[1]));
-        }
+    private static void processSearch(String[] params) {
+        bst.searchByKey(params[1]);
+    }
+
+
+    /**
+     * Search intersections
+     */
+    private static void processIntersections() {
+        bst.searchForIntersections();
 
     }
 
@@ -96,8 +101,8 @@ public class Parser {
     /**
      * to remove
      * 
-     * @param args
-     *            args
+     * @param cps
+     *            cps values
      */
     private static void processRemove(String[] cps) {
 
@@ -107,7 +112,13 @@ public class Parser {
         else if (cps.length == 5) {
             Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
                 cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
-            bst.removeAllByShape(rect);
+            boolean status = bst.removeByRect(rect);
+            if (!status) {
+                String output = String.format(
+                    "Rectangle rejected: (%d, %d, %d, %d)", rect.x, rect.y,
+                    rect.width, rect.height);
+                System.out.println(output);
+            }
         }
 
     }
@@ -118,8 +129,7 @@ public class Parser {
      * 
      */
     private static void processDump() {
-        String output = bst.dump();
-        System.out.println(output);
+        bst.dump();
     }
 
 
@@ -130,22 +140,16 @@ public class Parser {
      *            Region search command with params
      */
     private static void processRegionSearch(String[] cps) {
-
+        String output = "";
         try {
-            Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
-                cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
-            
-            String output = bst.searchByRegion(rect);
-            if (output.isEmpty()==false) {
-            System.out.println(String.format(
-                "Rectangles intersecting region %s %s %s %s :", cps[1], cps[2],
-                cps[3], cps[4]));
-            System.out.println(output.trim());
-            }
+            Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
+                cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
+            bst.searchByRegion(rect);
         }
         catch (Exception ex) {
-            ex.getMessage();
+            output = ex.getMessage();
         }
+        System.out.println(output);
 
     }
 
@@ -157,27 +161,27 @@ public class Parser {
      *            Insert command with params
      */
     private static void processInsert(String[] cps) {
-        String output = "";
         try {
             String name = cps[1];
             Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
                 cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
             boolean status = bst.insert(new Node<Rect>(name, rect));
             if (status) {
-                output = String.format(
-                    "Rectangle accepted: (%s, %s, %s, %s, %s)", name, rect.x,
+                String output = String.format(
+                    "Rectangle accepted: (%s, %d, %d, %d, %d)", name, rect.x,
                     rect.y, rect.width, rect.height);
+                System.out.println(output);
             }
             else {
-                output = String.format(
-                    "Rectangle rejected: (%s, %s, %s, %s, %s)", name, rect.x,
+                String output = String.format(
+                    "Rectangle rejected: (%s, %d, %d, %d, %d)", name, rect.x,
                     rect.y, rect.width, rect.height);
+                System.out.println(output);
             }
         }
         catch (Exception ex) {
             ex.printStackTrace();
         }
-        writeToOutput(output);
     }
 
 
@@ -197,25 +201,6 @@ public class Parser {
      */
     private static Rect getRect(int x, int y, int w, int h) {
         return new Rect(x, y, w, h);
-    }
-
-
-    /**
-     * Save output to file
-     * 
-     * @param msg
-     *            line to append to file
-     */
-    private static void writeToOutput(final String msg) {
-        try {
-            System.out.println(msg);
-            FileWriter fw = new FileWriter(outFile, true);
-            fw.write(String.format("%s", msg));
-            fw.close();
-        }
-        catch (Exception ex) {
-            ex.printStackTrace();
-        }
     }
 
 }

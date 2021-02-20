@@ -56,8 +56,9 @@ public class Rect extends Rectangle implements Shape {
      *         true if valid false otherwise
      */
     public boolean isShapeValid() {
-        return (x >= 0 & y >= 0 & width > 0 & height > 0) && (x < 1023
-            && y < 1023) && ((x + width) <= 1023) && ((y + height) <= 1023);
+        return (x >= 0 & y >= 0 & width > 0 & height > 0) && (x < 1024
+            && y < 1024) && ((x + width) <= 1024) && ((y + height) <= 1024);
+
     }
 
 
@@ -86,6 +87,28 @@ public class Rect extends Rectangle implements Shape {
      */
     public String toString() {
         return String.format("%d, %d, %d, %d", x, y, width, height);
+    }
+
+
+    @Override
+    public int shapeCompareTo(Shape o) {
+        if (!(o instanceof Rect)) {
+            return -1;
+        }
+        Rect other = (Rect)o;
+        int c = Integer.compare(x, other.x);
+        if (c != 0) {
+            return c;
+        }
+        c = Integer.compare(y, other.y);
+        if (c != 0) {
+            return c;
+        }
+        c = Integer.compare(width, other.width);
+        if (c != 0) {
+            return c;
+        }
+        return Integer.compare(height, other.height);
     }
 
 }

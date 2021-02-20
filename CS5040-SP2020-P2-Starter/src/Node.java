@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import java.util.UUID;
+>>>>>>> c347cb461f0fc224895068dfdc31b6593a01145b
 
 /**
  * Represents a node in BST
@@ -20,6 +24,8 @@ public class Node<V extends Shape> {
     private Node<V> right;
     private int size;
     private int depth;
+    private UUID uuid;
+
 
     /**
      * Instantiates a new node.
@@ -32,6 +38,7 @@ public class Node<V extends Shape> {
     public Node(String key, V value) {
         this.key = key;
         this.value = value;
+        this.uuid = UUID.randomUUID();
     }
 
 
@@ -159,6 +166,29 @@ public class Node<V extends Shape> {
      */
     public void setDepth(int depth) {
         this.depth = depth;
+    }
+
+
+    /**
+     * set the value
+     * 
+     * @param v
+     *            value
+     */
+    public void setValue(V v) {
+        this.value = v;
+
+    }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Node)) {
+            return false;
+        }
+        @SuppressWarnings("unchecked")
+        Node<V> otherNode = (Node<V>)obj;
+        return this.uuid.compareTo(otherNode.uuid) == 0;
     }
 
 }

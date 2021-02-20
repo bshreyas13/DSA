@@ -1,4 +1,3 @@
-
 /**
  * Represents the BST
  * 
@@ -15,19 +14,18 @@ public class BST<V extends Shape> {
     private Node<V> root;
 
     /**
-     * Searchstatus
+     * node removed status
      */
-    private boolean searchStatus;
+    private boolean nodeRemoved;
 
     /**
-     * Key for given value
+     * node removed status
      */
-    private String searchKey;
-
+    private boolean searchFound;
     /**
-     * Value for given key
+     * check for node exists while inserting
      */
-    private MyList<V> searchValues;
+    private boolean nodeAlreadyExists;
 
     /**
      * Default constructor
@@ -45,7 +43,7 @@ public class BST<V extends Shape> {
      * @param depth
      *            depth of node
      */
-    void updateDepth(Node<V> node, int depth) {
+    public void updateDepth(Node<V> node, int depth) {
         if (node != null) {
             node.setDepth(depth);
             updateDepth(node.getLeft(), depth + 1);
@@ -63,133 +61,15 @@ public class BST<V extends Shape> {
      */
     public boolean insert(Node<V> node) {
         if (node != null && node.isValid()) {
-            MyList<V> val = searchValue(node.getKey());
-            if (isNodeFound(root, node)) {
+            nodeAlreadyExists = false;
+            searchByKeyValue(node.getKey(), node.getValue());
+            if (root == null || !nodeAlreadyExists) {
                 root = insert(root, node);
                 updateDepth(root, 0);
                 return true;
             }
-            System.out.println(val.length(val));
-            for (int i = 0; i < val.length(val); i++) {
-                V value = val.get(i);
-                if (value == null || !value.isShapeEquals(node.getValue())) {
-                    root = insert(root, node);
-                    return true;
-                }
-
-            }
-
         }
         return false;
-    }
-
-
-    /**
-     * Checks if Value exists
-     * 
-     * @param value
-     */
-    private MyList<V> searchValue(String key) {
-        setSearchStatus(false);
-        inOrderTraverse(root, key);
-        MyList<V> values = isSearchValue();
-        // System.out.println(isSearchKey());
-        return values;
-    }
-
-
-    /**
-     * Utility method for in order traversal
-     * 
-     * @param node
-     *            The start node
-     * 
-     */
-    private V inOrderTraverse(Node<V> node, String key) {
-        if (node == null) {
-            return null;
-        }
-        inOrderTraverse(node.getLeft(), key);
-        int c = node.getKey().compareTo(key);
-        if (c == 0) {
-            // compare values here
-            // saveSearchValue(node.getValue());
-            // System.out.println(node.getValue());
-            return node.getValue();
-        }
-        inOrderTraverse(node.getRight(), key);
-        return null;
-    }
-
-
-    /**
-     * @return the searchKey
-     */
-    public String isSearchKey() {
-        return searchKey;
-    }
-
-
-    /**
-     * ignore this
-     * 
-     * @return the searchValue
-     */
-    public MyList<V> isSearchValue() {
-        return searchValues;
-    }
-
-
-    /**
-     * ignore this
-     * 
-     * @param searchKey
-     *            Key corresponding to value
-     * 
-     */
-    public void setSearchKey(String searchKey) {
-        this.searchKey = searchKey;
-    }
-
-
-    /**
-     * 
-     * @param searchValue
-     *            Value corresponding to key
-     * 
-     */
-    public void saveSearchValue(V searchValue) {
-        if (searchValues != null) {
-            searchValues.add(searchValue);
-        }
-    }
-
-
-    /**
-     * 
-     * verify node is found
-     * 
-     * @param node
-     *            New node to be inserted
-     * @param rootNode
-     *            root node
-     * 
-     * @return
-     *         true if inserted false otherwise
-     */
-    public boolean isNodeFound(Node<V> rootNode, Node<V> node) {
-        if (node == null || !node.isValid()) {
-            return false;
-        }
-        if (rootNode == null) {
-            return true;
-        }
-        if (rootNode.getKey().equals(node.getKey()) && rootNode.getValue()
-            .isShapeEquals(node.getValue())) {
-            return false;
-        }
-        return isNodeFound(node.getLeft(), node) && isNodeFound(node.getRight(),
-            node);
     }
 
 
@@ -205,23 +85,20 @@ public class BST<V extends Shape> {
      */
     private Node<V> insert(Node<V> parent, Node<V> node) {
         if (parent == null) {
-            if (node.isValid()) {
-                node.setSize(1);
-                return node;
-            }
-            else {
-                return null;
-            }
+            node.setSize(1);
+            return node;
         }
 
-        int difference = node.getKey().compareTo(parent.getKey());
+        int c = node.getKey().compareTo(parent.getKey());
 
-        if (difference <= 0) {
+        if (c < 0) {
             parent.setLeft(insert(parent.getLeft(), node));
         }
-        else if (difference > 0) {
+
+        else {
             parent.setRight(insert(parent.getRight(), node));
         }
+
         parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
 
         return parent;
@@ -229,63 +106,154 @@ public class BST<V extends Shape> {
 
 
     /**
-     * Remove the node from the BST
+     * Delete node
      * 
      * @param key
-     *            Key used to remove node from tree
+     *            remove by key
      */
     public void remove(String key) {
-        // V value = searchByKey(key);
-        // while (value != null) {
-        root = remove(root, key);
+        nodeRemoved = false;
+        root = delete(root, key);
         updateDepth(root, 0);
-        // value = searchByKey(key);
-        // }
+        if (!nodeRemoved) {
+            System.out.println(String.format("Rectangle rejected %s", key));
+        }
     }
 
 
     /**
-     * Remove the node from tree associated with key
+     * Delete node
      * 
-     * @param node
-     *            The node to be removed
-     * @param key
-     *            The key associated with node
+     * @param parent
+     *            start node
+     * @param toBeDeleted
+     *            key
      * @return
-     *         The node used to traverse recursively
+     *         node recursive
      */
-    private Node<V> remove(Node<V> node, String key) {
-        if (node == null) {
+    private Node<V> delete(Node<V> parent, Node<V> toBeDeleted) {
+        if (parent == null) {
+            nodeRemoved = false;
             return null;
         }
 
-        int difference = key.compareTo(node.getKey());
+        int c = toBeDeleted.getKey().compareTo(parent.getKey());
 
-        if (difference < 0) {
-            node.setLeft(remove(node.getLeft(), key));
+        if (c < 0) {
+            parent.setLeft(delete(parent.getLeft(), toBeDeleted));
         }
 
-        else if (difference > 0) {
-            node.setRight(remove(node.getRight(), key));
+        else if (c > 0) {
+            parent.setRight(delete(parent.getRight(), toBeDeleted));
+        }
+
+        else if (parent.equals(toBeDeleted)) {
+
+            if (parent.getLeft() == null) {
+                nodeRemoved = true;
+                return parent.getRight();
+            }
+
+            else if (parent.getRight() == null) {
+                nodeRemoved = true;
+                return parent.getLeft();
+            }
+
+            else {
+                Node<V> temp = getMax(parent.getLeft());
+                parent.setValue(temp.getValue());
+                parent.setLeft(deleteMax(parent.getLeft()));
+                nodeRemoved = true;
+            }
+        }
+
+        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
+
+        return parent;
+    }
+
+
+    /**
+     * Delete node
+     * 
+     * @param parent
+     *            start node
+     * @param key
+     *            key
+     * @return
+     *         node recursive
+     */
+    private Node<V> delete(Node<V> parent, String key) {
+        if (parent == null) {
+            nodeRemoved = false;
+            return null;
+        }
+
+        int c = key.compareTo(parent.getKey());
+
+        if (c < 0) {
+            parent.setLeft(delete(parent.getLeft(), key));
+        }
+
+        else if (c > 0) {
+            parent.setRight(delete(parent.getRight(), key));
         }
 
         else {
-            // System.out.println("Removed:" + node);
-            if (node.getRight() == null) {
-                return node.getLeft();
+            if (parent.getLeft() == null) {
+                nodeRemoved = true;
+                return parent.getRight();
             }
-            if (node.getLeft() == null) {
-                return node.getRight();
-            }
-            Node<V> t = node;
 
-            node = findMinimumInRightSubTree(t.getRight());
-            node.setRight(deleteMinimum(t.getRight()));
-            node.setLeft(t.getLeft());
+            else if (parent.getRight() == null) {
+                nodeRemoved = true;
+                return parent.getLeft();
+            }
+
+            else {
+                Node<V> temp = getMax(parent.getLeft());
+                parent.setValue(temp.getValue());
+                parent.setLeft(deleteMax(parent.getLeft()));
+                nodeRemoved = true;
+            }
         }
 
-        node.setSize(size(node.getLeft()) + size(node.getRight()) + 1);
-        return node;
+        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
+
+        return parent;
+    }
+
+
+    /**
+     * Get max node
+     * 
+     * @param right
+     *            right node
+     * @return
+     *         max node
+     */
+    private Node<V> getMax(Node<V> right) {
+        if (right.getRight() == null) {
+            return right;
+        }
+        return getMax(right.getRight());
+    }
+
+
+    /**
+     * Delete max node in right subtree
+     * 
+     * @param right
+     *            right node
+     * @return
+     *         node
+     */
+    private Node<V> deleteMax(Node<V> right) {
+        if (right.getRight() == null) {
+            return right.getLeft();
+        }
+        right.setRight(deleteMax(right.getRight()));
+        return right;
     }
 
 
@@ -300,7 +268,7 @@ public class BST<V extends Shape> {
     public String searchByRegion(V value) {
         StringBuilder sb = new StringBuilder();
         inOrderForIntersection(root, value, sb);
-        return (sb.toString());
+        return sb.toString();
     }
 
 
@@ -324,7 +292,7 @@ public class BST<V extends Shape> {
         inOrderForIntersection(node.getLeft(), value, sb);
         if (node.getValue().shapeIntersects(value) && !sb.toString().contains(
             node.toString())) {
-            sb.append(String.format("%s"+"\n", node));
+            sb.append(String.format("%s,", node));
         }
         inOrderForIntersection(node.getRight(), value, sb);
     }
@@ -366,12 +334,61 @@ public class BST<V extends Shape> {
      * 
      * @param key
      *            The key name
+     * @param value
+     *            value to match
      * @return
      * 
      *         The value found
      */
-    public V search(String key) {
-        return inOrderForSearchByKey(root, key);
+    public Node<V> searchByKeyValue(String key, V value) {
+        return searchWithValue(root, key, value);
+    }
+
+
+    /**
+     * Associated method for {@link #searchByKey(Comparable)}
+     * 
+     * @param node
+     *            The current node at each iteration
+     * @param key
+     *            The key value
+     * @param value
+     *            value of node
+     * @return
+     *         The value associated with key
+     */
+    private Node<V> searchWithValue(Node<V> node, String key, V value) {
+        if (node == null) {
+            return null;
+        }
+        int c = key.compareTo(node.getKey());
+        if (c == 0 && node.getValue().isShapeEquals(value)) {
+            nodeAlreadyExists = true;
+            return node;
+        }
+        if (c < 0) {
+            return search(node.getLeft(), key);
+        }
+        return search(node.getRight(), key);
+    }
+
+
+    /**
+     * Traverse tree with and search with given key
+     * 
+     * @param key
+     *            The key name
+     * @return
+     * 
+     *         The value found
+     */
+    public Node<V> searchByKey(String key) {
+        searchFound = false;
+        Node<V> node = search(root, key);
+        //if (!searchFound) {
+         //   System.out.println(String.format("Rectangle not found: %s", key));
+        //}
+        return node;
     }
 
 
@@ -385,42 +402,20 @@ public class BST<V extends Shape> {
      * @return
      *         The value associated with key
      */
-    private V inOrderForSearchByKey(Node<V> node, String key) {
+    private Node<V> search(Node<V> node, String key) {
         if (node == null) {
             return null;
         }
-        inOrderForSearchByKey(node.getLeft(), key);
-        if (node.getKey().equals(key)) {
-            System.out.println(String.format("Rectangle found: %s", node));
-            setSearchStatus(true);
-            if (node.getRight() != null && node.getRight().getKey().equals(key))
-                return node.getValue();
+        int c = key.compareTo(node.getKey());
+        if (c == 0) {
+            //System.out.println(String.format("Rectangle found: (%s, %s)", key,
+              //  node.getValue()));
+            searchFound = true;
         }
-        int dif = key.compareTo(node.getKey());
-        if (dif < 0) {
-            return inOrderForSearchByKey(node.getLeft(), key);
+        if (c < 0) {
+            return search(node.getLeft(), key);
         }
-        else {
-            return inOrderForSearchByKey(node.getRight(), key);
-        }
-
-    }
-
-
-    /**
-     * @return the searchStatus
-     */
-    public boolean isSearchStatus() {
-        return searchStatus;
-    }
-
-
-    /**
-     * @param searchStatus
-     *            the searchStatus to set
-     */
-    public void setSearchStatus(boolean searchStatus) {
-        this.searchStatus = searchStatus;
+        return search(node.getRight(), key);
     }
 
 
@@ -429,66 +424,41 @@ public class BST<V extends Shape> {
      * 
      * @param shape
      *            The shape value
+     * @return
+     *         return status
      */
-    public void removeAllByShape(Shape shape) {
-        inOrderForShape(root, shape);
+    public boolean removeByRect(Shape shape) {
+        nodeRemoved = false;
+        removeByShape(root, shape);
+        updateDepth(root, 0);
+        return nodeRemoved;
     }
 
 
     /**
-     * Associated method to {@link #removeAllByShape(Shape)}
+     * Associated method to {@link #removeByRect(Shape)}
      * 
      * @param node
      *            The node at current iteration
      * @param shape
      *            If this value matches, the node will be removed.
      */
-    private void inOrderForShape(Node<V> node, Shape shape) {
+    private void removeByShape(Node<V> node, Shape shape) {
         if (node == null) {
             return;
         }
-        inOrderForShape(node.getLeft(), shape);
+        if (!nodeRemoved) {
+            removeByShape(node.getLeft(), shape);
+        }
         if (node.getValue().isShapeEquals(shape)) {
-            remove(node.getKey());
+            root = delete(root, node);
+            if (nodeRemoved) {
+                return;
+            }
         }
-        inOrderForShape(node.getRight(), shape);
-    }
-
-
-    /**
-     * While deleting the node from tree, this method will be used to identify
-     * the minimum value in the right sub tree
-     * 
-     * @param x
-     *            The node value at current iteration
-     * @return
-     *         Returns the left minimum node
-     */
-    private Node<V> findMinimumInRightSubTree(Node<V> x) {
-        if (x.getLeft() == null) {
-            return x;
+        if (!nodeRemoved) {
+            removeByShape(node.getRight(), shape);
         }
-        else {
-            return findMinimumInRightSubTree(x.getLeft());
-        }
-    }
-
-
-    /**
-     * Delete the most minimum node from current node
-     * 
-     * @param x
-     *            The current node in the iteration
-     * @return
-     *         The node with update left node
-     */
-    private Node<V> deleteMinimum(Node<V> x) {
-        if (x.getLeft() == null) {
-            return x.getRight();
-        }
-        x.setLeft(deleteMinimum(x.getLeft()));
-        x.setSize(size(x.getLeft()) + size(x.getRight()) + 1);
-        return x;
     }
 
 
@@ -511,43 +481,40 @@ public class BST<V extends Shape> {
 
 
     /**
-     * Traverse tree in order
+     * Display tree in-order
      * 
-     * @param node
-     *            The node to start
-     * @param sb
-     *            StringBuilder which will hold the path while tree traversal
+     * @return
+     *         status contains the path of nodes with in-order tree traversal
      */
-    private void inOrder(Node<V> node, StringBuilder sb) {
-        if (node == null) {
-            return;
+    public boolean dump() {
+        System.out.println("BST dump:");
+        if (root != null) {
+            inOrder(root);
         }
-        inOrder(node.getLeft(), sb);
-        sb.append(String.format("Node has depth %d, Value %s%s", node
-            .getDepth(), node, System.lineSeparator()));
-        inOrder(node.getRight(), sb);
+        else {
+            System.out.println("Node has depth 0, Value (null)");
+        }
+        System.out.println(String.format("BST size is: %d", (root != null
+            ? root.getSize()
+            : 0)));
+        return true;
     }
 
 
     /**
-     * Display tree in-order
+     * Utility method for in order traversal
      * 
-     * @return
-     *         String contains the path of nodes with in-order tree traversal
+     * @param node
+     *            The start node
+     * 
      */
-    public String dump() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("BST dump:" + System.lineSeparator());
-        if (root != null) {
-            inOrder(root, sb);
+    private void inOrder(Node<V> node) {
+        if (node == null) {
+            return;
         }
-        else {
-            sb.append("Node has depth 0, Value (null)" + System
-                .lineSeparator());
-        }
-        sb.append(String.format("BST size is: %d", (root != null
-            ? root.getSize()
-            : 0)));
-        return sb.toString();
+        inOrder(node.getLeft());
+        System.out.println(String.format("Node has depth %d, Value %s", node
+            .getDepth(), node));
+        inOrder(node.getRight());
     }
 }
