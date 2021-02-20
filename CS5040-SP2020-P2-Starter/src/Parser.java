@@ -140,16 +140,21 @@ public class Parser {
      *            Region search command with params
      */
     private static void processRegionSearch(String[] cps) {
-        String output = "";
         try {
             Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
                 cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
-            bst.searchByRegion(rect);
+
+            String output = bst.searchByRegion(rect);
+            if (output.isEmpty() == false) {
+                System.out.println(String.format(
+                    "Rectangles intersecting region %s %s %s %s :", cps[1],
+                    cps[2], cps[3], cps[4]));
+                System.out.println(output.trim());
+            }
         }
         catch (Exception ex) {
-            output = ex.getMessage();
+            ex.getMessage();
         }
-        System.out.println(output);
 
     }
 

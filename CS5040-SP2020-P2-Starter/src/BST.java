@@ -18,7 +18,6 @@ public class BST<V extends Shape> {
      */
     private boolean nodeRemoved;
 
-
     /**
      * check for node exists while inserting
      */
@@ -43,8 +42,6 @@ public class BST<V extends Shape> {
     public void purgeList() {
         allNodes = new MyList<Node<V>>();
     }
-
-
 
 
     /**
@@ -280,7 +277,7 @@ public class BST<V extends Shape> {
     public String searchByRegion(V value) {
         StringBuilder sb = new StringBuilder();
         inOrderForIntersection(root, value, sb);
-        return sb.toString();
+        return (sb.toString());
     }
 
 
@@ -303,8 +300,8 @@ public class BST<V extends Shape> {
         }
         inOrderForIntersection(node.getLeft(), value, sb);
         if (node.getValue().shapeIntersects(value) && !sb.toString().contains(
-            node.toString())) {
-            sb.append(String.format("%s,", node));
+            node.toString()) && node.getValue().shapeCompareTo(value)<0) {
+            sb.append(String.format("%s" + "\n", node));
         }
         inOrderForIntersection(node.getRight(), value, sb);
     }

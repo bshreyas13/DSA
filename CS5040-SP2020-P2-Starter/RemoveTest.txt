@@ -28,13 +28,3 @@ remove 12 12 2 2
 
 dump
 
-remove r_r
-remove 1 1 0 0
-remove 1 2 20 10
-
-remove 3 1 10 10 
-remove 1 0 2 4
-remove 2 2 34 35 
-
-remove 2 34 2 35
-remove 200 200 10 10
