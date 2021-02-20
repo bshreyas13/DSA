@@ -1,6 +1,6 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.util.Scanner;
-import java.awt.Rectangle;
 
 /**
  * 
@@ -10,7 +10,7 @@ import java.awt.Rectangle;
  */
 public class Parser {
 
-    private static BST bst = new BST();
+    private static BST<Rect> bst = new BST<Rect>();
     private static File outFile;
 
     /**
@@ -63,11 +63,14 @@ public class Parser {
                 case "dump":
                     processDump();
                     break;
-                case "search":
-                    processSearch(cps);
-                    break;
                 case "remove":
                     processRemove(cps);
+                    break;
+                case "regionsearch":
+                    processRegionSearch(cps);
+                    break;
+                case "search":
+                    processSearch(cps);
                     break;
                 default:
                     break;
@@ -81,10 +84,30 @@ public class Parser {
      * 
      */
     private static void processSearch(String[] cps) {
-        bst.searchByKey(cps[1]);
+        bst.search(cps[1]);
         if (!bst.isSearchStatus()) {
             System.out.println(String.format("Rectangle not found: %s",
                 cps[1]));
+        }
+
+    }
+
+
+    /**
+     * to remove
+     * 
+     * @param args
+     *            args
+     */
+    private static void processRemove(String[] cps) {
+
+        if (cps.length == 2) {
+            bst.remove(cps[1]);
+        }
+        else if (cps.length == 5) {
+            Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
+                cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
+            bst.removeAllByShape(rect);
         }
 
     }
@@ -95,48 +118,35 @@ public class Parser {
      * 
      */
     private static void processDump() {
-        bst.dump();
+        String output = bst.dump();
+        System.out.println(output);
     }
 
 
     /**
-     * Process remove command
+     * Process region search command
      * 
      * @param cps
+     *            Region search command with params
      */
-    private static void processRemove(String[] cps) {
-        try {
-            String key = cps[1];
-            boolean isValue = key.chars().allMatch(Character::isDigit);
-            // System.out.println(isValue);
-            if (isValue == true) {
-                Rectangle rect = new Rectangle(Integer.parseInt(cps[1]), Integer
-                    .parseInt(cps[2]), Integer.parseInt(cps[3]), Integer
-                        .parseInt(cps[4]));
-                boolean valueOut = bst.removeByValue(rect);
-                
-                if (isValue && !valueOut) {
-                    System.out.println(String.format(
-                        "Rectangle rejected: (%s, %s, %s, %s)", rect.x, rect.y,
-                        rect.width, rect.height));
-                    //bst.clear();
-                    System.out.flush();
-                }
-            }
-            else {
-                boolean keyOut = bst.removeByKey(key);
-                if (!isValue && !keyOut) {
-                    System.out.println(String.format("Rectangle rejected: %s",
-                        key));
-                    //bst.clear();
-                    System.out.flush();
-                }
-            }
+    private static void processRegionSearch(String[] cps) {
 
+        try {
+            Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
+                cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
+            
+            String output = bst.searchByRegion(rect);
+            if (output.isEmpty()==false) {
+            System.out.println(String.format(
+                "Rectangles intersecting region %s %s %s %s :", cps[1], cps[2],
+                cps[3], cps[4]));
+            System.out.println(output.trim());
+            }
         }
         catch (Exception ex) {
-            ex.printStackTrace();
+            ex.getMessage();
         }
+
     }
 
 
@@ -147,18 +157,61 @@ public class Parser {
      *            Insert command with params
      */
     private static void processInsert(String[] cps) {
+        String output = "";
         try {
-            Node node = Node.build(cps[1], Integer.parseInt(cps[2]), Integer
-                .parseInt(cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(
-                    cps[5]));
-            if (node.isValid() && bst.insert(node)) {
-                System.out.println(String.format("Rectangle accepted: %s",
-                    node));
+            String name = cps[1];
+            Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
+                cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
+            boolean status = bst.insert(new Node<Rect>(name, rect));
+            if (status) {
+                output = String.format(
+                    "Rectangle accepted: (%s, %s, %s, %s, %s)", name, rect.x,
+                    rect.y, rect.width, rect.height);
             }
             else {
-                System.out.println(String.format("Rectangle rejected: %s",
-                    node));
+                output = String.format(
+                    "Rectangle rejected: (%s, %s, %s, %s, %s)", name, rect.x,
+                    rect.y, rect.width, rect.height);
             }
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        writeToOutput(output);
+    }
+
+
+    /**
+     * Create a rectangle for commands
+     * 
+     * @param x
+     *            Top left x
+     * @param y
+     *            Top left y
+     * @param w
+     *            width of rectangle
+     * @param h
+     *            height of rectangle
+     * @return
+     *         Rect object
+     */
+    private static Rect getRect(int x, int y, int w, int h) {
+        return new Rect(x, y, w, h);
+    }
+
+
+    /**
+     * Save output to file
+     * 
+     * @param msg
+     *            line to append to file
+     */
+    private static void writeToOutput(final String msg) {
+        try {
+            System.out.println(msg);
+            FileWriter fw = new FileWriter(outFile, true);
+            fw.write(String.format("%s", msg));
+            fw.close();
         }
         catch (Exception ex) {
             ex.printStackTrace();

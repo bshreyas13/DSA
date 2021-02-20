@@ -93,10 +93,10 @@ remove 2 34 2 35
 
 
 
-insert a 1 0 2 4
+insert a 0 0 2 4
 
-insert a 0 0 2 4 
+insert a 0 1 1023 4
 
-dump
+insert a 1 2 1 1 
 
-search a
+insert a 0 0 2 4

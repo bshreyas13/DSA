@@ -1,0 +1,91 @@
+import java.awt.Rectangle;
+
+/**
+ * Subclass of Shape
+ * 
+ * @author {shreyasb and veerad}
+ * @version 2021-2-15
+ *
+ */
+public class Rect extends Rectangle implements Shape {
+
+    /**
+     * version id
+     */
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * Verifies the intersection of another shape
+     * 
+     * @param other
+     *            other shape
+     * @return
+     *         true if intersects otherwise false
+     */
+    public boolean shapeIntersects(Shape other) {
+        if (!(other instanceof Rect)) {
+            return false;
+        }
+
+        Rect r = (Rect)other;
+        return this.intersects(r);
+    }
+
+
+    /**
+     * Verifies this shape equals to other shape
+     * 
+     * @param other
+     *            other shape
+     * @return
+     *         true if this shape equals otherwise false
+     */
+    public boolean isShapeEquals(Shape other) {
+        if (!(other instanceof Rect)) {
+            return false;
+        }
+        Rect r = (Rect)other;
+        return this.equals(r);
+    }
+
+
+    /**
+     * Verifies the shape is valid or not
+     * 
+     * @return
+     *         true if valid false otherwise
+     */
+    public boolean isShapeValid() {
+        return (x >= 0 & y >= 0 & width > 0 & height > 0) && (x < 1023
+            && y < 1023) && ((x + width) <= 1023) && ((y + height) <= 1023);
+    }
+
+
+    /**
+     * Creates a Rect with given values
+     * 
+     * @param x
+     *            Top left x
+     * @param y
+     *            Top Left y
+     * @param w
+     *            width
+     * @param h
+     *            height
+     */
+    public Rect(int x, int y, int w, int h) {
+        super(x, y, w, h);
+    }
+
+
+    /**
+     * Returns string representation of value
+     * 
+     * @return
+     *         String value
+     */
+    public String toString() {
+        return String.format("%d, %d, %d, %d", x, y, width, height);
+    }
+
+}

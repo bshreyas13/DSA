@@ -1,4 +1,3 @@
-import java.awt.Rectangle;
 
 /**
  * Represents a node in BST
@@ -6,41 +5,21 @@ import java.awt.Rectangle;
  * @author {shreyasb and veerad}
  * @version 2021-2-15
  * 
+ * @param <V>
+ * 
+ *            Any value which extends Shape
  */
-public class Node implements Comparable<Node> {
+public class Node<V extends Shape> {
 
     /**
      * Private fields
      */
     private String key;
-    private Rectangle value;
-    private Node left;
-    private Node right;
+    private V value;
+    private Node<V> left;
+    private Node<V> right;
     private int size;
     private int depth;
-
-    /**
-     * Constructor
-     * 
-     * @param key
-     *            key
-     * @param x
-     *            x
-     * @param y
-     *            y
-     * @param width
-     *            width
-     * @param height
-     *            height
-     * @return
-     *         Node built
-     */
-    public static Node build(String key, int x, int y, int width, int height) {
-        Rectangle value = new Rectangle(x, y, width, height);
-        return new Node(key, value);
-
-    }
-
 
     /**
      * Instantiates a new node.
@@ -50,7 +29,7 @@ public class Node implements Comparable<Node> {
      * @param value
      *            Value of the node
      */
-    private Node(String key, Rectangle value) {
+    public Node(String key, V value) {
         this.key = key;
         this.value = value;
     }
@@ -63,181 +42,92 @@ public class Node implements Comparable<Node> {
      *         true if valid false otherwise
      */
     public boolean isValid() {
-        return isKeyValid() && isValueValid();
+        boolean isKeyValid = (key != null && key.length() > 0 && Character
+            .isLetter(key.charAt(0)) && key.matches("[a-zA-Z0-9_]+"));
+        return isKeyValid && value.isShapeValid();
     }
 
 
     /**
-     * Verify the key is valid
-     * 
-     * @return
-     *         true if valid, false otherwise
-     */
-    public boolean isKeyValid() {
-        return (key != null && key.length() > 0 && Character.isLetter(key
-            .charAt(0)) && key.matches("[a-zA-Z0-9_]+"));
-    }
-
-
-    /**
-     * Verify the value is valid
-     * 
-     * @return
-     *         true if valid, false otherwise
-     */
-    public boolean isValueValid() {
-        return (value.x >= 0 & value.y >= 0 & value.width > 0
-            & value.height > 0) && (value.x < 1024 && value.y < 1024)
-            && ((value.x + value.width) <= 1024) && ((value.y
-                + value.height) <= 1024);
-    }
-
-
-    /**
-     * String representation
-     * 
-     * @return
-     *         String value of node
+     * String representation of node
      */
     @Override
     public String toString() {
-        return String.format("(%s, %d, %d, %d, %d)", key, value.x, value.y,
-            value.width, value.height);
+        return String.format("(%s, %s)", key, value);
     }
 
 
     /**
-     * Used for key comparison
+     * Get key value
      * 
-     * @param name
-     *            key name
      * @return
-     *         string comparison result
+     *         Returns the key
      */
-    public int compareKey(String name) {
-        return name.compareTo(key);
+    public String getKey() {
+        return key;
     }
 
 
     /**
+     * Get value
      * 
-     * @param dims
-     *            rectangle 1
-     * @param root
-     *            rectangle 2
-     * @return 0 if equal
+     * @return
+     *         Value
      */
-    public int compareValue(Rectangle dims, Rectangle root) {
-        return compareVal(root, dims);
+    public V getValue() {
+        return value;
     }
 
 
     /**
-     * Used for node comparison
-     */
-    @Override
-    public int compareTo(Node other) {
-        int c = key.compareTo(other.key);
-        if (c != 0) {
-            return c;
-        }
-        c = Integer.compare(value.x, other.value.x);
-        if (c != 0) {
-            return c;
-        }
-        c = Integer.compare(value.y, other.value.y);
-        if (c != 0) {
-            return c;
-        }
-        c = Integer.compare(value.width, other.value.width);
-        if (c != 0) {
-            return c;
-        }
-        return Integer.compare(value.height, other.value.height);
-    }
-
-
-    /**
+     * Returns the left node of current node
      * 
-     * @param value
-     *            rectangle 1
-     * @param other
-     *            rectangle 2
-     * @return 0 if equal
+     * @return
+     *         The left node
      */
-
-    private int compareVal(Rectangle value, Rectangle other) {
-
-        int c = Integer.compare(value.x, other.x);
-        if (c != 0) {
-            return c;
-        }
-        c = Integer.compare(value.y, other.y);
-        if (c != 0) {
-            return c;
-        }
-        c = Integer.compare(value.width, other.width);
-        if (c != 0) {
-            return c;
-        }
-        return Integer.compare(value.height, other.height);
-    }
-
-
-    /**
-     * @return the left
-     */
-    public Node getLeft() {
+    public Node<V> getLeft() {
         return left;
     }
 
 
     /**
+     * Sets the left node to current node
      * 
-     * @return the key
-     */
-    public String getKey() {
-        return this.key;
-    }
-
-
-    /**
-     * 
-     * @return the value(Rectangle)
-     */
-    public Rectangle getValue() {
-        return this.value;
-    }
-
-
-    /**
      * @param left
-     *            the left to set
+     *            Left node
      */
-    public void setLeft(Node left) {
+    public void setLeft(Node<V> left) {
         this.left = left;
     }
 
 
     /**
-     * @return the right
+     * Returns the right node
+     * 
+     * @return
+     *         The Right node
      */
-    public Node getRight() {
+    public Node<V> getRight() {
         return right;
     }
 
 
     /**
+     * Set the right node
+     * 
      * @param right
-     *            the right to set
+     *            The right node
      */
-    public void setRight(Node right) {
+    public void setRight(Node<V> right) {
         this.right = right;
     }
 
 
     /**
-     * @return the size
+     * Returns the size of node
+     * 
+     * @return
+     *         The node size
      */
     public int getSize() {
         return size;
@@ -245,8 +135,10 @@ public class Node implements Comparable<Node> {
 
 
     /**
+     * Set node size
+     * 
      * @param size
-     *            the size to set
+     *            The node size
      */
     public void setSize(int size) {
         this.size = size;
