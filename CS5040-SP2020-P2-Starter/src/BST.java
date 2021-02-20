@@ -17,21 +17,53 @@ public class BST<V extends Shape> {
      * node removed status
      */
     private boolean nodeRemoved;
+    /**
+     * Searchstatus
+     */
+    private boolean searchStatus;
 
     /**
-     * node removed status
+     * Key for given value
      */
-    private boolean searchFound;
+    private String searchKey;
+
     /**
      * check for node exists while inserting
      */
     private boolean nodeAlreadyExists;
 
     /**
+     * List to hold nodes when searched inorder
+     */
+    private MyList<Node<V>> allNodes;
+
+    /**
      * Default constructor
      */
     public BST() {
         root = null;
+    }
+
+
+    public void purgeList() {
+        allNodes = new MyList<Node<V>>();
+    }
+
+
+    /**
+     * @return the searchStatus
+     */
+    public boolean isSearchStatus() {
+        return searchStatus;
+    }
+
+
+    /**
+     * @param searchStatus
+     *            the searchStatus to set
+     */
+    public void setSearchStatus(boolean searchStatus) {
+        this.searchStatus = searchStatus;
     }
 
 
@@ -367,7 +399,7 @@ public class BST<V extends Shape> {
             return node;
         }
         if (c < 0) {
-            return searchWithValue(node.getLeft(), key,value);
+            return searchWithValue(node.getLeft(), key, value);
         }
         return searchWithValue(node.getRight(), key, value);
     }
@@ -382,40 +414,48 @@ public class BST<V extends Shape> {
      * 
      *         The value found
      */
-    public Node<V> searchByKey(String key) {
-        searchFound = false;
-        Node<V> node = search(root, key);
-        //if (!searchFound) {
-         //   System.out.println(String.format("Rectangle not found: %s", key));
-        //}
-        return node;
+    public void searchByKey(String key) {
+        // setSearchStatus(false);
+        purgeList();
+        inOrderSearch(root, key);
+        boolean isKeyPresent = false;
+        if (allNodes.length() != 0) {
+            for (int i = 0; i < allNodes.length(); i++) {
+                Node<V> node = allNodes.get(i);
+                // System.out.println(i);
+                if (node.getKey().compareTo(key) == 0) {
+                    System.out.println(String.format("Rectangle found: %s",
+                        node));
+                    isKeyPresent = true;
+                }
+            }
+        }
+        if (!isKeyPresent) {
+            System.out.println(String.format("Rectangle not found: %s", key));
+        }
+
     }
 
 
+
     /**
-     * Associated method for {@link #searchByKey(Comparable)}
+     * Iterate tree to get all nodes
      * 
      * @param node
-     *            The current node at each iteration
-     * @param key
-     *            The key value
-     * @return
-     *         The value associated with key
+     *            The node to begin search
+     * @param value
+     *            The value used to search
+     * 
      */
-    private Node<V> search(Node<V> node, String key) {
+    private void inOrderSearch(Node<V> node, String key) {
         if (node == null) {
-            return null;
+            return;
         }
-        int c = key.compareTo(node.getKey());
-        if (c == 0) {
-            //System.out.println(String.format("Rectangle found: (%s, %s)", key,
-              //  node.getValue()));
-            searchFound = true;
-        }
-        if (c < 0) {
-            return search(node.getLeft(), key);
-        }
-        return search(node.getRight(), key);
+        // System.out.println(node);
+        allNodes.add(node);
+        inOrderSearch(node.getLeft(), key);
+        inOrderSearch(node.getRight(), key);
+
     }
 
 

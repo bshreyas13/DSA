@@ -15,8 +15,6 @@ dump
 
 search r_r
 
-remove r_r
-remove 1 1 0 0
 	
 regionsearch   -5 -5 20 20 
 
@@ -50,9 +48,7 @@ insert z 1 1 30 40
 
 dump
 
-remove 1 2 20 10
 
-remove 3 1 10 10 
 
 
 insert ZZ 1 2 10 10
@@ -67,9 +63,6 @@ insert rec 1 1 12 15
 
 insert rec 1 1 12 15
 
-search rec
-remove rec
-
 
 regionsearch 1 1 100 100
 
@@ -78,25 +71,30 @@ insert a 1 0 2 4
 insert a2 2 2 34 35
 insert b 4 3 6 1
 insert c 2 5     123 6
-dump
+
 search a 
+
+
+search a 
+
+
+
+insert a 1 0 2 4
+
+insert a 0 0 2 4 
+
+
+dump
+
+search rec
+
+remove r_r
+remove 1 1 0 0
+remove 1 2 20 10
+
+remove 3 1 10 10 
 remove 1 0 2 4
 remove 2 2 34 35 
 
-dump
-
-remove 200 200 10 10
-
-search a 
-
 remove 2 34 2 35
-
-
-
-insert a 0 0 2 4
-
-insert a 0 1 1023 4
-
-insert a 1 2 1 1 
-
-insert a 0 0 2 4
+remove 200 200 10 10

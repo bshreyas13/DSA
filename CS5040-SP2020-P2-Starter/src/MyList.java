@@ -24,7 +24,7 @@ public class MyList<E> {
         elements[size++] = e;
     }
 
-    public int length(MyList<E> List) {
+    public int length() {
         return size;
     }
     private void ensureCapa() {
@@ -39,7 +39,5 @@ public class MyList<E> {
         }
         return (E) elements[i];
     }
-    public String toString() {
-        return String.format("%s",elements);
-    }
+
 }

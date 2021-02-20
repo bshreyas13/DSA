@@ -142,8 +142,8 @@ public class Parser {
     private static void processRegionSearch(String[] cps) {
         String output = "";
         try {
-            Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
-                cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
+            Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
+                cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
             bst.searchByRegion(rect);
         }
         catch (Exception ex) {
