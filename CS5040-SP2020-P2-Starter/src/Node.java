@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
+
 import java.util.UUID;
->>>>>>> c347cb461f0fc224895068dfdc31b6593a01145b
 
 /**
  * Represents a node in BST
@@ -25,7 +23,6 @@ public class Node<V extends Shape> {
     private int size;
     private int depth;
     private UUID uuid;
-
 
     /**
      * Instantiates a new node.

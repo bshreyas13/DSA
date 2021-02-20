@@ -367,9 +367,9 @@ public class BST<V extends Shape> {
             return node;
         }
         if (c < 0) {
-            return search(node.getLeft(), key);
+            return searchWithValue(node.getLeft(), key,value);
         }
-        return search(node.getRight(), key);
+        return searchWithValue(node.getRight(), key, value);
     }
 
 

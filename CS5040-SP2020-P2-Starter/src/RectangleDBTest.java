@@ -10,8 +10,12 @@ public class RectangleDBTest extends TestCase {
      * Get code coverage of the class declaration.
      */
     public void testRInit() {
+        String[] f = { "TestCases.txt" };
+        RectangleDB.main(f);
+        systemOut().clearHistory();
         RectangleDB manager = new RectangleDB();
+        Parser parserTest = new Parser();
+        assertNotNull(parserTest);
         assertNotNull(manager);
-        RectangleDB.main(null);
     }
 }
