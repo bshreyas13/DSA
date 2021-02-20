@@ -1,60 +1,38 @@
-import java.awt.Rectangle;
 
 /**
  * Represents the BST
  * 
  * @author {shreyasb and veerad}
  * @version 2021-2-15
+ * @param <V>
+ *            Value type
  */
-public class BST {
+public class BST<V extends Shape> {
 
     /**
      * Root node of the BST.
      */
-    private Node root;
+    private Node<V> root;
 
     /**
-     * Searchstatus
+     * node removed status
      */
-    private boolean searchStatus;
+    private boolean nodeRemoved;
 
     /**
-     * Key for given value
+     * node removed status
      */
-    private String searchKey;
+    private boolean searchFound;
+    /**
+     * check for node exists while inserting
+     */
+    private boolean nodeAlreadyExists;
 
     /**
      * Default constructor
      */
     public BST() {
         root = null;
-    }
-
-
-    /**
-     * Clears tree
-     */
-    public void clear() {
-        root.setSize(0);
-        root = null;
-    }
-
-
-    /**
-     * 
-     * @param node
-     *            New node to be inserted
-     * @return
-     *         true if inserted false otherwise
-     */
-    public boolean insert(Node node) {
-        if (searchByNode(root, node) == null) {
-            root = insert(root, node);
-            updateDepth(root, 0);
-            return true;
-        }
-
-        return false;
     }
 
 
@@ -66,12 +44,33 @@ public class BST {
      * @param depth
      *            depth of node
      */
-    void updateDepth(Node node, int depth) {
+    public void updateDepth(Node<V> node, int depth) {
         if (node != null) {
             node.setDepth(depth);
             updateDepth(node.getLeft(), depth + 1);
             updateDepth(node.getRight(), depth + 1);
         }
+    }
+
+
+    /**
+     * 
+     * @param node
+     *            New node to be inserted
+     * @return
+     *         true if inserted false otherwise
+     */
+    public boolean insert(Node<V> node) {
+        if (node != null && node.isValid()) {
+            nodeAlreadyExists = false;
+            searchByKeyValue(node.getKey(), node.getValue());
+            if (root == null || !nodeAlreadyExists) {
+                root = insert(root, node);
+                updateDepth(root, 0);
+                return true;
+            }
+        }
+        return false;
     }
 
 
@@ -85,205 +84,382 @@ public class BST {
      * @return
      *         the root node at each iteration
      */
-    private Node insert(Node parent, Node node) {
+    private Node<V> insert(Node<V> parent, Node<V> node) {
         if (parent == null) {
             node.setSize(1);
             return node;
         }
-        int c = node.compareTo(parent);
+
+        int c = node.getKey().compareTo(parent.getKey());
+
         if (c < 0) {
             parent.setLeft(insert(parent.getLeft(), node));
         }
-        else if (c > 0) {
+
+        else {
             parent.setRight(insert(parent.getRight(), node));
         }
-        parent.setSize((1 + (parent.getLeft() == null
-            ? 0
-            : parent.getLeft().getSize()) + (parent.getRight() == null
-                ? 0
-                : parent.getRight().getSize())));
+
+        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
+
         return parent;
     }
 
 
     /**
+     * Delete node
      * 
      * @param key
-     *            name of rectangle to remove
-     * @return
-     *         true if node remove false otherwise
+     *            remove by key
      */
-    public boolean removeByKey(String key) {
-
-        searchKey(key);
-        // System.out.println(isSearchStatus());
-        if (isSearchStatus()) {
-            root = remove(root, key);
-            updateDepth(root, 0);
-            return true;
+    public void remove(String key) {
+        nodeRemoved = false;
+        root = delete(root, key);
+        updateDepth(root, 0);
+        if (!nodeRemoved) {
+            System.out.println(String.format("Rectangle rejected %s", key));
         }
-
-        return false;
     }
 
 
     /**
+     * Delete node
      * 
-     * @param value
-     *            the x,y,w,h values
+     * @param parent
+     *            start node
+     * @param toBeDeleted
+     *            key
      * @return
-     *         true if node remove false otherwise
+     *         node recursive
      */
-    public boolean removeByValue(Rectangle value) {
-
-        String key = searchValue(value);
-        // System.out.println(key);
-        if (key != null) {
-            root = remove(root, key);
-            updateDepth(root, 0);
-            setSearchKey(null);
-            return true;
-        }
-
-        return false;
-    }
-
-
-    /**
-     * Remove the node from tree associated with key
-     * 
-     * @param node
-     *            The node to be removed
-     * @param key
-     *            The key associated with node
-     * @return
-     *         The node used to traverse recursively
-     */
-    private Node remove(Node node, String key) {
-        if (node == null) {
+    private Node<V> delete(Node<V> parent, Node<V> toBeDeleted) {
+        if (parent == null) {
+            nodeRemoved = false;
             return null;
         }
 
-        int difference = key.compareTo(node.getKey());
+        int c = toBeDeleted.getKey().compareTo(parent.getKey());
 
-        if (difference < 0) {
-            node.setLeft(remove(node.getLeft(), key));
+        if (c < 0) {
+            parent.setLeft(delete(parent.getLeft(), toBeDeleted));
         }
 
-        else if (difference > 0) {
-            node.setRight(remove(node.getRight(), key));
+        else if (c > 0) {
+            parent.setRight(delete(parent.getRight(), toBeDeleted));
+        }
+
+        else if (parent.equals(toBeDeleted)) {
+
+            if (parent.getLeft() == null) {
+                nodeRemoved = true;
+                return parent.getRight();
+            }
+
+            else if (parent.getRight() == null) {
+                nodeRemoved = true;
+                return parent.getLeft();
+            }
+
+            else {
+                Node<V> temp = getMax(parent.getLeft());
+                parent.setValue(temp.getValue());
+                parent.setLeft(deleteMax(parent.getLeft()));
+                nodeRemoved = true;
+            }
+        }
+
+        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
+
+        return parent;
+    }
+
+
+    /**
+     * Delete node
+     * 
+     * @param parent
+     *            start node
+     * @param key
+     *            key
+     * @return
+     *         node recursive
+     */
+    private Node<V> delete(Node<V> parent, String key) {
+        if (parent == null) {
+            nodeRemoved = false;
+            return null;
+        }
+
+        int c = key.compareTo(parent.getKey());
+
+        if (c < 0) {
+            parent.setLeft(delete(parent.getLeft(), key));
+        }
+
+        else if (c > 0) {
+            parent.setRight(delete(parent.getRight(), key));
         }
 
         else {
-            if (node.getRight() == null) {
-                return node.getLeft();
+            if (parent.getLeft() == null) {
+                nodeRemoved = true;
+                return parent.getRight();
             }
-            if (node.getLeft() == null) {
-                return node.getRight();
+
+            else if (parent.getRight() == null) {
+                nodeRemoved = true;
+                return parent.getLeft();
             }
-            Node t = node;
-            // System.out.println(t.getRight());
-            node = findMinimumInRightSubTree(t.getRight());
-            // System.out.println(node);
-            // System.out.println(deleteMinimum(t.getRight()));
-            node.setRight(deleteMinimum(t.getRight()));
-            // updateDepth(node,node.getDepth());
-            node.setLeft(t.getLeft());
-            // System.out.println(node.getRight());
+
+            else {
+                Node<V> temp = getMax(parent.getLeft());
+                parent.setValue(temp.getValue());
+                parent.setLeft(deleteMax(parent.getLeft()));
+                nodeRemoved = true;
+            }
         }
 
-        node.setSize(size(node.getLeft()) + size(node.getRight()) + 1);
+        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
+
+        return parent;
+    }
+
+
+    /**
+     * Get max node
+     * 
+     * @param right
+     *            right node
+     * @return
+     *         max node
+     */
+    private Node<V> getMax(Node<V> right) {
+        if (right.getRight() == null) {
+            return right;
+        }
+        return getMax(right.getRight());
+    }
+
+
+    /**
+     * Delete max node in right subtree
+     * 
+     * @param right
+     *            right node
+     * @return
+     *         node
+     */
+    private Node<V> deleteMax(Node<V> right) {
+        if (right.getRight() == null) {
+            return right.getLeft();
+        }
+        right.setRight(deleteMax(right.getRight()));
+        return right;
+    }
+
+
+    /**
+     * Search BST for specific rectangle
+     * 
+     * @param value
+     *            The rectangle used to search the for region match
+     * @return
+     *         String contains matched information
+     */
+    public String searchByRegion(V value) {
+        StringBuilder sb = new StringBuilder();
+        inOrderForIntersection(root, value, sb);
+        return sb.toString();
+    }
+
+
+    /**
+     * Iterate tree to search for intersections
+     * 
+     * @param node
+     *            The node to begin search
+     * @param value
+     *            The value used to search intersection
+     * @param sb
+     *            contains the information of the intersections
+     */
+    private void inOrderForIntersection(
+        Node<V> node,
+        V value,
+        StringBuilder sb) {
+        if (node == null) {
+            return;
+        }
+        inOrderForIntersection(node.getLeft(), value, sb);
+        if (node.getValue().shapeIntersects(value) && !sb.toString().contains(
+            node.toString())) {
+            sb.append(String.format("%s,", node));
+        }
+        inOrderForIntersection(node.getRight(), value, sb);
+    }
+
+
+    /**
+     * Search for intersections in BST
+     * 
+     * @return
+     *         String containing the information of intersections
+     */
+    public String searchForIntersections() {
+        StringBuilder sb = new StringBuilder();
+        traverseEachNode(root, sb);
+        return sb.toString();
+    }
+
+
+    /**
+     * This methods used for search intersections
+     * 
+     * @param node
+     *            Current node in traversal
+     * @param sb
+     *            Contains the information after each iteration
+     */
+    private void traverseEachNode(Node<V> node, StringBuilder sb) {
+        if (node == null) {
+            return;
+        }
+        traverseEachNode(node.getLeft(), sb);
+        inOrderForIntersection(node, node.getValue(), sb);
+        traverseEachNode(node.getRight(), sb);
+    }
+
+
+    /**
+     * Traverse tree with and search with given key
+     * 
+     * @param key
+     *            The key name
+     * @param value
+     *            value to match
+     * @return
+     * 
+     *         The value found
+     */
+    public Node<V> searchByKeyValue(String key, V value) {
+        return searchWithValue(root, key, value);
+    }
+
+
+    /**
+     * Associated method for {@link #searchByKey(Comparable)}
+     * 
+     * @param node
+     *            The current node at each iteration
+     * @param key
+     *            The key value
+     * @param value
+     *            value of node
+     * @return
+     *         The value associated with key
+     */
+    private Node<V> searchWithValue(Node<V> node, String key, V value) {
+        if (node == null) {
+            return null;
+        }
+        int c = key.compareTo(node.getKey());
+        if (c == 0 && node.getValue().isShapeEquals(value)) {
+            nodeAlreadyExists = true;
+            return node;
+        }
+        if (c < 0) {
+            return search(node.getLeft(), key);
+        }
+        return search(node.getRight(), key);
+    }
+
+
+    /**
+     * Traverse tree with and search with given key
+     * 
+     * @param key
+     *            The key name
+     * @return
+     * 
+     *         The value found
+     */
+    public Node<V> searchByKey(String key) {
+        searchFound = false;
+        Node<V> node = search(root, key);
+        //if (!searchFound) {
+         //   System.out.println(String.format("Rectangle not found: %s", key));
+        //}
         return node;
     }
 
 
     /**
-     * While deleting the node from tree, this method will be used to identify
-     * the minimum value in the right sub tree
-     * 
-     * @param x
-     *            The node value at current iteration
-     * @return
-     *         Returns the left minimum node
-     */
-    private Node findMinimumInRightSubTree(Node x) {
-        if (x.getLeft() == null) {
-            return x;
-        }
-        else {
-            return findMinimumInRightSubTree(x.getLeft());
-        }
-    }
-
-
-    /**
-     * Delete the most minimum node from current node
-     * 
-     * @param x
-     *            The current node in the iteration
-     * @return
-     *         The node with update left node
-     */
-    private Node deleteMinimum(Node x) {
-        if (x.getLeft() == null) {
-            return x.getRight();
-        }
-        x.setLeft(deleteMinimum(x.getLeft()));
-        x.setSize(size(x.getLeft()) + size(x.getRight()) + 1);
-        return x;
-    }
-
-
-    /**
-     * Checks if key exists
-     * 
-     * @param name
-     *            name of the rectangle
-     */
-    public void searchKey(String name) {
-        setSearchStatus(false);
-        searchKey(root, name);
-    }
-
-
-    /**
-     * Checks if Value exists
-     * 
-     * @param value
-     */
-    private String searchValue(Rectangle value) {
-        setSearchStatus(false);
-        inOrderTraverse(root, value);
-        // System.out.println(isSearchKey());
-        return isSearchKey();
-    }
-
-
-    /**
-     * Associated method for Remove
+     * Associated method for {@link #searchByKey(Comparable)}
      * 
      * @param node
      *            The current node at each iteration
-     * @param name
-     *            name of the key
+     * @param key
+     *            The key value
      * @return
-     *         count of search occurrences
+     *         The value associated with key
      */
-    private int searchKey(Node node, String name) {
-        int count = 0;
+    private Node<V> search(Node<V> node, String key) {
         if (node == null) {
-            return count;
+            return null;
         }
-        int c = node.compareKey(name);
+        int c = key.compareTo(node.getKey());
         if (c == 0) {
-            setSearchStatus(true);
-            count++;
-            return count;
+            //System.out.println(String.format("Rectangle found: (%s, %s)", key,
+              //  node.getValue()));
+            searchFound = true;
         }
         if (c < 0) {
-            return searchKey(node.getLeft(), name);
+            return search(node.getLeft(), key);
         }
-        return searchKey(node.getRight(), name);
+        return search(node.getRight(), key);
+    }
+
+
+    /**
+     * Remove the values by matched Shape
+     * 
+     * @param shape
+     *            The shape value
+     * @return
+     *         return status
+     */
+    public boolean removeByRect(Shape shape) {
+        nodeRemoved = false;
+        removeByShape(root, shape);
+        updateDepth(root, 0);
+        return nodeRemoved;
+    }
+
+
+    /**
+     * Associated method to {@link #removeByRect(Shape)}
+     * 
+     * @param node
+     *            The node at current iteration
+     * @param shape
+     *            If this value matches, the node will be removed.
+     */
+    private void removeByShape(Node<V> node, Shape shape) {
+        if (node == null) {
+            return;
+        }
+        if (!nodeRemoved) {
+            removeByShape(node.getLeft(), shape);
+        }
+        if (node.getValue().isShapeEquals(shape)) {
+            root = delete(root, node);
+            if (nodeRemoved) {
+                return;
+            }
+        }
+        if (!nodeRemoved) {
+            removeByShape(node.getRight(), shape);
+        }
     }
 
 
@@ -295,87 +471,13 @@ public class BST {
      * @return
      *         Size of the node
      */
-    private int size(Node node) {
+    private int size(Node<V> node) {
         if (node == null) {
             return 0;
         }
         else {
             return node.getSize();
         }
-    }
-
-
-    /**
-     * Associated method for {@link #searchByKey(Comparable)}
-     * 
-     * @param parent
-     *            The current node at each iteration
-     * @param child
-     *            The node value to be searched
-     * @return
-     *         The node if found already
-     */
-    private Node searchByNode(Node parent, Node child) {
-        if (parent == null) {
-            return null;
-        }
-        int c = child.compareTo(parent);
-        if (c == 0) {
-            return parent;
-        }
-        if (c < 0) {
-            return searchByNode(parent.getLeft(), child);
-        }
-        return searchByNode(parent.getRight(), child);
-    }
-
-
-    /**
-     * search by name
-     * 
-     * @param name
-     *            The node key
-     */
-    public void searchByKey(String name) {
-        setSearchStatus(false);
-        searchByKey(root, name);
-    }
-
-
-    /**
-     * Associated method for
-     * 
-     * @param node
-     *            The current node at each iteration
-     * @param name
-     *            name of the key
-     * @return
-     *         The node if found already
-     */
-    private Node searchByKey(Node node, String name) {
-
-        if (node == null) {
-            return null;
-        }
-
-        searchByKey(node.getLeft(), name);
-        // System.out.println(node);
-        if (node.getKey().equals(name)) {
-            System.out.println(String.format("Rectangle found: %s", node));
-            setSearchStatus(true);
-            if (node.getRight() != null && node.getRight().getKey().equals(
-                name)) {
-                System.out.println(String.format("Rectangle found: %s", node
-                    .getRight()));
-                setSearchStatus(true);
-                return node;
-            }
-
-            return node;
-        }
-        searchByKey(node.getRight(), name);
-
-        return null;
     }
 
 
@@ -407,7 +509,7 @@ public class BST {
      *            The start node
      * 
      */
-    private void inOrder(Node node) {
+    private void inOrder(Node<V> node) {
         if (node == null) {
             return;
         }
@@ -416,64 +518,4 @@ public class BST {
             .getDepth(), node));
         inOrder(node.getRight());
     }
-
-
-    /**
-     * Utility method for in order traversal
-     * 
-     * @param node
-     *            The start node
-     * 
-     */
-    private String inOrderTraverse(Node node, Rectangle val) {
-        if (node == null) {
-            return null;
-        }
-        inOrderTraverse(node.getLeft(), val);
-        int c = node.compareValue(node.getValue(), val);
-        if (c == 0) {
-            setSearchKey(node.getKey());
-
-            return node.getKey();
-        }
-        inOrderTraverse(node.getRight(), val);
-        return null;
-    }
-
-
-    /**
-     * @return the searchStatus
-     */
-    public boolean isSearchStatus() {
-        return searchStatus;
-    }
-
-
-    /**
-     * @return the searchKey
-     */
-    public String isSearchKey() {
-        return searchKey;
-    }
-
-
-    /**
-     * 
-     * @param searchKey
-     *            Key corresponding to value
-     * 
-     */
-    public void setSearchKey(String searchKey) {
-        this.searchKey = searchKey;
-    }
-
-
-    /**
-     * @param searchStatus
-     *            the searchStatus to set
-     */
-    public void setSearchStatus(boolean searchStatus) {
-        this.searchStatus = searchStatus;
-    }
-
 }

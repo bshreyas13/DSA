@@ -1,6 +1,5 @@
 import java.io.File;
 import java.util.Scanner;
-import java.awt.Rectangle;
 
 /**
  * 
@@ -10,7 +9,7 @@ import java.awt.Rectangle;
  */
 public class Parser {
 
-    private static BST bst = new BST();
+    private static BST<Rect> bst = new BST<Rect>();
     private static File outFile;
 
     /**
@@ -54,20 +53,26 @@ public class Parser {
      * @param line
      */
     private static void processCommand(String line) {
-        String[] cps = line.split(" ");
-        if (cps != null && cps.length > 0) {
-            switch (cps[0]) {
+        String[] params = line.split(" ");
+        if (params != null && params.length > 0) {
+            switch (params[0]) {
                 case "insert":
-                    processInsert(cps);
+                    processInsert(params);
+                    break;
+                case "remove":
+                    processRemove(params);
+                    break;
+                case "regionsearch":
+                    processRegionSearch(params);
+                    break;
+                case "intersections":
+                    processIntersections();
+                    break;
+                case "search":
+                    processSearch(params);
                     break;
                 case "dump":
                     processDump();
-                    break;
-                case "search":
-                    processSearch(cps);
-                    break;
-                case "remove":
-                    processRemove(cps);
                     break;
                 default:
                     break;
@@ -77,14 +82,43 @@ public class Parser {
 
 
     /**
-     * Process search command
-     * 
+     * search
      */
-    private static void processSearch(String[] cps) {
-        bst.searchByKey(cps[1]);
-        if (!bst.isSearchStatus()) {
-            System.out.println(String.format("Rectangle not found: %s",
-                cps[1]));
+    private static void processSearch(String[] params) {
+        bst.searchByKey(params[1]);
+    }
+
+
+    /**
+     * Search intersections
+     */
+    private static void processIntersections() {
+        bst.searchForIntersections();
+
+    }
+
+
+    /**
+     * to remove
+     * 
+     * @param cps
+     *            cps values
+     */
+    private static void processRemove(String[] cps) {
+
+        if (cps.length == 2) {
+            bst.remove(cps[1]);
+        }
+        else if (cps.length == 5) {
+            Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
+                cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
+            boolean status = bst.removeByRect(rect);
+            if (!status) {
+                String output = String.format(
+                    "Rectangle rejected: (%d, %d, %d, %d)", rect.x, rect.y,
+                    rect.width, rect.height);
+                System.out.println(output);
+            }
         }
 
     }
@@ -100,43 +134,23 @@ public class Parser {
 
 
     /**
-     * Process remove command
+     * Process region search command
      * 
      * @param cps
+     *            Region search command with params
      */
-    private static void processRemove(String[] cps) {
+    private static void processRegionSearch(String[] cps) {
+        String output = "";
         try {
-            String key = cps[1];
-            boolean isValue = key.chars().allMatch(Character::isDigit);
-            // System.out.println(isValue);
-            if (isValue == true) {
-                Rectangle rect = new Rectangle(Integer.parseInt(cps[1]), Integer
-                    .parseInt(cps[2]), Integer.parseInt(cps[3]), Integer
-                        .parseInt(cps[4]));
-                boolean valueOut = bst.removeByValue(rect);
-                
-                if (isValue && !valueOut) {
-                    System.out.println(String.format(
-                        "Rectangle rejected: (%s, %s, %s, %s)", rect.x, rect.y,
-                        rect.width, rect.height));
-                    //bst.clear();
-                    System.out.flush();
-                }
-            }
-            else {
-                boolean keyOut = bst.removeByKey(key);
-                if (!isValue && !keyOut) {
-                    System.out.println(String.format("Rectangle rejected: %s",
-                        key));
-                    //bst.clear();
-                    System.out.flush();
-                }
-            }
-
+            Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
+                cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
+            bst.searchByRegion(rect);
         }
         catch (Exception ex) {
-            ex.printStackTrace();
+            output = ex.getMessage();
         }
+        System.out.println(output);
+
     }
 
 
@@ -148,21 +162,45 @@ public class Parser {
      */
     private static void processInsert(String[] cps) {
         try {
-            Node node = Node.build(cps[1], Integer.parseInt(cps[2]), Integer
-                .parseInt(cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(
-                    cps[5]));
-            if (node.isValid() && bst.insert(node)) {
-                System.out.println(String.format("Rectangle accepted: %s",
-                    node));
+            String name = cps[1];
+            Rect rect = getRect(Integer.parseInt(cps[2]), Integer.parseInt(
+                cps[3]), Integer.parseInt(cps[4]), Integer.parseInt(cps[5]));
+            boolean status = bst.insert(new Node<Rect>(name, rect));
+            if (status) {
+                String output = String.format(
+                    "Rectangle accepted: (%s, %d, %d, %d, %d)", name, rect.x,
+                    rect.y, rect.width, rect.height);
+                System.out.println(output);
             }
             else {
-                System.out.println(String.format("Rectangle rejected: %s",
-                    node));
+                String output = String.format(
+                    "Rectangle rejected: (%s, %d, %d, %d, %d)", name, rect.x,
+                    rect.y, rect.width, rect.height);
+                System.out.println(output);
             }
         }
         catch (Exception ex) {
             ex.printStackTrace();
         }
+    }
+
+
+    /**
+     * Create a rectangle for commands
+     * 
+     * @param x
+     *            Top left x
+     * @param y
+     *            Top left y
+     * @param w
+     *            width of rectangle
+     * @param h
+     *            height of rectangle
+     * @return
+     *         Rect object
+     */
+    private static Rect getRect(int x, int y, int w, int h) {
+        return new Rect(x, y, w, h);
     }
 
 }
