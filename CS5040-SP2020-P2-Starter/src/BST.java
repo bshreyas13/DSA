@@ -210,7 +210,9 @@ public class BST<V extends Shape> {
 
             // check for valid successor in right subtree
             else if (parent.getRight() != null) {
+                Node<V> tempLeft = parent.getLeft();
                 parent = successor(parent);
+                parent.setLeft(tempLeft);
                 parent.setRight(iterateRemoveByKey(parent.getRight(), parent
                     .getKey(), exactNode));
                 nodeRemoved = true;
@@ -218,7 +220,9 @@ public class BST<V extends Shape> {
 
             // can't find successor, find predecessor
             else {
+                Node<V> tempRight = parent.getRight();
                 parent = predecessor(parent);
+                parent.setRight(tempRight);
                 parent.setLeft(iterateRemoveByKey(parent.getLeft(), parent
                     .getKey(), exactNode));
                 nodeRemoved = true;
