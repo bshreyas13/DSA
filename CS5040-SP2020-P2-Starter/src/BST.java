@@ -12,6 +12,7 @@ public class BST<V extends Shape> {
      * Root node of the BST.
      */
     private Node<V> root;
+    private Node<V> matchedNodeByShape;
 
     /**
      * node removed status
@@ -65,6 +66,24 @@ public class BST<V extends Shape> {
             node.setDepth(depth);
             updateDepth(node.getLeft(), depth + 1);
             updateDepth(node.getRight(), depth + 1);
+        }
+    }
+
+
+    /**
+     * Calculate node size
+     * 
+     * @param node
+     *            node to calculate
+     * @param depth
+     *            depth of node
+     */
+    public void updateSize(Node<V> parent) {
+        if (parent != null) {
+            updateSize(parent.getLeft());
+            parent.setSize(1 + size(parent.getLeft()) + size(parent
+                .getRight()));
+            updateSize(parent.getRight());
         }
     }
 
@@ -131,8 +150,11 @@ public class BST<V extends Shape> {
     public void removeByKey(String key) {
         nodeRemoved = false;
         root = iterateRemoveByKey(root, key);
-        updateDepth(root, 0);
-        if (!nodeRemoved) {
+        if (nodeRemoved) {
+            updateDepth(root, 0);
+            updateSize(root);
+        }
+        else {
             System.out.println(String.format("Rectangle rejected %s", key));
         }
     }
@@ -148,48 +170,33 @@ public class BST<V extends Shape> {
      * @return
      *         node recursive
      */
-    private Node<V> iterateRemoveByValue(Node<V> parent, Node<V> toBeDeleted) {
+    private Node<V> removeNode(Node<V> parent) {
         if (parent == null) {
             return null;
         }
 
-        int c = toBeDeleted.getKey().compareTo(parent.getKey());
-
-        if (c < 0) {
-            parent.setLeft(iterateRemoveByValue(parent.getLeft(), toBeDeleted));
+        // case leaf node
+        if (parent.getLeft() == null && parent.getRight() == null) {
+            parent = null;
+            nodeRemoved = true;
         }
 
-        else if (c > 0) {
-            parent.setRight(iterateRemoveByValue(parent.getRight(),
-                toBeDeleted));
+        // check for valid successor in right subtree
+        else if (parent.getRight() != null) {
+            Node<V> replacement = successor(parent);
+            parent.setKey(replacement.getKey());
+            parent.setValue(replacement.getValue());
+            parent.setRight(removeNode(parent.getRight()));
+            nodeRemoved = true;
         }
 
-        // node match. But check same node or not, using UUID, to avoid removing
-        // other node with same key
-        else if (parent.equals(toBeDeleted)) {
-
-            // case leaf node
-            if (parent.getLeft() == null && parent.getRight() == null) {
-                parent = null;
-                nodeRemoved = true;
-            }
-
-            // check for valid successor in right subtree
-            else if (parent.getRight() != null) {
-                Node<V> replacement = successor(parent);
-                parent.setKey(replacement.getKey());
-                parent.setValue(replacement.getValue());
-                nodeRemoved = true;
-            }
-
-            // can't find successor, find predecessor
-            else {
-                Node<V> replacement = predecessor(parent);
-                parent.setKey(replacement.getKey());
-                parent.setValue(replacement.getValue());
-                parent.setLeft(iterateRemoveByValue(parent.getLeft(), toBeDeleted));
-                nodeRemoved = true;
-            }
+        // can't find successor, find predecessor
+        else {
+            Node<V> replacement = predecessor(parent);
+            parent.setKey(replacement.getKey());
+            parent.setValue(replacement.getValue());
+            parent.setLeft(removeNode(parent.getLeft()));
+            nodeRemoved = true;
         }
 
         if (parent != null) {
@@ -478,8 +485,13 @@ public class BST<V extends Shape> {
      */
     public boolean removeByValue(Shape value) {
         nodeRemoved = false;
-        findNodesByValue(root, value);
-        updateDepth(root, 0);
+        matchedNodeByShape = null;
+        findNodeByValue(root, value);
+        if (matchedNodeByShape != null) {
+            removeNode(matchedNodeByShape);
+            updateDepth(root, 0);
+            updateSize(root);
+        }
         return nodeRemoved;
     }
 
@@ -492,21 +504,17 @@ public class BST<V extends Shape> {
      * @param value
      *            If this value matches, the node will be removed.
      */
-    private void findNodesByValue(Node<V> node, Shape value) {
+    private void findNodeByValue(Node<V> node, Shape value) {
+        if (node != null) {
 
-        if (!nodeRemoved) {
-            findNodesByValue(node.getLeft(), value);
-        }
-        
-        if (node.getValue().isShapeEquals(value)) {
-            root = iterateRemoveByValue(root, node);
-            if (nodeRemoved) {
+            findNodeByValue(node.getLeft(), value);
+
+            if (node.getValue().isShapeEquals(value)) {
+                matchedNodeByShape = node;
                 return;
             }
-        }
-        
-        if (!nodeRemoved) {
-            findNodesByValue(node.getRight(), value);
+
+            findNodeByValue(node.getRight(), value);
         }
     }
 

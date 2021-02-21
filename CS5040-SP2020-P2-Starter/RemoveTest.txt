@@ -1,29 +1,14 @@
-
-
+insert a 10 10 5 5
+insert b 15 15 10 10
+insert c 20 20 20 20
+insert d 20 20 20 20
+insert e 20 20 20 20
+insert f 20 20 20 20
 dump
-insert rec 1 2 3 4 
-insert a 1 0 2 4
-insert A2 2 2 34 35
-insert b 4 3 6 1
-
-insert B 2 2 10 12
-insert c 2 5     123 6
-
-insert r1 3 1 10 10 
-insert r1 12 12  2 2  
-insert A 1 2 2 4
-dump
-
-remove b
+remove 10 10 5 5
 remove a
-
-
+remove a
+remove 20 20 20 20
 dump
-
-remove 1 0 2 4
-
-
+remove f
 dump
-remove 3 1 10 10 
-
-remove 12 12 2 2 

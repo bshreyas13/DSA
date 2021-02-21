@@ -14,7 +14,7 @@ public class RectangleDBTest extends TestCase {
         RectangleDB.main(f);
         System.out.flush();
         systemOut().clearHistory();
-        String[] f1 = { "RemoveTest.txt" };
+         String[] f1 = { "RemoveTest.txt" };
         System.out.flush();
         systemOut().clearHistory();
         RectangleDB.main(f1);
