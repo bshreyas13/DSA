@@ -40,6 +40,7 @@ public class Parser {
         }
         sc.close();
         bst.clear();
+        
         return true;
     }
 
@@ -59,21 +60,27 @@ public class Parser {
             switch (params[0]) {
                 case "insert":
                     processInsert(params);
+                    System.out.flush();
                     break;
                 case "remove":
                     processRemove(params);
+                    System.out.flush();
                     break;
                 case "regionsearch":
                     processRegionSearch(params);
+                    System.out.flush();
                     break;
                 case "intersections":
                     processIntersections();
+                    System.out.flush();
                     break;
                 case "search":
                     processSearch(params);
+                    System.out.flush();
                     break;
                 case "dump":
                     processDump();
+                    System.out.flush();
                     break;
                 default:
                     break;
@@ -146,7 +153,7 @@ public class Parser {
                 cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
 
             String output = bst.searchByRegion(rect);
-            if (output.trim().isEmpty() == false) {
+            if (!output.trim().isEmpty()) {
                 System.out.println(String.format(
                     "Rectangles intersecting region (%s, %s, %s, %s) :", cps[1],
                     cps[2], cps[3], cps[4]));
