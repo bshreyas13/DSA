@@ -115,12 +115,12 @@ public class Parser {
     private static void processRemove(String[] cps) {
 
         if (cps.length == 2) {
-            bst.remove(cps[1]);
+            bst.removeByKey(cps[1]);
         }
         else if (cps.length == 5) {
             Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
                 cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
-            boolean status = bst.removeByRect(rect);
+            boolean status = bst.removeByValue(rect);
             if (!status) {
                 String output = String.format(
                     "Rectangle rejected: (%d, %d, %d, %d)", rect.x, rect.y,
