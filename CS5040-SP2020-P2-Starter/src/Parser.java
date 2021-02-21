@@ -40,6 +40,7 @@ public class Parser {
         }
         sc.close();
         bst.clear();
+        
         return true;
     }
 
@@ -59,21 +60,27 @@ public class Parser {
             switch (params[0]) {
                 case "insert":
                     processInsert(params);
+                    System.out.flush();
                     break;
                 case "remove":
                     processRemove(params);
+                    System.out.flush();
                     break;
                 case "regionsearch":
                     processRegionSearch(params);
+                    System.out.flush();
                     break;
                 case "intersections":
                     processIntersections();
+                    System.out.flush();
                     break;
                 case "search":
                     processSearch(params);
+                    System.out.flush();
                     break;
                 case "dump":
                     processDump();
+                    System.out.flush();
                     break;
                 default:
                     break;
