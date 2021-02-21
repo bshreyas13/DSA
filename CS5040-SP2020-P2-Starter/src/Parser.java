@@ -146,7 +146,7 @@ public class Parser {
                 cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
 
             String output = bst.searchByRegion(rect);
-            if (output.trim().isEmpty() == false) {
+            if (!output.trim().isEmpty()) {
                 System.out.println(String.format(
                     "Rectangles intersecting region (%s, %s, %s, %s) :", cps[1],
                     cps[2], cps[3], cps[4]));

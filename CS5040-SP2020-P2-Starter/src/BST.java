@@ -150,7 +150,6 @@ public class BST<V extends Shape> {
      */
     private Node<V> delete(Node<V> parent, Node<V> toBeDeleted) {
         if (parent == null) {
-            nodeRemoved = false;
             return null;
         }
 
@@ -164,27 +163,34 @@ public class BST<V extends Shape> {
             parent.setRight(delete(parent.getRight(), toBeDeleted));
         }
 
+        // node match. But check same node or not, using UUID, to avoid removing
+        // other node with same key
         else if (parent.equals(toBeDeleted)) {
 
-            if (parent.getLeft() == null) {
+            // case leaf node
+            if (parent.getLeft() == null && parent.getRight() == null) {
+                parent = null;
                 nodeRemoved = true;
-                return parent.getRight();
             }
 
-            else if (parent.getRight() == null) {
+            // check for valid successor in right subtree
+            else if (parent.getRight() != null) {
+                parent.setKey(successor(parent));
                 nodeRemoved = true;
-                return parent.getLeft();
             }
 
+            // can't find successor, find predecessor
             else {
-                Node<V> temp = getMax(parent.getLeft());
-                parent.setValue(temp.getValue());
-                parent.setLeft(deleteMax(parent.getLeft()));
+                parent.setKey(predecessor(parent));
+                parent.setLeft(delete(parent.getLeft(), parent.getKey()));
                 nodeRemoved = true;
             }
         }
 
-        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
+        if (parent != null) {
+            parent.setSize(1 + size(parent.getLeft()) + size(parent
+                .getRight()));
+        }
 
         return parent;
     }
@@ -202,7 +208,6 @@ public class BST<V extends Shape> {
      */
     private Node<V> delete(Node<V> parent, String key) {
         if (parent == null) {
-            nodeRemoved = false;
             return null;
         }
 
@@ -216,61 +221,71 @@ public class BST<V extends Shape> {
             parent.setRight(delete(parent.getRight(), key));
         }
 
+        // node match
         else {
-            if (parent.getLeft() == null) {
+
+            // case leaf node
+            if (parent.getLeft() == null && parent.getRight() == null) {
+                parent = null;
                 nodeRemoved = true;
-                return parent.getRight();
             }
 
-            else if (parent.getRight() == null) {
+            // check for valid successor in right subtree
+            else if (parent.getRight() != null) {
+                parent.setKey(successor(parent));
+                parent.setRight(delete(parent.getRight(), parent.getKey()));
                 nodeRemoved = true;
-                return parent.getLeft();
             }
 
+            // can't find successor, find predecessor
             else {
-                Node<V> temp = getMax(parent.getLeft());
-                parent.setValue(temp.getValue());
-                parent.setLeft(deleteMax(parent.getLeft()));
+                parent.setKey(predecessor(parent));
+                parent.setLeft(delete(parent.getLeft(), parent.getKey()));
                 nodeRemoved = true;
             }
+
         }
 
-        parent.setSize(1 + size(parent.getLeft()) + size(parent.getRight()));
+        if (parent != null) {
+            parent.setSize(1 + size(parent.getLeft()) + size(parent
+                .getRight()));
+        }
 
         return parent;
     }
 
 
     /**
-     * Get max node
+     * Find right most node in left subtree
      * 
-     * @param right
-     *            right node
+     * @param parent
+     *            root node where to find
      * @return
-     *         max node
+     *         key of most high node in left subtree
      */
-    private Node<V> getMax(Node<V> right) {
-        if (right.getRight() == null) {
-            return right;
+    private String predecessor(Node<V> parent) {
+        parent = parent.getLeft();
+        while (parent.getRight() != null) {
+            parent = parent.getRight();
         }
-        return getMax(right.getRight());
+        return parent.getKey();
     }
 
 
     /**
-     * Delete max node in right subtree
+     * Find out smallest left node in right subtree
      * 
-     * @param right
-     *            right node
+     * @param parent
+     *            parent node
      * @return
-     *         node
+     *         key of least node in left sub tree of right child
      */
-    private Node<V> deleteMax(Node<V> right) {
-        if (right.getRight() == null) {
-            return right.getLeft();
+    private String successor(Node<V> parent) {
+        parent = parent.getRight();
+        while (parent.getLeft() != null) {
+            parent = parent.getLeft();
         }
-        right.setRight(deleteMax(right.getRight()));
-        return right;
+        return parent.getKey();
     }
 
 

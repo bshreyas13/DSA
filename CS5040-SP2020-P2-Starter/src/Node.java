@@ -188,4 +188,16 @@ public class Node<V extends Shape> {
         return this.uuid.compareTo(otherNode.uuid) == 0;
     }
 
+
+    /**
+     * Set key
+     * 
+     * @param key
+     *            key value
+     */
+    public void setKey(String key) {
+        this.key = key;
+
+    }
+
 }
