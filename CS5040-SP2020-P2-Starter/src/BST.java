@@ -37,6 +37,14 @@ public class BST<V extends Shape> {
 
 
     /**
+     * Clear Tree
+     */
+    public void clear() {
+        root = null;
+    }
+
+
+    /**
      * To clear List elements
      */
     public void purgeList() {
@@ -300,7 +308,8 @@ public class BST<V extends Shape> {
         }
         inOrderForIntersection(node.getLeft(), value, sb);
         if (node.getValue().shapeIntersects(value) && !sb.toString().contains(
-            node.toString()) && node.getValue().shapeCompareTo(value)<0) {
+            node.toString()) && node.getValue().shapeCompareTo(value) < 0) {
+            allNodes.add(node);
             sb.append(String.format("%s" + "\n", node));
         }
         inOrderForIntersection(node.getRight(), value, sb);

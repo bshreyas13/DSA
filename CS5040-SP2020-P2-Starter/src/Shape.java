@@ -35,7 +35,6 @@ public interface Shape {
     boolean isShapeEquals(Shape other);
 
 
-
     /**
      * Verifies the two shapes equal or not
      * 

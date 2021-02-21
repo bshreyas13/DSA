@@ -35,6 +35,7 @@ public class RectangleDB {
     public static void main(String[] args) {
         try {
             Parser.parse(args[0]);
+            
         }
         catch (Exception ex) {
             ex.printStackTrace();

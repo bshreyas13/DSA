@@ -12,7 +12,10 @@ public class RectangleDBTest extends TestCase {
     public void testRInit() {
         String[] f = { "TestCases.txt" };
         RectangleDB.main(f);
+        System.out.flush();
         systemOut().clearHistory();
+        String[] f1 = { "RemoveTest.txt" };
+        RectangleDB.main(f1);
         RectangleDB manager = new RectangleDB();
         Parser parserTest = new Parser();
         assertNotNull(parserTest);
