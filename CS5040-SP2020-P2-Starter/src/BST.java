@@ -78,13 +78,12 @@ public class BST<V extends Shape> {
      * @param depth
      *            depth of node
      */
-    public void updateSize(Node<V> parent) {
-        if (parent != null) {
-            updateSize(parent.getLeft());
-            parent.setSize(1 + size(parent.getLeft()) + size(parent
+    public int updateSize(Node<V> node) {
+        if (node == null)
+            return 0;
+        else
+            return (updateSize(node.getLeft()) + 1 + updateSize(node
                 .getRight()));
-            updateSize(parent.getRight());
-        }
     }
 
 
