@@ -175,13 +175,17 @@ public class BST<V extends Shape> {
 
             // check for valid successor in right subtree
             else if (parent.getRight() != null) {
-                parent.setKey(successor(parent));
+                Node<V> replacement = successor(parent);
+                parent.setKey(replacement.getKey());
+                parent.setValue(replacement.getValue());
                 nodeRemoved = true;
             }
 
             // can't find successor, find predecessor
             else {
-                parent.setKey(predecessor(parent));
+                Node<V> replacement = predecessor(parent);
+                parent.setKey(replacement.getKey());
+                parent.setValue(replacement.getValue());
                 parent.setLeft(delete(parent.getLeft(), parent.getKey()));
                 nodeRemoved = true;
             }
@@ -232,14 +236,18 @@ public class BST<V extends Shape> {
 
             // check for valid successor in right subtree
             else if (parent.getRight() != null) {
-                parent.setKey(successor(parent));
+                Node<V> replacement = successor(parent);
+                parent.setKey(replacement.getKey());
+                parent.setValue(replacement.getValue());
                 parent.setRight(delete(parent.getRight(), parent.getKey()));
                 nodeRemoved = true;
             }
 
             // can't find successor, find predecessor
             else {
-                parent.setKey(predecessor(parent));
+                Node<V> replacement = predecessor(parent);
+                parent.setKey(replacement.getKey());
+                parent.setValue(replacement.getValue());
                 parent.setLeft(delete(parent.getLeft(), parent.getKey()));
                 nodeRemoved = true;
             }
@@ -263,12 +271,12 @@ public class BST<V extends Shape> {
      * @return
      *         key of most high node in left subtree
      */
-    private String predecessor(Node<V> parent) {
+    private Node<V> predecessor(Node<V> parent) {
         parent = parent.getLeft();
         while (parent.getRight() != null) {
             parent = parent.getRight();
         }
-        return parent.getKey();
+        return parent;
     }
 
 
@@ -280,12 +288,12 @@ public class BST<V extends Shape> {
      * @return
      *         key of least node in left sub tree of right child
      */
-    private String successor(Node<V> parent) {
+    private Node<V> successor(Node<V> parent) {
         parent = parent.getRight();
         while (parent.getLeft() != null) {
             parent = parent.getLeft();
         }
-        return parent.getKey();
+        return parent;
     }
 
 
