@@ -166,18 +166,6 @@ public class Node<V extends Shape> {
     }
 
 
-    /**
-     * set the value
-     * 
-     * @param v
-     *            value
-     */
-    public void setValue(V v) {
-        this.value = v;
-
-    }
-
-
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Node)) {

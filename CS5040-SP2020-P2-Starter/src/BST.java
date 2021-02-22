@@ -13,7 +13,7 @@ public class BST<V extends Shape> {
      */
     private Node<V> root;
     private Node<V> matchedNodeByShape;
-    private String excludeIntersections;
+    private String excludeText;
 
     /**
      * node removed status
@@ -265,11 +265,59 @@ public class BST<V extends Shape> {
      * 
      * @param value
      *            The rectangle used to search the for region match
-     * @return String contains matched information
      */
-    public String searchByRegion(V value) {
-        StringBuilder sb = new StringBuilder();
-        return (sb.toString());
+    public void searchByRegion(V value) {
+        excludeText = "";
+        System.out.println(String.format("Rectangles intersecting region (%s):",
+            value));
+        traverseEachNodeForRegions(root, value);
+    }
+
+
+    /**
+     * This methods used for search regions
+     * 
+     * @param node
+     *            Current node in traversal
+     */
+    private void traverseEachNodeForRegions(Node<V> node, Shape shape) {
+        if (node == null) {
+            return;
+        }
+        traverseEachNodeForRegions(node.getLeft(), shape);
+        inOrderForRegions(root, shape);
+        traverseEachNodeForRegions(node.getRight(), shape);
+    }
+
+
+    /**
+     * In-order traversal for region search
+     * 
+     * @param parent
+     *            parent node
+     * @param shape
+     */
+    private void inOrderForRegions(Node<V> parent, Shape shape) {
+        if (parent == null) {
+            return;
+        }
+        inOrderForRegions(parent.getLeft(), shape);
+        if (parent.getValue().shapeIntersects(shape)) {
+            String nodeInfo = String.format("%s", parent);
+            boolean display = true;
+            String[] excludes = excludeText.split(System.lineSeparator());
+            for (String s : excludes) {
+                if (nodeInfo.compareTo(s) == 0) {
+                    display = false;
+                }
+            }
+            if (display) {
+                excludeText += String.format("%s%s", nodeInfo, System
+                    .lineSeparator());
+                System.out.println(nodeInfo);
+            }
+        }
+        inOrderForRegions(parent.getRight(), shape);
     }
 
 
@@ -279,17 +327,16 @@ public class BST<V extends Shape> {
      * @param node
      *            The node to begin search
      */
-    private void inOrderForIntersection(Node<V> root, Node<V> node) {
-        if (root == null || node == null) {
+    private void inOrderForIntersection(Node<V> parent, Node<V> node) {
+        if (parent == null || node == null) {
             return;
         }
-        inOrderForIntersection(root, node.getLeft());
-        if (!root.getValue().isShapeEquals(node.getValue()) && root.getValue()
-            .shapeIntersects(node.getValue())) {
-            String[] excludes = excludeIntersections.split(System
-                .lineSeparator());
-            String forward = String.format("%s : %s", root, node);
-            String reverse = String.format("%s : %s", node, root);
+        inOrderForIntersection(parent, node.getLeft());
+        if (!parent.getValue().isShapeEquals(node.getValue()) && parent
+            .getValue().shapeIntersects(node.getValue())) {
+            String[] excludes = excludeText.split(System.lineSeparator());
+            String forward = String.format("%s : %s", parent, node);
+            String reverse = String.format("%s : %s", node, parent);
             boolean display = true;
             for (String s : excludes) {
                 if (forward.compareTo(s) == 0) {
@@ -297,26 +344,23 @@ public class BST<V extends Shape> {
                 }
             }
             if (display) {
-                excludeIntersections += String.format("%s%s", reverse, System
+                excludeText += String.format("%s%s", reverse, System
                     .lineSeparator());
                 System.out.println(forward);
             }
         }
-        inOrderForIntersection(root, node.getRight());
+        inOrderForIntersection(parent, node.getRight());
     }
 
 
     /**
      * Search for intersections in BST
      * 
-     * @return String containing the information of intersections
      */
-    public String searchForIntersections() {
-        StringBuilder sb = new StringBuilder();
+    public void searchForIntersections() {
         System.out.println("Intersection pairs:");
-        excludeIntersections = "";
+        excludeText = "";
         traverseEachNode(root);
-        return sb.toString();
     }
 
 

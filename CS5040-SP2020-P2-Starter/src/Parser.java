@@ -40,7 +40,7 @@ public class Parser {
         }
         sc.close();
         bst.clear();
-        
+
         return true;
     }
 
@@ -102,7 +102,6 @@ public class Parser {
      */
     private static void processIntersections() {
         bst.searchForIntersections();
-
     }
 
 
@@ -152,13 +151,7 @@ public class Parser {
             Rect rect = getRect(Integer.parseInt(cps[1]), Integer.parseInt(
                 cps[2]), Integer.parseInt(cps[3]), Integer.parseInt(cps[4]));
 
-            String output = bst.searchByRegion(rect);
-            if (!output.trim().isEmpty()) {
-                System.out.println(String.format(
-                    "Rectangles intersecting region (%s, %s, %s, %s) :", cps[1],
-                    cps[2], cps[3], cps[4]));
-                System.out.println(output.trim());
-            }
+            bst.searchByRegion(rect);
         }
         catch (Exception ex) {
             ex.getMessage();
