@@ -13,6 +13,7 @@ public class BST<V extends Shape> {
      */
     private Node<V> root;
     private Node<V> matchedNodeByShape;
+    private String excludeIntersections;
 
     /**
      * node removed status
@@ -75,8 +76,6 @@ public class BST<V extends Shape> {
      * 
      * @param node
      *            node to calculate
-     * @param depth
-     *            depth of node
      */
     public void updateSize(Node<V> node) {
         if (node == null) {
@@ -101,8 +100,7 @@ public class BST<V extends Shape> {
      * 
      * @param node
      *            New node to be inserted
-     * @return
-     *         true if inserted false otherwise
+     * @return true if inserted false otherwise
      */
     public boolean insert(Node<V> node) {
         if (node != null && node.isValid()) {
@@ -125,8 +123,7 @@ public class BST<V extends Shape> {
      *            The tree node
      * @param node
      *            New node to be inserted
-     * @return
-     *         the root node at each iteration
+     * @return the root node at each iteration
      */
     private Node<V> insert(Node<V> parent, Node<V> node) {
         if (parent == null) {
@@ -158,7 +155,7 @@ public class BST<V extends Shape> {
      */
     public void removeByKey(String key) {
         nodeRemoved = false;
-        root = iterateRemoveByKey(root, key, false);
+        root = iterateRemoveByKey(root, key, null);
         if (nodeRemoved) {
             updateDepth(root, 0);
             updateSize(root);
@@ -176,13 +173,12 @@ public class BST<V extends Shape> {
      *            start node
      * @param key
      *            key
-     * @return
-     *         node recursive
+     * @return node recursive
      */
     private Node<V> iterateRemoveByKey(
         Node<V> parent,
         String key,
-        boolean exactNode) {
+        Shape value) {
         if (parent == null) {
             return null;
         }
@@ -190,17 +186,15 @@ public class BST<V extends Shape> {
         int c = key.compareTo(parent.getKey());
 
         if (c < 0) {
-            parent.setLeft(iterateRemoveByKey(parent.getLeft(), key,
-                exactNode));
+            parent.setLeft(iterateRemoveByKey(parent.getLeft(), key, value));
         }
 
         else if (c > 0) {
-            parent.setRight(iterateRemoveByKey(parent.getRight(), key,
-                exactNode));
+            parent.setRight(iterateRemoveByKey(parent.getRight(), key, value));
         }
 
         // node match
-        else if (!exactNode || (parent.equals(matchedNodeByShape))) {
+        else if (value == null || (parent.getValue().isShapeEquals(value))) {
 
             // case leaf node
             if (parent.getLeft() == null && parent.getRight() == null) {
@@ -214,7 +208,7 @@ public class BST<V extends Shape> {
                 parent = successor(parent);
                 parent.setLeft(tempLeft);
                 parent.setRight(iterateRemoveByKey(parent.getRight(), parent
-                    .getKey(), exactNode));
+                    .getKey(), value));
                 nodeRemoved = true;
             }
 
@@ -224,7 +218,7 @@ public class BST<V extends Shape> {
                 parent = predecessor(parent);
                 parent.setRight(tempRight);
                 parent.setLeft(iterateRemoveByKey(parent.getLeft(), parent
-                    .getKey(), exactNode));
+                    .getKey(), value));
                 nodeRemoved = true;
             }
 
@@ -239,8 +233,7 @@ public class BST<V extends Shape> {
      * 
      * @param parent
      *            root node where to find
-     * @return
-     *         key of most high node in left subtree
+     * @return key of most high node in left subtree
      */
     private Node<V> predecessor(Node<V> parent) {
         parent = parent.getLeft();
@@ -256,8 +249,7 @@ public class BST<V extends Shape> {
      * 
      * @param parent
      *            parent node
-     * @return
-     *         key of least node in left sub tree of right child
+     * @return key of least node in left sub tree of right child
      */
     private Node<V> successor(Node<V> parent) {
         parent = parent.getRight();
@@ -273,12 +265,10 @@ public class BST<V extends Shape> {
      * 
      * @param value
      *            The rectangle used to search the for region match
-     * @return
-     *         String contains matched information
+     * @return String contains matched information
      */
     public String searchByRegion(V value) {
         StringBuilder sb = new StringBuilder();
-        inOrderForIntersection(root, value, sb);
         return (sb.toString());
     }
 
@@ -288,37 +278,44 @@ public class BST<V extends Shape> {
      * 
      * @param node
      *            The node to begin search
-     * @param value
-     *            The value used to search intersection
-     * @param sb
-     *            contains the information of the intersections
      */
-    private void inOrderForIntersection(
-        Node<V> node,
-        V value,
-        StringBuilder sb) {
-        if (node == null) {
+    private void inOrderForIntersection(Node<V> root, Node<V> node) {
+        if (root == null || node == null) {
             return;
         }
-        inOrderForIntersection(node.getLeft(), value, sb);
-        if (node.getValue().shapeIntersects(value) && !sb.toString().contains(
-            node.toString()) && node.getValue().shapeCompareTo(value) < 0) {
-            allNodes.add(node);
-            sb.append(String.format("%s" + "\n", node));
+        inOrderForIntersection(root, node.getLeft());
+        if (!root.getValue().isShapeEquals(node.getValue()) && root.getValue()
+            .shapeIntersects(node.getValue())) {
+            String[] excludes = excludeIntersections.split(System
+                .lineSeparator());
+            String forward = String.format("%s : %s", root, node);
+            String reverse = String.format("%s : %s", node, root);
+            boolean display = true;
+            for (String s : excludes) {
+                if (forward.compareTo(s) == 0) {
+                    display = false;
+                }
+            }
+            if (display) {
+                excludeIntersections += String.format("%s%s", reverse, System
+                    .lineSeparator());
+                System.out.println(forward);
+            }
         }
-        inOrderForIntersection(node.getRight(), value, sb);
+        inOrderForIntersection(root, node.getRight());
     }
 
 
     /**
      * Search for intersections in BST
      * 
-     * @return
-     *         String containing the information of intersections
+     * @return String containing the information of intersections
      */
     public String searchForIntersections() {
         StringBuilder sb = new StringBuilder();
-        traverseEachNode(root, sb);
+        System.out.println("Intersection pairs:");
+        excludeIntersections = "";
+        traverseEachNode(root);
         return sb.toString();
     }
 
@@ -328,16 +325,14 @@ public class BST<V extends Shape> {
      * 
      * @param node
      *            Current node in traversal
-     * @param sb
-     *            Contains the information after each iteration
      */
-    private void traverseEachNode(Node<V> node, StringBuilder sb) {
+    private void traverseEachNode(Node<V> node) {
         if (node == null) {
             return;
         }
-        traverseEachNode(node.getLeft(), sb);
-        inOrderForIntersection(node, node.getValue(), sb);
-        traverseEachNode(node.getRight(), sb);
+        traverseEachNode(node.getLeft());
+        inOrderForIntersection(root, node);
+        traverseEachNode(node.getRight());
     }
 
 
@@ -366,8 +361,7 @@ public class BST<V extends Shape> {
      *            The key value
      * @param value
      *            value of node
-     * @return
-     *         The value associated with key
+     * @return The value associated with key
      */
     private Node<V> searchWithValue(Node<V> node, String key, V value) {
         if (node == null) {
@@ -441,15 +435,14 @@ public class BST<V extends Shape> {
      * 
      * @param value
      *            The shape value
-     * @return
-     *         return status
+     * @return return status
      */
     public boolean removeByValue(Shape value) {
         nodeRemoved = false;
         matchedNodeByShape = null;
         findNodeByValue(root, value);
         if (matchedNodeByShape != null) {
-            root = iterateRemoveByKey(root, matchedNodeByShape.getKey(), true);
+            root = iterateRemoveByKey(root, matchedNodeByShape.getKey(), value);
             updateDepth(root, 0);
             updateSize(root);
             matchedNodeByShape = null;
@@ -471,7 +464,8 @@ public class BST<V extends Shape> {
 
             findNodeByValue(node.getLeft(), value);
 
-            if (node.getValue().isShapeEquals(value)) {
+            if (node.getValue().isShapeEquals(value)
+                && matchedNodeByShape == null) {
                 matchedNodeByShape = node;
                 return;
             }
@@ -486,8 +480,7 @@ public class BST<V extends Shape> {
      * 
      * @param node
      *            The node
-     * @return
-     *         Size of the node
+     * @return Size of the node
      */
     private int size(Node<V> node) {
         return node == null ? 0 : node.getSize();
@@ -497,8 +490,7 @@ public class BST<V extends Shape> {
     /**
      * Display tree in-order
      * 
-     * @return
-     *         status contains the path of nodes with in-order tree traversal
+     * @return status contains the path of nodes with in-order tree traversal
      */
     public boolean dump() {
         System.out.println("BST dump:");

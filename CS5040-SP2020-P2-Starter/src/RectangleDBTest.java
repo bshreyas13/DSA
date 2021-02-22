@@ -10,7 +10,9 @@ public class RectangleDBTest extends TestCase {
      * Get code coverage of the class declaration.
      */
     public void testRInit() {
-        String[] fileNames = { "TestCases.txt", "RemoveTest.txt" };
+        String[] fileNames = {
+            // comment files not needed
+            "TestCases.txt", "RemoveTest.txt" };
         for (String f : fileNames) {
             System.out.flush();
             systemOut().clearHistory();
