@@ -261,6 +261,7 @@ public class BST<V extends Shape> {
 
 
     /**
+     * 
      * Search BST for specific rectangle
      * 
      * @param value
@@ -331,7 +332,7 @@ public class BST<V extends Shape> {
         if (parent == null || node == null) {
             return;
         }
-        inOrderForIntersection(parent, node.getLeft());
+        inOrderForIntersection(parent.getLeft(), node);
         if (!parent.getValue().isShapeEquals(node.getValue()) && parent
             .getValue().shapeIntersects(node.getValue())) {
             String[] excludes = excludeText.split(System.lineSeparator());
@@ -349,7 +350,7 @@ public class BST<V extends Shape> {
                 System.out.println(forward);
             }
         }
-        inOrderForIntersection(parent, node.getRight());
+        inOrderForIntersection(parent.getRight(), node);
     }
 
 

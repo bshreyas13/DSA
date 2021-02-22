@@ -12,7 +12,7 @@ public class RectangleDBTest extends TestCase {
     public void testRInit() {
         String[] fileNames = {
             // comment files not needed
-            "TestCases.txt", "RemoveTest.txt" };
+            "TestCases.txt", "RemoveTest.txt"};
         for (String f : fileNames) {
             System.out.flush();
             systemOut().clearHistory();
