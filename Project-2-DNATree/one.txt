@@ -1,0 +1,7 @@
+insert d 0 0 20 30
+insert b 10 10 20 20
+insert f 10 10 20 20
+insert D 0 0 1024 1024
+insert A 20 20 1003 1003
+dump
+intersections

@@ -1,0 +1,36 @@
+
+
+insert rec 1 2 20 10
+
+insert sample 0 1 2 3
+insert rec 1 1 12 15
+
+insert r1 0 0 2 4
+insert rec 1 1 12 15
+
+
+
+insert a 1 0 2 4
+
+insert a 0 0 2 4 
+
+
+insert A 0 0 2 4 
+insert A 12 14 15 16
+
+insert A1 12 12 14 14
+
+insert A0 1 2 3 5
+
+
+dump
+
+search rec
+
+search a
+
+search A
+
+search A0
+
+search b
