@@ -1,0 +1,14 @@
+insert ACGT
+insert AAAA
+insert AA
+insert AAACCCCGGTGAAAACGTA
+insert ACTGGGAA
+insert AA
+remove ACGT
+insert ACCTT
+insert ACTTA
+insert TATA
+insert TCG
+print
+search TATA
+
