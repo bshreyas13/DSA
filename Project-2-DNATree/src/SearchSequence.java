@@ -1,6 +1,3 @@
-import java.util.LinkedList;
-import java.util.List;
-
 public class SearchSequence {
 	public static enum SearchMode {
 		EXACT, PREFIX
@@ -11,7 +8,7 @@ public class SearchSequence {
 	private final SearchMode mode;
 	private Sequence searchSequence;
 	private int visited;
-	private List<Sequence> matches = new LinkedList<Sequence>();
+	private MyList<Sequence> matches = new MyList<Sequence>();
 
 	public SearchSequence(String sequenceDescriptor) {
 		if (sequenceDescriptor.endsWith(DOLLOR)) {
@@ -56,15 +53,15 @@ public class SearchSequence {
 		this.visited = visited;
 	}
 
-	public List<Sequence> getMatches() {
+	public MyList<Sequence> getMatches() {
 		return matches;
 	}
 
-	public void setMatches(List<Sequence> matches) {
+	public void setMatches(MyList<Sequence> matches) {
 		this.matches = matches;
 	}
 
 	public boolean searchFound() {
-		return this.matches != null && this.matches.size() > 0;
+		return this.matches != null && this.matches.length() > 0;
 	}
 }
