@@ -13,15 +13,10 @@ public class SearchSequence {
 	private int visited;
 	private List<Sequence> matches = new LinkedList<Sequence>();
 
-	public SearchSequence(String sequenceDescriptor, boolean exactSearch) {
-		mode = exactSearch ? SearchMode.EXACT : SearchMode.PREFIX;
-		searchSequence = new Sequence(sequenceDescriptor);
-	}
-
 	public SearchSequence(String sequenceDescriptor) {
 		if (sequenceDescriptor.endsWith(DOLLOR)) {
 			mode = SearchMode.EXACT;
-			sequenceDescriptor = sequenceDescriptor.substring(0, sequenceDescriptor.length() - DOLLOR.length() - 1);
+			sequenceDescriptor = sequenceDescriptor.substring(0, sequenceDescriptor.length() - DOLLOR.length());
 		} else {
 			mode = SearchMode.PREFIX;
 		}

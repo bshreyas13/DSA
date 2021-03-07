@@ -30,6 +30,14 @@ public class DNAtree {
 				System.out.flush();
 				break;
 			case "print":
+				Print.printMode = PrintMode.NONE;
+				if (data.length > 1) {
+					if (data[1].compareTo("lengths") == 0) {
+						Print.printMode = PrintMode.LENGTH;
+					} else if (data[1].compareTo("stats") == 0) {
+						Print.printMode = PrintMode.STATS;
+					}
+				}
 				dnaTree.dump();
 				System.out.flush();
 				break;
@@ -41,6 +49,7 @@ public class DNAtree {
 			}
 		}
 		br.close();
+
 	}
 
 	public static void sequenceAlreadyExists(Sequence s) {

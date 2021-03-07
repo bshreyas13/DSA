@@ -10,7 +10,7 @@ public class LeafNode implements Node {
 
 	@Override
 	public void print() {
-		Print.node(sequence.toString(), level);
+		Print.node(this);
 	}
 
 	@Override

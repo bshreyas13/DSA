@@ -4,7 +4,7 @@ public class EmptyNode implements Node {
 
 	@Override
 	public void print() {
-		Print.node("E", level);
+		Print.node(this);
 	}
 
 	@Override

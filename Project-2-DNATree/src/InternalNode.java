@@ -53,7 +53,7 @@ public class InternalNode implements Node {
 
 	@Override
 	public void print() {
-		Print.node("I", level);
+		Print.node(this);
 		A.print();
 		C.print();
 		G.print();
@@ -128,9 +128,7 @@ public class InternalNode implements Node {
 	@Override
 	public void search(SearchSequence searchData) {
 		searchData.incrementNodesVisited();
-
 		final Sequence searchSequence = searchData.getSearchSequence();
-
 		if (searchSequence.hasNext()) {
 			final char currentSearchChar = searchSequence.next();
 			Node child = getChild(currentSearchChar);

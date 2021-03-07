@@ -10,5 +10,8 @@ insert ACTTA
 insert TATA
 insert TCG
 print
-search TATA
+search T
+search AA$
+print stats
+print lengths
 
