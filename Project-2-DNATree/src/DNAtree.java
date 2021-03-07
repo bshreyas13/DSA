@@ -1,22 +1,36 @@
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
+import java.io.File;
+import java.util.Scanner;
 
 /**
- * @author {veerad and bshreyas}
- *         Entry point for the DNA tree database.
+ * Represents the DNA Tree
+ * 
+ * @author {bshreyas and veerad}
+ * @version 2021-03-07
  */
 public class DNAtree {
+
+    private static Tree tree = new Tree();
+    private static boolean success;
+
+    /**
+     * get operation status
+     * 
+     * @return
+     *         operation status
+     */
+    public static boolean isSuccess() {
+        return success;
+    }
+
 
     /**
      * @param args
      *            args command line arguments expecting file name with commands
      */
     public static void main(String[] args) {
-        Tree dnaTree = new Tree();
         try {
-            process(dnaTree, args[0]);
+            process(args[0]);
+            success = true;
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -25,55 +39,64 @@ public class DNAtree {
 
 
     /**
-     * @param dnaTree
+     * @param tree
      * @param fileName
      * @throws Exception
      */
-    private static void process(Tree dnaTree, String fileName)
-        throws Exception {
-        String line = null;
-        BufferedReader br = new BufferedReader(new InputStreamReader(
-            new DataInputStream(new FileInputStream(fileName))));
-        while ((line = br.readLine()) != null) {
-            String[] data = line.split(" ");
-            switch (data[0]) {
-                case "insert":
-                    dnaTree.insert(new Sequence(data[1]));
-                    System.out.flush();
-                    break;
-                case "remove":
-                    dnaTree.remove(new Sequence(data[1]));
-                    System.out.flush();
-                    break;
-                case "print":
-                    Print.printMode = PrintMode.NONE;
-                    if (data.length > 1) {
-                        if (data[1].compareTo("lengths") == 0) {
-                            Print.printMode = PrintMode.LENGTH;
-                        }
-                        else if (data[1].compareTo("stats") == 0) {
-                            Print.printMode = PrintMode.STATS;
-                        }
-                    }
-                    dnaTree.dump();
-                    System.out.flush();
-                    break;
-                case "search":
-                    dnaTree.search(new SearchSequence(data[1]));
-                    System.out.flush();
-                default:
-                    break;
+    private static void process(String fileName) throws Exception {
+
+        File f = new File(fileName);
+        Scanner sc = new Scanner(f);
+        while (sc.hasNextLine()) {
+            String line = sc.nextLine().trim().replaceAll(" +", " ");
+            if (!line.isEmpty()) {
+                processCommand(line);
             }
         }
-        br.close();
-
+        sc.close();
+        tree.clear();
     }
 
 
     /**
-     * @param s
+     * Processes the command line
+     * 
+     * @param line
+     *            the line with command and params
      */
-    public static void sequenceAlreadyExists(Sequence s) {
-        System.out.println(String.format("sequence %s already exists", s));
+    private static void processCommand(String line) {
+        String[] params = line.split(" ");
+        if (params != null && params.length > 0) {
+            switch (params[0]) {
+                case "insert":
+                    tree.insert(new Sequence(params[1]));
+                    System.out.flush();
+                    break;
+                case "remove":
+                    tree.remove(new Sequence(params[1]));
+                    System.out.flush();
+                    break;
+                case "print":
+                    Print.setPrint(PrintMode.NONE);
+                    if (params.length > 1) {
+                        if (params[1].compareTo("lengths") == 0) {
+                            Print.setPrint(PrintMode.LENGTH);
+                        }
+                        else if (params[1].compareTo("stats") == 0) {
+                            Print.setPrint(PrintMode.STATS);
+                        }
+                    }
+                    tree.dump();
+                    System.out.flush();
+                    break;
+                case "search":
+                    tree.search(new SearchSequence(params[1]));
+                    System.out.flush();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
+
 }

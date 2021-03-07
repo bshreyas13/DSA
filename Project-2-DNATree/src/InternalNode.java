@@ -1,242 +1,407 @@
-
+/**
+ * Represents the Internal Node
+ * 
+ * @author {shreyasb and veerad}
+ * @version 2021-03-07
+ */
 public class InternalNode implements Node {
-	public static final int MIN_NODES = 1;
-	public int level;
+    /**
+     * occupied nodes limit
+     */
+    public static final int MIN_NODES = 1;
+    /**
+     * node level
+     */
+    private int level;
 
-	private Node A;
-	private Node C;
-	private Node G;
-	private Node T;
-	private Node $;
+    /**
+     * A child
+     */
+    private Node nodeA;
+    /**
+     * C Child
+     */
+    private Node nodeC;
+    /**
+     * G Child
+     */
+    private Node nodeG;
+    /**
+     * T Child
+     */
+    private Node nodeT;
+    /**
+     * $ Value
+     */
+    private Node nodeD;
 
-	public InternalNode(LeafNode existingSequenceNode, Sequence newSequence) {
+    /**
+     * @param currentSeq
+     *            current sequence
+     * @param newSeq
+     *            new sequence to insert
+     */
+    public InternalNode(LeafNode currentSeq, Sequence newSeq) {
+        setA(new EmptyNode());
+        setC(new EmptyNode());
+        setG(new EmptyNode());
+        setT(new EmptyNode());
+        setD(new EmptyNode());
 
-		A = new EmptyNode();
-		C = new EmptyNode();
-		G = new EmptyNode();
-		T = new EmptyNode();
-		$ = new EmptyNode();
+        final Sequence existingSequence = currentSeq.getSequence();
 
-		final Sequence existingSequence = existingSequenceNode.getSequence();
+        Sequence prefix;
+        Sequence suffix;
+        if (existingSequence.length() < newSeq.length()) {
+            prefix = newSeq;
+            suffix = existingSequence;
+        }
+        else {
+            prefix = existingSequence;
+            suffix = newSeq;
+        }
 
-		Sequence prefix, suffix;
-		if (existingSequence.length() < newSequence.length()) {
-			prefix = newSequence;
-			suffix = existingSequence;
-		} else {
-			prefix = existingSequence;
-			suffix = newSequence;
-		}
+        insert(prefix);
 
-		insert(prefix);
+        if (suffix.isPrefixOf(prefix)) {
+            insertDollor(suffix);
+        }
+        else {
+            insert(suffix);
+        }
+    }
 
-		if (suffix.isPrefixOf(prefix)) {
-			insertPrefix(suffix);
-		} else {
-			insert(suffix);
-		}
-	}
 
-	protected Node getChild(char sequenceCharacter) {
-		switch (sequenceCharacter) {
-		case 'A':
-			return A;
-		case 'C':
-			return C;
-		case 'G':
-			return G;
-		case 'T':
-			return T;
-		}
-		return null;
-	}
+    /**
+     * @param c
+     *            character to switch
+     * @return
+     *         Child node based on the char
+     */
+    protected Node getChild(char c) {
+        switch (c) {
+            case 'A':
+                return getA();
+            case 'C':
+                return getC();
+            case 'G':
+                return getG();
+            case 'T':
+                return getT();
+            default:
+                return null;
+        }
+    }
 
-	@Override
-	public void print() {
-		Print.node(this);
-		A.print();
-		C.print();
-		G.print();
-		T.print();
-		$.print();
-	}
 
-	@Override
-	public Node insert(Sequence sequence) {
-		if (sequence.hasNext()) {
-			final char sequenceChar = sequence.next();
-			Node child = getChild(sequenceChar);
-			if (($ instanceof LeafNode) && ((LeafNode) $).getSequence().length() > sequence.length()
-					&& sequence.isPrefixOf(((LeafNode) $).getSequence())) {
-				insert(swapPrefix(sequence));
-			} else if (!sequence.hasNext() && (child instanceof LeafNode) && (occupiedNodes() < MIN_NODES)) {
-				insertPrefix(sequence);
-			} else {
-				if (child != null) {
-					setChild(sequenceChar, child.insert(sequence));
-				}
-			}
-		} else {
-			insertPrefix(sequence);
-		}
-		return this;
-	}
+    /**
+     * Print node
+     */
+    @Override
+    public void print() {
+        Print.node(this);
+        getA().print();
+        getC().print();
+        getG().print();
+        getT().print();
+        getD().print();
+    }
 
-	private Sequence swapPrefix(Sequence newSequence) {
-		Sequence old = ((LeafNode) $).getSequence();
-		((LeafNode) $).setSequence(newSequence);
-		return old;
-	}
 
-	public void insertPrefix(Sequence sequence) {
-		if ($ instanceof EmptyNode) {
-			$ = $.insert(sequence);
-		} else if (sequence.equals(((LeafNode) $).getSequence())) {
-			DNAtree.sequenceAlreadyExists(sequence);
-		} else {
-			insert(swapPrefix(sequence));
-		}
-	}
+    /**
+     * @param sequence
+     *            sequence to insert
+     */
+    @Override
+    public Node insert(Sequence sequence) {
+        if (sequence.hasNext()) {
+            final char sequenceChar = sequence.next();
+            Node child = getChild(sequenceChar);
+            if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
+                .length() > sequence.length() && sequence.isPrefixOf(
+                    ((LeafNode)nodeD).getSequence())) {
+                insert(replaceSequence(sequence));
+            }
+            else if (!sequence.hasNext() && (child instanceof LeafNode)
+                && (occupiedNodes() < MIN_NODES)) {
+                insertDollor(sequence);
+            }
+            else {
+                setChild(sequenceChar, child.insert(sequence));
+            }
+        }
+        else {
+            insertDollor(sequence);
+        }
+        return this;
+    }
 
-	@Override
-	public Node remove(Sequence sequence) {
-		if (sequence.hasNext()) {
-			final char sequenceChar = sequence.next();
-			Node child = getChild(sequenceChar);
-			setChild(sequenceChar, child.remove(sequence));
-		} else {
-			$ = $.remove(sequence);
-		}
 
-		Node collapsible = null;
-		for (Node child : getChildren()) {
-			if (child instanceof InternalNode) {
-				return this;
-			} else if (child instanceof LeafNode) {
-				if (collapsible == null) {
-					collapsible = child;
-				} else {
-					return this;
-				}
-			}
-		}
+    /**
+     * @param replaceWith
+     *            change sequence
+     * @return
+     *         return sequence
+     */
+    private Sequence replaceSequence(Sequence replaceWith) {
+        Sequence currentSequence = ((LeafNode)nodeD).getSequence();
+        ((LeafNode)nodeD).setSequence(replaceWith);
+        return currentSequence;
+    }
 
-		((LeafNode) collapsible).getSequence().prev();
-		return collapsible;
-	}
 
-	@Override
-	public void search(SearchSequence searchData) {
-		searchData.incrementNodesVisited();
-		final Sequence searchSequence = searchData.getSearchSequence();
-		if (searchSequence.hasNext()) {
-			final char currentSearchChar = searchSequence.next();
-			Node child = getChild(currentSearchChar);
-			if (child != null) {
-				child.search(searchData);
-			}
-		} else if (searchData.matchExact()) {
-			$.search(searchData);
-		} else {
-			A.search(searchData);
-			C.search(searchData);
-			G.search(searchData);
-			T.search(searchData);
-			$.search(searchData);
-		}
-	}
+    /**
+     * @param sequence
+     *            set sequence to $ if empty node other wise call insert
+     *            recursively
+     */
+    public void insertDollor(Sequence sequence) {
+        if (nodeD instanceof EmptyNode) {
+            nodeD = nodeD.insert(sequence);
+        }
+        else if (sequence.equals(((LeafNode)nodeD).getSequence())) {
+            Print.sequenceAlreadyExists(sequence);
+        }
+        else {
+            insert(replaceSequence(sequence));
+        }
+    }
 
-	public boolean setChild(char sequenceChar, Node child) {
-		switch (sequenceChar) {
-		case 'A':
-			A = child;
-			return true;
-		case 'C':
-			C = child;
-			return true;
-		case 'G':
-			G = child;
-			return true;
-		case 'T':
-			T = child;
-			return true;
-		}
-		return false;
-	}
 
-	private int occupiedNodes() {
-		int occupiedNodes = 0;
-		if (A instanceof LeafNode) {
-			occupiedNodes++;
-		}
-		if (C instanceof LeafNode) {
-			occupiedNodes++;
-		}
-		if (G instanceof LeafNode) {
-			occupiedNodes++;
-		}
-		if (T instanceof LeafNode) {
-			occupiedNodes++;
-		}
-		return occupiedNodes;
-	}
+    /**
+     * @param
+     * remove
+     *            the sequence at this node iteratively
+     */
+    @Override
+    public Node remove(Sequence sequence) {
+        if (sequence.hasNext()) {
+            final char sequenceChar = sequence.next();
+            Node child = getChild(sequenceChar);
+            setChild(sequenceChar, child.remove(sequence));
+        }
+        else {
+            nodeD = nodeD.remove(sequence);
+        }
 
-	private Node[] getChildren() {
-		return new Node[] { A, C, G, T, $ };
-	}
+        Node collapsible = null;
+        for (Node child : getChildren()) {
+            if (child instanceof InternalNode) {
+                return this;
+            }
+            else if (child instanceof LeafNode) {
+                if (collapsible == null) {
+                    collapsible = child;
+                }
+                else {
+                    return this;
+                }
+            }
+        }
 
-	public Node getA() {
-		return A;
-	}
+        ((LeafNode)collapsible).getSequence().prev();
+        return collapsible;
+    }
 
-	public void setA(Node a) {
-		A = a;
-	}
 
-	public Node getC() {
-		return C;
-	}
+    /**
+     * @param sequence
+     *            sequence to search
+     */
+    @Override
+    public void search(SearchSequence sequence) {
+        sequence.incrementNodesVisited();
+        final Sequence searchSequence = sequence.getSearchSequence();
+        if (searchSequence.hasNext()) {
+            final char currentSearchChar = searchSequence.next();
+            Node child = getChild(currentSearchChar);
+            if (child != null) {
+                child.search(sequence);
+            }
+        }
+        else if (sequence.isExactMatch()) {
+            nodeD.search(sequence);
+        }
+        else {
+            nodeA.search(sequence);
+            nodeC.search(sequence);
+            nodeG.search(sequence);
+            nodeT.search(sequence);
+            nodeD.search(sequence);
+        }
+    }
 
-	public void setC(Node c) {
-		C = c;
-	}
 
-	public Node getG() {
-		return G;
-	}
+    /**
+     * @param c
+     *            character to find child node
+     * @param child
+     *            child node
+     * @return
+     *         return true if child was set
+     */
+    public boolean setChild(char c, Node child) {
+        switch (c) {
+            case 'A':
+                nodeA = child;
+                return true;
+            case 'C':
+                nodeC = child;
+                return true;
+            case 'G':
+                nodeG = child;
+                return true;
+            case 'T':
+                nodeT = child;
+                return true;
+            default:
+                return false;
+        }
+    }
 
-	public void setG(Node g) {
-		G = g;
-	}
 
-	public Node getT() {
-		return T;
-	}
+    /**
+     * @return
+     *         return nodes occupied
+     */
+    private int occupiedNodes() {
+        int occupiedNodes = 0;
+        if (nodeA instanceof LeafNode) {
+            occupiedNodes++;
+        }
+        if (nodeC instanceof LeafNode) {
+            occupiedNodes++;
+        }
+        if (nodeG instanceof LeafNode) {
+            occupiedNodes++;
+        }
+        if (nodeT instanceof LeafNode) {
+            occupiedNodes++;
+        }
+        return occupiedNodes;
+    }
 
-	public void setT(Node t) {
-		T = t;
-	}
 
-	public Node get$() {
-		return $;
-	}
+    /**
+     * @return
+     *         return chidren
+     */
+    private Node[] getChildren() {
+        return new Node[] { nodeA, nodeC, nodeG, nodeT, nodeD };
+    }
 
-	public void set$(Node $) {
-		this.$ = $;
-	}
 
-	@Override
-	public void setLevel(int level) {
-		this.level = level;
-		A.setLevel(level + 1);
-		C.setLevel(level + 1);
-		G.setLevel(level + 1);
-		T.setLevel(level + 1);
-		$.setLevel(level + 1);
-	}
+    /**
+     * @return
+     *         Node
+     */
+    public Node getA() {
+        return nodeA;
+    }
 
-	@Override
-	public int getLevel() {
-		return level;
-	}
+
+    /**
+     * @param a
+     *            set A
+     */
+    public void setA(Node a) {
+        nodeA = a;
+    }
+
+
+    /**
+     * @return
+     *         C
+     */
+    public Node getC() {
+        return nodeC;
+    }
+
+
+    /**
+     * @param c
+     *            set c
+     */
+    public void setC(Node c) {
+        nodeC = c;
+    }
+
+
+    /**
+     * @return
+     *         G
+     */
+    public Node getG() {
+        return nodeG;
+    }
+
+
+    /**
+     * @param g
+     *            set g
+     */
+    public void setG(Node g) {
+        nodeG = g;
+    }
+
+
+    /**
+     * @return
+     *         get T
+     */
+    public Node getT() {
+        return nodeT;
+    }
+
+
+    /**
+     * @param t
+     *            set T
+     */
+    public void setT(Node t) {
+        nodeT = t;
+    }
+
+
+    /**
+     * @return
+     *         get Dollor
+     */
+    public Node getD() {
+        return nodeD;
+    }
+
+
+    /**
+     * @param d
+     *            set Dollor
+     */
+    public void setD(Node d) {
+        this.nodeD = d;
+    }
+
+
+    /**
+     * @param level
+     *            set level
+     */
+    @Override
+    public void setLevel(int level) {
+        this.level = level;
+        nodeA.setLevel(level + 1);
+        nodeC.setLevel(level + 1);
+        nodeG.setLevel(level + 1);
+        nodeT.setLevel(level + 1);
+        nodeD.setLevel(level + 1);
+    }
+
+
+    /**
+     * @return
+     *         level
+     */
+    @Override
+    public int getLevel() {
+        return level;
+    }
 }

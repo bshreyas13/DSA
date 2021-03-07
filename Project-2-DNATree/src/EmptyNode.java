@@ -1,35 +1,77 @@
-
+/**
+ * Represents the Empty node
+ * 
+ * @author {bshreyas and veerad}
+ * @version 2021-03-07
+ */
 public class EmptyNode implements Node {
-	private int level;
+    /**
+     * node level
+     */
+    private int level;
 
-	@Override
-	public void print() {
-		Print.node(this);
-	}
+    /**
+     * Print node information
+     */
+    @Override
+    public void print() {
+        Print.node(this);
+    }
 
-	@Override
-	public Node insert(Sequence sequence) {
-		return new LeafNode(sequence);
-	}
 
-	@Override
-	public Node remove(Sequence sequence) {
-		Print.noSeqFound(sequence);
-		return this;
-	}
+    /**
+     * @param sequence
+     *            sequence string to insert, return new leaf node
+     * @return
+     *         inserted node
+     */
+    @Override
+    public Node insert(Sequence sequence) {
+        return new LeafNode(sequence);
+    }
 
-	@Override
-	public void search(SearchSequence searchCommand) {
-		searchCommand.incrementNodesVisited();
-	}
 
-	@Override
-	public void setLevel(int level) {
-		this.level = level;
-	}
+    /**
+     * @param sequence
+     *            sequence to remove, display as no sequence found becasue empty
+     *            node
+     * @return
+     *         return node
+     */
+    @Override
+    public Node remove(Sequence sequence) {
+        Print.noSeqFound(sequence);
+        return this;
+    }
 
-	@Override
-	public int getLevel() {
-		return level;
-	}
+
+    /**
+     * @param sequence
+     *            increase nodes visited for empty node as no content to search
+     *            here
+     */
+    @Override
+    public void search(SearchSequence sequence) {
+        sequence.incrementNodesVisited();
+    }
+
+
+    /**
+     * @param level
+     *            set level
+     */
+    @Override
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+
+    /**
+     * @return
+     *         return level
+     */
+    @Override
+    public int getLevel() {
+        return level;
+    }
 }

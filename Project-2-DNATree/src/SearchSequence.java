@@ -1,67 +1,142 @@
+/**
+ * Represents the Search sequence
+ * 
+ * @author {bshreyas and veerad}
+ * @version 2021-03-07
+ */
 public class SearchSequence {
-	public static enum SearchMode {
-		EXACT, PREFIX
-	}
 
-	public static final String DOLLOR = "$";
+    /**
+     * Search mode
+     * 
+     * @author {veerad and bshreyas}
+     *
+     */
+    public static enum SearchMode {
+        /**
+         * Exact search, with $
+         */
+        EXACT,
+        /**
+         * Search for starts with text
+         */
+        PREFIX
+    }
 
-	private final SearchMode mode;
-	private Sequence searchSequence;
-	private int visited;
-	private MyList<Sequence> matches = new MyList<Sequence>();
+    /**
+     * Used for prefix search
+     */
+    public static final String DOLLOR = "$";
 
-	public SearchSequence(String sequenceDescriptor) {
-		if (sequenceDescriptor.endsWith(DOLLOR)) {
-			mode = SearchMode.EXACT;
-			sequenceDescriptor = sequenceDescriptor.substring(0, sequenceDescriptor.length() - DOLLOR.length());
-		} else {
-			mode = SearchMode.PREFIX;
-		}
+    /**
+     * Holds search mode
+     */
+    private final SearchMode mode;
+    /**
+     * search sequence
+     */
+    private Sequence seq;
 
-		searchSequence = new Sequence(sequenceDescriptor);
-	}
+    /**
+     * holds the nodes visited
+     */
+    private int visited;
+    /**
+     * found matches
+     */
+    private MyList<Sequence> matches = new MyList<Sequence>();
 
-	public void incrementNodesVisited() {
-		this.visited++;
-	}
+    /**
+     * Constructor
+     * 
+     * @param sequence
+     *            sequence to hold
+     */
+    public SearchSequence(String sequence) {
+        if (sequence.endsWith(DOLLOR)) {
+            mode = SearchMode.EXACT;
+            sequence = sequence.substring(0, sequence.length() - DOLLOR
+                .length());
+        }
+        else {
+            mode = SearchMode.PREFIX;
+        }
 
-	public void matchFound(Sequence matchedSequence) {
-		this.matches.add(matchedSequence);
-	}
+        seq = new Sequence(sequence);
+    }
 
-	public boolean matchExact() {
-		return (mode == SearchMode.EXACT);
-	}
 
-	public SearchMode getMode() {
-		return mode;
-	}
+    /**
+     * Increase visited nodes
+     */
+    public void incrementNodesVisited() {
+        this.visited++;
+    }
 
-	public Sequence getSearchSequence() {
-		return searchSequence;
-	}
 
-	public void setSearchSequence(Sequence searchSequence) {
-		this.searchSequence = searchSequence;
-	}
+    /**
+     * Found match
+     * 
+     * @param sequence
+     *            sequence found
+     */
+    public void addMatch(Sequence sequence) {
+        this.matches.add(sequence);
+    }
 
-	public int getNodes() {
-		return visited;
-	}
 
-	public void setNumNodesVisited(int visited) {
-		this.visited = visited;
-	}
+    /**
+     * check for exact match mode
+     * 
+     * @return
+     *         true if match mode is exact
+     */
+    public boolean isExactMatch() {
+        return (mode == SearchMode.EXACT);
+    }
 
-	public MyList<Sequence> getMatches() {
-		return matches;
-	}
 
-	public void setMatches(MyList<Sequence> matches) {
-		this.matches = matches;
-	}
+    /**
+     * get search sequence
+     * 
+     * @return
+     *         search sequence
+     */
+    public Sequence getSearchSequence() {
+        return seq;
+    }
 
-	public boolean searchFound() {
-		return this.matches != null && this.matches.length() > 0;
-	}
+
+    /**
+     * get nodes
+     * 
+     * @return
+     *         nodes count
+     */
+    public int getNodes() {
+        return visited;
+    }
+
+
+    /**
+     * Get matches
+     * 
+     * @return
+     *         list of matches
+     */
+
+    public MyList<Sequence> getMatches() {
+        return matches;
+    }
+
+
+    /**
+     * check if search found
+     * 
+     * @return
+     *         true if search was found
+     */
+    public boolean searchFound() {
+        return this.matches != null && this.matches.length() > 0;
+    }
 }

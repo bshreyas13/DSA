@@ -1,68 +1,149 @@
-
+/**
+ * Represents the leaf node
+ * 
+ * @author {bshreyas and veerad}
+ * @version 2021-03-07
+ */
 public class LeafNode implements Node {
-	private Sequence sequence;
-	private int level;
+    /**
+     * this node sequence
+     */
+    private Sequence sequence;
+    /*
+     * node level
+     */
+    private int level;
 
-	public LeafNode(Sequence sequence) {
-		this.sequence = sequence;
-		Print.insertedNode = this;
-	}
+    /**
+     * leaf node constructor
+     * 
+     * @param sequence
+     *            sequence of this leaf node
+     */
+    public LeafNode(Sequence sequence) {
+        this.setSequence(sequence);
+        Print.setInserted(this);
+    }
 
-	@Override
-	public void print() {
-		Print.node(this);
-	}
 
-	@Override
-	public Node insert(Sequence sequence) {
-		if (this.sequence.equals(sequence)) {
-			DNAtree.sequenceAlreadyExists(sequence);
-			return this;
-		} else {
-			return new InternalNode(this, sequence);
-		}
-	}
+    /**
+     * print node
+     */
+    @Override
+    public void print() {
+        Print.node(this);
+    }
 
-	@Override
-	public Node remove(Sequence sequence) {
-		if (this.sequence.equals(sequence)) {
-			Print.info(String.format("sequence %s removed", sequence));
-			return new EmptyNode();
-		} else {
-			Print.noSeqFound(sequence);
-			return this;
-		}
-	}
 
-	@Override
-	public void search(SearchSequence searchData) {
-		searchData.incrementNodesVisited();
-		if ((searchData.matchExact() && this.sequence.equals(searchData.getSearchSequence()))
-				|| !searchData.matchExact()) {
-			searchData.matchFound(this.sequence);
-		}
-	}
+    /**
+     * @param seq
+     *            sequence to insert
+     * @return
+     *         Node
+     */
+    @Override
+    public Node insert(Sequence seq) {
+        if (this.sequence.equals(seq)) {
+            Print.sequenceAlreadyExists(seq);
+            return this;
+        }
+        else {
+            return new InternalNode(this, seq);
+        }
+    }
 
-	public Sequence getSequence() {
-		return sequence;
-	}
 
-	public void setSequence(Sequence sequence) {
-		this.sequence = sequence;
-	}
+    /**
+     * Remove sequence
+     * 
+     * @param seq
+     *            sequence to remove
+     * @return
+     *         node
+     */
+    @Override
+    public Node remove(Sequence seq) {
+        if (this.sequence.equals(seq)) {
+            Print.info(String.format("sequence %s removed", seq));
+            return new EmptyNode();
+        }
+        else {
+            Print.noSeqFound(seq);
+            return this;
+        }
+    }
 
-	@Override
-	public String toString() {
-		return sequence.toString();
-	}
 
-	@Override
-	public void setLevel(int level) {
-		this.level = level;
-	}
+    /**
+     * search node
+     * 
+     * @param seq
+     */
+    @Override
+    public void search(SearchSequence seq) {
+        seq.incrementNodesVisited();
+        if ((seq.isExactMatch() && this.sequence.equals(seq
+            .getSearchSequence())) || !seq.isExactMatch()) {
+            seq.addMatch(this.sequence);
+        }
+    }
 
-	@Override
-	public int getLevel() {
-		return level;
-	}
+
+    /**
+     * get sequence
+     * 
+     * @return
+     *         sequence
+     */
+    public Sequence getSequence() {
+        return sequence;
+    }
+
+
+    /**
+     * set sequence
+     * 
+     * @param sequence
+     *            sequence
+     */
+    public void setSequence(Sequence sequence) {
+        this.sequence = sequence;
+    }
+
+
+    /**
+     * to string implementation
+     * 
+     * @return
+     *         String
+     */
+    @Override
+    public String toString() {
+        return sequence.toString();
+    }
+
+
+    /**
+     * set level
+     * 
+     * @param level
+     *            level
+     * 
+     */
+    @Override
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+
+    /**
+     * get level
+     * 
+     * @return
+     *         level
+     */
+    @Override
+    public int getLevel() {
+        return level;
+    }
 }

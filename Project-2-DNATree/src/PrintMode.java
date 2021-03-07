@@ -1,4 +1,20 @@
-
+/**
+ * Represents the print mode
+ * 
+ * @author {bshreyas and veerad}
+ * @version 2021-03-07
+ */
 public enum PrintMode {
-	NONE, LENGTH, STATS
+    /**
+     * No metadata
+     */
+    NONE,
+    /**
+     * Show lengths
+     */
+    LENGTH,
+    /**
+     * Show stats
+     */
+    STATS
 }

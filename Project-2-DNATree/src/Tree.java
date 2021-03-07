@@ -1,31 +1,75 @@
-
+/**
+ * Represents the Tree
+ * 
+ * @author {bshreyas and veerad}
+ * @version 2021-03-07
+ */
 public class Tree {
-	private Node root = null;
+    /**
+     * Root node
+     */
+    private Node root = null;
 
-	public Tree() {
-		root = new EmptyNode();
-	}
+    /**
+     * Default constructor
+     */
+    public Tree() {
+        root = new EmptyNode();
+    }
 
-	public void insert(Sequence sequence) {
-		Print.insertedNode = null;
-		root = root.insert(sequence);
-		if (root != null) {
-			root.setLevel(0);
-			Print.printInserted(sequence);
-		}
-	}
 
-	public void remove(Sequence sequence) {
-		root = root.remove(sequence);
-	}
+    /**
+     * Clear Tree
+     */
+    public void clear() {
+        root = null;
+    }
 
-	public void dump() {
-		Print.info("tree dump:");
-		root.print();
-	}
 
-	public void search(SearchSequence searchSequence) {
-		root.search(searchSequence);
-		Print.searchSummary(searchSequence);
-	}
+    /**
+     * insert sequence
+     * 
+     * @param sequence
+     *            sequence of node
+     */
+    public void insert(Sequence sequence) {
+        Print.setInserted(null);
+        root = root.insert(sequence);
+        if (root != null) {
+            root.setLevel(0);
+            Print.printInserted(sequence);
+        }
+    }
+
+
+    /**
+     * Remove sequence
+     * 
+     * @param sequence
+     *            sequence to remove
+     */
+    public void remove(Sequence sequence) {
+        root = root.remove(sequence);
+    }
+
+
+    /**
+     * show tree dump
+     */
+    public void dump() {
+        Print.info("tree dump:");
+        root.print();
+    }
+
+
+    /**
+     * search for sequence
+     * 
+     * @param sequence
+     *            sequence to search
+     */
+    public void search(SearchSequence sequence) {
+        root.search(sequence);
+        Print.searchSummary(sequence);
+    }
 }

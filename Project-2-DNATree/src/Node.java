@@ -1,14 +1,62 @@
-
+/**
+ * Represents the Tree node operations
+ * 
+ * @author {bshreyas and veerad}
+ * @version 2021-03-07
+ */
 public interface Node {
-	public void print();
 
-	public Node insert(Sequence sequence);
+    /**
+     * Print node
+     */
+    public void print();
 
-	public Node remove(Sequence sequence);
 
-	public void search(SearchSequence command);
+    /**
+     * Insert node
+     * 
+     * @param sequence
+     *            sequence to insert
+     * @return
+     *         Node inserted
+     */
+    public Node insert(Sequence sequence);
 
-	public void setLevel(int level);
 
-	public int getLevel();
+    /**
+     * Remove sequence
+     * 
+     * @param sequence
+     *            sequence to remove
+     * @return
+     *         node
+     */
+    public Node remove(Sequence sequence);
+
+
+    /**
+     * Search node
+     * 
+     * @param command
+     *            command to search
+     */
+    public void search(SearchSequence command);
+
+
+    /**
+     * set node level
+     * 
+     * @param level
+     *            node level
+     */
+    public void setLevel(int level);
+
+
+    /**
+     * return level
+     * 
+     * @return
+     *         level
+     */
+    public int getLevel();
 }
