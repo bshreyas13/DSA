@@ -1,0 +1,5 @@
+insert A
+insert AA
+insert AAGT
+insert A
+print

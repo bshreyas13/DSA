@@ -64,12 +64,15 @@ public class Print {
         }
         String text = "";
         String metadata = "";
+
         if (node instanceof InternalNode) {
             text = "I";
         }
+
         else if (node instanceof EmptyNode) {
             text = "E";
         }
+
         else if (node instanceof LeafNode) {
             text = ((LeafNode)node).getSequence().toString();
             if (printMode == PrintMode.LENGTH) {
@@ -83,10 +86,13 @@ public class Print {
                     char c = chars[i];
                     metadata += String.format("%c:%.2f ", c, charStat(text, c));
                 }
-                metadata = metadata.trim();
             }
         }
-        System.out.println(String.format("%s%s %s", spaces, text, metadata));
+        metadata = metadata.trim();
+        if (metadata.length() > 0) {
+            metadata = " " + metadata;
+        }
+        System.out.println(String.format("%s%s%s", spaces, text, metadata));
     }
 
 

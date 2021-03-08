@@ -29,6 +29,7 @@ public class DNAtree {
      */
     public static void main(String[] args) {
         try {
+            tree = new Tree();
             process(args[0]);
             success = true;
         }
@@ -44,7 +45,6 @@ public class DNAtree {
      * @throws Exception
      */
     private static void process(String fileName) throws Exception {
-        tree = new Tree();
         File f = new File(fileName);
         Scanner sc = new Scanner(f);
         while (sc.hasNextLine()) {
@@ -54,7 +54,6 @@ public class DNAtree {
             }
         }
         sc.close();
-        tree.clear();
     }
 
 

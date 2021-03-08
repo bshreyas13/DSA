@@ -33,7 +33,7 @@ public class EmptyNode implements Node {
 
     /**
      * @param sequence
-     *            sequence to remove, display as no sequence found becasue empty
+     *            sequence to remove, display as no sequence found because empty
      *            node
      * @return
      *         return node

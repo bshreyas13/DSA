@@ -114,6 +114,8 @@ public class InternalNode implements Node {
      */
     @Override
     public Node insert(Sequence sequence) {
+        // System.out.println(String.format("Position %d, sequence %s", sequence
+        // .getPosition(), sequence));
         if (sequence.hasNext()) {
             final char sequenceChar = sequence.next();
             Node child = getChild(sequenceChar);
@@ -131,6 +133,7 @@ public class InternalNode implements Node {
             }
         }
         else {
+            // System.out.println("insert dollor");
             insertDollor(sequence);
         }
         return this;
@@ -146,6 +149,9 @@ public class InternalNode implements Node {
     private Sequence replaceSequence(Sequence replaceWith) {
         Sequence currentSequence = ((LeafNode)nodeD).getSequence();
         ((LeafNode)nodeD).setSequence(replaceWith);
+        // System.out.println(String.format("Replacing : %s->%s",
+        // currentSequence,
+        // replaceWith));
         return currentSequence;
     }
 
@@ -163,6 +169,7 @@ public class InternalNode implements Node {
             Print.sequenceAlreadyExists(sequence);
         }
         else {
+            // System.out.println("Node type" + nodeD.getClass());
             insert(replaceSequence(sequence));
         }
     }
@@ -212,8 +219,8 @@ public class InternalNode implements Node {
     public void search(SearchSequence sequence) {
         sequence.incrementNodesVisited();
         final Sequence searchSequence = sequence.getSearchSequence();
-        if (searchSequence.hasNext()) {
-            final char currentSearchChar = searchSequence.next();
+        if (searchSequence.hasNextExact()) {
+            final char currentSearchChar = searchSequence.nextExact();
             Node child = getChild(currentSearchChar);
             if (child != null) {
                 child.search(sequence);

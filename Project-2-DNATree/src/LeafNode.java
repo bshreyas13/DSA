@@ -112,18 +112,6 @@ public class LeafNode implements Node {
 
 
     /**
-     * to string implementation
-     * 
-     * @return
-     *         String
-     */
-    @Override
-    public String toString() {
-        return sequence.toString();
-    }
-
-
-    /**
      * set level
      * 
      * @param level
