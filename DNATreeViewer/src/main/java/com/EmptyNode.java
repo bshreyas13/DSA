@@ -1,3 +1,5 @@
+package com;
+
 /**
  * Represents the Empty node
  * 
@@ -9,6 +11,12 @@ public class EmptyNode implements Node {
      * node level
      */
     private int level;
+    private String type;
+
+    public EmptyNode() {
+        this.type="E";
+    }
+
 
     /**
      * Print node information
@@ -22,7 +30,8 @@ public class EmptyNode implements Node {
     /**
      * @param sequence
      *            sequence string to insert, return new leaf node
-     * @return inserted node
+     * @return
+     *         inserted node
      */
     @Override
     public Node insert(Sequence sequence) {
@@ -34,16 +43,10 @@ public class EmptyNode implements Node {
 
     /**
      * @param sequence
-<<<<<<< HEAD
-     *            sequence to remove, display as no sequence found becasue
-     *            empty node
-     * @return return node
-=======
      *            sequence to remove, display as no sequence found because empty
      *            node
      * @return
      *         return node
->>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      */
     @Override
     public Node remove(Sequence sequence) {
@@ -74,7 +77,8 @@ public class EmptyNode implements Node {
 
 
     /**
-     * @return return level
+     * @return
+     *         return level
      */
     @Override
     public int getLevel() {

@@ -1,0 +1,4 @@
+insert A
+insert AA
+insert AGCT
+insert A

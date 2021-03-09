@@ -1,14 +1,17 @@
-insert A
+insert T
 
 print
 
-insert AA
+insert TT
 
-insert A
+insert T
 
 print
-search A$
-insert A
+
+insert TCG
+
+insert T
+insert TAT
 
 print
 

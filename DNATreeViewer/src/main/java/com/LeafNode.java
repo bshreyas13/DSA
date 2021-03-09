@@ -1,3 +1,7 @@
+package com;
+
+import com.google.gson.annotations.Expose;
+
 /**
  * Represents the leaf node
  * 
@@ -8,7 +12,11 @@ public class LeafNode implements Node {
     /**
      * this node sequence
      */
+    @Expose(serialize = false)
     private Sequence sequence;
+    private String text;
+    private String type;
+
     /*
      * node level
      */
@@ -21,7 +29,9 @@ public class LeafNode implements Node {
      *            sequence of this leaf node
      */
     public LeafNode(Sequence sequence) {
+        type = "L";
         Print.log("Reached leaf node:" + sequence.toString());
+        this.text = sequence.toString();
         this.setSequence(sequence);
         Print.setInserted(this);
     }
@@ -39,7 +49,8 @@ public class LeafNode implements Node {
     /**
      * @param seq
      *            sequence to insert
-     * @return Node
+     * @return
+     *         Node
      */
     @Override
     public Node insert(Sequence seq) {
@@ -59,7 +70,8 @@ public class LeafNode implements Node {
      * 
      * @param seq
      *            sequence to remove
-     * @return node
+     * @return
+     *         node
      */
     @Override
     public Node remove(Sequence seq) {
@@ -92,7 +104,8 @@ public class LeafNode implements Node {
     /**
      * get sequence
      * 
-     * @return sequence
+     * @return
+     *         sequence
      */
     public Sequence getSequence() {
         return sequence;
@@ -111,20 +124,6 @@ public class LeafNode implements Node {
 
 
     /**
-<<<<<<< HEAD
-     * to string implementation
-     * 
-     * @return String
-     */
-    @Override
-    public String toString() {
-        return sequence.toString();
-    }
-
-
-    /**
-=======
->>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      * set level
      * 
      * @param level
@@ -140,7 +139,8 @@ public class LeafNode implements Node {
     /**
      * get level
      * 
-     * @return level
+     * @return
+     *         level
      */
     @Override
     public int getLevel() {

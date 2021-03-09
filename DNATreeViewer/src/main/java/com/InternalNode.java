@@ -1,3 +1,7 @@
+package com;
+
+import com.google.gson.annotations.Expose;
+
 /**
  * Represents the Internal Node
  * 
@@ -9,6 +13,7 @@ public class InternalNode implements Node {
      * occupied nodes limit
      */
     public static final int MIN_NODES = 1;
+    private String type;
     /**
      * node level
      */
@@ -42,6 +47,7 @@ public class InternalNode implements Node {
      *            new sequence to insert
      */
     public InternalNode(LeafNode parentNode, Sequence newSeq) {
+        type = "I";
         setA(new EmptyNode());
         setC(new EmptyNode());
         setG(new EmptyNode());
@@ -77,7 +83,8 @@ public class InternalNode implements Node {
     /**
      * @param c
      *            character to switch
-     * @return Child node based on the char
+     * @return
+     *         Child node based on the char
      */
     protected Node getChild(char c) {
         switch (c) {
@@ -125,8 +132,13 @@ public class InternalNode implements Node {
                 sequence));
 
             if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
-                .length() > sequence.length() && sequence.isPrefixOf(
-                    ((LeafNode)nodeD).getSequence())) {
+                .equals(sequence)) {
+                Print.sequenceAlreadyExists(sequence);
+            }
+
+            else if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD)
+                .getSequence().length() > sequence.length() && sequence
+                    .isPrefixOf(((LeafNode)nodeD).getSequence())) {
                 insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
             }
 
@@ -135,7 +147,6 @@ public class InternalNode implements Node {
                     "No characters remaining for %s, insert to dollor-1",
                     sequence));
                 insertPrefix(sequence);
-
             }
 
             else {
@@ -159,33 +170,34 @@ public class InternalNode implements Node {
      * 
      * @return
      *         count
-     
-    private int nonEmptyChilds() {
-        int nonEmptyChildren = 0;
-        if (nodeA instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeC instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeG instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeT instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeD instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-
-        return nonEmptyChildren;
-    }
-*/
+     * 
+     *         private int nonEmptyChilds() {
+     *         int nonEmptyChildren = 0;
+     *         if (nodeA instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeC instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeG instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeT instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeD instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     * 
+     *         return nonEmptyChildren;
+     *         }
+     */
 
     /**
      * @param newSeq
      *            change sequence
-     * @return return sequence
+     * @return
+     *         return sequence
      */
     private Sequence saveSmallSeqAndGetBigSeqFromDollor(Sequence newSeq) {
         Sequence currentSeq = ((LeafNode)nodeD).getSequence();
@@ -219,7 +231,8 @@ public class InternalNode implements Node {
 
 
     /**
-     * @param remove
+     * @param
+     * remove
      *            the sequence at this node iteratively
      */
     @Override
@@ -286,7 +299,8 @@ public class InternalNode implements Node {
      *            character to find child node
      * @param child
      *            child node
-     * @return return true if child was set
+     * @return
+     *         return true if child was set
      */
     public boolean setChild(char c, Node child) {
         switch (c) {
@@ -309,9 +323,6 @@ public class InternalNode implements Node {
 
 
     /**
-<<<<<<< HEAD
-     * @return return nodes occupied
-=======
      * @return
      *         return nodes occupied
      * 
@@ -319,11 +330,11 @@ public class InternalNode implements Node {
      *         return nodeA instanceof LeafNode && nodeC instanceof LeafNode
      *         && nodeG instanceof LeafNode && nodeT instanceof LeafNode;
      *         }
->>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      */
 
     /**
-     * @return return chidren
+     * @return
+     *         return chidren
      */
     private Node[] getChildren() {
         return new Node[] { nodeA, nodeC, nodeG, nodeT, nodeD };
@@ -331,7 +342,8 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return Node
+     * @return
+     *         Node
      */
     public Node getA() {
         return nodeA;
@@ -348,7 +360,8 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return C
+     * @return
+     *         C
      */
     public Node getC() {
         return nodeC;
@@ -365,7 +378,8 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return G
+     * @return
+     *         G
      */
     public Node getG() {
         return nodeG;
@@ -382,7 +396,8 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return get T
+     * @return
+     *         get T
      */
     public Node getT() {
         return nodeT;
@@ -399,7 +414,8 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return get Dollor
+     * @return
+     *         get Dollor
      */
     public Node getD() {
         return nodeD;
@@ -431,7 +447,8 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return level
+     * @return
+     *         level
      */
     @Override
     public int getLevel() {

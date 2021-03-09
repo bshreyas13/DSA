@@ -2,6 +2,7 @@ search AGCT
 insert TCG
 
 insert ACGT
+insert AA
 insert AAAA
 insert AA
 

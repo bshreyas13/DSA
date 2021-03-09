@@ -1,3 +1,4 @@
+package com;
 import java.io.File;
 import java.util.Scanner;
 
@@ -9,13 +10,14 @@ import java.util.Scanner;
  */
 public class DNAtree {
 
-    private static Tree tree = new Tree();
+    public static Tree tree = new Tree();
     private static boolean success;
 
     /**
      * get operation status
      * 
-     * @return operation status
+     * @return
+     *         operation status
      */
     public static boolean isSuccess() {
         return success;
@@ -24,7 +26,7 @@ public class DNAtree {
 
     /**
      * @param args
-     *            command line arguments expecting file name with commands
+     *            args command line arguments expecting file name with commands
      */
     public static void main(String[] args) {
         try {
