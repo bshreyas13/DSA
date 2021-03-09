@@ -4,6 +4,11 @@ insert TCG
 insert ACGT
 insert AAAA
 insert AA
+
+insert T
+insert TAT
+print 
+
 insert AAACCCCGGTGAAAACGTA
 insert ACTGGGAA
 insert AA

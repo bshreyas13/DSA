@@ -75,8 +75,7 @@ public class InternalNode implements Node {
     /**
      * @param c
      *            character to switch
-     * @return
-     *         Child node based on the char
+     * @return Child node based on the char
      */
     protected Node getChild(char c) {
         switch (c) {
@@ -123,7 +122,7 @@ public class InternalNode implements Node {
                 insert(replaceSequence(sequence));
             }
             else if (!sequence.hasNext() && (child instanceof LeafNode)
-                && (occupiedNodes() < MIN_NODES)) {
+                && (occupiedNodes() <= MIN_NODES)) {
                 insertDollor(sequence);
             }
             else {
@@ -140,8 +139,7 @@ public class InternalNode implements Node {
     /**
      * @param replaceWith
      *            change sequence
-     * @return
-     *         return sequence
+     * @return return sequence
      */
     private Sequence replaceSequence(Sequence replaceWith) {
         Sequence currentSequence = ((LeafNode)nodeD).getSequence();
@@ -169,8 +167,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @param
-     * remove
+     * @param remove
      *            the sequence at this node iteratively
      */
     @Override
@@ -237,8 +234,7 @@ public class InternalNode implements Node {
      *            character to find child node
      * @param child
      *            child node
-     * @return
-     *         return true if child was set
+     * @return return true if child was set
      */
     public boolean setChild(char c, Node child) {
         switch (c) {
@@ -261,8 +257,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         return nodes occupied
+     * @return return nodes occupied
      */
     private int occupiedNodes() {
         int occupiedNodes = 0;
@@ -283,8 +278,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         return chidren
+     * @return return chidren
      */
     private Node[] getChildren() {
         return new Node[] { nodeA, nodeC, nodeG, nodeT, nodeD };
@@ -292,8 +286,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         Node
+     * @return Node
      */
     public Node getA() {
         return nodeA;
@@ -310,8 +303,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         C
+     * @return C
      */
     public Node getC() {
         return nodeC;
@@ -328,8 +320,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         G
+     * @return G
      */
     public Node getG() {
         return nodeG;
@@ -346,8 +337,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         get T
+     * @return get T
      */
     public Node getT() {
         return nodeT;
@@ -364,8 +354,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         get Dollor
+     * @return get Dollor
      */
     public Node getD() {
         return nodeD;
@@ -397,8 +386,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         level
+     * @return level
      */
     @Override
     public int getLevel() {

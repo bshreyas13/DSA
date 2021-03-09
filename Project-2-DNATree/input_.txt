@@ -1,0 +1,16 @@
+insert A
+
+print
+
+insert AA
+
+insert A
+
+print
+search A$
+insert A
+
+print
+
+
+

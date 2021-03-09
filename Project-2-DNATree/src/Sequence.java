@@ -29,8 +29,7 @@ public class Sequence {
     /**
      * Return current character
      * 
-     * @return
-     *         current character
+     * @return current character
      */
     public char current() {
         return characters[position];
@@ -40,8 +39,7 @@ public class Sequence {
     /**
      * return next character
      * 
-     * @return
-     *         next character
+     * @return next character
      */
     public char next() {
         if (!hasNext()) {
@@ -54,8 +52,7 @@ public class Sequence {
     /**
      * return previous character
      * 
-     * @return
-     *         previous character
+     * @return previous character
      */
     public char prev() {
         if (!hasPrev()) {
@@ -68,8 +65,7 @@ public class Sequence {
     /**
      * check sequence has any characters
      * 
-     * @return
-     *         true if has false otherwise
+     * @return true if has false otherwise
      */
     public boolean hasNext() {
         return (position < characters.length);
@@ -79,8 +75,7 @@ public class Sequence {
     /**
      * Check has previous character
      * 
-     * @return
-     *         true if has false otherwise
+     * @return true if has false otherwise
      */
     public boolean hasPrev() {
         return position > 0;
@@ -90,8 +85,7 @@ public class Sequence {
     /**
      * return length
      * 
-     * @return
-     *         length of sequence
+     * @return length of sequence
      */
     public int length() {
         return characters.length;
@@ -101,8 +95,7 @@ public class Sequence {
     /**
      * String representation
      * 
-     * @return
-     *         String of sequence
+     * @return String of sequence
      */
     public String toString() {
         return new String(characters);
@@ -114,8 +107,7 @@ public class Sequence {
      * 
      * @param obj
      *            sequence
-     * @return
-     *         true if equal false otherwise
+     * @return true if equal false otherwise
      */
     public boolean equals(Object obj) {
         if (obj instanceof Sequence) {
@@ -128,8 +120,7 @@ public class Sequence {
     /**
      * Return positon
      * 
-     * @return
-     *         position
+     * @return position
      */
 
     public int getPosition() {
@@ -151,8 +142,7 @@ public class Sequence {
     /**
      * get sequence
      * 
-     * @return
-     *         String
+     * @return String
      */
     public String getSequence() {
         return new String(characters);
@@ -162,8 +152,7 @@ public class Sequence {
     /**
      * get characters
      * 
-     * @return
-     *         char array
+     * @return char array
      */
     public char[] getCharacters() {
         return characters;
@@ -175,8 +164,7 @@ public class Sequence {
      * 
      * @param other
      *            other sequence
-     * @return
-     *         true if prefix false otherwise
+     * @return true if prefix false otherwise
      */
     public boolean isPrefixOf(Sequence other) {
         return other.toString().startsWith(new String(characters));

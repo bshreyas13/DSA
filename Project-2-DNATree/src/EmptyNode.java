@@ -22,8 +22,7 @@ public class EmptyNode implements Node {
     /**
      * @param sequence
      *            sequence string to insert, return new leaf node
-     * @return
-     *         inserted node
+     * @return inserted node
      */
     @Override
     public Node insert(Sequence sequence) {
@@ -33,10 +32,9 @@ public class EmptyNode implements Node {
 
     /**
      * @param sequence
-     *            sequence to remove, display as no sequence found becasue empty
-     *            node
-     * @return
-     *         return node
+     *            sequence to remove, display as no sequence found becasue
+     *            empty node
+     * @return return node
      */
     @Override
     public Node remove(Sequence sequence) {
@@ -67,8 +65,7 @@ public class EmptyNode implements Node {
 
 
     /**
-     * @return
-     *         return level
+     * @return return level
      */
     @Override
     public int getLevel() {
