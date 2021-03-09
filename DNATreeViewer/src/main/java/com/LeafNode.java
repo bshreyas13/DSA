@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 
 /**
  * Represents the leaf node
- * 
+ *
  * @author {bshreyas and veerad}
  * @version 2021-03-07
  */
@@ -12,26 +12,22 @@ public class LeafNode implements Node {
     /**
      * this node sequence
      */
-    @Expose(serialize = false)
     private Sequence sequence;
-    private String text;
-    private String type;
 
     /*
      * node level
      */
     private int level;
+    private String type;
 
     /**
      * leaf node constructor
-     * 
-     * @param sequence
-     *            sequence of this leaf node
+     *
+     * @param sequence sequence of this leaf node
      */
     public LeafNode(Sequence sequence) {
         type = "L";
         Print.log("Reached leaf node:" + sequence.toString());
-        this.text = sequence.toString();
         this.setSequence(sequence);
         Print.setInserted(this);
     }
@@ -47,18 +43,15 @@ public class LeafNode implements Node {
 
 
     /**
-     * @param seq
-     *            sequence to insert
-     * @return
-     *         Node
+     * @param seq sequence to insert
+     * @return Node
      */
     @Override
     public Node insert(Sequence seq) {
         if (this.sequence.equals(seq)) {
             Print.sequenceAlreadyExists(seq);
             return this;
-        }
-        else {
+        } else {
             Print.log("Leaf node creating internal node to insert " + seq);
             return new InternalNode(this, seq);
         }
@@ -67,19 +60,16 @@ public class LeafNode implements Node {
 
     /**
      * Remove sequence
-     * 
-     * @param seq
-     *            sequence to remove
-     * @return
-     *         node
+     *
+     * @param seq sequence to remove
+     * @return node
      */
     @Override
     public Node remove(Sequence seq) {
         if (this.sequence.equals(seq)) {
             Print.info(String.format("sequence %s removed", seq));
             return new EmptyNode();
-        }
-        else {
+        } else {
             Print.noSeqFound(seq);
             return this;
         }
@@ -88,14 +78,14 @@ public class LeafNode implements Node {
 
     /**
      * search node
-     * 
+     *
      * @param seq
      */
     @Override
     public void search(SearchSequence seq) {
         seq.incrementNodesVisited();
         if ((seq.isExactMatch() && this.sequence.equals(seq
-            .getSearchSequence())) || !seq.isExactMatch()) {
+                .getSearchSequence())) || !seq.isExactMatch()) {
             seq.addMatch(this.sequence);
         }
     }
@@ -103,9 +93,8 @@ public class LeafNode implements Node {
 
     /**
      * get sequence
-     * 
-     * @return
-     *         sequence
+     *
+     * @return sequence
      */
     public Sequence getSequence() {
         return sequence;
@@ -114,9 +103,8 @@ public class LeafNode implements Node {
 
     /**
      * set sequence
-     * 
-     * @param sequence
-     *            sequence
+     *
+     * @param sequence sequence
      */
     public void setSequence(Sequence sequence) {
         this.sequence = sequence;
@@ -125,10 +113,8 @@ public class LeafNode implements Node {
 
     /**
      * set level
-     * 
-     * @param level
-     *            level
-     * 
+     *
+     * @param level level
      */
     @Override
     public void setLevel(int level) {
@@ -138,9 +124,8 @@ public class LeafNode implements Node {
 
     /**
      * get level
-     * 
-     * @return
-     *         level
+     *
+     * @return level
      */
     @Override
     public int getLevel() {
