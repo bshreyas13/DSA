@@ -6,7 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
-	<classpathentry kind="lib" path="/Users/nagendradurgada/Documents/GIT Shreyas/DSA_2_21_2021/DSA/Project-2-DNATree/lib/student.jar"/>
+	<classpathentry kind="lib" path="lib/student.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
