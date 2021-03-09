@@ -1,3 +1,7 @@
+package com;
+
+import com.google.gson.annotations.Expose;
+
 /**
  * Represents the Internal Node
  * 
@@ -9,6 +13,7 @@ public class InternalNode implements Node {
      * occupied nodes limit
      */
     public static final int MIN_NODES = 1;
+    private String type;
     /**
      * node level
      */
@@ -42,6 +47,7 @@ public class InternalNode implements Node {
      *            new sequence to insert
      */
     public InternalNode(LeafNode parentNode, Sequence newSeq) {
+        type = "I";
         setA(new EmptyNode());
         setC(new EmptyNode());
         setG(new EmptyNode());
@@ -126,8 +132,13 @@ public class InternalNode implements Node {
                 sequence));
 
             if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
-                .length() > sequence.length() && sequence.isPrefixOf(
-                    ((LeafNode)nodeD).getSequence())) {
+                .equals(sequence)) {
+                Print.sequenceAlreadyExists(sequence);
+            }
+
+            else if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD)
+                .getSequence().length() > sequence.length() && sequence
+                    .isPrefixOf(((LeafNode)nodeD).getSequence())) {
                 insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
             }
 
@@ -159,28 +170,28 @@ public class InternalNode implements Node {
      * 
      * @return
      *         count
-     
-    private int nonEmptyChilds() {
-        int nonEmptyChildren = 0;
-        if (nodeA instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeC instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeG instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeT instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeD instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-
-        return nonEmptyChildren;
-    }
-*/
+     * 
+     *         private int nonEmptyChilds() {
+     *         int nonEmptyChildren = 0;
+     *         if (nodeA instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeC instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeG instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeT instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeD instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     * 
+     *         return nonEmptyChildren;
+     *         }
+     */
 
     /**
      * @param newSeq

@@ -1,3 +1,4 @@
+package com;
 import java.io.File;
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ import java.util.Scanner;
  */
 public class DNAtree {
 
-    private static Tree tree = new Tree();
+    public static Tree tree = new Tree();
     private static boolean success;
 
     /**

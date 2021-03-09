@@ -1,3 +1,7 @@
+package com;
+
+import com.google.gson.annotations.Expose;
+
 /**
  * Represents the Sequence
  * 
@@ -13,6 +17,7 @@ public class Sequence {
     /**
      * Characters to hold for this sequence
      */
+    @Expose(serialize = false)
     private final char[] characters;
 
     /**

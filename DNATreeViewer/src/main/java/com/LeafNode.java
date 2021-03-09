@@ -1,3 +1,7 @@
+package com;
+
+import com.google.gson.annotations.Expose;
+
 /**
  * Represents the leaf node
  * 
@@ -8,7 +12,11 @@ public class LeafNode implements Node {
     /**
      * this node sequence
      */
+    @Expose(serialize = false)
     private Sequence sequence;
+    private String text;
+    private String type;
+
     /*
      * node level
      */
@@ -21,7 +29,9 @@ public class LeafNode implements Node {
      *            sequence of this leaf node
      */
     public LeafNode(Sequence sequence) {
+        type = "L";
         Print.log("Reached leaf node:" + sequence.toString());
+        this.text = sequence.toString();
         this.setSequence(sequence);
         Print.setInserted(this);
     }

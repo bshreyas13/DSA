@@ -1,3 +1,5 @@
+package com;
+
 /**
  * Represents the Empty node
  * 
@@ -9,6 +11,12 @@ public class EmptyNode implements Node {
      * node level
      */
     private int level;
+    private String type;
+
+    public EmptyNode() {
+        this.type="E";
+    }
+
 
     /**
      * Print node information
