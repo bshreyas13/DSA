@@ -1,9 +1,7 @@
-insert T
-
-print
-
+insert TTAC
+insert TTA
 insert TT
-
+print
 insert T
 
 print

@@ -1,3 +1,4 @@
+
 /**
  * Represents the Internal Node
  * 
@@ -123,10 +124,14 @@ public class InternalNode implements Node {
             Node child = getChild(c);
             Print.log(String.format("Got child %s for %s", child.toString(),
                 sequence));
-
             if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
-                .length() > sequence.length() && sequence.isPrefixOf(
-                    ((LeafNode)nodeD).getSequence())) {
+                .equals(sequence)) {
+                Print.sequenceAlreadyExists(sequence);
+            }
+
+            else if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD)
+                .getSequence().length() > sequence.length() && sequence
+                    .isPrefixOf(((LeafNode)nodeD).getSequence())) {
                 insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
             }
 
@@ -159,28 +164,28 @@ public class InternalNode implements Node {
      * 
      * @return
      *         count
-     
-    private int nonEmptyChilds() {
-        int nonEmptyChildren = 0;
-        if (nodeA instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeC instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeG instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeT instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeD instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-
-        return nonEmptyChildren;
-    }
-*/
+     * 
+     *         private int nonEmptyChilds() {
+     *         int nonEmptyChildren = 0;
+     *         if (nodeA instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeC instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeG instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeT instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeD instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     * 
+     *         return nonEmptyChildren;
+     *         }
+     */
 
     /**
      * @param newSeq
@@ -309,9 +314,10 @@ public class InternalNode implements Node {
 
 
     /**
-<<<<<<< HEAD
+     * <<<<<<< HEAD
+     * 
      * @return return nodes occupied
-=======
+     *         =======
      * @return
      *         return nodes occupied
      * 
@@ -319,7 +325,7 @@ public class InternalNode implements Node {
      *         return nodeA instanceof LeafNode && nodeC instanceof LeafNode
      *         && nodeG instanceof LeafNode && nodeT instanceof LeafNode;
      *         }
->>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
+     *         >>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      */
 
     /**
