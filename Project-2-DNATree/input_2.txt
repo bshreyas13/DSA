@@ -37,6 +37,9 @@ insert TAT
 
 print
 
+insert GAT
+insert CACTACG
+insert CACTACGT
 
 
 

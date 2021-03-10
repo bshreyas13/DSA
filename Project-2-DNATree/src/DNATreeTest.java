@@ -12,8 +12,8 @@ public class DNATreeTest extends TestCase {
      */
     public void testRInit() {
 
-        String[] fileNames = { "input.txt",
-             //"input_.txt"
+        String[] fileNames = { //"input_2.txt",
+             "input_.txt"
         };
 
         for (String f : fileNames) {

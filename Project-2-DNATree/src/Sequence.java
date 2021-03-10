@@ -1,6 +1,7 @@
+
 /**
  * Represents the Sequence
- * 
+ *
  * @author {bshreyas and veerad}
  * @version 2021-03-07
  */
@@ -9,6 +10,7 @@ public class Sequence {
      * Current position of sequence
      */
     private int position = 0;
+    private String text;
 
     /**
      * Characters to hold for this sequence
@@ -17,18 +19,19 @@ public class Sequence {
 
     /**
      * constructor
-     * 
+     *
      * @param sequence
      *            sequence to save
      */
     public Sequence(String sequence) {
         characters = sequence.toCharArray();
+        text = sequence;
     }
 
 
     /**
      * Return current character
-     * 
+     *
      * @return current character
      */
     public char current() {
@@ -38,7 +41,7 @@ public class Sequence {
 
     /**
      * return next character
-     * 
+     *
      * @return next character
      */
     public char next() {
@@ -51,7 +54,7 @@ public class Sequence {
 
     /**
      * return previous character
-     * 
+     *
      * @return previous character
      */
     public char prev() {
@@ -64,7 +67,7 @@ public class Sequence {
 
     /**
      * check sequence has any characters
-     * 
+     *
      * @return true if has false otherwise
      */
     public boolean hasNext() {
@@ -74,7 +77,7 @@ public class Sequence {
 
     /**
      * Check has previous character
-     * 
+     *
      * @return true if has false otherwise
      */
     public boolean hasPrev() {
@@ -84,7 +87,7 @@ public class Sequence {
 
     /**
      * return length
-     * 
+     *
      * @return length of sequence
      */
     public int length() {
@@ -94,7 +97,7 @@ public class Sequence {
 
     /**
      * String representation
-     * 
+     *
      * @return String of sequence
      */
     public String toString() {
@@ -104,7 +107,7 @@ public class Sequence {
 
     /**
      * Check two sequence
-     * 
+     *
      * @param obj
      *            sequence
      * @return true if equal false otherwise
@@ -119,7 +122,7 @@ public class Sequence {
 
     /**
      * Return positon
-     * 
+     *
      * @return position
      */
 
@@ -130,7 +133,7 @@ public class Sequence {
 
     /**
      * get sequence
-     * 
+     *
      * @return String
      */
     public String getSequence() {
@@ -140,7 +143,7 @@ public class Sequence {
 
     /**
      * check other sequence is prefix of this sequence
-     * 
+     *
      * @param other
      *            other sequence
      * @return true if prefix false otherwise
