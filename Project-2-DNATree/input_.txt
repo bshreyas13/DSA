@@ -1,19 +1,15 @@
 
-insert TTAC
-print
-insert TTA
-print
-insert TT
-print
-insert T
+
+insert GAT
 print
 
-insert TCG
-
-insert T
-insert TAT
-
+insert CACCTGC
 print
 
+insert CACTACG
+print
+
+insert CACTACGT
+print
 
 

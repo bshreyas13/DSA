@@ -8164,3 +8164,902 @@ false
 </Property>
 </Properties>
 </SensorData>
+<SensorData>
+<Timestamp>
+1615394397214
+</Timestamp>
+<Runtime>
+1615394397214
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence GAT inserted at level 0
+tree dump:
+GAT
+sequence CACTACG inserted at level 1
+tree dump:
+I
+  E
+  CACTACG
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 2
+tree dump:
+I
+  E
+  I
+    CACTACGT
+    E
+    E
+    E
+    CACTACG
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615394397215
+</Timestamp>
+<Runtime>
+1615394397215
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395858728
+</Timestamp>
+<Runtime>
+1615395858728
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence TTAC inserted at level 0
+tree dump:
+TTAC
+sequence TTA inserted at level 1
+tree dump:
+I
+  E
+  E
+  E
+  TTAC
+  TTA
+sequence TT inserted at level 2
+tree dump:
+I
+  E
+  E
+  E
+  I
+    E
+    E
+    E
+    TTAC
+    TTA
+  TT
+sequence T inserted at level 3
+tree dump:
+I
+  E
+  E
+  E
+  I
+    E
+    E
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence TCG inserted at level 2
+sequence T already exists
+sequence TAT inserted at level 2
+tree dump:
+I
+  E
+  E
+  E
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence GAT inserted at level 1
+tree dump:
+I
+  E
+  E
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence CACTACG inserted at level 1
+tree dump:
+I
+  E
+  CACTACG
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence CACTACGT inserted at level 2
+tree dump:
+I
+  E
+  I
+    CACTACGT
+    E
+    E
+    E
+    CACTACG
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395858729
+</Timestamp>
+<Runtime>
+1615395858729
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395901500
+</Timestamp>
+<Runtime>
+1615395901500
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence TTAC inserted at level 0
+tree dump:
+TTAC
+sequence TTA inserted at level 1
+tree dump:
+I
+  E
+  E
+  E
+  TTAC
+  TTA
+sequence TT inserted at level 2
+tree dump:
+I
+  E
+  E
+  E
+  I
+    E
+    E
+    E
+    TTAC
+    TTA
+  TT
+sequence T inserted at level 3
+tree dump:
+I
+  E
+  E
+  E
+  I
+    E
+    E
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence TCG inserted at level 2
+sequence T already exists
+sequence TAT inserted at level 2
+tree dump:
+I
+  E
+  E
+  E
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence GAT inserted at level 1
+tree dump:
+I
+  E
+  E
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence CCTGC inserted at level 1
+sequence CACTACG inserted at level 2
+tree dump:
+I
+  E
+  I
+    CACTACG
+    CCTGC
+    E
+    E
+    E
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence CACTACGT inserted at level 3
+tree dump:
+I
+  E
+  I
+    I
+      E
+      CACTACGT
+      E
+      E
+      CACTACG
+    CCTGC
+    E
+    E
+    E
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395901500
+</Timestamp>
+<Runtime>
+1615395901500
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395935793
+</Timestamp>
+<Runtime>
+1615395935793
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence TTAC inserted at level 0
+tree dump:
+TTAC
+sequence TTA inserted at level 1
+tree dump:
+I
+  E
+  E
+  E
+  TTAC
+  TTA
+sequence TT inserted at level 2
+tree dump:
+I
+  E
+  E
+  E
+  I
+    E
+    E
+    E
+    TTAC
+    TTA
+  TT
+sequence T inserted at level 3
+tree dump:
+I
+  E
+  E
+  E
+  I
+    E
+    E
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence TCG inserted at level 2
+sequence T already exists
+sequence TAT inserted at level 2
+tree dump:
+I
+  E
+  E
+  E
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence GAT inserted at level 1
+tree dump:
+I
+  E
+  E
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence CACCTGC inserted at level 1
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  I
+    TAT
+    TCG
+    E
+    I
+      TTAC
+      E
+      E
+      E
+      TTA
+    TT
+  T
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395935794
+</Timestamp>
+<Runtime>
+1615395935794
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395997734
+</Timestamp>
+<Runtime>
+1615395997734
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence GAT inserted at level 0
+tree dump:
+GAT
+sequence CACCTGC inserted at level 1
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615395997735
+</Timestamp>
+<Runtime>
+1615395997735
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>

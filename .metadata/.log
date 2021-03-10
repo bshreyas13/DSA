@@ -11281,3 +11281,2004 @@ java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
 	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
 	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
 	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:27:03.433
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:27:33.431
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:28:03.429
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:28:33.434
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:29:03.436
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:29:33.436
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:30:03.435
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:30:33.437
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:31:03.430
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:31:33.441
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:32:03.440
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:32:33.439
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:33:03.441
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:33:33.440
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:34:03.446
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:34:33.442
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:35:03.446
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:35:33.443
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:36:03.440
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:36:33.444
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:37:03.444
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:37:33.447
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:38:03.448
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:38:33.445
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:39:03.449
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:39:33.451
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:40:03.452
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:40:33.449
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:41:03.449
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:41:33.452
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:42:03.451
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:42:33.454
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:43:03.452
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:43:33.458
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:44:03.455
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:44:33.455
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:45:03.444
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:45:33.460
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:46:03.446
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:46:33.455
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:47:03.460
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:47:33.465
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:48:03.458
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:48:33.458
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:49:03.457
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:49:33.465
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:50:03.465
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:50:33.456
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:51:03.456
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:51:33.459
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:52:03.454
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:52:33.460
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:53:03.455
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:53:33.460
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:54:03.460
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:54:33.458
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:55:03.461
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:55:33.461
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:56:03.466
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:56:33.464
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:57:03.463
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:57:33.462
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:58:03.463
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:58:33.462
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:59:03.461
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 11:59:33.464
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:00:03.469
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:00:33.472
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:01:03.465
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:01:33.467
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:02:03.467
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:02:33.464
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:03:03.468
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:03:33.469
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:04:03.467
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:04:33.466
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:05:03.459
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:05:33.466
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:06:03.465
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:06:33.464
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:07:03.467
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:07:33.471
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:08:03.475
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:08:33.469
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:09:03.465
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:09:33.469
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-10 12:10:03.471
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
