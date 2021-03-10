@@ -39,8 +39,7 @@ public class LeafNode implements Node {
     /**
      * @param seq
      *            sequence to insert
-     * @return
-     *         Node
+     * @return Node
      */
     @Override
     public Node insert(Sequence seq) {
@@ -60,8 +59,7 @@ public class LeafNode implements Node {
      * 
      * @param seq
      *            sequence to remove
-     * @return
-     *         node
+     * @return node
      */
     @Override
     public Node remove(Sequence seq) {
@@ -94,8 +92,7 @@ public class LeafNode implements Node {
     /**
      * get sequence
      * 
-     * @return
-     *         sequence
+     * @return sequence
      */
     public Sequence getSequence() {
         return sequence;
@@ -114,6 +111,20 @@ public class LeafNode implements Node {
 
 
     /**
+<<<<<<< HEAD
+     * to string implementation
+     * 
+     * @return String
+     */
+    @Override
+    public String toString() {
+        return sequence.toString();
+    }
+
+
+    /**
+=======
+>>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      * set level
      * 
      * @param level
@@ -129,8 +140,7 @@ public class LeafNode implements Node {
     /**
      * get level
      * 
-     * @return
-     *         level
+     * @return level
      */
     @Override
     public int getLevel() {

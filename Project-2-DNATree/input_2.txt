@@ -2,8 +2,10 @@ search AGCT
 insert TCG
 
 insert ACGT
+insert AA
 insert AAAA
 insert AA
+
 insert AAACCCCGGTGAAAACGTA
 insert ACTGGGAA
 insert AA
@@ -19,4 +21,22 @@ print stats
 print lengths
 
 remove A
+
+insert TTAC
+insert TTA
+insert TT
+print
+insert T
+
+print
+
+insert TCG
+
+insert T
+insert TAT
+
+print
+
+
+
 

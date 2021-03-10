@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 
 /**
  * Represents the Sequence
- * 
+ *
  * @author {bshreyas and veerad}
  * @version 2021-03-07
  */
@@ -13,6 +13,7 @@ public class Sequence {
      * Current position of sequence
      */
     private int position = 0;
+    private String text;
 
     /**
      * Characters to hold for this sequence
@@ -22,20 +23,19 @@ public class Sequence {
 
     /**
      * constructor
-     * 
-     * @param sequence
-     *            sequence to save
+     *
+     * @param sequence sequence to save
      */
     public Sequence(String sequence) {
         characters = sequence.toCharArray();
+        text = sequence;
     }
 
 
     /**
      * Return current character
-     * 
-     * @return
-     *         current character
+     *
+     * @return current character
      */
     public char current() {
         return characters[position];
@@ -44,9 +44,8 @@ public class Sequence {
 
     /**
      * return next character
-     * 
-     * @return
-     *         next character
+     *
+     * @return next character
      */
     public char next() {
         if (!hasNext()) {
@@ -58,9 +57,8 @@ public class Sequence {
 
     /**
      * return previous character
-     * 
-     * @return
-     *         previous character
+     *
+     * @return previous character
      */
     public char prev() {
         if (!hasPrev()) {
@@ -72,9 +70,8 @@ public class Sequence {
 
     /**
      * check sequence has any characters
-     * 
-     * @return
-     *         true if has false otherwise
+     *
+     * @return true if has false otherwise
      */
     public boolean hasNext() {
         return (position < characters.length);
@@ -83,9 +80,8 @@ public class Sequence {
 
     /**
      * Check has previous character
-     * 
-     * @return
-     *         true if has false otherwise
+     *
+     * @return true if has false otherwise
      */
     public boolean hasPrev() {
         return position > 0;
@@ -94,9 +90,8 @@ public class Sequence {
 
     /**
      * return length
-     * 
-     * @return
-     *         length of sequence
+     *
+     * @return length of sequence
      */
     public int length() {
         return characters.length;
@@ -105,9 +100,8 @@ public class Sequence {
 
     /**
      * String representation
-     * 
-     * @return
-     *         String of sequence
+     *
+     * @return String of sequence
      */
     public String toString() {
         return new String(characters);
@@ -116,15 +110,13 @@ public class Sequence {
 
     /**
      * Check two sequence
-     * 
-     * @param obj
-     *            sequence
-     * @return
-     *         true if equal false otherwise
+     *
+     * @param obj sequence
+     * @return true if equal false otherwise
      */
     public boolean equals(Object obj) {
         if (obj instanceof Sequence) {
-            return (this.toString().equals(((Sequence)obj).toString()));
+            return (this.toString().equals(((Sequence) obj).toString()));
         }
         return super.equals(obj);
     }
@@ -132,9 +124,8 @@ public class Sequence {
 
     /**
      * Return positon
-     * 
-     * @return
-     *         position
+     *
+     * @return position
      */
 
     public int getPosition() {
@@ -144,9 +135,8 @@ public class Sequence {
 
     /**
      * get sequence
-     * 
-     * @return
-     *         String
+     *
+     * @return String
      */
     public String getSequence() {
         return new String(characters);
@@ -155,11 +145,9 @@ public class Sequence {
 
     /**
      * check other sequence is prefix of this sequence
-     * 
-     * @param other
-     *            other sequence
-     * @return
-     *         true if prefix false otherwise
+     *
+     * @param other other sequence
+     * @return true if prefix false otherwise
      */
     public boolean isPrefixOf(Sequence other) {
         return other.toString().startsWith(new String(characters));

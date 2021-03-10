@@ -15,8 +15,7 @@ public class DNAtree {
     /**
      * get operation status
      * 
-     * @return
-     *         operation status
+     * @return operation status
      */
     public static boolean isSuccess() {
         return success;
@@ -25,7 +24,7 @@ public class DNAtree {
 
     /**
      * @param args
-     *            args command line arguments expecting file name with commands
+     *            command line arguments expecting file name with commands
      */
     public static void main(String[] args) {
         try {

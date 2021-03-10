@@ -1,0 +1,17 @@
+insert TTAC
+insert TTA
+insert TT
+print
+insert T
+
+print
+
+insert TCG
+
+insert T
+insert TAT
+
+print
+
+
+

@@ -39,8 +39,7 @@ public class MyList<E> {
     /**
      * Method to get length
      * 
-     * @return
-     *         length of list
+     * @return length of list
      */
     public int length() {
         return size;
@@ -61,8 +60,7 @@ public class MyList<E> {
      * 
      * @param i
      *            index
-     * @return
-     *         element
+     * @return element
      */
     @SuppressWarnings("unchecked")
     public E get(int i) {
