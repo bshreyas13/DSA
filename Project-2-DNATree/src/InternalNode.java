@@ -131,12 +131,12 @@ public class InternalNode implements Node {
                 insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
             }
 
-            else if (!sequence.hasNext() && (child instanceof LeafNode)) {
+            /*else if (!sequence.hasNext() && (child instanceof LeafNode)) {
                 Print.log(String.format(
                     "No characters remaining for %s, insert to dollor-1",
                     sequence));
                 insertPrefix(sequence);
-            }
+            }*/
 
             else {
                 Print.log(String.format("setting child %s for %s", child
