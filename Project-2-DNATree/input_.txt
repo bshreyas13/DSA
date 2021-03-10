@@ -1,4 +1,20 @@
+## 0th node is always inserted correctly##
+insert AAAA
 
+insert ACGT
+
+##issue##
+insert AACCGT
+
+print
+
+##Has depth issue but has to goes correctly into same level as previous##
+insert AACCAGT
+
+print
+
+
+##Second set##
 
 insert GAT
 print
@@ -6,10 +22,14 @@ print
 insert CACCTGC
 print
 
+##issue##
 insert CACTACG
 print
 
+##No issue##
 insert CACTACGT
 print
 
-
+## No issue##
+insert CACG
+print

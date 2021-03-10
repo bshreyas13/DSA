@@ -1,980 +1,9 @@
 <SensorData>
 <Timestamp>
-1615391362496
+1615400048125
 </Timestamp>
 <Runtime>
-1615391362496
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/EmptyNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-EmptyNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391363763
-</Timestamp>
-<Runtime>
-1615391363763
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-InternalNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391364994
-</Timestamp>
-<Runtime>
-1615391364994
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-LeafNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391366044
-</Timestamp>
-<Runtime>
-1615391366044
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/MyList.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-MyList.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391367288
-</Timestamp>
-<Runtime>
-1615391367288
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391369752
-</Timestamp>
-<Runtime>
-1615391369752
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Print.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Print.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391370980
-</Timestamp>
-<Runtime>
-1615391370980
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/PrintMode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-PrintMode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391372316
-</Timestamp>
-<Runtime>
-1615391372316
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/SearchSequence.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SearchSequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391373518
-</Timestamp>
-<Runtime>
-1615391373518
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Sequence.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Sequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391374678
-</Timestamp>
-<Runtime>
-1615391374678
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Tree.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Tree.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391409892
-</Timestamp>
-<Runtime>
-1615391409892
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Current-Statements
-</Name>
-<Value>
-2
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Assertions
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-TestCodeEdit
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-CommitHash
-</Name>
-<Value>
-22306e63fd0d0a8479bea2647686717a988f2280
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Size
-</Name>
-<Value>
-591
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Save
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391421019
-</Timestamp>
-<Runtime>
-1615391421019
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-sequence TCG inserted at level 0
-sequence ACGT inserted at level 1
-sequence AA inserted at level 2
-sequence AAAA inserted at level 3
-sequence AA already exists
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-sequence ACTGGGAA inserted at level 3
-sequence AA already exists
-sequence ACGT removed
-sequence ACCTT inserted at level 3
-sequence ACTTA inserted at level 4
-sequence TATA inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-# of nodes visited: 4
-sequence: AA
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-sequence A does not exist
-sequence TTAC inserted at level 2
-sequence TTA inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TT
-    E
-  E
-sequence T inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence TCG already exists
-sequence T already exists
-sequence TAT inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    I
-      E
-      E
-      E
-      TATA
-      TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TT
-    T
-  E
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391421020
-</Timestamp>
-<Runtime>
-1615391421020
+1615400048125
 </Runtime>
 <Tool>
 Eclipse
@@ -1009,190 +38,10 @@ DNATreeTest
 </SensorData>
 <SensorData>
 <Timestamp>
-1615391519956
+1615400327183
 </Timestamp>
 <Runtime>
-1615391519956
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Tree.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391522618
-</Timestamp>
-<Runtime>
-1615391522618
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Current-Statements
-</Name>
-<Value>
-2
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Assertions
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-TestCodeEdit
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-CommitHash
-</Name>
-<Value>
-37c6032e6d18ec94eb08571f00062d4527d8ddf9
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Size
-</Name>
-<Value>
-591
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Save
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391522979
-</Timestamp>
-<Runtime>
-1615391522979
+1615400327183
 </Runtime>
 <Tool>
 Eclipse
@@ -1228,6002 +77,8 @@ DNATreeTest
 ConsoleOutput
 </Name>
 <Value>
-sequence AGGATCC inserted at level 0
-sequence TTGACATACACACGGC inserted at level 1
-sequence GCGTATGAGCGTTTACT inserted at level 1
-sequence AGATCGCAATTGGACAC inserted at level 3
-sequence ACA inserted at level 2
-sequence TCAGACATTTACAAA inserted at level 2
-sequence CGATGAGTATAGA inserted at level 1
-sequence TACAT inserted at level 2
-sequence CGCAACACTC inserted at level 3
-sequence AGACCCAGGTAC inserted at level 4
-sequence GATCTGCGC inserted at level 2
-sequence GGAAGTGTCTGT inserted at level 2
-sequence ACTACC inserted at level 3
-sequence TC inserted at level 3
-sequence AGGTCACGGTT inserted at level 4
-sequence CTAGGTATTGAATCGA inserted at level 2
-sequence GAAATAGCGAAA inserted at level 3
-sequence CGTAAGCGAAGGGCA inserted at level 3
-sequence TG inserted at level 2
-sequence TGATCAAGC inserted at level 3
-sequence TACTC inserted at level 4
-sequence CA inserted at level 2
-sequence CC inserted at level 2
-sequence GGGCTA inserted at level 3
-sequence GGGATCTCGG inserted at level 4
-sequence CGACTGCCGCGTATG inserted at level 4
-sequence GGTATCA inserted at level 3
-sequence AACCCCGATGGG inserted at level 2
-sequence GACGTTTGTACGCCCA inserted at level 3
-sequence GGGTTCCAG inserted at level 4
-sequence CG inserted at level 3
-sequence GTCTTAGGTATAGG inserted at level 2
-sequence ACACTT inserted at level 4
-sequence TCAGAAAATCATAT inserted at level 6
-sequence AAC inserted at level 3
-sequence AAAGCTCACA inserted at level 3
-sequence ACCAGGCTGG inserted at level 3
-sequence ATCGATTA inserted at level 2
-sequence GGCCGGGGACTA inserted at level 3
-sequence TCAGTAAGAGGTGAC inserted at level 5
-sequence CGTAGTA inserted at level 5
-sequence CGGTGTAATCCCGCC inserted at level 3
-sequence TTCCTTGGA inserted at level 3
-sequence CTATCAACGT inserted at level 4
-sequence TAGCAT inserted at level 3
-sequence CTTCACTGAACTAACG inserted at level 3
-sequence CGTCCCGGTC inserted at level 4
-sequence CTT inserted at level 4
-sequence ACCGCGGCCCCTGG inserted at level 4
-sequence AAGTTTGAGACC inserted at level 3
-sequence ATCCATTCGCA inserted at level 4
-sequence CTATTGGCCTTCGGCCC inserted at level 5
-sequence ATATGCAGCA inserted at level 3
-sequence GTTTGCTTCTTCTCC inserted at level 3
-sequence ATATTATTACCGGGCTG inserted at level 5
-sequence TATTTAACCG inserted at level 3
-sequence TTGGACCC inserted at level 4
-sequence GCCACGCCGCG inserted at level 3
-sequence TAGCAATCCTACGCT inserted at level 6
-sequence GAATTAGACCA inserted at level 4
-sequence AGGCTGACACACGA inserted at level 4
-sequence CCGGGTGATTTTCTCGT inserted at level 3
-sequence AGT inserted at level 3
-# of nodes visited: 5
-sequence: ACACTT
-sequence GCG inserted at level 4
-sequence TCCTGACATTAGGC inserted at level 3
-sequence AGGTCC inserted at level 6
-sequence CGACAAGTGGTT inserted at level 5
-sequence CGTCGGTGAGCCGCGGA inserted at level 5
-sequence CGTGACCCC inserted at level 4
-sequence AGTCTG inserted at level 4
-sequence ACAGGAAG inserted at level 4
-sequence CCGGTAAGTTCGCATC inserted at level 5
-sequence ATATAATT inserted at level 5
-sequence CTT removed
-sequence TTCGTGGGGAGGTAAA inserted at level 4
-sequence TTAGAT inserted at level 3
-sequence CAAACAC inserted at level 3
-sequence TTACATAGA inserted at level 4
-sequence TCTCGTTGTAGCT inserted at level 3
-sequence ACCTCGTCAA inserted at level 4
-sequence TTGGCTGT inserted at level 5
-sequence AACCTACATTACGCT inserted at level 5
-sequence GTGTGTTG inserted at level 3
-sequence GTAC inserted at level 3
-sequence AACTTTTGTGAATA inserted at level 4
-sequence TGGGGCCCTTCAC inserted at level 3
-sequence AAGCTTTCAGTCAGTAT inserted at level 4
-sequence GATCAAATCG inserted at level 5
-sequence TTACATTTG inserted at level 7
-sequence CGGCAGCTACACAAAGA inserted at level 4
-sequence TGTACAGGAGATTGCAA inserted at level 3
-sequence GGCGTCGTGCCGT inserted at level 4
-sequence GCATCTGAC inserted at level 3
-sequence GAAGGGGAGCT inserted at level 4
-sequence GTGCT inserted at level 4
-sequence CGGGCTCGCG inserted at level 4
-sequence CGGAGTACGC inserted at level 4
-sequence GCATGCATA inserted at level 5
-sequence CCTT inserted at level 3
-sequence GACGACCTCA inserted at level 5
-sequence CTGTCGGC inserted at level 3
-sequence TAATGGCAGCCTTA inserted at level 3
-sequence GG inserted at level 3
-sequence GTGTAGTCGAA inserted at level 5
-sequence TCGATGG inserted at level 3
-sequence TTCC inserted at level 5
-sequence GA inserted at level 3
-sequence GC inserted at level 3
-sequence CTCCTGTCCT inserted at level 3
-sequence CCAATCA inserted at level 3
-sequence TCGTCAACA inserted at level 4
-sequence TGAACGAAT inserted at level 4
-sequence AAGCACGATATCAAGC inserted at level 5
-sequence CCCTAC inserted at level 3
-sequence AACC inserted at level 5
-sequence GG removed
-sequence GAATTGTCGGGCCAG inserted at level 6
-sequence GAGTACCAC inserted at level 3
-sequence CCAAGCCTGT inserted at level 5
-sequence C inserted at level 2
-sequence ACGACGACTCTCCGG inserted at level 3
-sequence CGGTT inserted at level 5
-sequence AAAAC inserted at level 4
-sequence GAGCAGTTCTTGGTTG inserted at level 4
-sequence GTATAGCGTCG inserted at level 4
-sequence TTCC removed
-sequence CTGACACACCGTT inserted at level 4
-sequence ATGTCCGTTTGATG inserted at level 3
-sequence CTTACTCCAACT inserted at level 4
-sequence T inserted at level 2
-sequence G inserted at level 2
-sequence TCGGGTGCACTTAAGTG inserted at level 4
-sequence TAG inserted at level 4
-# of nodes visited: 5
-sequence: GAGCAGTTCTTGGTTG
-sequence AGTGGC inserted at level 4
-sequence CGAGCCG inserted at level 4
-sequence TGTACGCGCAGC inserted at level 6
-sequence ACGTGTCT inserted at level 4
-sequence TGCGA inserted at level 3
-sequence TAGCTTTTGGCACTA inserted at level 5
-sequence CTAACCC inserted at level 4
-sequence AG inserted at level 3
-sequence AC inserted at level 3
-sequence CGGTT removed
-sequence AAAGGGTTTCCCCCC does not exist
-sequence GTCCCC inserted at level 4
-sequence GTCCCC already exists
-sequence CGTAGTATGCA inserted at level 6
-# of nodes visited: 5
-sequence: GTCCCC
-tree dump:
-I
-  I
-    I
-      I
-        AAAAC
-        E
-        AAAGCTCACA
-        E
-        E
-      I
-        E
-        I
-          E
-          AACCCCGATGGG
-          E
-          AACCTACATTACGCT
-          AACC
-        E
-        AACTTTTGTGAATA
-        E
-      I
-        E
-        I
-          AAGCACGATATCAAGC
-          E
-          E
-          AAGCTTTCAGTCAGTAT
-          E
-        E
-        AAGTTTGAGACC
-        E
-      E
-      AAC
-    I
-      I
-        E
-        ACACTT
-        ACAGGAAG
-        E
-        ACA
-      I
-        ACCAGGCTGG
-        E
-        ACCGCGGCCCCTGG
-        ACCTCGTCAA
-        E
-      I
-        ACGACGACTCTCCGG
-        E
-        E
-        ACGTGTCT
-        E
-      ACTACC
-      AC
-    I
-      I
-        E
-        AGACCCAGGTAC
-        E
-        AGATCGCAATTGGACAC
-        E
-      E
-      I
-        AGGATCC
-        AGGCTGACACACGA
-        E
-        I
-          E
-          I
-            AGGTCACGGTT
-            AGGTCC
-            E
-            E
-            E
-          E
-          E
-          E
-        E
-      I
-        E
-        AGTCTG
-        AGTGGC
-        E
-        AGT
-      AG
-    I
-      I
-        E
-        E
-        E
-        I
-          ATATAATT
-          E
-          ATATGCAGCA
-          ATATTATTACCGGGCTG
-          E
-        E
-      I
-        E
-        ATCCATTCGCA
-        ATCGATTA
-        E
-        E
-      ATGTCCGTTTGATG
-      E
-      E
-    E
-  I
-    I
-      CAAACAC
-      E
-      E
-      E
-      CA
-    I
-      I
-        I
-          E
-          E
-          CCAAGCCTGT
-          CCAATCA
-          E
-        E
-        E
-        E
-        E
-      CCCTAC
-      I
-        E
-        E
-        I
-          E
-          E
-          CCGGGTGATTTTCTCGT
-          CCGGTAAGTTCGCATC
-          E
-        E
-        E
-      CCTT
-      CC
-    I
-      I
-        E
-        I
-          CGACAAGTGGTT
-          E
-          E
-          CGACTGCCGCGTATG
-          E
-        CGAGCCG
-        CGATGAGTATAGA
-        E
-      CGCAACACTC
-      I
-        CGGAGTACGC
-        CGGCAGCTACACAAAGA
-        CGGGCTCGCG
-        CGGTGTAATCCCGCC
-        E
-      I
-        I
-          CGTAAGCGAAGGGCA
-          E
-          I
-            E
-            E
-            E
-            CGTAGTATGCA
-            CGTAGTA
-          E
-          E
-        I
-          E
-          CGTCCCGGTC
-          CGTCGGTGAGCCGCGGA
-          E
-          E
-        CGTGACCCC
-        E
-        E
-      CG
-    I
-      I
-        CTAACCC
-        E
-        CTAGGTATTGAATCGA
-        I
-          E
-          CTATCAACGT
-          E
-          CTATTGGCCTTCGGCCC
-          E
-        E
-      CTCCTGTCCT
-      I
-        CTGACACACCGTT
-        E
-        E
-        CTGTCGGC
-        E
-      I
-        CTTACTCCAACT
-        CTTCACTGAACTAACG
-        E
-        E
-        E
-      E
-    C
-  I
-    I
-      I
-        GAAATAGCGAAA
-        E
-        GAAGGGGAGCT
-        I
-          E
-          E
-          E
-          I
-            GAATTAGACCA
-            E
-            GAATTGTCGGGCCAG
-            E
-            E
-          E
-        E
-      I
-        E
-        E
-        I
-          GACGACCTCA
-          E
-          E
-          GACGTTTGTACGCCCA
-          E
-        E
-        E
-      I
-        E
-        GAGCAGTTCTTGGTTG
-        E
-        GAGTACCAC
-        E
-      I
-        E
-        I
-          GATCAAATCG
-          E
-          E
-          GATCTGCGC
-          E
-        E
-        E
-        E
-      GA
-    I
-      I
-        E
-        E
-        E
-        I
-          E
-          GCATCTGAC
-          GCATGCATA
-          E
-          E
-        E
-      GCCACGCCGCG
-      I
-        E
-        E
-        E
-        GCGTATGAGCGTTTACT
-        GCG
-      E
-      GC
-    I
-      GGAAGTGTCTGT
-      I
-        E
-        GGCCGGGGACTA
-        GGCGTCGTGCCGT
-        E
-        E
-      I
-        GGGATCTCGG
-        GGGCTA
-        E
-        GGGTTCCAG
-        E
-      GGTATCA
-      E
-    I
-      I
-        E
-        GTAC
-        E
-        GTATAGCGTCG
-        E
-      I
-        E
-        GTCCCC
-        E
-        GTCTTAGGTATAGG
-        E
-      I
-        E
-        GTGCT
-        E
-        I
-          GTGTAGTCGAA
-          E
-          GTGTGTTG
-          E
-          E
-        E
-      GTTTGCTTCTTCTCC
-      E
-    G
-  I
-    I
-      TAATGGCAGCCTTA
-      I
-        TACAT
-        E
-        E
-        TACTC
-        E
-      I
-        E
-        I
-          I
-            TAGCAATCCTACGCT
-            E
-            E
-            TAGCAT
-            E
-          E
-          E
-          TAGCTTTTGGCACTA
-          E
-        E
-        E
-        TAG
-      TATTTAACCG
-      E
-    I
-org.webcat.deveventtracker.OutputTruncated
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391522979
-</Timestamp>
-<Runtime>
-1615391522979
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391574961
-</Timestamp>
-<Runtime>
-1615391574961
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Sequence.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Sequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391681190
-</Timestamp>
-<Runtime>
-1615391681190
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-sequence TCG inserted at level 0
-sequence ACGT inserted at level 1
-sequence AA inserted at level 2
-sequence AAAA inserted at level 3
-sequence AA already exists
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-sequence ACTGGGAA inserted at level 3
-sequence AA already exists
-sequence ACGT removed
-sequence ACCTT inserted at level 3
-sequence ACTTA inserted at level 4
-sequence TATA inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-# of nodes visited: 4
-sequence: AA
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-sequence A does not exist
-sequence TTAC inserted at level 2
-sequence TTA inserted at level 3
-sequence TT inserted at level 4
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-sequence T inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence TCG already exists
-sequence T already exists
-sequence TAT inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    I
-      E
-      E
-      E
-      TATA
-      TAT
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391681191
-</Timestamp>
-<Runtime>
-1615391681191
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391720751
-</Timestamp>
-<Runtime>
-1615391720751
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/SearchSequence.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/SearchSequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Sequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391730752
-</Timestamp>
-<Runtime>
-1615391730752
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Tree.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Tree.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/SearchSequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391785756
-</Timestamp>
-<Runtime>
-1615391785756
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Sequence.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Sequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Tree.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391790757
-</Timestamp>
-<Runtime>
-1615391790757
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/SearchSequence.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/SearchSequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Sequence.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391809371
-</Timestamp>
-<Runtime>
-1615391809371
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/PrintMode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Current-Statements
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-PrintMode
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Methods
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-TestCodeEdit
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-CommitHash
-</Name>
-<Value>
-06953638c7c64cb681ec6757000b53de14d9b71b
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Size
-</Name>
-<Value>
-282
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Save
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391812074
-</Timestamp>
-<Runtime>
-1615391812074
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-sequence TCG inserted at level 0
-sequence ACGT inserted at level 1
-sequence AA inserted at level 2
-sequence AAAA inserted at level 3
-sequence AA already exists
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-sequence ACTGGGAA inserted at level 3
-sequence AA already exists
-sequence ACGT removed
-sequence ACCTT inserted at level 3
-sequence ACTTA inserted at level 4
-sequence TATA inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-# of nodes visited: 4
-sequence: AA
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-sequence A does not exist
-sequence TTAC inserted at level 2
-sequence TTA inserted at level 3
-sequence TT inserted at level 4
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-sequence T inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence TCG already exists
-sequence T already exists
-sequence TAT inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    I
-      E
-      E
-      E
-      TATA
-      TAT
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391812074
-</Timestamp>
-<Runtime>
-1615391812074
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391823392
-</Timestamp>
-<Runtime>
-1615391823392
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/PrintMode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-PrintMode
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Statements
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Methods
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Size
-</Name>
-<Value>
-282
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-StateChange
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391860764
-</Timestamp>
-<Runtime>
-1615391860764
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Print.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/PrintMode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391895768
-</Timestamp>
-<Runtime>
-1615391895768
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391903730
-</Timestamp>
-<Runtime>
-1615391903730
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-sequence TCG inserted at level 0
-sequence ACGT inserted at level 1
-sequence AA inserted at level 2
-sequence AAAA inserted at level 3
-sequence AA already exists
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-sequence ACTGGGAA inserted at level 3
-sequence AA already exists
-sequence ACGT removed
-sequence ACCTT inserted at level 3
-sequence ACTTA inserted at level 4
-sequence TATA inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-# of nodes visited: 4
-sequence: AA
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-sequence A does not exist
-sequence TTAC inserted at level 2
-sequence TTA inserted at level 3
-sequence TT inserted at level 4
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-sequence T inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence TCG already exists
-sequence T already exists
-sequence TAT inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    I
-      E
-      E
-      E
-      TATA
-      TAT
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391903731
-</Timestamp>
-<Runtime>
-1615391903731
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391920771
-</Timestamp>
-<Runtime>
-1615391920771
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391936627
-</Timestamp>
-<Runtime>
-1615391936627
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-----------------------------------------------
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence TCG inserted at level 0
-----------------------------------------------
-Leaf node creating internal node to insert ACGT
-Inserting ACGT
-current position 0
-Got child EmptyNode@630182c1 for ACGT
-setting child EmptyNode@630182c1 for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-Inserting TCG
-current position 0
-Got child EmptyNode@24d31f52 for TCG
-setting child EmptyNode@24d31f52 for TCG
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence ACGT inserted at level 1
-----------------------------------------------
-Inserting AA
-current position 0
-Got child ACGT for AA
-setting child ACGT for AA
-Leaf node creating internal node to insert AA
-Inserting ACGT
-current position 1
-Got child EmptyNode@10b68de6 for ACGT
-setting child EmptyNode@10b68de6 for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-Inserting AA
-current position 1
-Got child EmptyNode@5f126c8f for AA
-setting child EmptyNode@5f126c8f for AA
-Empty node reached for AA, creating leaf node
-Reached leaf node:AA
-sequence AA inserted at level 2
-----------------------------------------------
-Inserting AAAA
-current position 0
-Got child InternalNode@306aea26 for AAAA
-setting child InternalNode@306aea26 for AAAA
-Inserting AAAA
-current position 1
-Got child AA for AAAA
-setting child AA for AAAA
-Leaf node creating internal node to insert AAAA
-Inserting AAAA
-current position 2
-Got child EmptyNode@cff5af6 for AAAA
-setting child EmptyNode@cff5af6 for AAAA
-Empty node reached for AAAA, creating leaf node
-Reached leaf node:AAAA
-AA is prefix of AAAA, insert to dollor
-inserting prefix: AA
-Empty node reached for AA, creating leaf node
-Reached leaf node:AA
-sequence AAAA inserted at level 3
-----------------------------------------------
-Inserting AA
-current position 0
-Got child InternalNode@306aea26 for AA
-setting child InternalNode@306aea26 for AA
-Inserting AA
-current position 1
-Got child InternalNode@28823f32 for AA
-setting child InternalNode@28823f32 for AA
-Inserting AA
-No characters remaining for AA, insert to dollor-2
-inserting prefix: AA
-sequence AA already exists
-----------------------------------------------
-Inserting AAACCCCGGTGAAAACGTA
-current position 0
-Got child InternalNode@306aea26 for AAACCCCGGTGAAAACGTA
-setting child InternalNode@306aea26 for AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 1
-Got child InternalNode@28823f32 for AAACCCCGGTGAAAACGTA
-setting child InternalNode@28823f32 for AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 2
-Got child AAAA for AAACCCCGGTGAAAACGTA
-setting child AAAA for AAACCCCGGTGAAAACGTA
-Leaf node creating internal node to insert AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 3
-Got child EmptyNode@64b848b9 for AAACCCCGGTGAAAACGTA
-setting child EmptyNode@64b848b9 for AAACCCCGGTGAAAACGTA
-Empty node reached for AAACCCCGGTGAAAACGTA, creating leaf node
-Reached leaf node:AAACCCCGGTGAAAACGTA
-Inserting AAAA
-current position 3
-Got child EmptyNode@364b5d2 for AAAA
-setting child EmptyNode@364b5d2 for AAAA
-Empty node reached for AAAA, creating leaf node
-Reached leaf node:AAAA
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-----------------------------------------------
-Inserting ACTGGGAA
-current position 0
-Got child InternalNode@306aea26 for ACTGGGAA
-setting child InternalNode@306aea26 for ACTGGGAA
-Inserting ACTGGGAA
-current position 1
-Got child ACGT for ACTGGGAA
-setting child ACGT for ACTGGGAA
-Leaf node creating internal node to insert ACTGGGAA
-Inserting ACTGGGAA
-current position 2
-Got child EmptyNode@75ba77a2 for ACTGGGAA
-setting child EmptyNode@75ba77a2 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACGT
-current position 2
-Got child EmptyNode@4c78bd88 for ACGT
-setting child EmptyNode@4c78bd88 for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-sequence ACTGGGAA inserted at level 3
-----------------------------------------------
-Inserting AA
-current position 0
-Got child InternalNode@306aea26 for AA
-setting child InternalNode@306aea26 for AA
-Inserting AA
-current position 1
-Got child InternalNode@28823f32 for AA
-setting child InternalNode@28823f32 for AA
-Inserting AA
-No characters remaining for AA, insert to dollor-2
-inserting prefix: AA
-sequence AA already exists
-----------------------------------------------
-sequence ACGT removed
-----------------------------------------------
-Inserting ACCTT
-current position 0
-Got child InternalNode@306aea26 for ACCTT
-setting child InternalNode@306aea26 for ACCTT
-Inserting ACCTT
-current position 1
-Got child ACTGGGAA for ACCTT
-setting child ACTGGGAA for ACCTT
-Leaf node creating internal node to insert ACCTT
-Inserting ACTGGGAA
-current position 2
-Got child EmptyNode@6aa3c93e for ACTGGGAA
-setting child EmptyNode@6aa3c93e for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACCTT
-current position 2
-Got child EmptyNode@4c4f2b9d for ACCTT
-setting child EmptyNode@4c4f2b9d for ACCTT
-Empty node reached for ACCTT, creating leaf node
-Reached leaf node:ACCTT
-sequence ACCTT inserted at level 3
-----------------------------------------------
-Inserting ACTTA
-current position 0
-Got child InternalNode@306aea26 for ACTTA
-setting child InternalNode@306aea26 for ACTTA
-Inserting ACTTA
-current position 1
-Got child InternalNode@6a6e42d1 for ACTTA
-setting child InternalNode@6a6e42d1 for ACTTA
-Inserting ACTTA
-current position 2
-Got child ACTGGGAA for ACTTA
-setting child ACTGGGAA for ACTTA
-Leaf node creating internal node to insert ACTTA
-Inserting ACTGGGAA
-current position 3
-Got child EmptyNode@637326e9 for ACTGGGAA
-setting child EmptyNode@637326e9 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACTTA
-current position 3
-Got child EmptyNode@17ede980 for ACTTA
-setting child EmptyNode@17ede980 for ACTTA
-Empty node reached for ACTTA, creating leaf node
-Reached leaf node:ACTTA
-sequence ACTTA inserted at level 4
-----------------------------------------------
-Inserting TATA
-current position 0
-Got child TCG for TATA
-setting child TCG for TATA
-Leaf node creating internal node to insert TATA
-Inserting TATA
-current position 1
-Got child EmptyNode@22cb2b23 for TATA
-setting child EmptyNode@22cb2b23 for TATA
-Empty node reached for TATA, creating leaf node
-Reached leaf node:TATA
-Inserting TCG
-current position 1
-Got child EmptyNode@3aab8d61 for TCG
-setting child EmptyNode@3aab8d61 for TCG
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence TATA inserted at level 2
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-----------------------------------------------
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-----------------------------------------------
-# of nodes visited: 4
-sequence: AA
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-----------------------------------------------
-sequence A does not exist
-----------------------------------------------
-Inserting TTAC
-current position 0
-Got child InternalNode@45b72381 for TTAC
-setting child InternalNode@45b72381 for TTAC
-Inserting TTAC
-current position 1
-Got child EmptyNode@2cd81b6e for TTAC
-setting child EmptyNode@2cd81b6e for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-sequence TTAC inserted at level 2
-----------------------------------------------
-Inserting TTA
-current position 0
-Got child InternalNode@45b72381 for TTA
-setting child InternalNode@45b72381 for TTA
-Inserting TTA
-current position 1
-Got child TTAC for TTA
-setting child TTAC for TTA
-Leaf node creating internal node to insert TTA
-Inserting TTAC
-current position 2
-Got child EmptyNode@1dc4377d for TTAC
-setting child EmptyNode@1dc4377d for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-TTA is prefix of TTAC, insert to dollor
-inserting prefix: TTA
-Empty node reached for TTA, creating leaf node
-Reached leaf node:TTA
-sequence TTA inserted at level 3
-----------------------------------------------
-Inserting TT
-current position 0
-Got child InternalNode@45b72381 for TT
-setting child InternalNode@45b72381 for TT
-Inserting TT
-current position 1
-Got child InternalNode@52e33045 for TT
-setting child InternalNode@52e33045 for TT
-Inserting TT
-No characters remaining for TT, insert to dollor-2
-inserting prefix: TT
-Replacing : TT[with ->]TTA
-Inserting TTA
-current position 2
-Got child TTAC for TTA
-setting child TTAC for TTA
-Leaf node creating internal node to insert TTA
-Inserting TTAC
-current position 3
-Got child EmptyNode@2eb4bab3 for TTAC
-setting child EmptyNode@2eb4bab3 for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-TTA is prefix of TTAC, insert to dollor
-inserting prefix: TTA
-Empty node reached for TTA, creating leaf node
-Reached leaf node:TTA
-sequence TT inserted at level 4
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-----------------------------------------------
-Inserting T
-current position 0
-Got child InternalNode@45b72381 for T
-setting child InternalNode@45b72381 for T
-Inserting T
-No characters remaining for T, insert to dollor-2
-inserting prefix: T
-Empty node reached for T, creating leaf node
-Reached leaf node:T
-sequence T inserted at level 2
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-----------------------------------------------
-org.webcat.deveventtracker.OutputTruncated
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391936628
-</Timestamp>
-<Runtime>
-1615391936628
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391966423
-</Timestamp>
-<Runtime>
-1615391966423
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-----------------------------------------------
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence TCG inserted at level 0
-----------------------------------------------
-Leaf node creating internal node to insert ACGT
-Inserting ACGT
-current position 0
-Got child EmptyNode@630182c1 for ACGT
-setting child EmptyNode@630182c1 for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-Inserting TCG
-current position 0
-Got child EmptyNode@24d31f52 for TCG
-setting child EmptyNode@24d31f52 for TCG
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence ACGT inserted at level 1
-----------------------------------------------
-Inserting AA
-current position 0
-Got child LeafNode@10b68de6 for AA
-setting child LeafNode@10b68de6 for AA
-Leaf node creating internal node to insert AA
-Inserting ACGT
-current position 1
-Got child EmptyNode@5f126c8f for ACGT
-setting child EmptyNode@5f126c8f for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-Inserting AA
-current position 1
-Got child EmptyNode@306aea26 for AA
-setting child EmptyNode@306aea26 for AA
-Empty node reached for AA, creating leaf node
-Reached leaf node:AA
-sequence AA inserted at level 2
-----------------------------------------------
-Inserting AAAA
-current position 0
-Got child InternalNode@cff5af6 for AAAA
-setting child InternalNode@cff5af6 for AAAA
-Inserting AAAA
-current position 1
-Got child LeafNode@28823f32 for AAAA
-setting child LeafNode@28823f32 for AAAA
-Leaf node creating internal node to insert AAAA
-Inserting AAAA
-current position 2
-Got child EmptyNode@64b848b9 for AAAA
-setting child EmptyNode@64b848b9 for AAAA
-Empty node reached for AAAA, creating leaf node
-Reached leaf node:AAAA
-AA is prefix of AAAA, insert to dollor
-inserting prefix: AA
-Empty node reached for AA, creating leaf node
-Reached leaf node:AA
-sequence AAAA inserted at level 3
-----------------------------------------------
-Inserting AA
-current position 0
-Got child InternalNode@cff5af6 for AA
-setting child InternalNode@cff5af6 for AA
-Inserting AA
-current position 1
-Got child InternalNode@364b5d2 for AA
-setting child InternalNode@364b5d2 for AA
-Inserting AA
-No characters remaining for AA, insert to dollor-2
-inserting prefix: AA
-sequence AA already exists
-----------------------------------------------
-Inserting AAACCCCGGTGAAAACGTA
-current position 0
-Got child InternalNode@cff5af6 for AAACCCCGGTGAAAACGTA
-setting child InternalNode@cff5af6 for AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 1
-Got child InternalNode@364b5d2 for AAACCCCGGTGAAAACGTA
-setting child InternalNode@364b5d2 for AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 2
-Got child LeafNode@75ba77a2 for AAACCCCGGTGAAAACGTA
-setting child LeafNode@75ba77a2 for AAACCCCGGTGAAAACGTA
-Leaf node creating internal node to insert AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 3
-Got child EmptyNode@4c78bd88 for AAACCCCGGTGAAAACGTA
-setting child EmptyNode@4c78bd88 for AAACCCCGGTGAAAACGTA
-Empty node reached for AAACCCCGGTGAAAACGTA, creating leaf node
-Reached leaf node:AAACCCCGGTGAAAACGTA
-Inserting AAAA
-current position 3
-Got child EmptyNode@6aa3c93e for AAAA
-setting child EmptyNode@6aa3c93e for AAAA
-Empty node reached for AAAA, creating leaf node
-Reached leaf node:AAAA
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-----------------------------------------------
-Inserting ACTGGGAA
-current position 0
-Got child InternalNode@cff5af6 for ACTGGGAA
-setting child InternalNode@cff5af6 for ACTGGGAA
-Inserting ACTGGGAA
-current position 1
-Got child LeafNode@4c4f2b9d for ACTGGGAA
-setting child LeafNode@4c4f2b9d for ACTGGGAA
-Leaf node creating internal node to insert ACTGGGAA
-Inserting ACTGGGAA
-current position 2
-Got child EmptyNode@6a6e42d1 for ACTGGGAA
-setting child EmptyNode@6a6e42d1 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACGT
-current position 2
-Got child EmptyNode@637326e9 for ACGT
-setting child EmptyNode@637326e9 for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-sequence ACTGGGAA inserted at level 3
-----------------------------------------------
-Inserting AA
-current position 0
-Got child InternalNode@cff5af6 for AA
-setting child InternalNode@cff5af6 for AA
-Inserting AA
-current position 1
-Got child InternalNode@364b5d2 for AA
-setting child InternalNode@364b5d2 for AA
-Inserting AA
-No characters remaining for AA, insert to dollor-2
-inserting prefix: AA
-sequence AA already exists
-----------------------------------------------
-sequence ACGT removed
-----------------------------------------------
-Inserting ACCTT
-current position 0
-Got child InternalNode@cff5af6 for ACCTT
-setting child InternalNode@cff5af6 for ACCTT
-Inserting ACCTT
-current position 1
-Got child LeafNode@17ede980 for ACCTT
-setting child LeafNode@17ede980 for ACCTT
-Leaf node creating internal node to insert ACCTT
-Inserting ACTGGGAA
-current position 2
-Got child EmptyNode@22cb2b23 for ACTGGGAA
-setting child EmptyNode@22cb2b23 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACCTT
-current position 2
-Got child EmptyNode@3aab8d61 for ACCTT
-setting child EmptyNode@3aab8d61 for ACCTT
-Empty node reached for ACCTT, creating leaf node
-Reached leaf node:ACCTT
-sequence ACCTT inserted at level 3
-----------------------------------------------
-Inserting ACTTA
-current position 0
-Got child InternalNode@cff5af6 for ACTTA
-setting child InternalNode@cff5af6 for ACTTA
-Inserting ACTTA
-current position 1
-Got child InternalNode@4095b0b3 for ACTTA
-setting child InternalNode@4095b0b3 for ACTTA
-Inserting ACTTA
-current position 2
-Got child LeafNode@38cce0c8 for ACTTA
-setting child LeafNode@38cce0c8 for ACTTA
-Leaf node creating internal node to insert ACTTA
-Inserting ACTGGGAA
-current position 3
-Got child EmptyNode@43a546c1 for ACTGGGAA
-setting child EmptyNode@43a546c1 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACTTA
-current position 3
-Got child EmptyNode@25831b51 for ACTTA
-setting child EmptyNode@25831b51 for ACTTA
-Empty node reached for ACTTA, creating leaf node
-Reached leaf node:ACTTA
-sequence ACTTA inserted at level 4
-----------------------------------------------
-Inserting TATA
-current position 0
-Got child LeafNode@48fe277a for TATA
-setting child LeafNode@48fe277a for TATA
-Leaf node creating internal node to insert TATA
-Inserting TATA
-current position 1
-Got child EmptyNode@176b440d for TATA
-setting child EmptyNode@176b440d for TATA
-Empty node reached for TATA, creating leaf node
-Reached leaf node:TATA
-Inserting TCG
-current position 1
-Got child EmptyNode@7e119b6f for TCG
-setting child EmptyNode@7e119b6f for TCG
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence TATA inserted at level 2
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-----------------------------------------------
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-----------------------------------------------
-# of nodes visited: 4
-sequence: AA
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-----------------------------------------------
-sequence A does not exist
-----------------------------------------------
-Inserting TTAC
-current position 0
-Got child InternalNode@35321917 for TTAC
-setting child InternalNode@35321917 for TTAC
-Inserting TTAC
-current position 1
-Got child EmptyNode@3e585c20 for TTAC
-setting child EmptyNode@3e585c20 for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-sequence TTAC inserted at level 2
-----------------------------------------------
-Inserting TTA
-current position 0
-Got child InternalNode@35321917 for TTA
-setting child InternalNode@35321917 for TTA
-Inserting TTA
-current position 1
-Got child LeafNode@22a4fc4c for TTA
-setting child LeafNode@22a4fc4c for TTA
-Leaf node creating internal node to insert TTA
-Inserting TTAC
-current position 2
-Got child EmptyNode@1f7dabb6 for TTAC
-setting child EmptyNode@1f7dabb6 for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-TTA is prefix of TTAC, insert to dollor
-inserting prefix: TTA
-Empty node reached for TTA, creating leaf node
-Reached leaf node:TTA
-sequence TTA inserted at level 3
-----------------------------------------------
-Inserting TT
-current position 0
-Got child InternalNode@35321917 for TT
-setting child InternalNode@35321917 for TT
-Inserting TT
-current position 1
-Got child InternalNode@3a22f3ef for TT
-setting child InternalNode@3a22f3ef for TT
-Inserting TT
-No characters remaining for TT, insert to dollor-2
-inserting prefix: TT
-Replacing : TT[with ->]TTA
-Inserting TTA
-current position 2
-Got child LeafNode@466701d7 for TTA
-setting child LeafNode@466701d7 for TTA
-Leaf node creating internal node to insert TTA
-Inserting TTAC
-current position 3
-Got child EmptyNode@43a4d3cb for TTAC
-setting child EmptyNode@43a4d3cb for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-TTA is prefix of TTAC, insert to dollor
-inserting prefix: TTA
-Empty node reached for TTA, creating leaf node
-Reached leaf node:TTA
-sequence TT inserted at level 4
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-----------------------------------------------
-Inserting T
-current position 0
-Got child InternalNode@35321917 for T
-setting child InternalNode@35321917 for T
-Inserting T
-No characters remaining for T, insert to dollor-2
-inserting prefix: T
-Empty node reached for T, creating leaf node
-Reached leaf node:T
-sequence T inserted at level 2
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-----------------------------------------------
-org.webcat.deveventtracker.OutputTruncated
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615391966424
-</Timestamp>
-<Runtime>
-1615391966424
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392045785
-</Timestamp>
-<Runtime>
-1615392045785
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Print.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392048790
-</Timestamp>
-<Runtime>
-1615392048790
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-----------------------------------------------
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence TCG inserted at level 0
-----------------------------------------------
-Leaf node creating internal node to insert ACGT
-Inserting ACGT
-current position 0
-Got child EmptyNode@630182c1 for ACGT
-setting child EmptyNode@630182c1 for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-Inserting TCG
-current position 0
-Got child EmptyNode@24d31f52 for TCG
-setting child EmptyNode@24d31f52 for TCG
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence ACGT inserted at level 1
-----------------------------------------------
-Inserting AA
-current position 0
-Got child LeafNode@10b68de6 for AA
-setting child LeafNode@10b68de6 for AA
-Leaf node creating internal node to insert AA
-Inserting ACGT
-current position 1
-Got child EmptyNode@5f126c8f for ACGT
-setting child EmptyNode@5f126c8f for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-Inserting AA
-current position 1
-Got child EmptyNode@306aea26 for AA
-setting child EmptyNode@306aea26 for AA
-Empty node reached for AA, creating leaf node
-Reached leaf node:AA
-sequence AA inserted at level 2
-----------------------------------------------
-Inserting AAAA
-current position 0
-Got child InternalNode@cff5af6 for AAAA
-setting child InternalNode@cff5af6 for AAAA
-Inserting AAAA
-current position 1
-Got child LeafNode@28823f32 for AAAA
-setting child LeafNode@28823f32 for AAAA
-Leaf node creating internal node to insert AAAA
-Inserting AAAA
-current position 2
-Got child EmptyNode@64b848b9 for AAAA
-setting child EmptyNode@64b848b9 for AAAA
-Empty node reached for AAAA, creating leaf node
-Reached leaf node:AAAA
-AA is prefix of AAAA, insert to dollor
-inserting prefix: AA
-Empty node reached for AA, creating leaf node
-Reached leaf node:AA
-sequence AAAA inserted at level 3
-----------------------------------------------
-Inserting AA
-current position 0
-Got child InternalNode@cff5af6 for AA
-setting child InternalNode@cff5af6 for AA
-Inserting AA
-current position 1
-Got child InternalNode@364b5d2 for AA
-setting child InternalNode@364b5d2 for AA
-Inserting AA
-No characters remaining for AA, insert to dollor-2
-inserting prefix: AA
-sequence AA already exists
-----------------------------------------------
-Inserting AAACCCCGGTGAAAACGTA
-current position 0
-Got child InternalNode@cff5af6 for AAACCCCGGTGAAAACGTA
-setting child InternalNode@cff5af6 for AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 1
-Got child InternalNode@364b5d2 for AAACCCCGGTGAAAACGTA
-setting child InternalNode@364b5d2 for AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 2
-Got child LeafNode@75ba77a2 for AAACCCCGGTGAAAACGTA
-setting child LeafNode@75ba77a2 for AAACCCCGGTGAAAACGTA
-Leaf node creating internal node to insert AAACCCCGGTGAAAACGTA
-Inserting AAACCCCGGTGAAAACGTA
-current position 3
-Got child EmptyNode@4c78bd88 for AAACCCCGGTGAAAACGTA
-setting child EmptyNode@4c78bd88 for AAACCCCGGTGAAAACGTA
-Empty node reached for AAACCCCGGTGAAAACGTA, creating leaf node
-Reached leaf node:AAACCCCGGTGAAAACGTA
-Inserting AAAA
-current position 3
-Got child EmptyNode@6aa3c93e for AAAA
-setting child EmptyNode@6aa3c93e for AAAA
-Empty node reached for AAAA, creating leaf node
-Reached leaf node:AAAA
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-----------------------------------------------
-Inserting ACTGGGAA
-current position 0
-Got child InternalNode@cff5af6 for ACTGGGAA
-setting child InternalNode@cff5af6 for ACTGGGAA
-Inserting ACTGGGAA
-current position 1
-Got child LeafNode@4c4f2b9d for ACTGGGAA
-setting child LeafNode@4c4f2b9d for ACTGGGAA
-Leaf node creating internal node to insert ACTGGGAA
-Inserting ACTGGGAA
-current position 2
-Got child EmptyNode@6a6e42d1 for ACTGGGAA
-setting child EmptyNode@6a6e42d1 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACGT
-current position 2
-Got child EmptyNode@637326e9 for ACGT
-setting child EmptyNode@637326e9 for ACGT
-Empty node reached for ACGT, creating leaf node
-Reached leaf node:ACGT
-sequence ACTGGGAA inserted at level 3
-----------------------------------------------
-Inserting AA
-current position 0
-Got child InternalNode@cff5af6 for AA
-setting child InternalNode@cff5af6 for AA
-Inserting AA
-current position 1
-Got child InternalNode@364b5d2 for AA
-setting child InternalNode@364b5d2 for AA
-Inserting AA
-No characters remaining for AA, insert to dollor-2
-inserting prefix: AA
-sequence AA already exists
-----------------------------------------------
-sequence ACGT removed
-----------------------------------------------
-Inserting ACCTT
-current position 0
-Got child InternalNode@cff5af6 for ACCTT
-setting child InternalNode@cff5af6 for ACCTT
-Inserting ACCTT
-current position 1
-Got child LeafNode@17ede980 for ACCTT
-setting child LeafNode@17ede980 for ACCTT
-Leaf node creating internal node to insert ACCTT
-Inserting ACTGGGAA
-current position 2
-Got child EmptyNode@22cb2b23 for ACTGGGAA
-setting child EmptyNode@22cb2b23 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACCTT
-current position 2
-Got child EmptyNode@3aab8d61 for ACCTT
-setting child EmptyNode@3aab8d61 for ACCTT
-Empty node reached for ACCTT, creating leaf node
-Reached leaf node:ACCTT
-sequence ACCTT inserted at level 3
-----------------------------------------------
-Inserting ACTTA
-current position 0
-Got child InternalNode@cff5af6 for ACTTA
-setting child InternalNode@cff5af6 for ACTTA
-Inserting ACTTA
-current position 1
-Got child InternalNode@4095b0b3 for ACTTA
-setting child InternalNode@4095b0b3 for ACTTA
-Inserting ACTTA
-current position 2
-Got child LeafNode@38cce0c8 for ACTTA
-setting child LeafNode@38cce0c8 for ACTTA
-Leaf node creating internal node to insert ACTTA
-Inserting ACTGGGAA
-current position 3
-Got child EmptyNode@43a546c1 for ACTGGGAA
-setting child EmptyNode@43a546c1 for ACTGGGAA
-Empty node reached for ACTGGGAA, creating leaf node
-Reached leaf node:ACTGGGAA
-Inserting ACTTA
-current position 3
-Got child EmptyNode@25831b51 for ACTTA
-setting child EmptyNode@25831b51 for ACTTA
-Empty node reached for ACTTA, creating leaf node
-Reached leaf node:ACTTA
-sequence ACTTA inserted at level 4
-----------------------------------------------
-Inserting TATA
-current position 0
-Got child LeafNode@48fe277a for TATA
-setting child LeafNode@48fe277a for TATA
-Leaf node creating internal node to insert TATA
-Inserting TATA
-current position 1
-Got child EmptyNode@176b440d for TATA
-setting child EmptyNode@176b440d for TATA
-Empty node reached for TATA, creating leaf node
-Reached leaf node:TATA
-Inserting TCG
-current position 1
-Got child EmptyNode@7e119b6f for TCG
-setting child EmptyNode@7e119b6f for TCG
-Empty node reached for TCG, creating leaf node
-Reached leaf node:TCG
-sequence TATA inserted at level 2
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-----------------------------------------------
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-----------------------------------------------
-# of nodes visited: 4
-sequence: AA
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-----------------------------------------------
-sequence A does not exist
-----------------------------------------------
-Inserting TTAC
-current position 0
-Got child InternalNode@35321917 for TTAC
-setting child InternalNode@35321917 for TTAC
-Inserting TTAC
-current position 1
-Got child EmptyNode@3e585c20 for TTAC
-setting child EmptyNode@3e585c20 for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-sequence TTAC inserted at level 2
-----------------------------------------------
-Inserting TTA
-current position 0
-Got child InternalNode@35321917 for TTA
-setting child InternalNode@35321917 for TTA
-Inserting TTA
-current position 1
-Got child LeafNode@22a4fc4c for TTA
-setting child LeafNode@22a4fc4c for TTA
-Leaf node creating internal node to insert TTA
-Inserting TTAC
-current position 2
-Got child EmptyNode@1f7dabb6 for TTAC
-setting child EmptyNode@1f7dabb6 for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-TTA is prefix of TTAC, insert to dollor
-inserting prefix: TTA
-Empty node reached for TTA, creating leaf node
-Reached leaf node:TTA
-sequence TTA inserted at level 3
-----------------------------------------------
-Inserting TT
-current position 0
-Got child InternalNode@35321917 for TT
-setting child InternalNode@35321917 for TT
-Inserting TT
-current position 1
-Got child InternalNode@3a22f3ef for TT
-setting child InternalNode@3a22f3ef for TT
-Inserting TT
-No characters remaining for TT, insert to dollor-2
-inserting prefix: TT
-Replacing : TT[with ->]TTA
-Inserting TTA
-current position 2
-Got child LeafNode@466701d7 for TTA
-setting child LeafNode@466701d7 for TTA
-Leaf node creating internal node to insert TTA
-Inserting TTAC
-current position 3
-Got child EmptyNode@43a4d3cb for TTAC
-setting child EmptyNode@43a4d3cb for TTAC
-Empty node reached for TTAC, creating leaf node
-Reached leaf node:TTAC
-TTA is prefix of TTAC, insert to dollor
-inserting prefix: TTA
-Empty node reached for TTA, creating leaf node
-Reached leaf node:TTA
-sequence TT inserted at level 4
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-----------------------------------------------
-Inserting T
-current position 0
-Got child InternalNode@35321917 for T
-setting child InternalNode@35321917 for T
-Inserting T
-No characters remaining for T, insert to dollor-2
-inserting prefix: T
-Empty node reached for T, creating leaf node
-Reached leaf node:T
-sequence T inserted at level 2
-----------------------------------------------
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-----------------------------------------------
-org.webcat.deveventtracker.OutputTruncated
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392048791
-</Timestamp>
-<Runtime>
-1615392048791
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392060786
-</Timestamp>
-<Runtime>
-1615392060786
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392085789
-</Timestamp>
-<Runtime>
-1615392085789
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392125453
-</Timestamp>
-<Runtime>
-1615392125453
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-sequence TCG inserted at level 0
-sequence ACGT inserted at level 1
-sequence AA inserted at level 2
-sequence AAAA inserted at level 3
-sequence AA already exists
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-sequence ACTGGGAA inserted at level 3
-sequence AA already exists
-sequence ACGT removed
-sequence ACCTT inserted at level 3
-sequence ACTTA inserted at level 4
-sequence TATA inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-# of nodes visited: 4
-sequence: AA
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-sequence A does not exist
-sequence TTAC inserted at level 2
-sequence TTA inserted at level 3
-sequence TT inserted at level 4
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-sequence T inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence TCG already exists
-sequence T already exists
-sequence TAT inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    I
-      E
-      E
-      E
-      TATA
-      TAT
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence GAT does not exist
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392125454
-</Timestamp>
-<Runtime>
-1615392125454
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392210800
-</Timestamp>
-<Runtime>
-1615392210800
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392213399
-</Timestamp>
-<Runtime>
-1615392213399
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Current-Statements
-</Name>
-<Value>
-2
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Assertions
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Size
-</Name>
-<Value>
-591
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-StateChange
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392295467
-</Timestamp>
-<Runtime>
-1615392295467
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-sequence TCG inserted at level 0
-sequence ACGT inserted at level 1
-sequence AA inserted at level 2
-sequence AAAA inserted at level 3
-sequence AA already exists
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-sequence ACTGGGAA inserted at level 3
-sequence AA already exists
-sequence ACGT removed
-sequence ACCTT inserted at level 3
-sequence ACTTA inserted at level 4
-sequence TATA inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-# of nodes visited: 4
-sequence: AA
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-sequence A does not exist
-sequence TTAC inserted at level 2
-sequence TTA inserted at level 3
-sequence TT inserted at level 4
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-sequence T inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence TCG already exists
-sequence T already exists
-sequence TAT inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    I
-      E
-      E
-      E
-      TATA
-      TAT
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence GAT does not exist
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392295468
-</Timestamp>
-<Runtime>
-1615392295468
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392348489
-</Timestamp>
-<Runtime>
-1615392348489
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Current-Statements
-</Name>
-<Value>
-2
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Assertions
-</Name>
-<Value>
-0
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-TestCodeEdit
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-CommitHash
-</Name>
-<Value>
-b03aeffc1dc9ad34da1abb14b2438372296d7915
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Size
-</Name>
-<Value>
-591
-</Value>
-</Property>
-<Property>
-<Name>
-Current-Test-Methods
-</Name>
-<Value>
-1
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Save
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392402389
-</Timestamp>
-<Runtime>
-1615392402389
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-# of nodes visited: 1
-no sequence found
-sequence TCG inserted at level 0
-sequence ACGT inserted at level 1
-sequence AA inserted at level 2
-sequence AAAA inserted at level 3
-sequence AA already exists
-sequence AAACCCCGGTGAAAACGTA inserted at level 4
-sequence ACTGGGAA inserted at level 3
-sequence AA already exists
-sequence ACGT removed
-sequence ACCTT inserted at level 3
-sequence ACTTA inserted at level 4
-sequence TATA inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    E
-    E
-  E
-# of nodes visited: 7
-sequence: TATA
-sequence: TCG
-# of nodes visited: 4
-sequence: AA
-tree dump:
-I
-  I
-    I
-      I
-        AAAA A:100.00 C:0.00 G:0.00 T:0.00
-        AAACCCCGGTGAAAACGTA A:42.11 C:26.32 G:21.05 T:10.53
-        E
-        E
-        E
-      E
-      E
-      E
-      AA A:100.00 C:0.00 G:0.00 T:0.00
-    I
-      E
-      ACCTT A:20.00 C:40.00 G:0.00 T:40.00
-      E
-      I
-        E
-        E
-        ACTGGGAA A:37.50 C:12.50 G:37.50 T:12.50
-        ACTTA A:40.00 C:20.00 G:0.00 T:40.00
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA A:50.00 C:0.00 G:0.00 T:50.00
-    TCG A:0.00 C:33.33 G:33.33 T:33.33
-    E
-    E
-    E
-  E
-tree dump:
-I
-  I
-    I
-      I
-        AAAA 4
-        AAACCCCGGTGAAAACGTA 19
-        E
-        E
-        E
-      E
-      E
-      E
-      AA 2
-    I
-      E
-      ACCTT 5
-      E
-      I
-        E
-        E
-        ACTGGGAA 8
-        ACTTA 5
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA 4
-    TCG 3
-    E
-    E
-    E
-  E
-sequence A does not exist
-sequence TTAC inserted at level 2
-sequence TTA inserted at level 3
-sequence TT inserted at level 4
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    E
-  E
-sequence T inserted at level 2
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    TATA
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence TCG already exists
-sequence T already exists
-sequence TAT inserted at level 3
-tree dump:
-I
-  I
-    I
-      I
-        AAAA
-        AAACCCCGGTGAAAACGTA
-        E
-        E
-        E
-      E
-      E
-      E
-      AA
-    I
-      E
-      ACCTT
-      E
-      I
-        E
-        E
-        ACTGGGAA
-        ACTTA
-        E
-      E
-    E
-    E
-    E
-  E
-  E
-  I
-    I
-      E
-      E
-      E
-      TATA
-      TAT
-    TCG
-    E
-    I
-      I
-        E
-        TTAC
-        E
-        E
-        TTA
-      E
-      E
-      E
-      TT
-    T
-  E
-sequence GAT inserted at level 1
-sequence CACTACG inserted at level 1
-sequence CACTACGT inserted at level 2
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392402390
-</Timestamp>
-<Runtime>
-1615392402390
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392450412
-</Timestamp>
-<Runtime>
-1615392450412
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-sequence TTA inserted at level 1
-sequence TT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    TTAC
-    TTA
-  TT
-sequence T inserted at level 3
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence GAT inserted at level 1
-sequence CACTACG inserted at level 1
-sequence CACTACGT inserted at level 2
-tree dump:
-I
-  E
-  I
-    CACTACGT
-    E
-    E
-    E
-    CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392450413
-</Timestamp>
-<Runtime>
-1615392450413
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392839141
-</Timestamp>
-<Runtime>
-1615392839141
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-sequence TTA inserted at level 1
-sequence TT inserted at level 2
-sequence T inserted at level 3
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence GAT inserted at level 1
-tree dump:
-I
-  E
-  E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACG inserted at level 1
-tree dump:
-I
-  E
-  CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACGT inserted at level 2
-tree dump:
-I
-  E
-  I
-    CACTACGT
-    E
-    E
-    E
-    CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392839142
-</Timestamp>
-<Runtime>
-1615392839142
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392944192
-</Timestamp>
-<Runtime>
-1615392944192
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence ACGT inserted at level 0
-sequence AAAA inserted at level 2
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
 tree dump:
 I
   I
@@ -7236,34 +91,6 @@ I
   E
   E
   E
-sequence TTAC inserted at level 1
-sequence TTA inserted at level 2
-sequence TT inserted at level 3
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  I
-    AAAA
-    ACGT
-    E
-    E
-    E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    T
-  E
 sequence GAT inserted at level 1
 tree dump:
 I
@@ -7275,1543 +102,1668 @@ I
     E
   E
   GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    T
   E
-sequence CACTACG inserted at level 1
-tree dump:
-I
-  I
-    AAAA
-    ACGT
-    E
-    E
-    E
-  CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    T
   E
-sequence CACTACGT inserted at level 2
-tree dump:
-I
-  I
-    AAAA
-    ACGT
-    E
-    E
-    E
-  I
-    CACTACGT
-    E
-    E
-    E
-    CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    T
-  E
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615392944193
-</Timestamp>
-<Runtime>
-1615392944193
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393025287
-</Timestamp>
-<Runtime>
-1615393025287
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-sequence TTA inserted at level 1
-sequence TT inserted at level 2
-sequence T inserted at level 3
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence GAT inserted at level 1
-tree dump:
-I
-  E
-  E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACG inserted at level 1
-tree dump:
-I
-  E
-  CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACGT inserted at level 2
-tree dump:
-I
-  E
-  I
-    CACTACGT
-    E
-    E
-    E
-    CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393025288
-</Timestamp>
-<Runtime>
-1615393025288
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393182269
-</Timestamp>
-<Runtime>
-1615393182269
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-sequence TTA inserted at level 1
-sequence TT inserted at level 2
-sequence T inserted at level 3
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence GAT inserted at level 1
-tree dump:
-I
-  E
-  E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACG inserted at level 1
-tree dump:
-I
-  E
-  CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACGT inserted at level 2
-tree dump:
-I
-  E
-  I
-    CACTACGT
-    E
-    E
-    E
-    CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393182270
-</Timestamp>
-<Runtime>
-1615393182270
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393287534
-</Timestamp>
-<Runtime>
-1615393287534
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-tree dump:
-TTAC
-sequence TTA inserted at level 1
-tree dump:
-I
-  E
-  E
-  E
-  TTAC
-  TTA
-sequence TT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    TTAC
-    TTA
-  TT
-sequence T inserted at level 3
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393287534
-</Timestamp>
-<Runtime>
-1615393287534
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393425925
-</Timestamp>
-<Runtime>
-1615393425925
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393430346
-</Timestamp>
-<Runtime>
-1615393430346
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-type
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393434857
-</Timestamp>
-<Runtime>
-1615393434857
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-type cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393440890
-</Timestamp>
-<Runtime>
-1615393440890
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-String type
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615393441909
-</Timestamp>
-<Runtime>
-1615393441909
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-type cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615394397214
-</Timestamp>
-<Runtime>
-1615394397214
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence GAT inserted at level 0
-tree dump:
-GAT
-sequence CACTACG inserted at level 1
-tree dump:
-I
-  E
-  CACTACG
-  GAT
-  E
-  E
-sequence CACTACGT inserted at level 2
-tree dump:
-I
-  E
-  I
-    CACTACGT
-    E
-    E
-    E
-    CACTACG
-  GAT
-  E
-  E
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615394397215
-</Timestamp>
-<Runtime>
-1615394397215
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615395858728
-</Timestamp>
-<Runtime>
-1615395858728
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-tree dump:
-TTAC
-sequence TTA inserted at level 1
-tree dump:
-I
-  E
-  E
-  E
-  TTAC
-  TTA
-sequence TT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    TTAC
-    TTA
-  TT
-sequence T inserted at level 3
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence GAT inserted at level 1
-tree dump:
-I
-  E
-  E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACG inserted at level 1
-tree dump:
-I
-  E
-  CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACGT inserted at level 2
-tree dump:
-I
-  E
-  I
-    CACTACGT
-    E
-    E
-    E
-    CACTACG
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615395858729
-</Timestamp>
-<Runtime>
-1615395858729
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615395901500
-</Timestamp>
-<Runtime>
-1615395901500
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-tree dump:
-TTAC
-sequence TTA inserted at level 1
-tree dump:
-I
-  E
-  E
-  E
-  TTAC
-  TTA
-sequence TT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    TTAC
-    TTA
-  TT
-sequence T inserted at level 3
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence GAT inserted at level 1
-tree dump:
-I
-  E
-  E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CCTGC inserted at level 1
-sequence CACTACG inserted at level 2
-tree dump:
-I
-  E
-  I
-    CACTACG
-    CCTGC
-    E
-    E
-    E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence CACTACGT inserted at level 3
-tree dump:
-I
-  E
-  I
-    I
-      E
-      CACTACGT
-      E
-      E
-      CACTACG
-    CCTGC
-    E
-    E
-    E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615395901500
-</Timestamp>
-<Runtime>
-1615395901500
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1615395935793
-</Timestamp>
-<Runtime>
-1615395935793
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-DNATreeTest
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-sequence TTAC inserted at level 0
-tree dump:
-TTAC
-sequence TTA inserted at level 1
-tree dump:
-I
-  E
-  E
-  E
-  TTAC
-  TTA
-sequence TT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    TTAC
-    TTA
-  TT
-sequence T inserted at level 3
-tree dump:
-I
-  E
-  E
-  E
-  I
-    E
-    E
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence TCG inserted at level 2
-sequence T already exists
-sequence TAT inserted at level 2
-tree dump:
-I
-  E
-  E
-  E
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
-sequence GAT inserted at level 1
-tree dump:
-I
-  E
-  E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
 sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400327183
+</Timestamp>
+<Runtime>
+1615400327183
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400428644
+</Timestamp>
+<Runtime>
+1615400428644
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400428645
+</Timestamp>
+<Runtime>
+1615400428645
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400444210
+</Timestamp>
+<Runtime>
+1615400444210
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence ACAGT inserted at level 3
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400444210
+</Timestamp>
+<Runtime>
+1615400444210
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400536232
+</Timestamp>
+<Runtime>
+1615400536232
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence ACAGT inserted at level 3
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400536233
+</Timestamp>
+<Runtime>
+1615400536233
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400552348
+</Timestamp>
+<Runtime>
+1615400552348
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence ACAGT inserted at level 3
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400552349
+</Timestamp>
+<Runtime>
+1615400552349
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400637287
+</Timestamp>
+<Runtime>
+1615400637287
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence ACAGT inserted at level 3
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400637287
+</Timestamp>
+<Runtime>
+1615400637287
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400646070
+</Timestamp>
+<Runtime>
+1615400646070
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence ACAGT inserted at level 3
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    AAAA
+    I
+      ACAGT
+      E
+      ACGT
+      E
+      E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400646070
+</Timestamp>
+<Runtime>
+1615400646070
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615400841628
+</Timestamp>
+<Runtime>
+1615400841628
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence CACCTGC inserted at level 0
+tree dump:
+CACCTGC
 sequence CACTACG inserted at level 4
 tree dump:
 I
@@ -8832,19 +1784,9 @@ I
     E
     E
     E
-  GAT
-  I
-    TAT
-    TCG
-    E
-    I
-      TTAC
-      E
-      E
-      E
-      TTA
-    TT
-  T
+  E
+  E
+  E
 sequence CACTACGT inserted at level 5
 tree dump:
 I
@@ -8870,29 +1812,47 @@ I
     E
     E
     E
-  GAT
+  E
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  E
   I
-    TAT
-    TCG
-    E
     I
-      TTAC
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
       E
       E
       E
-      TTA
-    TT
-  T
+    E
+    E
+    E
+    E
+  E
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1615395935794
+1615400841629
 </Timestamp>
 <Runtime>
-1615395935794
+1615400841629
 </Runtime>
 <Tool>
 Eclipse
@@ -8927,10 +1887,335 @@ DNATreeTest
 </SensorData>
 <SensorData>
 <Timestamp>
-1615395997734
+1615401076313
 </Timestamp>
 <Runtime>
-1615395997734
+1615401076313
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence AACCGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      AACCGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AACCAGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615401076313
+</Timestamp>
+<Runtime>
+1615401076313
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615401110014
+</Timestamp>
+<Runtime>
+1615401110014
 </Runtime>
 <Tool>
 Eclipse
@@ -8970,6 +2255,13 @@ sequence GAT inserted at level 0
 tree dump:
 GAT
 sequence CACCTGC inserted at level 1
+tree dump:
+I
+  E
+  CACCTGC
+  GAT
+  E
+  E
 sequence CACTACG inserted at level 4
 tree dump:
 I
@@ -9021,16 +2313,369 @@ I
   GAT
   E
   E
+sequence CACG inserted at level 4
+tree dump:
+I
+  E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1615395997735
+1615401110014
 </Timestamp>
 <Runtime>
-1615395997735
+1615401110014
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615401134872
+</Timestamp>
+<Runtime>
+1615401134872
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence AACCGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      AACCGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AACCAGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAA
+      I
+        E
+        I
+          AACCAGT
+          E
+          AACCGT
+          E
+          E
+        E
+        E
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615401134873
+</Timestamp>
+<Runtime>
+1615401134873
 </Runtime>
 <Tool>
 Eclipse
