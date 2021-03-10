@@ -1,3 +1,4 @@
+
 /**
  * Represents the Internal Node
  * 
@@ -36,29 +37,30 @@ public class InternalNode implements Node {
     private Node nodeD;
 
     /**
-     * @param parentNode
+     * @param leaf
      *            current sequence
-     * @param newSeq
+     * @param inputSeq
      *            new sequence to insert
      */
-    public InternalNode(LeafNode parentNode, Sequence newSeq) {
+    public InternalNode(LeafNode leaf, Sequence inputSeq) {
         setA(new EmptyNode());
         setC(new EmptyNode());
         setG(new EmptyNode());
         setT(new EmptyNode());
-        setD(new EmptyNode());
+        setD(new EmptyNode()); 
 
-        final Sequence parentSeq = parentNode.getSequence();
+        final Sequence leafSeq = leaf.getSequence();
 
         Sequence first;
         Sequence second;
-        if (parentSeq.length() < newSeq.length()) {
-            first = newSeq;
-            second = parentSeq;
+
+        if (leafSeq.length() < inputSeq.length()) {
+            first = inputSeq;
+            second = leafSeq;
         }
         else {
-            first = parentSeq;
-            second = newSeq;
+            first = leafSeq;
+            second = inputSeq;
         }
 
         insert(first);
@@ -126,17 +128,24 @@ public class InternalNode implements Node {
                 sequence));
 
             if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
-                .length() > sequence.length() && sequence.isPrefixOf(
-                    ((LeafNode)nodeD).getSequence())) {
+                .equals(sequence)) {
+                Print.sequenceAlreadyExists(sequence);
+            }
+
+            else if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD)
+                .getSequence().length() > sequence.length() && sequence
+                    .isPrefixOf(((LeafNode)nodeD).getSequence())) {
                 insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
             }
 
-            /*else if (!sequence.hasNext() && (child instanceof LeafNode)) {
-                Print.log(String.format(
-                    "No characters remaining for %s, insert to dollor-1",
-                    sequence));
-                insertPrefix(sequence);
-            }*/
+            /*
+             * else if (!sequence.hasNext() && (child instanceof LeafNode)) {
+             * Print.log(String.format(
+             * "No characters remaining for %s, insert to dollor-1",
+             * sequence));
+             * insertPrefix(sequence);
+             * }
+             */
 
             else {
                 Print.log(String.format("setting child %s for %s", child
@@ -159,28 +168,28 @@ public class InternalNode implements Node {
      * 
      * @return
      *         count
-     
-    private int nonEmptyChilds() {
-        int nonEmptyChildren = 0;
-        if (nodeA instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeC instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeG instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeT instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-        if (nodeD instanceof LeafNode) {
-            nonEmptyChildren++;
-        }
-
-        return nonEmptyChildren;
-    }
-*/
+     * 
+     *         private int nonEmptyChilds() {
+     *         int nonEmptyChildren = 0;
+     *         if (nodeA instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeC instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeG instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeT instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     *         if (nodeD instanceof LeafNode) {
+     *         nonEmptyChildren++;
+     *         }
+     * 
+     *         return nonEmptyChildren;
+     *         }
+     */
 
     /**
      * @param newSeq

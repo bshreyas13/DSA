@@ -111,7 +111,6 @@ public class LeafNode implements Node {
 
 
     /**
-<<<<<<< HEAD
      * to string implementation
      * 
      * @return String
@@ -123,8 +122,6 @@ public class LeafNode implements Node {
 
 
     /**
-=======
->>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      * set level
      * 
      * @param level

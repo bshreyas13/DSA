@@ -1,0 +1,15 @@
+insert ACGT
+insert AAAA
+insert AA
+insert AAACCCCGGTGAAAACGTA
+insert ACTGGGAA
+remove ACGT
+insert ACCTT
+insert ACTTA
+insert TATA
+insert TCG
+print length
+sprint stats
+search AAAA$
+search AA
+search ACGT$

@@ -139,19 +139,6 @@ public class Sequence {
 
 
     /**
-<<<<<<< HEAD
-     * get characters
-     * 
-     * @return char array
-     */
-    public char[] getCharacters() {
-        return characters;
-    }
-
-
-    /**
-=======
->>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      * check other sequence is prefix of this sequence
      * 
      * @param other

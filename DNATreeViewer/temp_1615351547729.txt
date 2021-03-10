@@ -1,0 +1,4 @@
+insert ACGT
+insert AAAA
+insert AA
+insert AAA

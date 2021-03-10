@@ -1,0 +1,22 @@
+insert TAG
+search GAGCAGTTCTTGGTTG
+insert AGTGGC
+insert CGAGCCG
+insert TGTACGCGCAGC
+insert ACGTGTCT
+insert TGCGA
+insert TAGCTTTTGGCACTA
+insert CTAACCC
+insert AG
+insert AC
+remove CGGTT
+remove AAAGGGTTTCCCCCC
+insert GTCCCC
+insert GTCCCC           
+insert CGTAGTATGCA              
+search GTCCCG
+print
+print lengths
+print stats         
+search GTCCCC$
+search T

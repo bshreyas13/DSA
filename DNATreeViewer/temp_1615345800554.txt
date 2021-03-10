@@ -1,0 +1,5 @@
+insert A
+insert G
+insert T
+insert CC
+insert C

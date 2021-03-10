@@ -34,16 +34,9 @@ public class EmptyNode implements Node {
 
     /**
      * @param sequence
-<<<<<<< HEAD
      *            sequence to remove, display as no sequence found becasue
      *            empty node
      * @return return node
-=======
-     *            sequence to remove, display as no sequence found because empty
-     *            node
-     * @return
-     *         return node
->>>>>>> c36520732ef167bd88d4f52ad2474f06108e8f1f
      */
     @Override
     public Node remove(Sequence sequence) {

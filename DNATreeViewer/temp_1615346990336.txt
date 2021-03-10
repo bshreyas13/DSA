@@ -1,0 +1,4 @@
+insert A
+insert C
+insert G
+insert AC

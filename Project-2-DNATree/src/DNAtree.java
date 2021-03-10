@@ -68,8 +68,12 @@ public class DNAtree {
         if (params != null && params.length > 0) {
             switch (params[0]) {
                 case "insert":
-                    tree.insert(new Sequence(params[1]));
-                    System.out.flush();
+                    if (params.length > 1) {
+                        String seq = params[1].trim();
+                        if (seq.length() > 0) {
+                            tree.insert(new Sequence(seq));
+                        }
+                    }
                     break;
                 case "remove":
                     tree.remove(new Sequence(params[1]));

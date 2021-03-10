@@ -1,9 +1,4 @@
-~*
-._*
-.TemporaryItems
-.DS_Store
-Thumbs.db
-<<<<<<< HEAD
+
 /bin/
 *.class
 *.war
@@ -25,6 +20,4 @@ hs_error_pid*
 *.lib
 *.exe
 *.app
-=======
->>>>>>> branch 'master' of https://web-cat.cs.vt.edu/Web-CAT/WebObjects/Web-CAT.woa/git/StudentProject/743b097a-8a8e-4a05-aa00-68b3889f286a
 /bin/

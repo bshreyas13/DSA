@@ -13,11 +13,11 @@ public class InternalNode implements Node {
      * occupied nodes limit
      */
     public static final int MIN_NODES = 1;
+    private String type;
     /**
      * node level
      */
     private int level;
-    private String type;
 
     /**
      * A child
