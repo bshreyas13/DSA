@@ -70,17 +70,30 @@ public class Sequence {
      * @return true if has false otherwise
      */
     public boolean hasNext() {
-        if (prefixLength != -1)
+        if (prefixLength != -1) {
             return (position < prefixLength + 2);
+        }
         return (position < characters.length);
     }
 
 
+    /**
+     * check has prefix
+     * 
+     * @return
+     *         true if pass false otherwise
+     */
     public boolean hasNextPrefix() {
-        return (position < Math.min(prefixLength-1, characters.length));
+        return (position < Math.min(prefixLength - 1, characters.length));
     }
 
 
+    /**
+     * check next prefix
+     * 
+     * @return
+     *         next char
+     */
     public char nextPrefix() {
         if (!hasNextPrefix()) {
             return current();

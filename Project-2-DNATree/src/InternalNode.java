@@ -68,17 +68,17 @@ public class InternalNode implements Node {
         insert(first);
         insert(second);
 
-        if (second.isPrefixOf(first)) {
-            Print.log(String.format("%s is prefix of %s, insert to dollor",
-                second, first));
-            // insertToDollor(second);
-        }
-        else {
-
-        }
     }
 
 
+    /**
+     * Internal code constructor
+     * 
+     * @param parentNode
+     *            parent node
+     * @param newSeq
+     *            sequence code
+     */
     public InternalNode(EmptyNode parentNode, Sequence newSeq) {
         setA(new EmptyNode());
         setC(new EmptyNode());
@@ -159,6 +159,8 @@ public class InternalNode implements Node {
 
 
     /**
+     * insert to dollor node
+     * 
      * @param sequence
      *            set sequence to $ if empty node other wise call insert
      *            recursively
