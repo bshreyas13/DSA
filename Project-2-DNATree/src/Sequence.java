@@ -1,4 +1,3 @@
-
 /**
  * Represents the Sequence
  *
@@ -71,7 +70,7 @@ public class Sequence {
      */
     public boolean hasNext() {
         if (prefixLength != -1) {
-            return (position < prefixLength + 2);
+            return (position < prefixLength + 1);
         }
         return (position < characters.length);
     }
