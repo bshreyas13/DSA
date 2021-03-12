@@ -63,7 +63,7 @@ public class SearchSequence {
             mode = SearchMode.PREFIX;
         }
 
-        seq = new Sequence(sequence);
+        seq = new Sequence(sequence.trim());
     }
 
 

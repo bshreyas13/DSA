@@ -51,7 +51,7 @@ public class LeafNode implements Node {
         }
         else {
             Print.log("Leaf node creating internal node to insert " + seq);
-            //System.out.println(this.getLevel());
+            // System.out.println(this.getLevel());
             return new InternalNode(this, seq);
         }
     }
@@ -85,8 +85,11 @@ public class LeafNode implements Node {
     @Override
     public void search(SearchSequence seq) {
         seq.incrementNodesVisited();
-        if ((seq.isExactMatch() && this.sequence.equals(seq
-            .getSearchSequence())) || !seq.isExactMatch()) {
+        if (seq.isExactMatch() && this.sequence.equals(seq
+            .getSearchSequence())) {
+            seq.addMatch(this.sequence);
+        }
+        else if (this.sequence.toString().startsWith(seq.getSearchSequence().toString())) {
             seq.addMatch(this.sequence);
         }
     }

@@ -178,7 +178,9 @@ public class InternalNode implements Node {
 
 
     /**
-     * @param remove
+     * remove node
+     * 
+     * @param sequence
      *            the sequence at this node iteratively
      */
     @Override
