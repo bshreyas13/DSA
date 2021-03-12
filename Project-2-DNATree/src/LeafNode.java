@@ -51,6 +51,7 @@ public class LeafNode implements Node {
         }
         else {
             Print.log("Leaf node creating internal node to insert " + seq);
+            //System.out.println(this.getLevel());
             return new InternalNode(this, seq);
         }
     }
