@@ -47,11 +47,13 @@ public class DNAtree {
         File f = new File(fileName);
         Scanner sc = new Scanner(f);
         while (sc.hasNextLine()) {
-            String line = sc.nextLine().trim();
+            String line = sc.nextLine().trim().replaceAll("\\s", " ");
+            //System.out.println(line);
             if (!line.isEmpty()) {
                 processCommand(line);
                 Print.log("----------------------------------------------");
             }
+
         }
         sc.close();
     }

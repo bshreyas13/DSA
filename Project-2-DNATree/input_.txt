@@ -1,21 +1,8 @@
-insert AAT
-                   insert AT
-                   
-                   
-                   
-                   
-                   
-insert                         AT
-insert AT
-
-			insert      T
+insert T
+insert	           TATATAG			 
 
 
-				print            
-search AT
 
 
-print         lengths
+insert 		T
 
-
-		print stats
