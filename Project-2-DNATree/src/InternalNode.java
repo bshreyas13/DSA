@@ -62,13 +62,13 @@ public class InternalNode implements Node {
             first = parentSeq;
             second = newSeq;
         }
-
+        //System.out.println(first);
         insert(first);
 
         if (second.isPrefixOf(first)) {
             Print.log(String.format("%s is prefix of %s, insert to dollor",
                 second, first));
-            insertPrefix(second);
+            insert(second);
         }
         else {
             insert(second);
@@ -126,7 +126,7 @@ public class InternalNode implements Node {
             Node child = getChild(c);
             Print.log(String.format("Got child %s for %s", child.toString(),
                 sequence));
-
+            
             if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
                 .equals(sequence)) {
                 Print.sequenceAlreadyExists(sequence);
@@ -141,7 +141,10 @@ public class InternalNode implements Node {
             else {
                 Print.log(String.format("setting child %s for %s", child
                     .toString(), sequence));
+                //System.out.println(c);
+                //System.out.println(child);
                 setChild(c, child.insert(sequence));
+
             }
         }
         else {
@@ -150,6 +153,7 @@ public class InternalNode implements Node {
                 sequence));
             insertPrefix(sequence);
         }
+        //System.out.println(this);
         return this;
     }
 

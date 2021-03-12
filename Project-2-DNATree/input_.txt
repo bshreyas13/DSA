@@ -1,9 +1,14 @@
-## 0th node is always inserted correctly##
-insert AAAAAA
-
-
-##issue##
-insert AAAAACGT
+insert TTAC
+insert TTA
+insert TT
+print
+insert T
 
 print
 
+insert TCG
+
+insert T
+insert TAT
+
+print

@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\shrey\OneDrive - Virginia Tech\Documents\Study Material\Spring 21\DSA_projects\DSA\DNATreeViewer"/>
+			<item value="C:\Users\shrey\OneDrive - Virginia Tech\Documents\Study Material\Spring 21\DSA_projects\DSA\CS5040-SP2020-P2-Starter"/>
+			<item value="C:\Users\shrey\OneDrive - Virginia Tech\Documents\Study Material\Spring 21\DSA_projects\DSA\Project-2-DNATree"/>
 			<item value="C:\Users\shrey\OneDrive - Virginia Tech\Documents\Study Material\Spring 21\DSA\Bhat_Shreyas_P1"/>
 			<item value="C:\Users\shrey\OneDrive - Virginia Tech\Documents\Study Material\Spring 21\DSA\CS5040-SP2020-P2-Starter"/>
 			<item value="C:\Users\shrey\OneDrive - Virginia Tech\Documents\Study Material\Spring 21\DSA\Bhat_Shreyas_Project1\src"/>
