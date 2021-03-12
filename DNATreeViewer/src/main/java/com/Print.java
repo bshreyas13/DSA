@@ -181,7 +181,7 @@ public class Print {
      *            log msg
      */
     public static void log(String string) {
-        info(string);
+        //info(string);
         string = null;
 
     }

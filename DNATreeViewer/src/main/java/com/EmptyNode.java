@@ -2,7 +2,7 @@ package com;
 
 /**
  * Represents the Empty node
- * 
+ *
  * @author {bshreyas and veerad}
  * @version 2021-03-07
  */
@@ -14,7 +14,7 @@ public class EmptyNode implements Node {
     private String type;
 
     public EmptyNode() {
-        this.type="E";
+        this.type = "E";
     }
 
 
@@ -28,25 +28,23 @@ public class EmptyNode implements Node {
 
 
     /**
-     * @param sequence
-     *            sequence string to insert, return new leaf node
-     * @return
-     *         inserted node
+     * @param sequence sequence string to insert, return new leaf node
+     * @return inserted node
      */
     @Override
     public Node insert(Sequence sequence) {
+        if (sequence.hasNextPrefix())
+            return new InternalNode(this, sequence);
         Print.log(String.format("Empty node reached for %s, creating leaf node",
-            sequence));
+                sequence));
         return new LeafNode(sequence);
     }
 
 
     /**
-     * @param sequence
-     *            sequence to remove, display as no sequence found because empty
-     *            node
-     * @return
-     *         return node
+     * @param sequence sequence to remove, display as no sequence found because empty
+     *                 node
+     * @return return node
      */
     @Override
     public Node remove(Sequence sequence) {
@@ -56,9 +54,8 @@ public class EmptyNode implements Node {
 
 
     /**
-     * @param sequence
-     *            increase nodes visited for empty node as no content to search
-     *            here
+     * @param sequence increase nodes visited for empty node as no content to search
+     *                 here
      */
     @Override
     public void search(SearchSequence sequence) {
@@ -67,8 +64,7 @@ public class EmptyNode implements Node {
 
 
     /**
-     * @param level
-     *            set level
+     * @param level set level
      */
     @Override
     public void setLevel(int level) {
@@ -77,8 +73,7 @@ public class EmptyNode implements Node {
 
 
     /**
-     * @return
-     *         return level
+     * @return return level
      */
     @Override
     public int getLevel() {

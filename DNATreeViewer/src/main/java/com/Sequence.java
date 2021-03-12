@@ -14,6 +14,7 @@ public class Sequence {
      */
     private int position = 0;
     private String text;
+    public int prefixLength = -1;
 
     /**
      * Characters to hold for this sequence
@@ -74,7 +75,20 @@ public class Sequence {
      * @return true if has false otherwise
      */
     public boolean hasNext() {
+        if (prefixLength != -1)
+            return (position < prefixLength + 1);
         return (position < characters.length);
+    }
+
+    public boolean hasNextPrefix() {
+        return (position < Math.min(prefixLength, characters.length));
+    }
+
+    public char nextPrefix() {
+        if (!hasNextPrefix()) {
+            return current();
+        }
+        return characters[position++];
     }
 
 
@@ -130,6 +144,10 @@ public class Sequence {
 
     public int getPosition() {
         return position;
+    }
+
+    public void setPosition(int p) {
+        this.position = p;
     }
 
 
