@@ -1,3 +1,4 @@
+
 /**
  * Represents the Tree node operations
  * 
@@ -17,7 +18,8 @@ public interface Node {
      * 
      * @param sequence
      *            sequence to insert
-     * @return Node inserted
+     * @return
+     *         Node inserted
      */
     public Node insert(Sequence sequence);
 
@@ -27,7 +29,8 @@ public interface Node {
      * 
      * @param sequence
      *            sequence to remove
-     * @return node
+     * @return
+     *         node
      */
     public Node remove(Sequence sequence);
 
@@ -53,7 +56,8 @@ public interface Node {
     /**
      * return level
      * 
-     * @return level
+     * @return
+     *         level
      */
     public int getLevel();
 }

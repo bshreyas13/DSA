@@ -1,4 +1,3 @@
-
 /**
  * Represents the Internal Node
  * 
@@ -10,6 +9,7 @@ public class InternalNode implements Node {
      * occupied nodes limit
      */
     public static final int MIN_NODES = 1;
+    private String type;
     /**
      * node level
      */
@@ -37,30 +37,30 @@ public class InternalNode implements Node {
     private Node nodeD;
 
     /**
-     * @param leaf
+     * @param parentNode
      *            current sequence
-     * @param inputSeq
+     * @param newSeq
      *            new sequence to insert
      */
-    public InternalNode(LeafNode leaf, Sequence inputSeq) {
+    public InternalNode(LeafNode parentNode, Sequence newSeq) {
+        type = "I";
         setA(new EmptyNode());
         setC(new EmptyNode());
         setG(new EmptyNode());
         setT(new EmptyNode());
-        setD(new EmptyNode()); 
+        setD(new EmptyNode());
 
-        final Sequence leafSeq = leaf.getSequence();
+        final Sequence parentSeq = parentNode.getSequence();
 
         Sequence first;
         Sequence second;
-
-        if (leafSeq.length() < inputSeq.length()) {
-            first = inputSeq;
-            second = leafSeq;
+        if (parentSeq.length() < newSeq.length()) {
+            first = newSeq;
+            second = parentSeq;
         }
         else {
-            first = leafSeq;
-            second = inputSeq;
+            first = parentSeq;
+            second = newSeq;
         }
 
         insert(first);
@@ -137,15 +137,6 @@ public class InternalNode implements Node {
                     .isPrefixOf(((LeafNode)nodeD).getSequence())) {
                 insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
             }
-
-            /*
-             * else if (!sequence.hasNext() && (child instanceof LeafNode)) {
-             * Print.log(String.format(
-             * "No characters remaining for %s, insert to dollor-1",
-             * sequence));
-             * insertPrefix(sequence);
-             * }
-             */
 
             else {
                 Print.log(String.format("setting child %s for %s", child

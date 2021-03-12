@@ -1,3 +1,4 @@
+
 /**
  * Represents the Tree
  * 
@@ -71,5 +72,10 @@ public class Tree {
     public void search(SearchSequence sequence) {
         root.search(sequence);
         Print.searchSummary(sequence);
+    }
+
+
+    public Node getInfo() {
+        return root;
     }
 }

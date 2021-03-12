@@ -1,9 +1,9 @@
 <SensorData>
 <Timestamp>
-1613105888975
+1615486614012
 </Timestamp>
 <Runtime>
-1613105888975
+1615486614012
 </Runtime>
 <Tool>
 Eclipse
@@ -12,7 +12,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -28,28 +28,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613105916481
+1615486638627
 </Timestamp>
 <Runtime>
-1613105916481
+1615486638627
 </Runtime>
 <Tool>
 Eclipse
@@ -58,7 +50,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -77,15 +69,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -93,27 +77,199 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AAAACGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      E
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AACCAGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613105916481
+1615486638628
 </Timestamp>
 <Runtime>
-1613105916481
+1615486638628
 </Runtime>
 <Tool>
 Eclipse
@@ -122,7 +278,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -138,28 +294,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613105936867
+1615486734557
 </Timestamp>
 <Runtime>
-1613105936867
+1615486734557
 </Runtime>
 <Tool>
 Eclipse
@@ -168,7 +316,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -187,15 +335,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -203,27 +343,234 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AAACGT inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      E
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AACCAGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613105936867
+1615486734558
 </Timestamp>
 <Runtime>
-1613105936867
+1615486734558
 </Runtime>
 <Tool>
 Eclipse
@@ -232,7 +579,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -248,28 +595,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106187973
+1615486763360
 </Timestamp>
 <Runtime>
-1613106187973
+1615486763360
 </Runtime>
 <Tool>
 Eclipse
@@ -278,7 +617,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -297,15 +636,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -313,29 +644,17 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106187973
+1615486763361
 </Timestamp>
 <Runtime>
-1613106187973
+1615486763361
 </Runtime>
 <Tool>
 Eclipse
@@ -344,7 +663,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -360,28 +679,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106523356
+1615487119987
 </Timestamp>
 <Runtime>
-1613106523356
+1615487119987
 </Runtime>
 <Tool>
 Eclipse
@@ -390,7 +701,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -409,15 +720,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -425,30 +728,18 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-(r_r,-1,-20,3,4)
-(rec,7,-8,1,3)
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106523356
+1615487119988
 </Timestamp>
 <Runtime>
-1613106523356
+1615487119988
 </Runtime>
 <Tool>
 Eclipse
@@ -457,7 +748,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -473,28 +764,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106549029
+1615487209289
 </Timestamp>
 <Runtime>
-1613106549029
+1615487209289
 </Runtime>
 <Tool>
 Eclipse
@@ -503,7 +786,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -522,15 +805,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -538,29 +813,30 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+tree dump:
+I
+  I
+    AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106549029
+1615487209290
 </Timestamp>
 <Runtime>
-1613106549029
+1615487209290
 </Runtime>
 <Tool>
 Eclipse
@@ -569,7 +845,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -585,28 +861,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106662847
+1615487304556
 </Timestamp>
 <Runtime>
-1613106662847
+1615487304556
 </Runtime>
 <Tool>
 Eclipse
@@ -615,147 +883,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-toString()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613106668357
-</Timestamp>
-<Runtime>
-1613106668357
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-String toString()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613106693342
-</Timestamp>
-<Runtime>
-1613106693342
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -774,15 +902,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -790,29 +910,36 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AA inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      E
+      E
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106693343
+1615487304557
 </Timestamp>
 <Runtime>
-1613106693343
+1615487304557
 </Runtime>
 <Tool>
 Eclipse
@@ -821,7 +948,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -837,28 +964,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106715444
+1615487326333
 </Timestamp>
 <Runtime>
-1613106715444
+1615487326333
 </Runtime>
 <Tool>
 Eclipse
@@ -867,77 +986,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-toString()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613106718016
-</Timestamp>
-<Runtime>
-1613106718016
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -956,15 +1005,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -972,29 +1013,37 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AA inserted at level 3
+sequence AGCT inserted at level 2
+tree dump:
+I
+  I
+    I
+      AAAA
+      E
+      E
+      E
+      AA
+    ACGT
+    AGCT
+    E
+    E
+  E
+  E
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106718017
+1615487326333
 </Timestamp>
 <Runtime>
-1613106718017
+1615487326333
 </Runtime>
 <Tool>
 Eclipse
@@ -1003,7 +1052,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1019,28 +1068,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106727464
+1615487405871
 </Timestamp>
 <Runtime>
-1613106727464
+1615487405871
 </Runtime>
 <Tool>
 Eclipse
@@ -1049,77 +1090,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-String toString()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613106962857
-</Timestamp>
-<Runtime>
-1613106962857
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1138,15 +1109,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -1154,29 +1117,37 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-Rectangle@68837a77
-[insert, rec, 7, -8, 1, 3]
-Rectangle@6be46e8f
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AA inserted at level 3
+sequence AAGCT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      E
+      AAGCT
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613106962857
+1615487405872
 </Timestamp>
 <Runtime>
-1613106962857
+1615487405872
 </Runtime>
 <Tool>
 Eclipse
@@ -1185,7 +1156,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1201,28 +1172,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107207700
+1615487474524
 </Timestamp>
 <Runtime>
-1613107207700
+1615487474524
 </Runtime>
 <Tool>
 Eclipse
@@ -1231,7 +1194,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1250,15 +1213,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -1266,29 +1221,60 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AA inserted at level 3
+sequence AAGCT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      E
+      AAGCT
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AAACGT inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      E
+      AAGCT
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107207701
+1615487474525
 </Timestamp>
 <Runtime>
-1613107207701
+1615487474525
 </Runtime>
 <Tool>
 Eclipse
@@ -1297,7 +1283,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1313,28 +1299,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107214765
+1615487502556
 </Timestamp>
 <Runtime>
-1613107214765
+1615487502556
 </Runtime>
 <Tool>
 Eclipse
@@ -1343,69 +1321,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107237333
-</Timestamp>
-<Runtime>
-1613107237333
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1424,15 +1340,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -1440,29 +1348,61 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence A inserted at level 1
+sequence ACGT inserted at level 2
+sequence AA inserted at level 3
+sequence AAGCT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      E
+      AAGCT
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  A
+sequence AAACGT inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      E
+      AAGCT
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  A
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107237334
+1615487502557
 </Timestamp>
 <Runtime>
-1613107237334
+1615487502557
 </Runtime>
 <Tool>
 Eclipse
@@ -1471,7 +1411,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1487,28 +1427,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107269770
+1615487567433
 </Timestamp>
 <Runtime>
-1613107269770
+1615487567433
 </Runtime>
 <Tool>
 Eclipse
@@ -1517,131 +1449,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107284772
-</Timestamp>
-<Runtime>
-1613107284772
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107287128
-</Timestamp>
-<Runtime>
-1613107287128
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1660,15 +1468,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -1676,29 +1476,61 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-0
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence A inserted at level 1
+sequence ACGT inserted at level 2
+sequence AA inserted at level 3
+sequence AAGCT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      E
+      AAGCT
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  A
+sequence AAAACGT inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAACGT
+        E
+        E
+        E
+        AAAA
+      E
+      AAGCT
+      E
+      AA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  A
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107287129
+1615487567434
 </Timestamp>
 <Runtime>
-1613107287129
+1615487567434
 </Runtime>
 <Tool>
 Eclipse
@@ -1707,7 +1539,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -1723,28 +1555,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107729824
+1615487617130
 </Timestamp>
 <Runtime>
-1613107729824
+1615487617130
 </Runtime>
 <Tool>
 Eclipse
@@ -1753,317 +1577,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107734825
-</Timestamp>
-<Runtime>
-1613107734825
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107744826
-</Timestamp>
-<Runtime>
-1613107744826
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107759829
-</Timestamp>
-<Runtime>
-1613107759829
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107849841
-</Timestamp>
-<Runtime>
-1613107849841
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613107854209
-</Timestamp>
-<Runtime>
-1613107854209
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -2082,15 +1596,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -2098,29 +1604,59 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
--6
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AAGCT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAA
+      E
+      AAGCT
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AAAACGT inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAACGT
+        E
+        E
+        E
+        AAAA
+      E
+      AAGCT
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613107854209
+1615487617130
 </Timestamp>
 <Runtime>
-1613107854209
+1615487617130
 </Runtime>
 <Tool>
 Eclipse
@@ -2129,7 +1665,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -2145,28 +1681,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-RectangleDB (1)
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613108114863
+1615487651359
 </Timestamp>
 <Runtime>
-1613108114863
+1615487651359
 </Runtime>
 <Tool>
 Eclipse
@@ -2175,131 +1703,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613108319879
-</Timestamp>
-<Runtime>
-1613108319879
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613108454754
-</Timestamp>
-<Runtime>
-1613108454754
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -2318,15 +1722,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-RectangleDB (1)
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
+DNATreeTest
 </Value>
 </Property>
 <Property>
@@ -2334,29 +1730,188 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
--6
-[insert, r_r, -1, -20, 3, 4]
-(r_r,-1,-20,3,4)
-[insert, rec, 7, -8, 1, 3]
-(rec,7,-8,1,3)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
+sequence AAAA inserted at level 0
+sequence AAAACGT inserted at level 1
+tree dump:
+I
+  AAAACGT
+  E
+  E
+  E
+  AAAA
+sequence AACCAGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  E
+  E
+  AAAA
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  E
+  GAT
+  E
+  AAAA
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  AAAA
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  AAAA
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  AAAA
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  AAAA
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613108454754
+1615487651359
 </Timestamp>
 <Runtime>
-1613108454754
+1615487651359
 </Runtime>
 <Tool>
 Eclipse
@@ -2365,7 +1920,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -2384,17 +1939,17 @@ Launch
 Unit-Name
 </Name>
 <Value>
-RectangleDBTest
+DNATreeTest
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1613108639907
+1615487926397
 </Timestamp>
 <Runtime>
-1613108639907
+1615487926397
 </Runtime>
 <Tool>
 Eclipse
@@ -2403,7 +1958,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
 </URI>
 <ProjectURI>
 /C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
@@ -2411,10 +1966,1066 @@ DevEvent
 <Properties>
 <Property>
 <Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AAAACGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      E
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AACCAGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      AAAACGT
+      AACCAGT
+      E
+      E
+      AAAA
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615487926398
+</Timestamp>
+<Runtime>
+1615487926398
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615487992742
+</Timestamp>
+<Runtime>
+1615487992742
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AAACGT inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      E
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AACCAGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        AAAA
+        AAACGT
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615487992743
+</Timestamp>
+<Runtime>
+1615487992743
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615488064502
+</Timestamp>
+<Runtime>
+1615488064502
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AAAAACGT inserted at level 6
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      E
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence AACCAGT inserted at level 3
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+sequence GAT inserted at level 1
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  GAT
+  E
+  E
+sequence CACCTGC inserted at level 1
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  CACCTGC
+  GAT
+  E
+  E
+sequence CACTACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACTACGT inserted at level 5
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        E
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+sequence CACG inserted at level 4
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      AACCAGT
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  I
+    I
+      E
+      I
+        E
+        CACCTGC
+        CACG
+        I
+          CACTACGT
+          E
+          E
+          E
+          CACTACG
+        E
+      E
+      E
+      E
+    E
+    E
+    E
+    E
+  GAT
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615488064503
+</Timestamp>
+<Runtime>
+1615488064503
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615488128103
+</Timestamp>
+<Runtime>
+1615488128103
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+sequence AAAAAA inserted at level 0
+sequence ACGT inserted at level 2
+sequence AAAAACGT inserted at level 6
+tree dump:
+I
+  I
+    I
+      I
+        I
+          I
+            AAAAAA
+            AAAAACGT
+            E
+            E
+            E
+          E
+          E
+          E
+          E
+        E
+        E
+        E
+        E
+      E
+      E
+      E
+      E
+    ACGT
+    E
+    E
+    E
+  E
+  E
+  E
+  E
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615488128104
+</Timestamp>
+<Runtime>
+1615488128104
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+DNATreeTest
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1615488137224
+</Timestamp>
+<Runtime>
+1615488137224
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/EmptyNode.java
+</URI>
+<ProjectURI>
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/EmptyNode.java
 </Value>
 </Property>
 <Property>
@@ -2438,7 +3049,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
 </Value>
 </Property>
 <Property>
@@ -2453,10 +3064,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613108804923
+1615488157226
 </Timestamp>
 <Runtime>
-1613108804923
+1615488157226
 </Runtime>
 <Tool>
 Eclipse
@@ -2465,10 +3076,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -2476,7 +3087,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </Value>
 </Property>
 <Property>
@@ -2500,7 +3111,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/InternalNode.java
 </Value>
 </Property>
 <Property>
@@ -2515,10 +3126,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613109144958
+1615488187229
 </Timestamp>
 <Runtime>
-1613109144958
+1615488187229
 </Runtime>
 <Tool>
 Eclipse
@@ -2527,10 +3138,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -2538,7 +3149,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </Value>
 </Property>
 <Property>
@@ -2562,7 +3173,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </Value>
 </Property>
 <Property>
@@ -2577,10 +3188,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613109199163
+1615488222232
 </Timestamp>
 <Runtime>
-1613109199163
+1615488222232
 </Runtime>
 <Tool>
 Eclipse
@@ -2589,2778 +3200,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Rectangle getRectangle()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199163
-</Timestamp>
-<Runtime>
-1613109199163
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-void setRectangle(Rectangle)
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199163
-</Timestamp>
-<Runtime>
-1613109199163
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-BTNode getBtNode()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199163
-</Timestamp>
-<Runtime>
-1613109199163
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-void setBtNode(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199163
-</Timestamp>
-<Runtime>
-1613109199163
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-BTNode getLeft()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199163
-</Timestamp>
-<Runtime>
-1613109199163
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-void setLeft(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199164
-</Timestamp>
-<Runtime>
-1613109199164
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-BTNode getRight()
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199164
-</Timestamp>
-<Runtime>
-1613109199164
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-void setRight(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199164
-</Timestamp>
-<Runtime>
-1613109199164
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Rectangle rectangle
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199164
-</Timestamp>
-<Runtime>
-1613109199164
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-BTNode btNode
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199164
-</Timestamp>
-<Runtime>
-1613109199164
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-BTNode left/2
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109199164
-</Timestamp>
-<Runtime>
-1613109199164
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-BTNode right/2
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109261736
-</Timestamp>
-<Runtime>
-1613109261736
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-btNode
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109261736
-</Timestamp>
-<Runtime>
-1613109261736
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-left/2
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109261736
-</Timestamp>
-<Runtime>
-1613109261736
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-right/2
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109276756
-</Timestamp>
-<Runtime>
-1613109276757
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-rectangle
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109290805
-</Timestamp>
-<Runtime>
-1613109290805
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setRight(Node)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setRight(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109301334
-</Timestamp>
-<Runtime>
-1613109301334
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setLeft(Node)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setLeft(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109307860
-</Timestamp>
-<Runtime>
-1613109307860
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setNode(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setBtNode(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109310872
-</Timestamp>
-<Runtime>
-1613109310872
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setNode(Node)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setNode(BTNode)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109367045
-</Timestamp>
-<Runtime>
-1613109367045
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-Node getNode()
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-getBtNode()
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109824809
-</Timestamp>
-<Runtime>
-1613109824809
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-rectangle cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109824809
-</Timestamp>
-<Runtime>
-1613109824809
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-rectangle cannot be resolved or is not a field
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109824809
-</Timestamp>
-<Runtime>
-1613109824809
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-node cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109824809
-</Timestamp>
-<Runtime>
-1613109824809
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-node cannot be resolved or is not a field
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109944173
-</Timestamp>
-<Runtime>
-1613109944173
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-Node<t> Node
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-left
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109948185
-</Timestamp>
-<Runtime>
-1613109948185
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-Node<t> node
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-Node
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109973222
-</Timestamp>
-<Runtime>
-1613109973222
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setNode(Node<T>)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setNode(Node)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109978241
-</Timestamp>
-<Runtime>
-1613109978241
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setLeft(Node<>)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setLeft(Node)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109979248
-</Timestamp>
-<Runtime>
-1613109979248
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setLeft(Node<T>)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setLeft(Node<>)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613109985258
-</Timestamp>
-<Runtime>
-1613109985258
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setRight(Node<T>)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setRight(Node)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110011298
-</Timestamp>
-<Runtime>
-1613110011298
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-value
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110012305
-</Timestamp>
-<Runtime>
-1613110012305
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-T value
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110086409
-</Timestamp>
-<Runtime>
-1613110086409
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Remove
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-value
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110088918
-</Timestamp>
-<Runtime>
-1613110088918
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Add
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Rectangle value
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Field
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110106443
-</Timestamp>
-<Runtime>
-1613110106443
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-Node(Rectangle)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-Node(T)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110123001
-</Timestamp>
-<Runtime>
-1613110123001
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-rectangle cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110123001
-</Timestamp>
-<Runtime>
-1613110123001
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-rectangle cannot be resolved or is not a field
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110123001
-</Timestamp>
-<Runtime>
-1613110123001
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-node cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110123001
-</Timestamp>
-<Runtime>
-1613110123001
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-node cannot be resolved or is not a field
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110330075
-</Timestamp>
-<Runtime>
-1613110330075
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -5368,69 +3211,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-true
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110365077
-</Timestamp>
-<Runtime>
-1613110365077
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </Value>
 </Property>
 <Property>
@@ -5454,7 +3235,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Parser.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </Value>
 </Property>
 <Property>
@@ -5469,10 +3250,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613110385079
+1615488282237
 </Timestamp>
 <Runtime>
-1613110385079
+1615488282237
 </Runtime>
 <Tool>
 Eclipse
@@ -5481,10 +3262,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/PrintMode.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -5492,7 +3273,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/PrintMode.java
 </Value>
 </Property>
 <Property>
@@ -5516,7 +3297,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </Value>
 </Property>
 <Property>
@@ -5531,10 +3312,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613110395080
+1615488287238
 </Timestamp>
 <Runtime>
-1613110395080
+1615488287238
 </Runtime>
 <Tool>
 Eclipse
@@ -5543,10 +3324,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -5554,7 +3335,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </Value>
 </Property>
 <Property>
@@ -5578,7 +3359,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDBTest.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/PrintMode.java
 </Value>
 </Property>
 <Property>
@@ -5593,10 +3374,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613110409724
+1615488327242
 </Timestamp>
 <Runtime>
-1613110409724
+1615488327242
 </Runtime>
 <Tool>
 Eclipse
@@ -5605,64 +3386,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/BSTTest.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-BSTTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110410081
-</Timestamp>
-<Runtime>
-1613110410081
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/BSTTest.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -5670,7 +3397,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/BSTTest.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </Value>
 </Property>
 <Property>
@@ -5694,7 +3421,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </Value>
 </Property>
 <Property>
@@ -5709,10 +3436,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613110435083
+1615488352245
 </Timestamp>
 <Runtime>
-1613110435083
+1615488352245
 </Runtime>
 <Tool>
 Eclipse
@@ -5721,10 +3448,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -5732,7 +3459,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </Value>
 </Property>
 <Property>
@@ -5756,7 +3483,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/BSTTest.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/LeafNode.java
 </Value>
 </Property>
 <Property>
@@ -5771,10 +3498,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1613110465086
+1615488377246
 </Timestamp>
 <Runtime>
-1613110465086
+1615488377246
 </Runtime>
 <Tool>
 Eclipse
@@ -5783,10 +3510,10 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/BSTTest.java
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
 </URI>
 <ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
+/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA_projects/DSA/Project-2-DNATree
 </ProjectURI>
 <Properties>
 <Property>
@@ -5794,7 +3521,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/BSTTest.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/DNATreeTest.java
 </Value>
 </Property>
 <Property>
@@ -5818,7 +3545,7 @@ false
 From-Buff-Name
 </Name>
 <Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/RectangleDB.java
+file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA_projects/DSA/Project-2-DNATree/src/Print.java
 </Value>
 </Property>
 <Property>
@@ -5827,464 +3554,6 @@ Subtype
 </Name>
 <Value>
 BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110510091
-</Timestamp>
-<Runtime>
-1613110510091
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/BSTTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110515091
-</Timestamp>
-<Runtime>
-1613110515091
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110535093
-</Timestamp>
-<Runtime>
-1613110535093
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/C:/Users/shrey/OneDrive%20-%20Virginia%20Tech/Documents/Study%20Material/Spring%2021/DSA/CS5040-SP2020-P2-Starter/src/Rectangle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110606436
-</Timestamp>
-<Runtime>
-1613110606436
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void setR(Rectangle)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setRectangle(Rectangle)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1613110607946
-</Timestamp>
-<Runtime>
-1613110607946
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Rename
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-To-Unit-Name
-</Name>
-<Value>
-void set(Rectangle)
-</Value>
-</Property>
-<Property>
-<Name>
-From-Unit-Name
-</Name>
-<Value>
-setR(Rectangle)
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-ProgramUnit
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-Method
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1614798944879
-</Timestamp>
-<Runtime>
-1614798944879
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1614798955636
-</Timestamp>
-<Runtime>
-1614798955636
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter/src/Node.java
-</URI>
-<ProjectURI>
-/C:/Users/shrey/OneDrive - Virginia Tech/Documents/Study Material/Spring 21/DSA/CS5040-SP2020-P2-Starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Language
-</Name>
-<Value>
-java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Close
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Node.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
 </Value>
 </Property>
 </Properties>

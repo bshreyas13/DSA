@@ -5,6 +5,7 @@
 Thumbs.db
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /bin/
 *.class
 *.war
@@ -31,4 +32,7 @@ hs_error_pid*
 /bin/
 =======
 >>>>>>> branch 'master' of https://web-cat.cs.vt.edu/Web-CAT/WebObjects/Web-CAT.woa/git/StudentProject/b9411224-e771-4857-b738-b7fe9fddd2fd
+/bin/
+=======
+>>>>>>> branch 'master' of https://web-cat.cs.vt.edu/Web-CAT/WebObjects/Web-CAT.woa/git/StudentProject/29950a80-60f6-4475-930d-ce7524439a02
 /bin/
