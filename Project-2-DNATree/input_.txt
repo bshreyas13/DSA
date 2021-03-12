@@ -1,14 +1,21 @@
-insert TTAC
-insert TTA
-insert TT
-print
-insert T
+insert AT
+                   insert AT
+                   
+                   
+                   
+                   
+                   
+insert                         AT
+insert AT
 
-print
+			insert      T
 
-insert TCG
 
-insert T
-insert TAT
+				print            
+search AT
 
-print
+
+print         lengths
+
+
+		print stats

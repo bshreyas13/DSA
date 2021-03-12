@@ -47,7 +47,7 @@ public class DNAtree {
         File f = new File(fileName);
         Scanner sc = new Scanner(f);
         while (sc.hasNextLine()) {
-            String line = sc.nextLine().trim().replaceAll(" +", " ");
+            String line = sc.nextLine().trim();
             if (!line.isEmpty()) {
                 processCommand(line);
                 Print.log("----------------------------------------------");
@@ -64,40 +64,42 @@ public class DNAtree {
      *            the line with command and params
      */
     private static void processCommand(String line) {
-        String[] params = line.split(" ");
-        if (params != null && params.length > 0) {
-            switch (params[0]) {
-                case "insert":
-                    if (params.length > 1) {
-                        String seq = params[1].trim();
-                        if (seq.length() > 0) {
-                            tree.insert(new Sequence(seq));
+        if (line != null && line.length() > 0) {
+            String[] params = line.trim().replaceAll(" +", " ").split(" ");
+            if (params != null && params.length > 0) {
+                switch (params[0]) {
+                    case "insert":
+                        if (params.length > 1) {
+                            String seq = params[1].trim();
+                            if (seq.length() > 0) {
+                                tree.insert(new Sequence(seq));
+                            }
                         }
-                    }
-                    break;
-                case "remove":
-                    tree.remove(new Sequence(params[1]));
-                    System.out.flush();
-                    break;
-                case "print":
-                    Print.setPrint(PrintMode.NONE);
-                    if (params.length > 1) {
-                        if (params[1].compareTo("lengths") == 0) {
-                            Print.setPrint(PrintMode.LENGTH);
+                        break;
+                    case "remove":
+                        tree.remove(new Sequence(params[1]));
+                        System.out.flush();
+                        break;
+                    case "print":
+                        Print.setPrint(PrintMode.NONE);
+                        if (params.length > 1) {
+                            if (params[1].compareTo("lengths") == 0) {
+                                Print.setPrint(PrintMode.LENGTH);
+                            }
+                            else if (params[1].compareTo("stats") == 0) {
+                                Print.setPrint(PrintMode.STATS);
+                            }
                         }
-                        else if (params[1].compareTo("stats") == 0) {
-                            Print.setPrint(PrintMode.STATS);
-                        }
-                    }
-                    tree.dump();
-                    System.out.flush();
-                    break;
-                case "search":
-                    tree.search(new SearchSequence(params[1]));
-                    System.out.flush();
-                    break;
-                default:
-                    break;
+                        tree.dump();
+                        System.out.flush();
+                        break;
+                    case "search":
+                        tree.search(new SearchSequence(params[1]));
+                        System.out.flush();
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }
