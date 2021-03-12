@@ -77,7 +77,7 @@ public class Sequence {
 
 
     public boolean hasNextPrefix() {
-        return (position < Math.min(prefixLength, characters.length));
+        return (position < Math.min(prefixLength-1, characters.length));
     }
 
 
