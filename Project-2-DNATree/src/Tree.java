@@ -78,5 +78,4 @@ public class Tree {
         root.search(sequence);
         Print.searchSummary(sequence);
     }
-
 }

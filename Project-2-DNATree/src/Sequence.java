@@ -1,4 +1,3 @@
-
 /**
  * Represents the Sequence
  *

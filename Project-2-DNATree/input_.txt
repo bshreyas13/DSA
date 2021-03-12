@@ -1,8 +1,7 @@
-insert T
-insert	           TATATAG			 
+insert ACGT
 
+insert ACTGGGAA
 
+remove ACGT
 
-
-insert 		T
-
+print
