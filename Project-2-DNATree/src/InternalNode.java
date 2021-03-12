@@ -5,11 +5,7 @@
  * @version 2021-03-07
  */
 public class InternalNode implements Node {
-    /**
-     * occupied nodes limit
-     */
-    public static final int MIN_NODES = 1;
-    private String type;
+
     /**
      * node level
      */
@@ -43,44 +39,61 @@ public class InternalNode implements Node {
      *            new sequence to insert
      */
     public InternalNode(LeafNode parentNode, Sequence newSeq) {
-        type = "I";
         setA(new EmptyNode());
         setC(new EmptyNode());
         setG(new EmptyNode());
         setT(new EmptyNode());
         setD(new EmptyNode());
 
-        final Sequence parentSeq = parentNode.getSequence();
+        final Sequence leafSeq = parentNode.getSequence();
+
+        if (leafSeq.isPrefixOf(newSeq)) {
+            newSeq.setPrefixLength(leafSeq.length() + 2);
+        }
+        else if (newSeq.isPrefixOf(leafSeq)) {
+            leafSeq.setPrefixLength(newSeq.length() + 2);
+        }
 
         Sequence first;
         Sequence second;
-        if (parentSeq.length() < newSeq.length()) {
+        if (leafSeq.length() < newSeq.length()) {
             first = newSeq;
-            second = parentSeq;
+            second = leafSeq;
         }
         else {
-            first = parentSeq;
+            first = leafSeq;
             second = newSeq;
         }
 
         insert(first);
+        insert(second);
 
         if (second.isPrefixOf(first)) {
             Print.log(String.format("%s is prefix of %s, insert to dollor",
                 second, first));
-            insertPrefix(second);
+            // insertToDollor(second);
         }
         else {
-            insert(second);
+ 
         }
+    }
+
+
+    public InternalNode(EmptyNode parentNode, Sequence newSeq) {
+        setA(new EmptyNode());
+        setC(new EmptyNode());
+        setG(new EmptyNode());
+        setT(new EmptyNode());
+        setD(new EmptyNode());
+
+        insert(newSeq);
     }
 
 
     /**
      * @param c
      *            character to switch
-     * @return
-     *         Child node based on the char
+     * @return Child node based on the char
      */
     protected Node getChild(char c) {
         switch (c) {
@@ -119,81 +132,29 @@ public class InternalNode implements Node {
     @Override
     public Node insert(Sequence sequence) {
         Print.log(String.format("Inserting %s", sequence));
-        if (sequence.hasNext()) {
+
+        if (sequence.hasNextPrefix()) {
+            final char c = sequence.nextPrefix();
+            Print.log(String.format("current prefix char %c", c));
+            Node child = getChild(c);
+            setChild(c, child.insert(sequence));
+        }
+        else if (sequence.hasNext()) {
             Print.log(String.format("current position %d", sequence
                 .getPosition()));
             final char c = sequence.next();
             Node child = getChild(c);
             Print.log(String.format("Got child %s for %s", child.toString(),
                 sequence));
-
-            if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
-                .equals(sequence)) {
-                Print.sequenceAlreadyExists(sequence);
-            }
-
-            else if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD)
-                .getSequence().length() > sequence.length() && sequence
-                    .isPrefixOf(((LeafNode)nodeD).getSequence())) {
-                insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
-            }
-
-            else {
-                Print.log(String.format("setting child %s for %s", child
-                    .toString(), sequence));
-                setChild(c, child.insert(sequence));
-            }
+            setChild(c, child.insert(sequence));
         }
         else {
-            Print.log(String.format(
-                "No characters remaining for %s, insert to dollor-2",
-                sequence));
-            insertPrefix(sequence);
+            // Print.log(String.format(
+            // "No characters remaining for %s, insert to dollor-2",
+            // sequence));
+            insertToDollor(sequence);
         }
         return this;
-    }
-
-
-    /**
-     * find total non empty nodes
-     * 
-     * @return
-     *         count
-     * 
-     *         private int nonEmptyChilds() {
-     *         int nonEmptyChildren = 0;
-     *         if (nodeA instanceof LeafNode) {
-     *         nonEmptyChildren++;
-     *         }
-     *         if (nodeC instanceof LeafNode) {
-     *         nonEmptyChildren++;
-     *         }
-     *         if (nodeG instanceof LeafNode) {
-     *         nonEmptyChildren++;
-     *         }
-     *         if (nodeT instanceof LeafNode) {
-     *         nonEmptyChildren++;
-     *         }
-     *         if (nodeD instanceof LeafNode) {
-     *         nonEmptyChildren++;
-     *         }
-     * 
-     *         return nonEmptyChildren;
-     *         }
-     */
-
-    /**
-     * @param newSeq
-     *            change sequence
-     * @return
-     *         return sequence
-     */
-    private Sequence saveSmallSeqAndGetBigSeqFromDollor(Sequence newSeq) {
-        Sequence currentSeq = ((LeafNode)nodeD).getSequence();
-        ((LeafNode)nodeD).setSequence(newSeq);
-        Print.log(String.format("Replacing : %s[with ->]%s", newSeq,
-            currentSeq));
-        return currentSeq;
     }
 
 
@@ -202,7 +163,7 @@ public class InternalNode implements Node {
      *            set sequence to $ if empty node other wise call insert
      *            recursively
      */
-    public void insertPrefix(Sequence sequence) {
+    public void insertToDollor(Sequence sequence) {
         Print.log(String.format("inserting prefix: %s", sequence));
         if (nodeD instanceof EmptyNode) {
             nodeD = nodeD.insert(sequence);
@@ -211,17 +172,11 @@ public class InternalNode implements Node {
             ((LeafNode)nodeD).getSequence())) {
             Print.sequenceAlreadyExists(sequence);
         }
-        else if ((nodeD instanceof LeafNode) && ((LeafNode)nodeD).getSequence()
-            .length() > sequence.length() && sequence.isPrefixOf(
-                ((LeafNode)nodeD).getSequence())) {
-            insert(saveSmallSeqAndGetBigSeqFromDollor(sequence));
-        }
     }
 
 
     /**
-     * @param
-     * remove
+     * @param remove
      *            the sequence at this node iteratively
      */
     @Override
@@ -288,8 +243,7 @@ public class InternalNode implements Node {
      *            character to find child node
      * @param child
      *            child node
-     * @return
-     *         return true if child was set
+     * @return return true if child was set
      */
     public boolean setChild(char c, Node child) {
         switch (c) {
@@ -312,18 +266,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         return nodes occupied
-     * 
-     *         private boolean allChildsFilled() {
-     *         return nodeA instanceof LeafNode && nodeC instanceof LeafNode
-     *         && nodeG instanceof LeafNode && nodeT instanceof LeafNode;
-     *         }
-     */
-
-    /**
-     * @return
-     *         return chidren
+     * @return return chidren
      */
     private Node[] getChildren() {
         return new Node[] { nodeA, nodeC, nodeG, nodeT, nodeD };
@@ -331,8 +274,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         Node
+     * @return Node
      */
     public Node getA() {
         return nodeA;
@@ -349,8 +291,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         C
+     * @return C
      */
     public Node getC() {
         return nodeC;
@@ -367,8 +308,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         G
+     * @return G
      */
     public Node getG() {
         return nodeG;
@@ -385,8 +325,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         get T
+     * @return get T
      */
     public Node getT() {
         return nodeT;
@@ -403,8 +342,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         get Dollor
+     * @return get Dollor
      */
     public Node getD() {
         return nodeD;
@@ -436,8 +374,7 @@ public class InternalNode implements Node {
 
 
     /**
-     * @return
-     *         level
+     * @return level
      */
     @Override
     public int getLevel() {

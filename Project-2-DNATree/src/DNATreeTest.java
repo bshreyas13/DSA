@@ -11,8 +11,8 @@ public class DNATreeTest extends TestCase {
      * Get code coverage of the DNA Tree.
      */
     public void testRInit() {
-        String[] fileNames = { "input_.txt",
-             //"input_.txt"
+        String[] fileNames = { "input.txt",
+            // "input_.txt"
         };
 
         for (String f : fileNames) {

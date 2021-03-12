@@ -26,6 +26,9 @@ public class EmptyNode implements Node {
      */
     @Override
     public Node insert(Sequence sequence) {
+        if (sequence.hasNextPrefix()) {
+            return new InternalNode(this, sequence);
+        }
         Print.log(String.format("Empty node reached for %s, creating leaf node",
             sequence));
         return new LeafNode(sequence);

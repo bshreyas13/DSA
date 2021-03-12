@@ -10,7 +10,7 @@ public class Sequence {
      * Current position of sequence
      */
     private int position = 0;
-    private String text;
+    private int prefixLength = -1;
 
     /**
      * Characters to hold for this sequence
@@ -25,7 +25,6 @@ public class Sequence {
      */
     public Sequence(String sequence) {
         characters = sequence.toCharArray();
-        text = sequence;
     }
 
 
@@ -71,7 +70,22 @@ public class Sequence {
      * @return true if has false otherwise
      */
     public boolean hasNext() {
+        if (prefixLength != -1)
+            return (position < prefixLength + 2);
         return (position < characters.length);
+    }
+
+
+    public boolean hasNextPrefix() {
+        return (position < Math.min(prefixLength, characters.length));
+    }
+
+
+    public char nextPrefix() {
+        if (!hasNextPrefix()) {
+            return current();
+        }
+        return characters[position++];
     }
 
 
@@ -131,6 +145,11 @@ public class Sequence {
     }
 
 
+    public void setPosition(int p) {
+        this.position = p;
+    }
+
+
     /**
      * get sequence
      *
@@ -151,4 +170,26 @@ public class Sequence {
     public boolean isPrefixOf(Sequence other) {
         return other.toString().startsWith(new String(characters));
     }
+
+
+    /**
+     * get prefix
+     * 
+     * @return prefix lengths
+     */
+    public int getPrefixLength() {
+        return prefixLength;
+    }
+
+
+    /**
+     * set length
+     * 
+     * @param length
+     *            length
+     */
+    public void setPrefixLength(int length) {
+        this.prefixLength = length;
+    }
+
 }

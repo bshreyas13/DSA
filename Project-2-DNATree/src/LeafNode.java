@@ -1,5 +1,4 @@
 
-
 /**
  * Represents the leaf node
  *
@@ -16,15 +15,14 @@ public class LeafNode implements Node {
      * node level
      */
     private int level;
-    private String type;
 
     /**
      * leaf node constructor
      *
-     * @param sequence sequence of this leaf node
+     * @param sequence
+     *            sequence of this leaf node
      */
     public LeafNode(Sequence sequence) {
-        type = "L";
         Print.log("Reached leaf node:" + sequence.toString());
         this.setSequence(sequence);
         Print.setInserted(this);
@@ -41,7 +39,8 @@ public class LeafNode implements Node {
 
 
     /**
-     * @param seq sequence to insert
+     * @param seq
+     *            sequence to insert
      * @return Node
      */
     @Override
@@ -49,7 +48,8 @@ public class LeafNode implements Node {
         if (this.sequence.equals(seq)) {
             Print.sequenceAlreadyExists(seq);
             return this;
-        } else {
+        }
+        else {
             Print.log("Leaf node creating internal node to insert " + seq);
             return new InternalNode(this, seq);
         }
@@ -59,7 +59,8 @@ public class LeafNode implements Node {
     /**
      * Remove sequence
      *
-     * @param seq sequence to remove
+     * @param seq
+     *            sequence to remove
      * @return node
      */
     @Override
@@ -67,7 +68,8 @@ public class LeafNode implements Node {
         if (this.sequence.equals(seq)) {
             Print.info(String.format("sequence %s removed", seq));
             return new EmptyNode();
-        } else {
+        }
+        else {
             Print.noSeqFound(seq);
             return this;
         }
@@ -83,7 +85,7 @@ public class LeafNode implements Node {
     public void search(SearchSequence seq) {
         seq.incrementNodesVisited();
         if ((seq.isExactMatch() && this.sequence.equals(seq
-                .getSearchSequence())) || !seq.isExactMatch()) {
+            .getSearchSequence())) || !seq.isExactMatch()) {
             seq.addMatch(this.sequence);
         }
     }
@@ -102,7 +104,8 @@ public class LeafNode implements Node {
     /**
      * set sequence
      *
-     * @param sequence sequence
+     * @param sequence
+     *            sequence
      */
     public void setSequence(Sequence sequence) {
         this.sequence = sequence;
@@ -112,7 +115,8 @@ public class LeafNode implements Node {
     /**
      * set level
      *
-     * @param level level
+     * @param level
+     *            level
      */
     @Override
     public void setLevel(int level) {

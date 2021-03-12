@@ -89,8 +89,7 @@ public class SearchSequence {
     /**
      * check for exact match mode
      * 
-     * @return
-     *         true if match mode is exact
+     * @return true if match mode is exact
      */
     public boolean isExactMatch() {
         return (mode == SearchMode.EXACT);
@@ -100,8 +99,7 @@ public class SearchSequence {
     /**
      * get search sequence
      * 
-     * @return
-     *         search sequence
+     * @return search sequence
      */
     public Sequence getSearchSequence() {
         return seq;
@@ -111,8 +109,7 @@ public class SearchSequence {
     /**
      * get nodes
      * 
-     * @return
-     *         nodes count
+     * @return nodes count
      */
     public int getNodes() {
         return visited;
@@ -122,8 +119,7 @@ public class SearchSequence {
     /**
      * Get matches
      * 
-     * @return
-     *         list of matches
+     * @return list of matches
      */
 
     public MyList<Sequence> getMatches() {
@@ -134,8 +130,7 @@ public class SearchSequence {
     /**
      * check if search found
      * 
-     * @return
-     *         true if search was found
+     * @return true if search was found
      */
     public boolean searchFound() {
         return this.matches != null && this.matches.length() > 0;
