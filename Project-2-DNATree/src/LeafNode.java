@@ -126,6 +126,7 @@ public class LeafNode implements Node {
     @Override
     public void setLevel(int level) {
         this.level = level;
+        this.sequence.setPrefixLength(-1);
     }
 
 
