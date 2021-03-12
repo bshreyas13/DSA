@@ -35,9 +35,9 @@ public class Tree {
      */
     public void insert(Sequence sequence) {
         Print.setInserted(null);
-        //System.out.println(root);
+        // System.out.println(root);
         root = root.insert(sequence);
-        //System.out.println(root);
+        // System.out.println(root);
         if (root != null) {
             root.setLevel(0);
             Print.printInserted(sequence);
@@ -53,6 +53,9 @@ public class Tree {
      */
     public void remove(Sequence sequence) {
         root = root.remove(sequence);
+        if (root != null) {
+            root.setLevel(0);
+        }
     }
 
 
@@ -76,8 +79,4 @@ public class Tree {
         Print.searchSummary(sequence);
     }
 
-
-    public Node getInfo() {
-        return root;
-    }
 }

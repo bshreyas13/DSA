@@ -158,11 +158,6 @@ public class Sequence {
     }
 
 
-    public void setPosition(int p) {
-        this.position = p;
-    }
-
-
     /**
      * get sequence
      *
