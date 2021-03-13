@@ -1,25 +1,14 @@
-insert G
-
-insert CAT 
-insert C 
-
-insert TAT
-
-insert T
-insert CGT
-
-insert GACGT
-
-insert GACTGGGAA
-
-insert GAT
- 
-
-remove G
-remove C
-remove T
-
-search T
+insert 	GA
+insert GTAT
+insert GTCT
+ 	  insert G
+           remove   CGA
+print
 search G
-search C 
+	search GTAT
+search GTCT
+search         GTAT
+remove G
+search G
+search GA
 
