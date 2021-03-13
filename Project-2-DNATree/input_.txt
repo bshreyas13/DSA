@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 insert 	GA
 insert GTAT
 insert GTCT
@@ -11,4 +12,29 @@ search         GTAT
 remove G
 search G
 search GA
+=======
+  insert G
+insert 	GA
+insert GG
+ 	  
+ 	  insert GTAT
+ 	  insert GTCT
+ 	  insert G
+ 	  search CGA
+ 	  print
+ 	  
+ 	  
+ 	  search G
+ 	  search  GTAT$
+ 	  search GTCT
+ 	  
+  remove                                            GG
+
+ 	  search 	GG
+ 	    insert G
+ remove G
+ 	  search GA
+
+ 	  
+>>>>>>> 03f6fecc2d126c6937b653e4ae0bc68d88645fd7
 

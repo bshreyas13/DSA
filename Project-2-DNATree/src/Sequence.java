@@ -140,14 +140,15 @@ public class Sequence {
      */
     public boolean equals(Object obj) {
         if (obj instanceof Sequence) {
-            return (this.toString().equals(((Sequence)obj).toString()));
+            return (this.toString().trim().equals(((Sequence)obj).toString()
+                .trim()));
         }
         return super.equals(obj);
     }
 
 
     /**
-     * Return positon
+     * Return position
      *
      * @return position
      */

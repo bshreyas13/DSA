@@ -9427,6 +9427,7 @@ java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
 	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
 	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
 	at java.base/java.util.TimerThread.run(Timer.java:506)
+<<<<<<< HEAD
 
 !ENTRY org.webcat.eclipse.projectlink 4 0 2021-03-12 17:55:43.570
 !MESSAGE null Operation not supported in JLS2 AST
@@ -11923,3 +11924,42 @@ java.net.UnknownHostException: web-cat.cs.vt.edu
 	at org.webcat.eclipse.deveventtracker.PostToServerTimerTask.run(PostToServerTimerTask.java:33)
 	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
 	at java.base/java.util.TimerThread.run(Timer.java:506)
+=======
+>>>>>>> 03f6fecc2d126c6937b653e4ae0bc68d88645fd7
+
+!ENTRY org.eclipse.core.resources 4 2 2021-03-12 22:53:30.503
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2060)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:517)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3083)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3012)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.access$18(EclipseSensor.java:615)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor$ResourceChangeAdapter.visit(EclipseSensor.java:1279)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor$ResourceChangeAdapter.resourceChanged(EclipseSensor.java:1181)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2306)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.egit.core.internal.ResourceRefreshHandler.refreshRepository(ResourceRefreshHandler.java:148)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.run(Activator.java:828)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

@@ -11,10 +11,10 @@ public class DNATreeTest extends TestCase {
      * Get code coverage of the DNA Tree.
      */
     public void testRInit() {
+
+        String[] fileNames = { "input.txt" };
         System.out.flush();
         systemOut().clearHistory();
-        String[] fileNames = { "input_.txt"};
-
 
         for (String f : fileNames) {
             DNAtree.main(new String[] { f });
