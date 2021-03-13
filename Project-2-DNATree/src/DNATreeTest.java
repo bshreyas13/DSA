@@ -12,11 +12,11 @@ public class DNATreeTest extends TestCase {
      */
     public void testRInit() {
 
-        String[] fileNames = { "input_.txt" };
+        String[] fileNames = { "input.txt" };
+        System.out.flush();
+        systemOut().clearHistory();
 
         for (String f : fileNames) {
-            System.out.flush();
-            systemOut().clearHistory();
             DNAtree.main(new String[] { f });
             assertTrue(DNAtree.isSuccess());
         }
