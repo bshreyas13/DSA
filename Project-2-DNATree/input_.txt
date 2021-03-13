@@ -1,7 +1,25 @@
-insert ACGT
+insert G
 
-insert ACTGGGAA
+insert CAT 
+insert C 
 
-remove ACGT
+insert TAT
 
-print
+insert T
+insert CGT
+
+insert GACGT
+
+insert GACTGGGAA
+
+insert GAT
+ 
+
+remove G
+remove C
+remove T
+
+search T
+search G
+search C 
+
