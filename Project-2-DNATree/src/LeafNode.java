@@ -89,8 +89,8 @@ public class LeafNode implements Node {
             .getSearchSequence())) {
             seq.addMatch(this.sequence);
         }
-        else if (this.sequence.toString().startsWith(seq.getSearchSequence()
-            .toString())) {
+        else if (!seq.isExactMatch() && this.sequence.toString().trim()
+            .startsWith(seq.getSearchSequence().toString().trim())) {
             seq.addMatch(this.sequence);
         }
     }

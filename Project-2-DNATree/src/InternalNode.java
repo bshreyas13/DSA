@@ -186,9 +186,9 @@ public class InternalNode implements Node {
     @Override
     public Node remove(Sequence sequence) {
         if (sequence.hasNext()) {
-            final char sequenceChar = sequence.next();
-            Node child = getChild(sequenceChar);
-            setChild(sequenceChar, child.remove(sequence));
+            final char nextChar = sequence.next();
+            Node child = getChild(nextChar);
+            setChild(nextChar, child.remove(sequence));
         }
         else {
             nodeD = nodeD.remove(sequence);

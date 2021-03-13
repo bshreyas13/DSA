@@ -1,7 +1,24 @@
-insert ACGT
+  insert G
+insert 	GA
+insert GG
+ 	  
+ 	  insert GTAT
+ 	  insert GTCT
+ 	  insert G
+ 	  search CGA
+ 	  print
+ 	  
+ 	  
+ 	  search G
+ 	  search  GTAT$
+ 	  search GTCT
+ 	  
+  remove                                            GG
 
-insert ACTGGGAA
+ 	  search 	GG
+ 	    insert G
+ remove G
+ 	  search GA
 
-remove ACGT
+ 	  
 
-print

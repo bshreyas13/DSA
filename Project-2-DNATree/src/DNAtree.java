@@ -79,7 +79,7 @@ public class DNAtree {
                         }
                         break;
                     case "remove":
-                        tree.remove(new Sequence(params[1]));
+                        tree.remove(new Sequence(params[1].trim()));
                         System.out.flush();
                         break;
                     case "print":
@@ -96,7 +96,7 @@ public class DNAtree {
                         System.out.flush();
                         break;
                     case "search":
-                        tree.search(new SearchSequence(params[1]));
+                        tree.search(new SearchSequence(params[1].trim()));
                         System.out.flush();
                         break;
                     default:
