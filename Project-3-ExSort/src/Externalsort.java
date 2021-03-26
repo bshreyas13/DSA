@@ -32,11 +32,69 @@
 public class Externalsort {
 
     /**
-     * @param args
+     * @param argss
      *            Command line parameters
      */
     public static void main(String[] args) {
-        //Your main method code goes here.
+        // Make sure we have the correct number of argsuments, if not, print an
+        // error message and exit.
+        if (args.length != 3) {
+            String msg = "Usage: heapsort <data-file-name> <numb-buffers> "
+                + "<stat-file-name>";
+            System.out.println(msg);
+            System.exit(2);
+        }
+
+        // Set up the argsument names to be more meaningful.
+        String datafile = args[0];
+        int num_buffers = Integer.parseInt(args[1]);
+        String statfile = args[2];
+
+        // Inform Stats of the datafile name
+        // Stats.dataFileName = datafile;
+
+        // Load up the Record Array
+        RecordTemp array = null;
+        try {
+            array = new RecordTemp(datafile, num_buffers);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.exit(-1);
+        }
+
+        // Perform the sort.
+        sort(array);
+        array.flush();
+
+
+
+        // Print the output of the sort. The first record of every block.
+        final int RECS_PER_ARRAY = 512;
+        for (int i = 0; i < (array.size() / RECS_PER_ARRAY); i++) {
+            // Print the first record of the i-th block.
+            System.out.printf("%5d %5d ", array.getKey(i * RECS_PER_ARRAY),
+                array.getValue(i * RECS_PER_ARRAY));
+
+            if (((i + 1) % 8 == 0)) {
+                System.out.print("\n");
+            } // new line
+        }
+        System.out.print("\n"); // Final new line.
     }
 
+
+    /**
+     * Perform the heap sort on the record array passed in.
+     * 
+     * @param array
+     *            The array to sort.
+     */
+    public static void sort(RecordTemp array) {
+        int size = array.size();
+        MaxHeap heap = new MaxHeap(array);
+        for (int i = 0; i < size; i++) {
+            heap.removeMax();
+        }
+    }
 }
