@@ -1,0 +1,41 @@
+sequence GA inserted at level 0
+sequence GTAT inserted at level 2
+sequence GTCT inserted at level 3
+sequence G inserted at level 2
+sequence CGA does not exist
+tree dump:
+I
+  E
+  E
+  I
+    GA
+    E
+    E
+    I
+      GTAT
+      GTCT
+      E
+      E
+      E
+    G
+  E
+  E
+# of nodes visited: 12
+sequence: GA
+sequence: GTAT
+sequence: GTCT
+sequence: G
+# of nodes visited: 4
+sequence: GTAT
+# of nodes visited: 4
+sequence: GTCT
+# of nodes visited: 4
+sequence: GTAT
+sequence G removed
+# of nodes visited: 12
+sequence: GA
+sequence: GTAT
+sequence: GTCT
+# of nodes visited: 3
+sequence: GA
+

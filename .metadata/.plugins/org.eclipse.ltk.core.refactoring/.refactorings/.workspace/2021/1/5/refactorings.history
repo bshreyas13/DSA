@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;CS5040-SP2020-P2-Starter&apos;" deleteContents="false" description="Delete resource &apos;CS5040-SP2020-P2-Starter&apos;" element1="/CS5040-SP2020-P2-Starter" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1611869331383"/>&#x0A;<refactoring comment="Delete resource &apos;src&apos;" deleteContents="false" description="Delete resource &apos;src&apos;" element1="/src" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1611869340982"/>
-</session>
