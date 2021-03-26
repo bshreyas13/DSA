@@ -8,16 +8,15 @@ import java.nio.ByteBuffer;
  * the array database. The user will be able to query the array for information
  * about a record, and will be able to swap records within the array.
  * 
- * @author Reese Moore
- * @author Tyler Kahn
- * @version 2011.10.24
+ * @author bshreyas and veerad
+ * @version 02-26-2021
  */
 public class RecordTemp {
     private BufferPool pool;
     
     // Some Constants
     private final static int BLOCK_SIZE = 8192; // bytes
-    private final static int RECORD_SIZE = 8; // bytes
+    private final static int RECORD_SIZE = 16; // bytes
     
     /**
      * Instantiate a new Record Array
