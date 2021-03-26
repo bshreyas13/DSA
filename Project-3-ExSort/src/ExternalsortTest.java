@@ -18,6 +18,10 @@ public class ExternalsortTest extends TestCase {
      * Get code coverage of the class declaration.
      */
     public void testExternalsortInit() {
+        String[] file = {"sampleinput16.bin"};
+        System.out.flush();
+        systemOut().clearHistory();
+        Externalsort.main(file);
         Externalsort sorter = new Externalsort();
         assertNotNull(sorter);
         Externalsort.main(null);
