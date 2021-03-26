@@ -15,7 +15,7 @@ public abstract class ArrayTree {
 
 
     /**
-     * Check if an index in the array refers to a leaf
+     * Check if an index refers to a leaf node
      * 
      * @param index.
      * @return True if the index is a leaf, false otherwise
