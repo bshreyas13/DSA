@@ -38,17 +38,15 @@ public class Externalsort {
     public static void main(String[] args) {
         // Make sure we have the correct number of argsuments, if not, print an
         // error message and exit.
-        if (args.length != 3) {
-            String msg = "Usage: heapsort <data-file-name> <numb-buffers> "
-                + "<stat-file-name>";
+        if (args.length != 1) {
+            String msg = "Usage: ExternalSort <record-file-name> ";
             System.out.println(msg);
             System.exit(2);
         }
 
         // Set up the argsument names to be more meaningful.
         String datafile = args[0];
-        int num_buffers = Integer.parseInt(args[1]);
-        String statfile = args[2];
+        int num_buffers = 20;
 
         // Inform Stats of the datafile name
         // Stats.dataFileName = datafile;
