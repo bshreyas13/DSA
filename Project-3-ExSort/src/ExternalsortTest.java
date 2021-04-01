@@ -24,7 +24,6 @@ public class ExternalsortTest extends TestCase {
         Externalsort.main(file);
         Externalsort sorter = new Externalsort();
         assertNotNull(sorter);
-        Externalsort.main(null);
     }
 
 }

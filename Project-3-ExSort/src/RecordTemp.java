@@ -34,7 +34,7 @@ public class RecordTemp {
     /**
      * Get the key for a record in the array.
      * @param index The index of the record
-     * @return The key for the index-th record.
+     * @return The key for the  record.
      */
     public short getKey(int index)
     {

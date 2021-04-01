@@ -85,7 +85,7 @@ public class Externalsort {
      */
     public static void sort(RecordTemp array) {
         int size = array.size();
-        MaxHeap heap = new MaxHeap(array);
+        MinHeap heap = new MinHeap(array);
         for (int i = 0; i < size; i++) {
             heap.removeMax();
         }

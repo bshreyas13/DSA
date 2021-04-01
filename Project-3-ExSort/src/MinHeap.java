@@ -4,11 +4,10 @@
  * This heap implementation is *heavily* based on the implementation presented 
  * in section 5.5 of the textbook "Data Structures".
  * 
- * @author Reese Moore
- * @author Tyler Kahn
- * @version 2011.10.26
+ * @author bshreyas and veerad
+ * @version 02-26-2021
  */
-public class MaxHeap extends ArrayTree {
+public class MinHeap extends ArrayTree {
     private RecordTemp array;
     private int size;
     
@@ -17,7 +16,7 @@ public class MaxHeap extends ArrayTree {
      * Will automatically 'heapify' the entire array in place.
      * @param record_array The array that we are going to heapify.
      */
-    public MaxHeap( RecordTemp record_array )
+    public MinHeap( RecordTemp record_array )
     {
         array = record_array;
         size = array.size();
@@ -65,7 +64,7 @@ public class MaxHeap extends ArrayTree {
             
             // Compare the selected child to the parent, return early if the 
             // comparison satisfies the heap condition.
-            if (array.getKey(index) >= array.getKey(child)) { return; }
+            if (array.getKey(index) <= array.getKey(child)) { return; }
             
             // If the heap condition isn't satisfied, swap and check the next
             // level for the heap condition
