@@ -1,12 +1,15 @@
+import java.io.IOException;
+import java.util.LinkedList;
+
 /**
- * {Project Description Here}
+ * Sorts Files stored in Secondary Storage
  */
 
 /**
  * The class containing the main method.
  *
- * @author {Your Name Here}
- * @version {Put Something Here}
+ * @author Jaineel Nandu
+ * @version 20201204
  */
 
 // On my honor:
@@ -32,11 +35,110 @@
 public class Externalsort {
 
     /**
+     * Main function that sorts the given file.
+     * 
      * @param args
      *            Command line parameters
+     * @throws IOException
      */
-    public static void main(String[] args) {
-        //Your main method code goes here.
+    public static void main(String[] args) throws IOException {
+        FileAccess runFiles = new FileAccess(args[0], "The run file.bin");
+        BlocksBuffer ipBuffer = new BlocksBuffer(1); // 1 block(s)
+        BlocksBuffer opBuffer = new BlocksBuffer(1);
+        LinkedList<Integer> runLengths = new LinkedList<Integer>();
+        LinkedList<Long> runPointers = new LinkedList<Long>();
+        MinHeap<Record> memoryHeap = new MinHeap<Record>(8 * 512);
+        boolean memHeapRun = false;
+        boolean lastRun = false;
+        boolean lastRunDone = false;
+        if (ipBuffer.isEmpty() && !runFiles.isEndOfReadFile()) {
+            ipBuffer.insertBlock(runFiles.getBlock());
+        }
+        while (!memoryHeap.isHeapFull()) {
+            memoryHeap.insertBlock(ipBuffer.removeBlock());
+            if (ipBuffer.isEmpty() && !runFiles.isEndOfReadFile()) {
+                ipBuffer.insertBlock(runFiles.getBlock());
+            }
+        }
+
+        while (!lastRunDone) {
+            boolean runComplete = false;
+            int runLength = 0;
+            long runStartPointer = runFiles.getWriteFilePointer();
+            if (!memoryHeap.isNull() && memHeapRun) {
+                memoryHeap.restoreMaxSize();
+                memoryHeap.buildHeap();
+                memHeapRun = false;
+            }
+
+            if (lastRun) {
+                while (!runComplete) {
+                    Record min = memoryHeap.removeMin();
+                    opBuffer.insertLastRecord(min);
+                    if (opBuffer.isFull()) {
+                        runLength += 512;
+                        runFiles.writeBlock((Record[])opBuffer.removeBlock());
+                    }
+                    if (memoryHeap.heapMax() == 0) {
+                        runComplete = true;
+                        lastRunDone = true;
+                    }
+                }
+            }
+            else {
+                while (!runComplete) {
+
+                    {
+                        if (ipBuffer.isEmpty() && !runFiles.isEndOfReadFile()) {
+                            ipBuffer.insertBlock(runFiles.getBlock());
+                        }
+                        if (!ipBuffer.isEmpty()) {
+                            Record min = memoryHeap.getMin();
+                            opBuffer.insertLastRecord(min);
+
+                            if (opBuffer.isFull()) {
+                                runLength += 512;
+                                runFiles.writeBlock((Record[])opBuffer
+                                    .removeBlock());
+                            }
+                            Record replacement = ipBuffer.removeLastRecord();
+                            if (replacement.compareTo(min) < 0) {
+                                memoryHeap.badInsert(replacement);
+                            }
+                            else {
+                                memoryHeap.goodInsert(replacement);
+                            }
+                            if (memoryHeap.heapMax() == 0) {
+                                runComplete = true;
+                                memHeapRun = true;
+                            }
+                        }
+                        else {
+                            runComplete = true;
+                            memHeapRun = true;
+                            lastRun = true;
+                        }
+                    }
+
+                }
+            }
+            while (!opBuffer.isEmpty()) {
+                Record[] writeRem = opBuffer.removeBlock();
+                runFiles.writeBlock(writeRem);
+                runLength += writeRem.length;
+            }
+            if (runLength > 0) {
+                runLengths.add(runLength);
+                runPointers.add(runStartPointer);
+            }
+
+        }
+        runPointers.add(runFiles.getWriteFilePointer());
+        long[] rps = new long[runPointers.size()];
+        for (int i = 0; i < rps.length; i++) {
+            rps[i] = runPointers.removeFirst();
+        }
+        MergeFile.merge("The run file.bin", rps, args[0]);
     }
 
 }

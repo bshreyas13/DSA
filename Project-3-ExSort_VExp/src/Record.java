@@ -30,6 +30,7 @@ public class Record implements Comparable<Record> {
         return completeRecord;
     }
 
+
     /**
      * Returns the object's key
      * 
@@ -38,6 +39,17 @@ public class Record implements Comparable<Record> {
     public double getKey() {
         ByteBuffer buff = ByteBuffer.wrap(completeRecord);
         return buff.getDouble(8);
+    }
+
+
+    /**
+     * Returns the object's ID
+     * 
+     * @return the ID
+     */
+    public long getID() {
+        ByteBuffer buff = ByteBuffer.wrap(completeRecord);
+        return buff.getLong(0);
     }
 
 
@@ -62,7 +74,7 @@ public class Record implements Comparable<Record> {
      * @return a string of what the record contains
      */
     public String toString() {
-        return "" + this.getKey();
+        return this.getID() + " " + this.getKey();
     }
 
 }
