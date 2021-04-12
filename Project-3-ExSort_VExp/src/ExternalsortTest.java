@@ -200,10 +200,10 @@ public class ExternalsortTest extends TestCase {
             l1 = b11.getDouble(8);
             l2 = b12.getDouble(8);
         }
-        FileAccess reverse = new FileAccess(args[0] + "Out.bin", args[0]
+        FileIO reverse = new FileIO(args[0] + "Out.bin", args[0]
             + "ReverseSort.bin");
         for (long i = reverse.getReadLength() - 16; i >= 0; i -= 16) {
-            reverse.writeRecord(reverse.getPartialBlock(i, i + 16)[0]);
+            reverse.outRecord(reverse.getPartialBlock(i, i + 16)[0]);
         }
         f2 = new RandomAccessFile(args[0] + "ReverseSort.bin", "r");
         m1 = f2.read(b1);

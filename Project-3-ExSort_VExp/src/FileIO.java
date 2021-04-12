@@ -4,34 +4,40 @@ import java.io.RandomAccessFile;
 import java.util.Arrays;
 
 /**
- * File Access Object that handles two files, one for read and the other for
- * write
+ * File Access Object that handles two files, 
+ * one for read and the other for write
+ * 
  * 
  * @author bshreyas and veerad
  * @version 4/10/2021
  */
 
-public class FileAccess {
+public class FileIO {
     private RandomAccessFile file;
-    private byte[] blockBytes;
+    private byte[] oneBlock;
     @SuppressWarnings("unused")
-    private int readPointer = 0;
+    private int endOfFile = 0;
     private RandomAccessFile runFile;
 
+    // Constants as per specification
+    private final static int BLOCK_SIZE = 8192; // bytes
+    private final static int RECORD_SIZE = 16; // bytes
+    private final static int RECORDS_PER_BLOCK = BLOCK_SIZE / RECORD_SIZE;
+
     /**
-     * Constructor to initialize FileAccess object.
+     * Constructor to initialize FileIO object.
      * 
-     * @param readName
-     *            String: name of the read file.
-     * @param writeName
-     *            String: name of the write file.
+     * @param inFileName
+     *            String: name of the file that is read.
+     * @param outFileName
+     *            String: name of the file written out.
      * @throws FileNotFoundException
      */
-    public FileAccess(String readName, String writeName)
+    public FileIO(String inFileName, String outFileName)
         throws FileNotFoundException {
-        file = new RandomAccessFile(readName, "r");
-        blockBytes = new byte[512 * 16];
-        runFile = new RandomAccessFile(writeName, "rw");
+        file = new RandomAccessFile(inFileName, "r");
+        oneBlock = new byte[BLOCK_SIZE];
+        runFile = new RandomAccessFile(outFileName, "rw");
     }
 
 
@@ -42,13 +48,13 @@ public class FileAccess {
      *         Array of Records
      * @throws IOException
      */
-    public Record[] getBlock() throws IOException {
-        readPointer = file.read(blockBytes);
-        Record[] block = new Record[512];
-        for (int i = 0; i < 512; i++) {
-            byte[] sixteenByte = Arrays.copyOfRange(blockBytes, i * 16, (i * 16)
-                + 16);
-            block[i] = new Record(sixteenByte);
+    public Record[] getCurrBlock() throws IOException {
+        endOfFile = file.read(oneBlock);
+        Record[] block = new Record[RECORDS_PER_BLOCK];
+        for (int i = 0; i < RECORDS_PER_BLOCK; i++) {
+            byte[] oneBlockBytes = Arrays.copyOfRange(oneBlock, i * RECORD_SIZE,
+                (i * RECORD_SIZE) + RECORDS_PER_BLOCK);
+            block[i] = new Record(oneBlockBytes);
         }
         return block;
 
@@ -66,12 +72,12 @@ public class FileAccess {
      */
     public Record[] getBlock(long pos) throws IOException {
         file.seek(pos);
-        readPointer = file.read(blockBytes);
-        Record[] block = new Record[512];
-        for (int i = 0; i < 512; i++) {
-            byte[] sixteenByte = Arrays.copyOfRange(blockBytes, i * 16, (i * 16)
-                + 16);
-            block[i] = new Record(sixteenByte);
+        endOfFile = file.read(oneBlock);
+        Record[] block = new Record[RECORDS_PER_BLOCK];
+        for (int i = 0; i < RECORDS_PER_BLOCK; i++) {
+            byte[] oneBlockBytes = Arrays.copyOfRange(oneBlock, i * RECORD_SIZE,
+                (i * RECORD_SIZE) + RECORDS_PER_BLOCK);
+            block[i] = new Record(oneBlockBytes);
         }
         return block;
     }
@@ -91,24 +97,24 @@ public class FileAccess {
     public Record[] getPartialBlock(long pos, long end) throws IOException {
         file.seek(pos);
         byte[] readBytes = new byte[(int)(end - pos)];
-        Record[] fin = new Record[(int)(end - pos) / 16];
-        readPointer = file.read(readBytes);
-        for (int i = 0; i < fin.length; i++) {
-            fin[i] = new Record(Arrays.copyOfRange(readBytes, i * 16, (i + 1)
-                * 16));
+        Record[] partBlock = new Record[(int)(end - pos) / RECORD_SIZE];
+        endOfFile = file.read(readBytes);
+        for (int i = 0; i < partBlock.length; i++) {
+            partBlock[i] = new Record(Arrays.copyOfRange(readBytes, i * RECORD_SIZE, (i + 1)
+                * RECORD_SIZE));
         }
-        return fin;
+        return partBlock;
     }
 
 
     /**
-     * Tells if we have reached the end of read file.
+     * Tells if we have reached the end of file being read.
      * 
      * @return
      *         boolean: true if end of read file.
      * @throws IOException
      */
-    public boolean isEndOfReadFile() throws IOException {
+    public boolean isEndOfFile() throws IOException {
         return file.getFilePointer() == file.length();
     }
 
@@ -132,13 +138,13 @@ public class FileAccess {
      *            Array of blocks to write.
      * @throws IOException
      */
-    public void writeBlock(Record[] b) throws IOException {
-        byte[] writeByte = new byte[b.length * 16];
+    public void outBlock(Record[] b) throws IOException {
+        byte[] outByte = new byte[b.length * RECORD_SIZE];
         for (int i = 0; i < b.length; i++) {
-            System.arraycopy(b[i].getCompleteRecord(), 0, writeByte, i * 16,
-                16);
+            System.arraycopy(b[i].getCompleteRecord(), 0, outByte, i * RECORD_SIZE,
+                RECORD_SIZE);
         }
-        runFile.write(writeByte);
+        runFile.write(outByte);
     }
 
 
@@ -149,19 +155,19 @@ public class FileAccess {
      *            Record to be written.
      * @throws IOException
      */
-    public void writeRecord(Record b) throws IOException {
+    public void outRecord(Record b) throws IOException {
         runFile.write(b.getCompleteRecord());
     }
 
 
     /**
-     * Gets the position of the write file.
+     * Gets the position of the file being written.
      * 
      * @return
-     *         long: pointer of the current wrie file location.
+     *         long: pointer of the current file location.
      * @throws IOException
      */
-    public long getWriteFilePointer() throws IOException {
+    public long getWritePointer() throws IOException {
         return runFile.getFilePointer();
     }
 

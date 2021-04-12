@@ -21,7 +21,7 @@ public class MergeFile {
      */
     public static void merge(String in, long[] rps, String out)
         throws IOException {
-        FileAccess mergeFiles = new FileAccess(in, out + "Out.bin");
+        FileIO mergeFiles = new FileIO(in, out + "Out.bin");
         long[] currentPointers = Arrays.copyOf(rps, rps.length - 1);
         BlocksBuffer[] runBufs = new BlocksBuffer[currentPointers.length];
         boolean[] runsOver = new boolean[runBufs.length];
@@ -64,7 +64,7 @@ public class MergeFile {
             }
             if (buffmin == -1) {
                 if (outBuff.isFull()) {
-                    mergeFiles.writeBlock(outBuff.removeBlock());
+                    mergeFiles.outBlock(outBuff.removeBlock());
                 }
                 break;
             }
@@ -80,16 +80,16 @@ public class MergeFile {
             }
             outBuff.insertLastRecord(runBufs[buffmin].removeFirstRecord());
             if (outBuff.isFull()) {
-                mergeFiles.writeBlock(outBuff.removeBlock());
+                mergeFiles.outBlock(outBuff.removeBlock());
 
             }
 
         }
 
-        FileAccess printFile = new FileAccess(out + "Out.bin", "Empty.bin");
+        FileIO printFile = new FileIO(out + "Out.bin", "Empty.bin");
         int numRec = 0;
         while (printFile.getReadLength() != printFile.getReadPointer()) {
-            outBuff.insertBlock(printFile.getBlock());
+            outBuff.insertBlock(printFile.getCurrBlock());
             System.out.print(outBuff.removeFirstRecord().toString());
             numRec += 1;
             if (numRec % 5 == 0) {

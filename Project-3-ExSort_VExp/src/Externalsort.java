@@ -42,7 +42,7 @@ public class Externalsort {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        FileAccess runFiles = new FileAccess(args[0], "The run file.bin");
+        FileIO runFiles = new FileIO(args[0], "The run file.bin");
         BlocksBuffer ipBuffer = new BlocksBuffer(1); // 1 block(s)
         BlocksBuffer opBuffer = new BlocksBuffer(1);
         LinkedList<Integer> runLengths = new LinkedList<Integer>();
@@ -51,20 +51,20 @@ public class Externalsort {
         boolean memHeapRun = false;
         boolean lastRun = false;
         boolean lastRunDone = false;
-        if (ipBuffer.isEmpty() && !runFiles.isEndOfReadFile()) {
-            ipBuffer.insertBlock(runFiles.getBlock());
+        if (ipBuffer.isEmpty() && !runFiles.isEndOfFile()) {
+            ipBuffer.insertBlock(runFiles.getCurrBlock());
         }
         while (!memoryHeap.isHeapFull()) {
             memoryHeap.insertBlock(ipBuffer.removeBlock());
-            if (ipBuffer.isEmpty() && !runFiles.isEndOfReadFile()) {
-                ipBuffer.insertBlock(runFiles.getBlock());
+            if (ipBuffer.isEmpty() && !runFiles.isEndOfFile()) {
+                ipBuffer.insertBlock(runFiles.getCurrBlock());
             }
         }
 
         while (!lastRunDone) {
             boolean runComplete = false;
             int runLength = 0;
-            long runStartPointer = runFiles.getWriteFilePointer();
+            long runStartPointer = runFiles.getWritePointer();
             if (!memoryHeap.isNull() && memHeapRun) {
                 memoryHeap.restoreMaxSize();
                 memoryHeap.buildHeap();
@@ -77,7 +77,7 @@ public class Externalsort {
                     opBuffer.insertLastRecord(min);
                     if (opBuffer.isFull()) {
                         runLength += 512;
-                        runFiles.writeBlock((Record[])opBuffer.removeBlock());
+                        runFiles.outBlock((Record[])opBuffer.removeBlock());
                     }
                     if (memoryHeap.heapMax() == 0) {
                         runComplete = true;
@@ -89,8 +89,8 @@ public class Externalsort {
                 while (!runComplete) {
 
                     {
-                        if (ipBuffer.isEmpty() && !runFiles.isEndOfReadFile()) {
-                            ipBuffer.insertBlock(runFiles.getBlock());
+                        if (ipBuffer.isEmpty() && !runFiles.isEndOfFile()) {
+                            ipBuffer.insertBlock(runFiles.getCurrBlock());
                         }
                         if (!ipBuffer.isEmpty()) {
                             Record min = memoryHeap.getMin();
@@ -98,7 +98,7 @@ public class Externalsort {
 
                             if (opBuffer.isFull()) {
                                 runLength += 512;
-                                runFiles.writeBlock((Record[])opBuffer
+                                runFiles.outBlock((Record[])opBuffer
                                     .removeBlock());
                             }
                             Record replacement = ipBuffer.removeLastRecord();
@@ -124,7 +124,7 @@ public class Externalsort {
             }
             while (!opBuffer.isEmpty()) {
                 Record[] writeRem = opBuffer.removeBlock();
-                runFiles.writeBlock(writeRem);
+                runFiles.outBlock(writeRem);
                 runLength += writeRem.length;
             }
             if (runLength > 0) {
@@ -133,7 +133,7 @@ public class Externalsort {
             }
 
         }
-        runPointers.add(runFiles.getWriteFilePointer());
+        runPointers.add(runFiles.getWritePointer());
         long[] rps = new long[runPointers.size()];
         for (int i = 0; i < rps.length; i++) {
             rps[i] = runPointers.removeFirst();
