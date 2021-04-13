@@ -46,25 +46,25 @@ public class ExternalsortTest extends TestCase {
                 "r");
             byte[] b1 = new byte[RECORD_SIZE];
             byte[] b2 = new byte[RECORD_SIZE];
-            int m1 = outFile.read(b1);
-            int m2 = outFile.read(b2);
+            int rec1 = outFile.read(b1);
+            int rec2 = outFile.read(b2);
             outFile.seek(RECORD_SIZE);
             ByteBuffer b11 = ByteBuffer.wrap(b1);
-            double l1 = b11.getDouble(HEAP_SIZE);
+            double val1 = b11.getDouble(HEAP_SIZE);
             ByteBuffer b12 = ByteBuffer.wrap(b2);
-            double l2 = b12.getDouble(HEAP_SIZE);
+            double val2 = b12.getDouble(HEAP_SIZE);
             int copies = 0;
-            assertTrue(l1 < l2);
+            assertTrue(val1 < val2);
             for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
                 - 1; i++) {
                 outFile.seek(i * RECORD_SIZE);
-                m1 = outFile.read(b1);
-                m2 = outFile.read(b2);
+                rec1 = outFile.read(b1);
+                rec2 = outFile.read(b2);
                 b11 = ByteBuffer.wrap(b1);
                 b12 = ByteBuffer.wrap(b2);
-                l1 = b11.getDouble(HEAP_SIZE);
-                l2 = b12.getDouble(HEAP_SIZE);
-                assertTrue(l1 < l2);
+                val1 = b11.getDouble(HEAP_SIZE);
+                val2 = b12.getDouble(HEAP_SIZE);
+                assertTrue(val1 < val2);
             }
             outFile.close();
 
@@ -91,25 +91,25 @@ public class ExternalsortTest extends TestCase {
                 "r");
             byte[] b1 = new byte[RECORD_SIZE];
             byte[] b2 = new byte[RECORD_SIZE];
-            int m1 = outFile.read(b1);
-            int m2 = outFile.read(b2);
+            int rec1 = outFile.read(b1);
+            int rec2 = outFile.read(b2);
             outFile.seek(RECORD_SIZE);
             ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
-            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            double val1 = b1Buffer.getDouble(HEAP_SIZE);
             ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
-            double l2 = b2Buffer.getDouble(HEAP_SIZE);
+            double val2 = b2Buffer.getDouble(HEAP_SIZE);
             int copies = 0;
-            assertTrue(l1 < l2);
+            assertTrue(val1 < val2);
             for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
                 - 1; i++) {
                 outFile.seek(i * RECORD_SIZE);
-                m1 = outFile.read(b1);
-                m2 = outFile.read(b2);
+                rec1 = outFile.read(b1);
+                rec2 = outFile.read(b2);
                 b1Buffer = ByteBuffer.wrap(b1);
                 b2Buffer = ByteBuffer.wrap(b2);
-                l1 = b1Buffer.getDouble(HEAP_SIZE);
-                l2 = b2Buffer.getDouble(HEAP_SIZE);
-                assertTrue(l1 < l2);
+                val1 = b1Buffer.getDouble(HEAP_SIZE);
+                val2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(val1 < val2);
             }
             outFile.close();
         }
@@ -135,25 +135,25 @@ public class ExternalsortTest extends TestCase {
                 "r");
             byte[] b1 = new byte[RECORD_SIZE];
             byte[] b2 = new byte[RECORD_SIZE];
-            int m1 = outFile.read(b1);
-            int m2 = outFile.read(b2);
+            int rec1 = outFile.read(b1);
+            int rec2 = outFile.read(b2);
             outFile.seek(RECORD_SIZE);
             ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
-            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            double val1 = b1Buffer.getDouble(HEAP_SIZE);
             ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
-            double l2 = b2Buffer.getDouble(HEAP_SIZE);
+            double val2 = b2Buffer.getDouble(HEAP_SIZE);
             int copies = 0;
-            assertTrue(l1 < l2);
+            assertTrue(val1 < val2);
             for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
                 - 1; i++) {
                 outFile.seek(i * RECORD_SIZE);
-                m1 = outFile.read(b1);
-                m2 = outFile.read(b2);
+                rec1 = outFile.read(b1);
+                rec2 = outFile.read(b2);
                 b1Buffer = ByteBuffer.wrap(b1);
                 b2Buffer = ByteBuffer.wrap(b2);
-                l1 = b1Buffer.getDouble(HEAP_SIZE);
-                l2 = b2Buffer.getDouble(HEAP_SIZE);
-                assertTrue(l1 < l2);
+                val1 = b1Buffer.getDouble(HEAP_SIZE);
+                val2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(val1 < val2);
             }
             outFile.close();
         }
@@ -179,25 +179,25 @@ public class ExternalsortTest extends TestCase {
                 "r");
             byte[] b1 = new byte[RECORD_SIZE];
             byte[] b2 = new byte[RECORD_SIZE];
-            int m1 = outFile.read(b1);
-            int m2 = outFile.read(b2);
+            int rec1 = outFile.read(b1);
+            int rec2 = outFile.read(b2);
             outFile.seek(RECORD_SIZE);
             ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
-            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            double val1 = b1Buffer.getDouble(HEAP_SIZE);
             ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
-            double l2 = b2Buffer.getDouble(HEAP_SIZE);
-            assertTrue(l1 < l2);
+            double val2 = b2Buffer.getDouble(HEAP_SIZE);
+            assertTrue(val1 < val2);
             int copies = 0;
             for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
                 - 1; i++) {
                 outFile.seek(i * RECORD_SIZE);
-                m1 = outFile.read(b1);
-                m2 = outFile.read(b2);
+                rec1 = outFile.read(b1);
+                rec2 = outFile.read(b2);
                 b1Buffer = ByteBuffer.wrap(b1);
                 b2Buffer = ByteBuffer.wrap(b2);
-                l1 = b1Buffer.getDouble(HEAP_SIZE);
-                l2 = b2Buffer.getDouble(HEAP_SIZE);
-                assertTrue(l1 < l2);
+                val1 = b1Buffer.getDouble(HEAP_SIZE);
+                val2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(val1 < val2);
             }
             outFile.close();
         }
@@ -224,24 +224,24 @@ public class ExternalsortTest extends TestCase {
                 "r");
             byte[] b1 = new byte[RECORD_SIZE];
             byte[] b2 = new byte[RECORD_SIZE];
-            int m1 = outFile.read(b1);
-            int m2 = outFile.read(b2);
+            int rec1 = outFile.read(b1);
+            int rec2 = outFile.read(b2);
             outFile.seek(RECORD_SIZE);
             ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
-            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            double val1 = b1Buffer.getDouble(HEAP_SIZE);
             ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
-            double l2 = b2Buffer.getDouble(HEAP_SIZE);
-            assertTrue(l1 < l2);
+            double val2 = b2Buffer.getDouble(HEAP_SIZE);
+            assertTrue(val1 < val2);
             int copies = 0;
             for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
                 - 1; i++) {
                 outFile.seek(i * RECORD_SIZE);
-                m1 = outFile.read(b1);
-                m2 = outFile.read(b2);
+                rec1 = outFile.read(b1);
+                rec2 = outFile.read(b2);
                 b1Buffer = ByteBuffer.wrap(b1);
                 b2Buffer = ByteBuffer.wrap(b2);
-                l1 = b1Buffer.getDouble(HEAP_SIZE);
-                l2 = b2Buffer.getDouble(HEAP_SIZE);
+                val1 = b1Buffer.getDouble(HEAP_SIZE);
+                val2 = b2Buffer.getDouble(HEAP_SIZE);
             }
             FileIO reverse = new FileIO(args[0] + "Out.bin", args[0]
                 + "ReverseSort.bin");
@@ -251,49 +251,49 @@ public class ExternalsortTest extends TestCase {
                     + RECORD_SIZE)[0]);
             }
             outFile = new RandomAccessFile(args[0] + "ReverseSort.bin", "r");
-            m1 = outFile.read(b1);
-            m2 = outFile.read(b2);
+            rec1 = outFile.read(b1);
+            rec2 = outFile.read(b2);
             outFile.seek(RECORD_SIZE);
             b1Buffer = ByteBuffer.wrap(b1);
-            l1 = b1Buffer.getDouble(HEAP_SIZE);
+            val1 = b1Buffer.getDouble(HEAP_SIZE);
             b2Buffer = ByteBuffer.wrap(b2);
-            l2 = b2Buffer.getDouble(HEAP_SIZE);
-            assertTrue(l1 > l2);
+            val2 = b2Buffer.getDouble(HEAP_SIZE);
+            assertTrue(val1 > val2);
             copies = 0;
             for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
                 - 1; i++) {
                 outFile.seek(i * RECORD_SIZE);
-                m1 = outFile.read(b1);
-                m2 = outFile.read(b2);
+                rec1 = outFile.read(b1);
+                rec2 = outFile.read(b2);
                 b1Buffer = ByteBuffer.wrap(b1);
                 b2Buffer = ByteBuffer.wrap(b2);
-                l1 = b1Buffer.getDouble(HEAP_SIZE);
-                l2 = b2Buffer.getDouble(HEAP_SIZE);
+                val1 = b1Buffer.getDouble(HEAP_SIZE);
+                val2 = b2Buffer.getDouble(HEAP_SIZE);
             }
             String[] newArg = new String[1];
             newArg[0] = args[0] + "ReverseSort.bin";
             Externalsort.main(newArg);
             outFile = new RandomAccessFile(args[0] + "ReverseSort.bin"
                 + "Out.bin", "r");
-            m1 = outFile.read(b1);
-            m2 = outFile.read(b2);
+            rec1 = outFile.read(b1);
+            rec2 = outFile.read(b2);
             outFile.seek(RECORD_SIZE);
             b1Buffer = ByteBuffer.wrap(b1);
-            l1 = b1Buffer.getDouble(HEAP_SIZE);
+            val1 = b1Buffer.getDouble(HEAP_SIZE);
             b2Buffer = ByteBuffer.wrap(b2);
-            l2 = b2Buffer.getDouble(HEAP_SIZE);
-            assertTrue(l1 < l2);
+            val2 = b2Buffer.getDouble(HEAP_SIZE);
+            assertTrue(val1 < val2);
             copies = 0;
             for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
                 - 1; i++) {
                 outFile.seek(i * RECORD_SIZE);
-                m1 = outFile.read(b1);
-                m2 = outFile.read(b2);
+                rec1 = outFile.read(b1);
+                rec2 = outFile.read(b2);
                 b1Buffer = ByteBuffer.wrap(b1);
                 b2Buffer = ByteBuffer.wrap(b2);
-                l1 = b1Buffer.getDouble(HEAP_SIZE);
-                l2 = b2Buffer.getDouble(HEAP_SIZE);
-                assertTrue(l1 < l2);
+                val1 = b1Buffer.getDouble(HEAP_SIZE);
+                val2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(val1 < val2);
             }
             
         }
