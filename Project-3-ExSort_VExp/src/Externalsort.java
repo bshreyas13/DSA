@@ -85,29 +85,7 @@ public class Externalsort {
             if (isFinalRun) {
                 while (!allRunsComplete) {
                     Record min = sortingHeap.removeMin();
-<<<<<<< HEAD
-                    outBuffer.insertRecordEnd(min);
-                    if (outBuffer.isFull()) {
-                        runLength += 512;
-                        runFile.outBlock((Record[])outBuffer.removeBlock());
-                    }
-                    if (sortingHeap.heapMaxSize() == 0) {
-                        allRunsComplete = true;
-                        finalRunDone = true;
-                    }
-                }
-            }
-            else {
-                while (!allRunsComplete) {
 
-                    {
-                        if (inBuffer.isEmpty() && !runFile.isEndOfFile()) {
-                            inBuffer.insertBlock(runFile.getCurrBlock());
-                        }
-                        if (!inBuffer.isEmpty()) {
-                            Record min = sortingHeap.getMinRecord();
-                            outBuffer.insertRecordEnd(min);
-=======
                     outBuffer.insertRecEnd(min);
                     if (outBuffer.isFull()) {
                         runLength += 512;
@@ -129,14 +107,13 @@ public class Externalsort {
                         if (!inBuffer.isEmpty()) {
                             Record min = sortingHeap.getMinRecord();
                             outBuffer.insertRecEnd(min);
->>>>>>> branch 'master' of https://web-cat.cs.vt.edu/Web-CAT/WebObjects/Web-CAT.woa/git/StudentProject/adc6100a-0c25-4d2a-8b13-8d97011838b3
 
                             if (outBuffer.isFull()) {
                                 runLength += 512;
                                 runFile.outBlock((Record[])outBuffer
                                     .removeBlock());
                             }
-                            Record replacement = inBuffer.removeRecordEnd();
+                            Record replacement = inBuffer.removeRecEnd();
                             if (replacement.compareTo(min) < 0) {
                                 sortingHeap.dirtyInsert(replacement);
                             }

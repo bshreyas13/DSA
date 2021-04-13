@@ -48,7 +48,7 @@ public class Buffer {
      * @return
      *         Record at the end of the buffer.
      */
-    public Record removeRecordEnd() {
+    public Record removeRecEnd() {
         bufferOccupied -= 1;
         return block[bufferOccupied];
     }
@@ -60,26 +60,7 @@ public class Buffer {
      * @return
      *         Record at the front of the buffer.
      */
-<<<<<<< HEAD
-    public Record removeRecordFront() {
-        Record firstRecord;
-        firstRecord = block[0];
-        for (int i = 0; i < bufferOccupied - 1; i++) {
-            block[i] = block[i + 1];
-        }
-        bufferOccupied--;
-        return firstRecord;
-    }
 
-
-    /**
-     * Inserts a record at the end of the buffer
-     * 
-     * @param r
-     *            Record to be inserted.
-     */
-    public void insertRecordEnd(Record r) {
-=======
     public Record removeRecFront() {
         Record firstRecord;
         firstRecord = block[0];
@@ -98,7 +79,6 @@ public class Buffer {
      *            Record to be inserted.
      */
     public void insertRecEnd(Record r) {
->>>>>>> branch 'master' of https://web-cat.cs.vt.edu/Web-CAT/WebObjects/Web-CAT.woa/git/StudentProject/adc6100a-0c25-4d2a-8b13-8d97011838b3
         block[bufferOccupied] = r;
         bufferOccupied += 1;
     }
