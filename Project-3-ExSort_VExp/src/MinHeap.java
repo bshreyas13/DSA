@@ -1,7 +1,7 @@
 // import java.util.*;
 // Min-heap implementation
 /**
- * Min Heap implemetation
+ * Min Heap implementation based on OpenDSA 10.17
  * 
  * @author bshreyas and veerad
  * @version 4/10/2021
@@ -10,9 +10,9 @@
  *            Generic parameter so we can use it in multiple ways.
  */
 public class MinHeap<T extends Comparable<T>> {
-    private T[] heapArray; // Pointer to the heap array
-    private int max; // Maximum size of the heap
-    private int size; // Number of things now in heap
+    private T[] heap; // Pointer to the heap array
+    private int maxSize; // Maximum size of the heap
+    private int n; // Number of things now in heap
 
     /**
      * Contructor that generates a Min Heap with given maximum size.
@@ -22,9 +22,10 @@ public class MinHeap<T extends Comparable<T>> {
      */
     @SuppressWarnings("unchecked")
     MinHeap(int maximum) {
-        heapArray = (T[])new Comparable[maximum];
-        max = maximum;
-        size = 0;
+        heap = (T[])new Comparable[maximum];
+        maxSize = maximum;
+        n = 0;
+        buildHeap();
     }
 
 
@@ -36,16 +37,16 @@ public class MinHeap<T extends Comparable<T>> {
      */
     // Return current size of the heap
     public int heapSize() {
-        return size;
+        return n;
     }
 
 
     /**
-     * Restores the max value and size value
+     * Resets the maxSize and n
      */
-    public void restoreMaxSize() {
-        max = heapArray.length;
-        size = max;
+    public void resetMaxSize() {
+        maxSize = heap.length;
+        n = maxSize;
     }
 
 
@@ -56,18 +57,18 @@ public class MinHeap<T extends Comparable<T>> {
      *         boolean: true if heap is full.
      */
     public boolean isHeapFull() {
-        return size == max;
+        return n == maxSize;
     }
 
 
     /**
-     * Tells if the heap has just been initialized.
+     * Tells if the heap is null.
      * 
      * @return
      *         boolean: true if the tree is null.
      */
-    public boolean isNull() {
-        return heapArray[0] == null;
+    public boolean isHeapNull() {
+        return heap[0] == null;
     }
 
 
@@ -81,7 +82,7 @@ public class MinHeap<T extends Comparable<T>> {
      */
     // Return true if pos a leaf position, false otherwise
     public boolean isLeaf(int pos) {
-        return (pos >= size / 2) && (pos < size);
+        return (pos >= n / 2) && (pos < n);
     }
 
 
@@ -95,7 +96,7 @@ public class MinHeap<T extends Comparable<T>> {
      */
     // Return position for left child of pos
     public int leftChild(int pos) {
-        if (pos >= size / 2) {
+        if (pos >= n / 2) {
             return -1;
         }
         return 2 * pos + 1;
@@ -120,49 +121,49 @@ public class MinHeap<T extends Comparable<T>> {
 
 
     /**
-     * Insert a single record.
+     * Insert for a single record.
      * 
      * @param record
      *            Record to be inserted
      */
     // Insert val into heap
     void insert(T record) {
-        if (size >= max) {
+        if (n >= maxSize) {
             System.out.println("Heap is full");
             return;
         }
-        int curr = size++;
-        heapArray[curr] = record; // Start at end of heap
-        // Now sift up until curr's parent's key > curr's ke y
-        while ((curr != 0) && (heapArray[curr].compareTo(heapArray[parent(
-            curr)]) <= 0)) {
-            swap(heapArray, curr, parent(curr));
+        int curr = n++;
+        heap[curr] = record; // Start at end of heap
+        // Now sift up until curr's parent's key < curr's key
+
+        while ((curr != 0) && (heap[curr].compareTo(heap[parent(curr)]) <= 0)) {
+            swap(heap, curr, parent(curr));
             curr = parent(curr);
         }
     }
 
 
     /**
-     * Inserts a block of data into the heap and heapify it.
+     * Inserts a block of data and heapifys it.
      * 
      * @param records
      *            Records to be inserted in the heap.
      */
     void insertBlock(T[] records) {
         for (int i = 0; i < records.length; i++) {
-            heapArray[size + i] = records[i];
+            heap[n + i] = records[i];
         }
-        size += records.length;
+        n += records.length;
         buildHeap();
     }
 
 
     /**
-     * Helper funtion to build the heap properly.
+     * Helper function to build the heap properly.
      */
     // Heapify contents of Heap
     public void buildHeap() {
-        for (int i = size / 2 - 1; i >= 0; i--) {
+        for (int i = n / 2 - 1; i >= 0; i--) {
             siftdown(i);
         }
     }
@@ -193,20 +194,19 @@ public class MinHeap<T extends Comparable<T>> {
      */
     // Put element in its correct place
     private void siftdown(int pos) {
-        if ((pos < 0) || (pos >= size)) {
+        if ((pos < 0) || (pos >= n)) {
             return; // Illegal position
         }
         while (!isLeaf(pos)) {
             int j = leftChild(pos);
-            if ((j < (size - 1)) && (heapArray[j].compareTo(heapArray[j
-                + 1]) >= 0)) {
+            if ((j < (n - 1)) && (heap[j].compareTo(heap[j + 1]) >= 0)) {
                 j++; // j is now index of child with greater value
             }
-            if (size > 1 && heapArray[pos].compareTo(heapArray[j]) < 0) {
+            if (n > 1 && heap[pos].compareTo(heap[j]) < 0) {
                 return;
             }
 
-            swap(heapArray, pos, j);
+            swap(heap, pos, j);
             pos = j; // Move down
         }
     }
@@ -218,8 +218,8 @@ public class MinHeap<T extends Comparable<T>> {
      * @return
      *         Minimum Record
      */
-    public T getMin() {
-        return heapArray[0];
+    public T getMinRecord() {
+        return heap[0];
     }
 
 
@@ -229,15 +229,15 @@ public class MinHeap<T extends Comparable<T>> {
      * @return
      *         Minim record.
      */
-    // Remove and return maximum value
+    // Remove and return minimum value
     public T removeMin() {
-        if (size == 0) {
+        if (n == 0) {
             return null; // Removing from empty heap
         }
-        swap(heapArray, 0, --size); // Swap maximum with last value
+        swap(heap, 0, --n); // Swap minimum with first value
         siftdown(0); // Put new heap root val in correct place
-        max--;
-        return heapArray[size];
+        maxSize--;
+        return heap[n];
     }
 
 
@@ -248,49 +248,49 @@ public class MinHeap<T extends Comparable<T>> {
      *         String: heap as string
      */
     public String toString() {
-        String ret = "";
-        for (int i = 0; i < size; i++) {
-            ret = ret + heapArray[i] + " ";
+        String heapString = "";
+        for (int i = 0; i < n; i++) {
+            heapString = heapString + heap[i] + " ";
         }
-        return ret;
+        return heapString;
     }
 
 
     /**
-     * Inserts without reducing heap numbers.
+     * Inserts without reducing heap size.
      * 
      * @param replacement
      *            Data to replace
      */
-    public void goodInsert(T replacement) {
-        heapArray[0] = replacement;
+    public void cleanInsert(T replacement) {
+        heap[0] = replacement;
         siftdown(0);
 
     }
 
 
     /**
-     * Inserts by reducing heap numbers
+     * Inserts by reducing heap size
      * 
      * @param replacement
      *            Data to replace
      */
-    public void badInsert(T replacement) {
-        heapArray[0] = replacement;
-        swap(heapArray, 0, --size); // Swap maximum with last value
-        max -= 1;
+    public void dirtyInsert(T replacement) {
+        heap[0] = replacement;
+        swap(heap, 0, --n); // Swap maximum with last value
+        maxSize -= 1;
         siftdown(0); // Put new heap root val in correct place
 
     }
 
 
     /**
-     * Returns the maximum size value
+     * Gives the maximum size value
      * 
      * @return
      *         int: maximum size of the heap.
      */
-    public int heapMax() {
-        return max;
+    public int heapMaxSize() {
+        return maxSize;
     }
 }

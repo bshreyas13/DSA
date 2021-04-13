@@ -13,74 +13,77 @@ public class MergeFile {
      * 
      * @param in
      *            String: name of input file
-     * @param rps
+     * @param endPointers
      *            Array of longs: specifying the end pointers of runs.
      * @param out
      *            String: name of output file to store in.
      * @throws IOException
      */
-    public static void merge(String in, long[] rps, String out)
+    public static void merge(String in, long[] endPointers, String out)
         throws IOException {
+        
         FileIO mergeFiles = new FileIO(in, out + "Out.bin");
-        long[] currentPointers = Arrays.copyOf(rps, rps.length - 1);
-        BlocksBuffer[] runBufs = new BlocksBuffer[currentPointers.length];
-        boolean[] runsOver = new boolean[runBufs.length];
-        for (int i = 0; i < currentPointers.length; i++) {
-            runBufs[i] = new BlocksBuffer(1);
-            runsOver[i] = false;
+        long[] currPointers = Arrays.copyOf(endPointers, endPointers.length
+            - 1);
+        Buffer[] runBuffers = new Buffer[currPointers.length];
+        boolean[] runStatus = new boolean[runBuffers.length];
+        for (int i = 0; i < currPointers.length; i++) {
+            runBuffers[i] = new Buffer(1);
+            runStatus[i] = false;
         }
-        BlocksBuffer outBuff = new BlocksBuffer(1);
-        boolean mergeOver = false;
-        while (!mergeOver) {
-            boolean recOnlyOut = true;
-            for (int i = 0; i < runBufs.length; i++) {
-                if (!runsOver[i] && runBufs[i].isEmpty()) {
+        
+        Buffer outBuffer = new Buffer(1);
+        boolean mergeComplete = false;
+        while (!mergeComplete) {
+       
+            for (int i = 0; i < runBuffers.length; i++) {
+                if (!runStatus[i] && runBuffers[i].isEmpty()) {
 
-                    if (rps[i + 1] - currentPointers[i] >= 512 * 16) {
-                        runBufs[i].insertBlock(mergeFiles.getBlock(
-                            currentPointers[i]));
-                        currentPointers[i] = mergeFiles.getReadPointer();
+                    if (endPointers[i + 1] - currPointers[i] >= 512 * 16) {
+                        runBuffers[i].insertBlock(mergeFiles.getBlock(
+                            currPointers[i]));
+                        currPointers[i] = mergeFiles.getReadPointer();
                     }
                     else {
-                        runBufs[i].insertBlock(mergeFiles.getPartialBlock(
-                            currentPointers[i], rps[i + 1]));
-                        currentPointers[i] = mergeFiles.getReadPointer();
+                        runBuffers[i].insertBlock(mergeFiles.getPartialBlock(
+                            currPointers[i], endPointers[i + 1]));
+                        currPointers[i] = mergeFiles.getReadPointer();
                     }
-                    if (currentPointers[i] == rps[i + 1]) {
-                        runsOver[i] = true;
+                    if (currPointers[i] == endPointers[i + 1]) {
+                        runStatus[i] = true;
                     }
 
                 }
             }
 
-            int buffmin = -1;
+            int bufferMinIdx = -1;
             Record min = null;
-            for (int i = 0; i < runBufs.length; i++) {
-                if (!runBufs[i].isEmpty()) {
-                    buffmin = i;
-                    min = runBufs[i].getFirst();
+            for (int i = 0; i < runBuffers.length; i++) {
+                if (!runBuffers[i].isEmpty()) {
+                    bufferMinIdx = i;
+                    min = runBuffers[i].getFirst();
                     break;
                 }
             }
-            if (buffmin == -1) {
-                if (outBuff.isFull()) {
-                    mergeFiles.outBlock(outBuff.removeBlock());
+            if (bufferMinIdx == -1) {
+                if (outBuffer.isFull()) {
+                    mergeFiles.outBlock(outBuffer.removeBlock());
                 }
                 break;
             }
-            for (int i = 0; i < runBufs.length; i++) {
-                if (!runBufs[i].isEmpty() && min.compareTo(runBufs[i]
+            for (int i = 0; i < runBuffers.length; i++) {
+                if (!runBuffers[i].isEmpty() && min.compareTo(runBuffers[i]
                     .getFirst()) > 0) {
 
-                    min = runBufs[i].getFirst();
-                    buffmin = i;
+                    min = runBuffers[i].getFirst();
+                    bufferMinIdx = i;
 
                 }
-                recOnlyOut = recOnlyOut && runBufs[i].isEmpty();
+                
             }
-            outBuff.insertLastRecord(runBufs[buffmin].removeFirstRecord());
-            if (outBuff.isFull()) {
-                mergeFiles.outBlock(outBuff.removeBlock());
+            outBuffer.insertRecordEnd(runBuffers[bufferMinIdx].removeRecordFront());
+            if (outBuffer.isFull()) {
+                mergeFiles.outBlock(outBuffer.removeBlock());
 
             }
 
@@ -89,8 +92,8 @@ public class MergeFile {
         FileIO printFile = new FileIO(out + "Out.bin", "Empty.bin");
         int numRec = 0;
         while (printFile.getReadLength() != printFile.getReadPointer()) {
-            outBuff.insertBlock(printFile.getCurrBlock());
-            System.out.print(outBuff.removeFirstRecord().toString());
+            outBuffer.insertBlock(printFile.getCurrBlock());
+            System.out.print(outBuffer.removeRecordFront().toString());
             numRec += 1;
             if (numRec % 5 == 0) {
                 System.out.print("\n");

@@ -47,10 +47,10 @@ public class MinHeapTest extends TestCase {
     public void testIntegerBigInsert() {
         MinHeap<Integer> heap;
         heap = new MinHeap<>(15);
-        assertTrue(heap.isNull());
+        assertTrue(heap.isHeapNull());
         heap.insert(50);
         heap.insert(12);
-        assertFalse(heap.isNull());
+        assertFalse(heap.isHeapNull());
         heap.insert(7);
         heap.insert(25);
         heap.insert(15);
@@ -66,17 +66,17 @@ public class MinHeapTest extends TestCase {
         heap.insert(33);
         heap.insert(16);
         assertEquals(15, heap.heapSize());
-        heap.restoreMaxSize();
-        assertEquals(7, (int)heap.getMin());
-        assertEquals(15, heap.heapMax());
+        heap.resetMaxSize();
+        assertEquals(7, (int)heap.getMinRecord());
+        assertEquals(15, heap.heapMaxSize());
         assertTrue(heap.isHeapFull());
-        assertEquals(7, (int)heap.getMin());
+        assertEquals(7, (int)heap.getMinRecord());
         assertEquals(7, (int)heap.removeMin());
         assertEquals(14, heap.heapSize());
-        assertEquals(14, heap.heapMax());
-        heap.goodInsert(13);
-        heap.badInsert(5);
-        heap.badInsert(4);
+        assertEquals(14, heap.heapMaxSize());
+        heap.cleanInsert(13);
+        heap.dirtyInsert(5);
+        heap.dirtyInsert(4);
         assertTrue(heap.isLeaf(10));
         assertFalse(heap.isLeaf(26));
     }

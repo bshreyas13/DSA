@@ -10,7 +10,12 @@
 import java.io.*;
 import java.util.*;
 import java.math.*;
-
+/**
+ * Class to generate test input files
+ * @author CS Staff
+ *
+ *
+ */
 public class Genfile_proj3 {
 
     static final int NumRecs = 512; // Because they are short ints

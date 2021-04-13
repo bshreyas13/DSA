@@ -13,6 +13,12 @@ import student.TestCase;
  */
 public class ExternalsortTest extends TestCase {
 
+    // Constants as per specification
+    private final static int BLOCK_SIZE = 8192; // bytes
+    private final static int RECORD_SIZE = 16; // bytes
+    private final static int RECORDS_PER_BLOCK = BLOCK_SIZE / RECORD_SIZE;
+    private final static int HEAP_SIZE = 8; // blocks
+
     /**
      * Get code coverage of the class declaration.
      * 
@@ -25,228 +31,276 @@ public class ExternalsortTest extends TestCase {
 
 
     /**
-     * Tests the External sort on 16 blocks of random records.
+     * Tests the External sort on 16 blocks of records.
      * 
      * @throws IOException
      */
     @SuppressWarnings("unused")
-    public void testRandom16() throws IOException {
-        String[] args = { "Random16", "16" };
+    public void test16() throws IOException {
+        String[] args = { "Test16", "16" };
         Genfile_proj3.main(args);
         Externalsort.main(args);
-        RandomAccessFile f2 = new RandomAccessFile(args[0] + "Out.bin", "r");
-        byte[] b1 = new byte[16];
-        byte[] b2 = new byte[16];
-        int m1 = f2.read(b1);
-        int m2 = f2.read(b2);
-        f2.seek(16);
-        ByteBuffer b11 = ByteBuffer.wrap(b1);
-        double l1 = b11.getDouble(8);
-        ByteBuffer b12 = ByteBuffer.wrap(b2);
-        double l2 = b12.getDouble(8);
-        int copies = 0;
-        assertTrue(l1 < l2);
-        for (int i = 0; i < (Integer.parseInt(args[1])) * 512 - 1; i++) {
-            f2.seek(i * 16);
-            m1 = f2.read(b1);
-            m2 = f2.read(b2);
-            b11 = ByteBuffer.wrap(b1);
-            b12 = ByteBuffer.wrap(b2);
-            l1 = b11.getDouble(8);
-            l2 = b12.getDouble(8);
+
+        try {
+            RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
+                "r");
+            byte[] b1 = new byte[RECORD_SIZE];
+            byte[] b2 = new byte[RECORD_SIZE];
+            int m1 = outFile.read(b1);
+            int m2 = outFile.read(b2);
+            outFile.seek(RECORD_SIZE);
+            ByteBuffer b11 = ByteBuffer.wrap(b1);
+            double l1 = b11.getDouble(HEAP_SIZE);
+            ByteBuffer b12 = ByteBuffer.wrap(b2);
+            double l2 = b12.getDouble(HEAP_SIZE);
+            int copies = 0;
             assertTrue(l1 < l2);
+            for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
+                - 1; i++) {
+                outFile.seek(i * RECORD_SIZE);
+                m1 = outFile.read(b1);
+                m2 = outFile.read(b2);
+                b11 = ByteBuffer.wrap(b1);
+                b12 = ByteBuffer.wrap(b2);
+                l1 = b11.getDouble(HEAP_SIZE);
+                l2 = b12.getDouble(HEAP_SIZE);
+                assertTrue(l1 < l2);
+            }
+            outFile.close();
+
+        }
+        catch (IOException e) {
+            e.printStackTrace();
         }
         System.out.flush();
     }
 
 
     /**
-     * Tests the External sort on 24 blocks of random records.
+     * Tests the External sort on 24 blocks of records.
      * 
      * @throws IOException
      */
     @SuppressWarnings("unused")
-    public void testRandom24() throws IOException {
-        String[] args = { "Random24", "24" };
+    public void test24() throws IOException {
+        String[] args = { "Test24", "24" };
         Genfile_proj3.main(args);
         Externalsort.main(args);
-        RandomAccessFile f2 = new RandomAccessFile(args[0] + "Out.bin", "r");
-        byte[] b1 = new byte[16];
-        byte[] b2 = new byte[16];
-        int m1 = f2.read(b1);
-        int m2 = f2.read(b2);
-        f2.seek(16);
-        ByteBuffer b11 = ByteBuffer.wrap(b1);
-        double l1 = b11.getDouble(8);
-        ByteBuffer b12 = ByteBuffer.wrap(b2);
-        double l2 = b12.getDouble(8);
-        int copies = 0;
-        assertTrue(l1 < l2);
-        for (int i = 0; i < (Integer.parseInt(args[1])) * 512 - 1; i++) {
-            f2.seek(i * 16);
-            m1 = f2.read(b1);
-            m2 = f2.read(b2);
-            b11 = ByteBuffer.wrap(b1);
-            b12 = ByteBuffer.wrap(b2);
-            l1 = b11.getDouble(8);
-            l2 = b12.getDouble(8);
+        try {
+            RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
+                "r");
+            byte[] b1 = new byte[RECORD_SIZE];
+            byte[] b2 = new byte[RECORD_SIZE];
+            int m1 = outFile.read(b1);
+            int m2 = outFile.read(b2);
+            outFile.seek(RECORD_SIZE);
+            ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
+            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
+            double l2 = b2Buffer.getDouble(HEAP_SIZE);
+            int copies = 0;
             assertTrue(l1 < l2);
+            for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
+                - 1; i++) {
+                outFile.seek(i * RECORD_SIZE);
+                m1 = outFile.read(b1);
+                m2 = outFile.read(b2);
+                b1Buffer = ByteBuffer.wrap(b1);
+                b2Buffer = ByteBuffer.wrap(b2);
+                l1 = b1Buffer.getDouble(HEAP_SIZE);
+                l2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(l1 < l2);
+            }
+            outFile.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
         }
         System.out.flush();
     }
 
 
     /**
-     * Tests the External sort on 32 blocks of random records.
+     * Tests the External sort on 32 blocks of records.
      * 
      * @throws IOException
      */
     @SuppressWarnings("unused")
-    public void testRandom32() throws IOException {
-        String[] args = { "Random32", "32" };
+    public void test32() throws IOException {
+        String[] args = { "Test32", "32" };
         Genfile_proj3.main(args);
         Externalsort.main(args);
-        RandomAccessFile f2 = new RandomAccessFile(args[0] + "Out.bin", "r");
-        byte[] b1 = new byte[16];
-        byte[] b2 = new byte[16];
-        int m1 = f2.read(b1);
-        int m2 = f2.read(b2);
-        f2.seek(16);
-        ByteBuffer b11 = ByteBuffer.wrap(b1);
-        double l1 = b11.getDouble(8);
-        ByteBuffer b12 = ByteBuffer.wrap(b2);
-        double l2 = b12.getDouble(8);
-        assertTrue(l1 < l2);
-        int copies = 0;
-        for (int i = 0; i < (Integer.parseInt(args[1])) * 512 - 1; i++) {
-            f2.seek(i * 16);
-            m1 = f2.read(b1);
-            m2 = f2.read(b2);
-            b11 = ByteBuffer.wrap(b1);
-            b12 = ByteBuffer.wrap(b2);
-            l1 = b11.getDouble(8);
-            l2 = b12.getDouble(8);
+        try {
+            RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
+                "r");
+            byte[] b1 = new byte[RECORD_SIZE];
+            byte[] b2 = new byte[RECORD_SIZE];
+            int m1 = outFile.read(b1);
+            int m2 = outFile.read(b2);
+            outFile.seek(RECORD_SIZE);
+            ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
+            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
+            double l2 = b2Buffer.getDouble(HEAP_SIZE);
+            int copies = 0;
             assertTrue(l1 < l2);
+            for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
+                - 1; i++) {
+                outFile.seek(i * RECORD_SIZE);
+                m1 = outFile.read(b1);
+                m2 = outFile.read(b2);
+                b1Buffer = ByteBuffer.wrap(b1);
+                b2Buffer = ByteBuffer.wrap(b2);
+                l1 = b1Buffer.getDouble(HEAP_SIZE);
+                l2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(l1 < l2);
+            }
+            outFile.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
         }
         System.out.flush();
     }
 
 
     /**
-     * Tests the External sort on 48 blocks of random records.
+     * Tests the External sort on 48 blocks of records.
      * 
      * @throws IOException
      */
     @SuppressWarnings("unused")
-    public void testRandom48() throws IOException {
-        String[] args = { "Random48", "48" };
+    public void test48() throws IOException {
+        String[] args = { "Test48", "48" };
         Genfile_proj3.main(args);
         Externalsort.main(args);
-        RandomAccessFile f2 = new RandomAccessFile(args[0] + "Out.bin", "r");
-        byte[] b1 = new byte[16];
-        byte[] b2 = new byte[16];
-        int m1 = f2.read(b1);
-        int m2 = f2.read(b2);
-        f2.seek(16);
-        ByteBuffer b11 = ByteBuffer.wrap(b1);
-        double l1 = b11.getDouble(8);
-        ByteBuffer b12 = ByteBuffer.wrap(b2);
-        double l2 = b12.getDouble(8);
-        assertTrue(l1 < l2);
-        int copies = 0;
-        for (int i = 0; i < (Integer.parseInt(args[1])) * 512 - 1; i++) {
-            f2.seek(i * 16);
-            m1 = f2.read(b1);
-            m2 = f2.read(b2);
-            b11 = ByteBuffer.wrap(b1);
-            b12 = ByteBuffer.wrap(b2);
-            l1 = b11.getDouble(8);
-            l2 = b12.getDouble(8);
+        try {
+            RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
+                "r");
+            byte[] b1 = new byte[RECORD_SIZE];
+            byte[] b2 = new byte[RECORD_SIZE];
+            int m1 = outFile.read(b1);
+            int m2 = outFile.read(b2);
+            outFile.seek(RECORD_SIZE);
+            ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
+            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
+            double l2 = b2Buffer.getDouble(HEAP_SIZE);
             assertTrue(l1 < l2);
+            int copies = 0;
+            for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
+                - 1; i++) {
+                outFile.seek(i * RECORD_SIZE);
+                m1 = outFile.read(b1);
+                m2 = outFile.read(b2);
+                b1Buffer = ByteBuffer.wrap(b1);
+                b2Buffer = ByteBuffer.wrap(b2);
+                l1 = b1Buffer.getDouble(HEAP_SIZE);
+                l2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(l1 < l2);
+            }
+            outFile.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
         }
         System.out.flush();
     }
 
 
     /**
-     * Tests the External sort on 500 blocks of random records.
-     * Reverses the sort to test the worst case as well.
+     * Tests the External sort on 500 blocks of records.
+     * Test for worst case by reversing order sorted set.
      * 
      * @throws IOException
      */
     @SuppressWarnings("unused")
-    public void testRandomAndWorstCase500() throws IOException {
-        String[] args = { "Random500", "500" };
+    public void testWorstCase500() throws IOException {
+        String[] args = { "Test500", "500" };
         Genfile_proj3.main(args);
         Externalsort.main(args);
-        RandomAccessFile f2 = new RandomAccessFile(args[0] + "Out.bin", "r");
-        byte[] b1 = new byte[16];
-        byte[] b2 = new byte[16];
-        int m1 = f2.read(b1);
-        int m2 = f2.read(b2);
-        f2.seek(16);
-        ByteBuffer b11 = ByteBuffer.wrap(b1);
-        double l1 = b11.getDouble(8);
-        ByteBuffer b12 = ByteBuffer.wrap(b2);
-        double l2 = b12.getDouble(8);
-        assertTrue(l1 < l2);
-        int copies = 0;
-        for (int i = 0; i < (Integer.parseInt(args[1])) * 512 - 1; i++) {
-            f2.seek(i * 16);
-            m1 = f2.read(b1);
-            m2 = f2.read(b2);
-            b11 = ByteBuffer.wrap(b1);
-            b12 = ByteBuffer.wrap(b2);
-            l1 = b11.getDouble(8);
-            l2 = b12.getDouble(8);
-        }
-        FileIO reverse = new FileIO(args[0] + "Out.bin", args[0]
-            + "ReverseSort.bin");
-        for (long i = reverse.getReadLength() - 16; i >= 0; i -= 16) {
-            reverse.outRecord(reverse.getPartialBlock(i, i + 16)[0]);
-        }
-        f2 = new RandomAccessFile(args[0] + "ReverseSort.bin", "r");
-        m1 = f2.read(b1);
-        m2 = f2.read(b2);
-        f2.seek(16);
-        b11 = ByteBuffer.wrap(b1);
-        l1 = b11.getDouble(8);
-        b12 = ByteBuffer.wrap(b2);
-        l2 = b12.getDouble(8);
-        assertTrue(l1 > l2);
-        copies = 0;
-        for (int i = 0; i < (Integer.parseInt(args[1])) * 512 - 1; i++) {
-            f2.seek(i * 16);
-            m1 = f2.read(b1);
-            m2 = f2.read(b2);
-            b11 = ByteBuffer.wrap(b1);
-            b12 = ByteBuffer.wrap(b2);
-            l1 = b11.getDouble(8);
-            l2 = b12.getDouble(8);
-        }
-        String[] newArg = new String[1];
-        newArg[0] = args[0] + "ReverseSort.bin";
-        Externalsort.main(newArg);
-        f2 = new RandomAccessFile(args[0] + "ReverseSort.bin" + "Out.bin", "r");
-        m1 = f2.read(b1);
-        m2 = f2.read(b2);
-        f2.seek(16);
-        b11 = ByteBuffer.wrap(b1);
-        l1 = b11.getDouble(8);
-        b12 = ByteBuffer.wrap(b2);
-        l2 = b12.getDouble(8);
-        assertTrue(l1 < l2);
-        copies = 0;
-        for (int i = 0; i < (Integer.parseInt(args[1])) * 512 - 1; i++) {
-            f2.seek(i * 16);
-            m1 = f2.read(b1);
-            m2 = f2.read(b2);
-            b11 = ByteBuffer.wrap(b1);
-            b12 = ByteBuffer.wrap(b2);
-            l1 = b11.getDouble(8);
-            l2 = b12.getDouble(8);
+        try {
+            RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
+                "r");
+            byte[] b1 = new byte[RECORD_SIZE];
+            byte[] b2 = new byte[RECORD_SIZE];
+            int m1 = outFile.read(b1);
+            int m2 = outFile.read(b2);
+            outFile.seek(RECORD_SIZE);
+            ByteBuffer b1Buffer = ByteBuffer.wrap(b1);
+            double l1 = b1Buffer.getDouble(HEAP_SIZE);
+            ByteBuffer b2Buffer = ByteBuffer.wrap(b2);
+            double l2 = b2Buffer.getDouble(HEAP_SIZE);
             assertTrue(l1 < l2);
+            int copies = 0;
+            for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
+                - 1; i++) {
+                outFile.seek(i * RECORD_SIZE);
+                m1 = outFile.read(b1);
+                m2 = outFile.read(b2);
+                b1Buffer = ByteBuffer.wrap(b1);
+                b2Buffer = ByteBuffer.wrap(b2);
+                l1 = b1Buffer.getDouble(HEAP_SIZE);
+                l2 = b2Buffer.getDouble(HEAP_SIZE);
+            }
+            FileIO reverse = new FileIO(args[0] + "Out.bin", args[0]
+                + "ReverseSort.bin");
+            for (long i = reverse.getReadLength() - RECORD_SIZE; i >= 0; i -=
+                RECORD_SIZE) {
+                reverse.outRecord(reverse.getPartialBlock(i, i
+                    + RECORD_SIZE)[0]);
+            }
+            outFile = new RandomAccessFile(args[0] + "ReverseSort.bin", "r");
+            m1 = outFile.read(b1);
+            m2 = outFile.read(b2);
+            outFile.seek(RECORD_SIZE);
+            b1Buffer = ByteBuffer.wrap(b1);
+            l1 = b1Buffer.getDouble(HEAP_SIZE);
+            b2Buffer = ByteBuffer.wrap(b2);
+            l2 = b2Buffer.getDouble(HEAP_SIZE);
+            assertTrue(l1 > l2);
+            copies = 0;
+            for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
+                - 1; i++) {
+                outFile.seek(i * RECORD_SIZE);
+                m1 = outFile.read(b1);
+                m2 = outFile.read(b2);
+                b1Buffer = ByteBuffer.wrap(b1);
+                b2Buffer = ByteBuffer.wrap(b2);
+                l1 = b1Buffer.getDouble(HEAP_SIZE);
+                l2 = b2Buffer.getDouble(HEAP_SIZE);
+            }
+            String[] newArg = new String[1];
+            newArg[0] = args[0] + "ReverseSort.bin";
+            Externalsort.main(newArg);
+            outFile = new RandomAccessFile(args[0] + "ReverseSort.bin"
+                + "Out.bin", "r");
+            m1 = outFile.read(b1);
+            m2 = outFile.read(b2);
+            outFile.seek(RECORD_SIZE);
+            b1Buffer = ByteBuffer.wrap(b1);
+            l1 = b1Buffer.getDouble(HEAP_SIZE);
+            b2Buffer = ByteBuffer.wrap(b2);
+            l2 = b2Buffer.getDouble(HEAP_SIZE);
+            assertTrue(l1 < l2);
+            copies = 0;
+            for (int i = 0; i < (Integer.parseInt(args[1])) * RECORDS_PER_BLOCK
+                - 1; i++) {
+                outFile.seek(i * RECORD_SIZE);
+                m1 = outFile.read(b1);
+                m2 = outFile.read(b2);
+                b1Buffer = ByteBuffer.wrap(b1);
+                b2Buffer = ByteBuffer.wrap(b2);
+                l1 = b1Buffer.getDouble(HEAP_SIZE);
+                l2 = b2Buffer.getDouble(HEAP_SIZE);
+                assertTrue(l1 < l2);
+            }
+            
         }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
         System.out.flush();
     }
 

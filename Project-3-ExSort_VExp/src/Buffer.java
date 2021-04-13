@@ -2,37 +2,43 @@ import java.util.Arrays;
 
 /**
  * Buffer Class that stores blocks of Records.
- * 
+ * This class has functions to add and remove blocks from buffer
+ * And to monitor buffer status
  * 
  * @author bshreyas and veerad
  * @version 4/10/2021
  */
  
-public class BlocksBuffer {
+public class Buffer {
     private Record[] block;
-    private int bufferFill;
+    private int bufferOccupied;
+
+ // Constants as per specification
+    private final static int BLOCK_SIZE = 8192; // bytes
+    private final static int RECORD_SIZE = 16; // bytes
+    private final static int RECORDS_PER_BLOCK = BLOCK_SIZE / RECORD_SIZE;
 
     /**
-     * Constructor to initialize buffer blocks
+     * Constructor to initialize blocks in buffer pool
      * 
      * @param numBlocks
      *            number of blocks to store in buffer.
      */
-    public BlocksBuffer(int numBlocks) {
-        bufferFill = 0;
-        block = new Record[512 * numBlocks];
+    public Buffer(int numBlocks) {
+        bufferOccupied = 0;
+        block = new Record[RECORDS_PER_BLOCK * numBlocks];
     }
 
 
     /**
      * Inserts block of data to this buffer.
      * 
-     * @param b
+     * @param oneBlock
      *            Block of records to be inserted.
      */
-    public void insertBlock(Record[] b) {
-        block = b;
-        bufferFill = b.length;
+    public void insertBlock(Record[] oneBlock) {
+        block = oneBlock;
+        bufferOccupied = oneBlock.length;
     }
 
 
@@ -42,9 +48,9 @@ public class BlocksBuffer {
      * @return
      *         Record at the end of the buffer.
      */
-    public Record removeLastRecord() {
-        bufferFill -= 1;
-        return block[bufferFill];
+    public Record removeRecordEnd() {
+        bufferOccupied -= 1;
+        return block[bufferOccupied];
     }
 
 
@@ -54,14 +60,14 @@ public class BlocksBuffer {
      * @return
      *         Record at the front of the buffer.
      */
-    public Record removeFirstRecord() {
-        Record ret;
-        ret = block[0];
-        for (int i = 0; i < bufferFill - 1; i++) {
+    public Record removeRecordFront() {
+        Record firstRecord;
+        firstRecord = block[0];
+        for (int i = 0; i < bufferOccupied - 1; i++) {
             block[i] = block[i + 1];
         }
-        bufferFill--;
-        return ret;
+        bufferOccupied--;
+        return firstRecord;
     }
 
 
@@ -71,9 +77,9 @@ public class BlocksBuffer {
      * @param r
      *            Record to be inserted.
      */
-    public void insertLastRecord(Record r) {
-        block[bufferFill] = r;
-        bufferFill += 1;
+    public void insertRecordEnd(Record r) {
+        block[bufferOccupied] = r;
+        bufferOccupied += 1;
     }
 
 
@@ -84,9 +90,9 @@ public class BlocksBuffer {
      *         Array of records in the buffer.
      */
     public Record[] removeBlock() {
-        Record[] ret = Arrays.copyOfRange(block, 0, bufferFill);
+        Record[] ret = Arrays.copyOfRange(block, 0, bufferOccupied);
         block = new Record[block.length];
-        bufferFill = 0;
+        bufferOccupied = 0;
         return ret;
     }
 
@@ -109,7 +115,7 @@ public class BlocksBuffer {
      *         boolean: true if the buffer is empty.
      */
     public boolean isEmpty() {
-        return bufferFill == 0;
+        return bufferOccupied == 0;
     }
 
 
@@ -120,6 +126,6 @@ public class BlocksBuffer {
      *         boolean: true if buffer is full.
      */
     public boolean isFull() {
-        return bufferFill == block.length;
+        return bufferOccupied == block.length;
     }
 }

@@ -4,7 +4,7 @@ import java.io.RandomAccessFile;
 import java.util.Arrays;
 
 /**
- * File Access Object that handles two files, 
+ * File Access Object that handles two files,
  * one for read and the other for write
  * 
  * 
@@ -100,8 +100,8 @@ public class FileIO {
         Record[] partBlock = new Record[(int)(end - pos) / RECORD_SIZE];
         endOfFile = file.read(readBytes);
         for (int i = 0; i < partBlock.length; i++) {
-            partBlock[i] = new Record(Arrays.copyOfRange(readBytes, i * RECORD_SIZE, (i + 1)
-                * RECORD_SIZE));
+            partBlock[i] = new Record(Arrays.copyOfRange(readBytes, i
+                * RECORD_SIZE, (i + 1) * RECORD_SIZE));
         }
         return partBlock;
     }
@@ -141,8 +141,8 @@ public class FileIO {
     public void outBlock(Record[] b) throws IOException {
         byte[] outByte = new byte[b.length * RECORD_SIZE];
         for (int i = 0; i < b.length; i++) {
-            System.arraycopy(b[i].getCompleteRecord(), 0, outByte, i * RECORD_SIZE,
-                RECORD_SIZE);
+            System.arraycopy(b[i].getCompleteRecord(), 0, outByte, i
+                * RECORD_SIZE, RECORD_SIZE);
         }
         runFile.write(outByte);
     }
