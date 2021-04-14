@@ -8,12 +8,12 @@ import java.util.Arrays;
  * @author bshreyas and veerad
  * @version 4/10/2021
  */
- 
+
 public class Buffer {
     private Record[] block;
     private int bufferOccupied;
 
- // Constants as per specification
+    // Constants as per specification
     private final static int BLOCK_SIZE = 8192; // bytes
     private final static int RECORD_SIZE = 16; // bytes
     private final static int RECORDS_PER_BLOCK = BLOCK_SIZE / RECORD_SIZE;

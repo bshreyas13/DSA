@@ -9,49 +9,46 @@
 
 import java.io.*;
 import java.util.*;
-import java.math.*;
 
 /**
  * Class to generate test input files
  * 
- * @author CS Staff
- *
- *
+ * @author bshreyas and veerad
+ * @version 4/10/2021
  */
-public class Genfile_proj3 {
 
-    static final int NumRecs = 512; // Because they are short ints
+public class GenFileProject3 {
 
-    /** Initialize the random variable */
-    static private Random value = new Random(); // Hold the Random class object
+    private static final int NUM_RECS = 512; // Because they are short ints
+
+    // Initialize the random variable
+    private static Random value = new Random(); // Hold the Random class object
 
     /**
+     * Generates random long
      * 
-     * @return
-     *         returns random long value
+     * @return random long value
      */
-    static long randLong() {
+    private static long randLong() {
         return value.nextLong();
     }
 
 
     /**
+     * Generates random long
      * 
-     * @return
-     *         returns random double value
+     * @return random double value
      */
-    static double randDouble() {
+    private static double randDouble() {
         return value.nextDouble();
     }
 
 
     /**
-     * 
      * @param args
-     *            long and double to from key, value pair
-     * @throws IOException
+     *            command line arguments expecting commands
      */
-    public static void main(String args[]) throws IOException {
+    public static void main(String[] args) throws IOException {
         long val;
         double val2;
         assert (args.length == 2) : "\nUsage: Genfile <filename> <size>"
@@ -61,14 +58,14 @@ public class Genfile_proj3 {
         DataOutputStream file = new DataOutputStream(new BufferedOutputStream(
             new FileOutputStream(args[0])));
 
-        for (int i = 0; i < filesize; i++)
-            for (int j = 0; j < NumRecs; j++) {
+        for (int i = 0; i < filesize; i++) {
+            for (int j = 0; j < NUM_RECS; j++) {
                 val = (long)(randLong());
                 file.writeLong(val);
                 val2 = (double)(randDouble());
                 file.writeDouble(val2);
             }
-
+        }
         file.flush();
         file.close();
     }

@@ -1,4 +1,3 @@
-// import java.util.*;
 // Min-heap implementation
 /**
  * Min Heap implementation based on OpenDSA 10.17
@@ -265,7 +264,6 @@ public class MinHeap<T extends Comparable<T>> {
     public void cleanInsert(T replacement) {
         heap[0] = replacement;
         siftdown(0);
-
     }
 
 
@@ -280,7 +278,6 @@ public class MinHeap<T extends Comparable<T>> {
         swap(heap, 0, --n); // Swap maximum with last value
         maxSize -= 1;
         siftdown(0); // Put new heap root val in correct place
-
     }
 
 
