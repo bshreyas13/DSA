@@ -1,4 +1,3 @@
-// import java.util.*;
 // Min-heap implementation
 /**
  * Min Heap implementation based on OpenDSA 10.17

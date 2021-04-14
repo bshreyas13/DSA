@@ -4,6 +4,7 @@ import java.util.LinkedList;
 /**
  * The class containing the main method.
  * External Sort large files when stored on disk
+ * 
  * @author bshreyas and veerad
  * @version 4/10/2021
  */
@@ -29,7 +30,7 @@ import java.util.LinkedList;
 // letter of this restriction.
 
 public class Externalsort {
- // Constants as per specification
+    // Constants as per specification
     private final static int BLOCK_SIZE = 8192; // bytes
     private final static int RECORD_SIZE = 16; // bytes
     private final static int HEAP_SIZE = 8; // bytes
@@ -42,7 +43,7 @@ public class Externalsort {
      *            Command line parameters
      * @throws IOException
      */
-    
+
     public static void main(String[] args) throws IOException {
         FileIO runFile = new FileIO(args[0], "runFile.bin");
         Buffer inBuffer = new Buffer(1); // 1 block input buffer
@@ -130,13 +131,13 @@ public class Externalsort {
 
                 }
             }
-            
+
             while (!outBuffer.isEmpty()) {
                 Record[] writeOut = outBuffer.removeBlock();
                 runFile.outBlock(writeOut);
                 runLength += writeOut.length;
             }
-            
+
             if (runLength > 0) {
                 runStatList.add(runLength);
                 pointersList.add(runStartPointer);

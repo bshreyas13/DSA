@@ -294,12 +294,12 @@ public class ExternalsortTest extends TestCase {
                 val2 = b2Buffer.getDouble(HEAP_SIZE);
                 assertTrue(val1 < val2);
             }
-            
+
         }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         System.out.flush();
     }
 

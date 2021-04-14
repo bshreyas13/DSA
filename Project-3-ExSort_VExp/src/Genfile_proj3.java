@@ -9,11 +9,12 @@
 
 import java.io.*;
 import java.util.*;
-import java.math.*;
+//import java.math.*;
+
 /**
  * Class to generate test input files
+ * 
  * @author CS Staff
- *
  *
  */
 public class Genfile_proj3 {
@@ -43,14 +44,14 @@ public class Genfile_proj3 {
         DataOutputStream file = new DataOutputStream(new BufferedOutputStream(
             new FileOutputStream(args[0])));
 
-        for (int i = 0; i < filesize; i++)
+        for (int i = 0; i < filesize; i++) {
             for (int j = 0; j < NumRecs; j++) {
                 val = (long)(randLong());
                 file.writeLong(val);
                 val2 = (double)(randDouble());
                 file.writeDouble(val2);
             }
-
+        }
         file.flush();
         file.close();
     }
