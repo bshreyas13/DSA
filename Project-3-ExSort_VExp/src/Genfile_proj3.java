@@ -10,8 +10,10 @@
 import java.io.*;
 import java.util.*;
 import java.math.*;
+
 /**
  * Class to generate test input files
+ * 
  * @author CS Staff
  *
  *
@@ -23,16 +25,32 @@ public class Genfile_proj3 {
     /** Initialize the random variable */
     static private Random value = new Random(); // Hold the Random class object
 
+    /**
+     * 
+     * @return
+     *         returns random long value
+     */
     static long randLong() {
         return value.nextLong();
     }
 
 
+    /**
+     * 
+     * @return
+     *         returns random double value
+     */
     static double randDouble() {
         return value.nextDouble();
     }
 
 
+    /**
+     * 
+     * @param args
+     *            long and double to from key, value pair
+     * @throws IOException
+     */
     public static void main(String args[]) throws IOException {
         long val;
         double val2;
