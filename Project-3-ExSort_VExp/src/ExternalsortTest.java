@@ -37,7 +37,7 @@ public class ExternalsortTest extends TestCase {
     @SuppressWarnings("unused")
     public void test16() throws IOException {
         String[] args = { "Test16", "16" };
-        Genfile_proj3.main(args);
+        GenFileProject3.main(args);
         Externalsort.main(args);
 
         try {
@@ -83,7 +83,7 @@ public class ExternalsortTest extends TestCase {
     @SuppressWarnings("unused")
     public void test24() throws IOException {
         String[] args = { "Test24", "24" };
-        Genfile_proj3.main(args);
+        GenFileProject3.main(args);
         Externalsort.main(args);
         try {
             RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
@@ -127,7 +127,7 @@ public class ExternalsortTest extends TestCase {
     @SuppressWarnings("unused")
     public void test32() throws IOException {
         String[] args = { "Test32", "32" };
-        Genfile_proj3.main(args);
+        GenFileProject3.main(args);
         Externalsort.main(args);
         try {
             RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
@@ -171,7 +171,7 @@ public class ExternalsortTest extends TestCase {
     @SuppressWarnings("unused")
     public void test48() throws IOException {
         String[] args = { "Test48", "48" };
-        Genfile_proj3.main(args);
+        GenFileProject3.main(args);
         Externalsort.main(args);
         try {
             RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
@@ -216,7 +216,7 @@ public class ExternalsortTest extends TestCase {
     @SuppressWarnings("unused")
     public void testWorstCase500() throws IOException {
         String[] args = { "Test500", "500" };
-        Genfile_proj3.main(args);
+        GenFileProject3.main(args);
         Externalsort.main(args);
         try {
             RandomAccessFile outFile = new RandomAccessFile(args[0] + "Out.bin",
