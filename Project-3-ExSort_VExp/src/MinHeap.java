@@ -15,7 +15,7 @@ public class MinHeap<T extends Comparable<T>> {
     private int n; // Number of things now in heap
 
     /**
-     * Contructor that generates a Min Heap with given maximum size.
+     * Constructor that generates a Min Heap with given maximum size.
      * 
      * @param maximum
      *            Maximim size of the heap to construct.

@@ -2,12 +2,8 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 /**
- * External Sort large files when stored on disk
- */
-
-/**
  * The class containing the main method.
- *
+ * External Sort large files when stored on disk
  * @author bshreyas and veerad
  * @version 4/10/2021
  */
@@ -88,7 +84,7 @@ public class Externalsort {
 
                     outBuffer.insertRecEnd(min);
                     if (outBuffer.isFull()) {
-                        runLength += 512;
+                        runLength += RECORDS_PER_BLOCK;
                         runFile.outBlock((Record[])outBuffer.removeBlock());
                     }
                     if (sortingHeap.heapMaxSize() == 0) {
@@ -109,7 +105,7 @@ public class Externalsort {
                             outBuffer.insertRecEnd(min);
 
                             if (outBuffer.isFull()) {
-                                runLength += 512;
+                                runLength += RECORDS_PER_BLOCK;
                                 runFile.outBlock((Record[])outBuffer
                                     .removeBlock());
                             }
