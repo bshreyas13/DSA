@@ -120,29 +120,6 @@ public class MinHeap<T extends Comparable<T>> {
 
 
     /**
-     * Insert for a single record.
-     * 
-     * @param record
-     *            Record to be inserted
-     */
-    // Insert val into heap
-    void insert(T record) {
-        if (n >= maxSize) {
-            System.out.println("Heap is full");
-            return;
-        }
-        int curr = n++;
-        heap[curr] = record; // Start at end of heap
-        // Now sift up until curr's parent's key < curr's key
-
-        while ((curr != 0) && (heap[curr].compareTo(heap[parent(curr)]) <= 0)) {
-            swap(heap, curr, parent(curr));
-            curr = parent(curr);
-        }
-    }
-
-
-    /**
      * Inserts a block of data and heapifys it.
      * 
      * @param records

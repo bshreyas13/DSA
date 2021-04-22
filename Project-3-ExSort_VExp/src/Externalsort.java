@@ -33,7 +33,7 @@ public class Externalsort {
     // Constants as per specification
     private final static int BLOCK_SIZE = 8192; // bytes
     private final static int RECORD_SIZE = 16; // bytes
-    private final static int HEAP_SIZE = 8; // bytes
+    private final static int HEAP_SIZE = 8; // blocks
     private final static int RECORDS_PER_BLOCK = BLOCK_SIZE / RECORD_SIZE;
 
     /**
