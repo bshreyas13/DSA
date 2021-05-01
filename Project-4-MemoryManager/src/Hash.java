@@ -22,7 +22,7 @@
 /**
  * Code for Hash (String based with quadratic probing)
  * 
- * @author {shreyasb and veerad}
+ * @author {bshreyas and veerad}
  * @version 2021-04-20
  */
 
@@ -31,7 +31,7 @@ public class Hash {
     private int hashSize;
     private int filledSize;
     private String[] data = null;
-    private String tombStone = "<SEP>";
+    private String seperator = "<SEP>";
     private Handle[] values;
 
     /**
@@ -45,7 +45,6 @@ public class Hash {
         filledSize = 0;
         data = new String[hashSize];
         values = new Handle[hashSize];
-        // Nothing here yet
     }
 
 
@@ -118,7 +117,7 @@ public class Hash {
         int index = homeSlot;
         int i = 0;
         while (data[index % hashSize] != null && !data[index % hashSize].equals(
-            tombStone)) {
+            seperator)) {
             i++;
             index = this.findIndex(homeSlot, i);
         }
@@ -145,7 +144,7 @@ public class Hash {
             if (dataCopy[i] == null) {
                 continue;
             }
-            if (dataCopy[i].equals(tombStone)) {
+            if (dataCopy[i].equals(seperator)) {
                 continue;
             }
 
@@ -158,7 +157,7 @@ public class Hash {
 
 
     /**
-     * This will search the hashtable and return the index
+     * This will search the hash table and return the index
      * 
      * @param name
      *            the name to be searched
@@ -180,11 +179,11 @@ public class Hash {
 
 
     /**
-     * Delete the name if in the table
+     * Delete the name if it exists in the table
      * 
      * @param name
      *            String to be deleted
-     * @return true if successfully deleted, false if name is not in the table
+     * @return true if successfully deleted, false otherwise
      * 
      */
     public boolean delete(String name) {
@@ -193,7 +192,7 @@ public class Hash {
             // if we can't find this in the hashtable
             return false;
         }
-        data[index] = this.tombStone;
+        data[index] = this.seperator;
         values[index] = null;
         filledSize -= 1;
         return true;
@@ -201,14 +200,14 @@ public class Hash {
 
 
     /**
-     * This will print the hashtable
+     * This methodwill print the hash table
      */
     public void print() {
         for (int i = 0; i < data.length; i++) {
             if (data[i] == null) {
                 continue;
             }
-            if (data[i].equals(tombStone)) {
+            if (data[i].equals(seperator)) {
                 continue;
             }
             System.out.println("|" + data[i] + "| " + i);
@@ -218,7 +217,7 @@ public class Hash {
 
 
     /**
-     * get the String key at the index
+     * This will return key for the passed index
      * 
      * @param index
      *            index of the hash
@@ -230,7 +229,7 @@ public class Hash {
 
 
     /**
-     * get the handle at the index
+     * This method will return handle for the passed index
      * 
      * @param index
      *            index of the hashtable - will usually come from teh search
@@ -243,15 +242,15 @@ public class Hash {
 
 
     /**
-     * assigns a handle at index
+     * This method will assign handle for the passed index
      * 
      * @param h
      *            the handle
      * @param index
      *            the location of the handle in values
      */
-    public void sethandle(Handle h, int index) {
+    public void setHandle(Handle h, int index) {
         values[index] = h;
     }
-    
+
 }

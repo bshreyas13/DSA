@@ -1,71 +1,51 @@
-/**
- * On my honor:
- * - I have not used source code obtained from another student,
- * or any other unauthorized source, either modified or
- * unmodified.
- * 
- * - All source code and documentation used in my program is
- * either my original work, or was derived by me from the
- * source code published in the textbook for this course.
- *
- * - I have not discussed coding details about this project with
- * anyone other than my partner (in the case of a joint
- * submission), instructor, ACM/UPE tutors or the TAs assigned
- * to this course. I understand that I may discuss the concepts
- * of this program with other students, and that another student
- * may help me debug my program so long as neither of us writes
- * anything during the discussion or modifies any computer file
- * during the discussion. I have violated neither the spirit nor
- * letter of this restriction.
- */
 
 /**
- * Record class collects the information
+ * DBRecord class collects the information
  * related to each string
  * 
  * @author {shreyasb and veerad}
  * @version 2021-04-20
  *
  */
-public class Record {
+public class DBRecord {
     private String name;
     private String fieldandValues;
     private static final String DELIMITER = "<SEP>";
 
     /**
-     * Constructor - takes two params
+     * Constructor
      * 
      * @param name
      *            of record
      * @param f
      *            field and value part of string
      */
-    public Record(String name, String f) {
+    public DBRecord(String name, String f) {
         this.name = name;
         this.fieldandValues = f;
     }
 
 
     /**
-     * Constructor - takes one param
+     * Constructor
      * 
      * @param name
      *            of record
      * 
      */
-    public Record(String name) {
+    public DBRecord(String name) {
         this.name = name;
 
     }
 
 
     /**
-     * Constructor - takes one param
+     * Constructor
      * 
      * @param data
      *            - String
      */
-    public Record(byte[] data) {
+    public DBRecord(byte[] data) {
         String d = new String(data);
         if (d.contains(DELIMITER)) {
             this.name = d.substring(0, d.indexOf(DELIMITER));
@@ -79,7 +59,8 @@ public class Record {
 
 
     /**
-     * Updates the string by deleting the field and value passed in
+     * 
+     * This method will update String after deleting the field
      * 
      * @param field
      *            to be deleted
@@ -98,7 +79,6 @@ public class Record {
         StringBuilder b = new StringBuilder();
         while (i < splitted.length - 1) {
             if (splitted[i].equals(field)) {
-                // do something
                 i = i + 2;
                 found = true;
                 continue;
@@ -115,7 +95,7 @@ public class Record {
 
 
     /**
-     * updates string to add field and value
+     * This method will update string with field and value
      * 
      * @param field
      *            identifier
@@ -156,7 +136,8 @@ public class Record {
 
 
     /**
-     * find memory for added data
+     * 
+     * This method will get memory for the added data
      * 
      * @return name+field and value.getBytes
      */
@@ -172,7 +153,7 @@ public class Record {
 
 
     /**
-     * Concatenates name with field and values
+     * This method will concatenate name with field and values
      * 
      * @return the concatenated string
      */

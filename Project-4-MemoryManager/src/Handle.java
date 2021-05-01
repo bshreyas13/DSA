@@ -22,18 +22,18 @@
 /**
  * The class defining the handles for the Memory Manager
  *
- * @author {shreyasb and veerad}
+ * @author {bshreyas and veerad}
  * @version 2021-04-20
  *
  */
 
 public class Handle {
-    private int length; // total length for empty block; used length for used
+    private int length;
     private int locationStart;
     private Handle next = null;
 
     /**
-     * Constructor for memory blockhandle
+     * Constructor for memory block handle
      * 
      * @param length
      *            is the length of the memory block
@@ -72,7 +72,7 @@ public class Handle {
 
 
     /**
-     * get the next handle in the list.
+     * This method will return next handle
      * 
      * @return the next Handle in the list
      */
@@ -82,7 +82,7 @@ public class Handle {
 
 
     /**
-     * set the next handle in the list
+     * This method will set the next handle in the list
      * 
      * @param next
      *            the next handle in the list
@@ -93,7 +93,7 @@ public class Handle {
 
 
     /**
-     * get the start of the memory block
+     * This method will get the start of the memory block
      * 
      * @return start of the memory block
      */
@@ -103,7 +103,7 @@ public class Handle {
 
 
     /**
-     * set the start of the location
+     * This method will set the start of the location
      * 
      * @param locationStart
      *            start of memory block
@@ -114,7 +114,7 @@ public class Handle {
 
 
     /**
-     * finds if two handles are next to each other
+     * This method will find if two handles are next to each other
      * in the disk and can be merged
      * 
      * @param h

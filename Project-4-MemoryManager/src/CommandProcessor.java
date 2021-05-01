@@ -35,8 +35,7 @@ public class CommandProcessor {
     private static MemManager memoryManager = null;
 
     /**
-     * initializer for memory control will create instances of hashtable and
-     * memory manager
+     * This method will initialize MemManager and HashTable
      * 
      * @param initialHashSize
      *            the number of slot in the initial hash
@@ -59,8 +58,7 @@ public class CommandProcessor {
 
 
     /**
-     * this will get the current instance of CommandProcessor
-     * or create a new instance of CommandProcessor
+     * This method will instantiate Command Processor
      * 
      * @param initialHashSize
      *            the number of slot in the initial hash
@@ -80,17 +78,8 @@ public class CommandProcessor {
 
 
     /**
-     * This Function will do the job of calling the relevant within this class
-     * 
-     * @param commands
-     *            0th index is expected to be the function:
-     *            "add","delete","update add" or "print"
-     *            1st index is expected to be the name (hashtable or blocks for
-     *            print)
-     *            2nd index (only for update add and delete) is expected to be
-     *            field
-     *            3rd index (only for update add) is expected to be the value of
-     *            the field
+     * Processes the command line
+     *
      * @return true if the command is correct, false otherwise
      */
     public boolean executeCommand(String[] commands) {
@@ -122,7 +111,6 @@ public class CommandProcessor {
                 }
                 return true;
             default:
-                // todo: raise an exception here for invalid input
                 System.out.println("Error: no code found");
                 return false;
         }
@@ -130,17 +118,13 @@ public class CommandProcessor {
 
 
     /**
-     * the add function will call the relevant hashtable and Memmanager
-     * functions to add the name
+     * 
+     * This method will add name to hash table and Memory Manager
      * 
      * @param name
      *            is the name of the string
      */
     public static void add(String name) {
-        // need to add code to check for resizing
-        // need to check if record already exists
-        // need to add to memorymanager
-        // add name to hashTable
         if (hashTable.search(name) == -1) {
             Handle h = memoryManager.add(name.getBytes());
             hashTable.add(name, h);
@@ -156,14 +140,12 @@ public class CommandProcessor {
 
 
     /**
-     * deletes the name from both the hash and memory manager
+     * This method will delete the name from hash and memory manager
      * 
      * @param name
      *            is the id to be deleted
      */
     public static void delete(String name) {
-        // note: deletion needs to be implemented on memmanager
-        // delete name from hashTable
         int indexHash = hashTable.search(name);
         if (indexHash == -1) {
             System.out.println("|" + name
@@ -173,8 +155,7 @@ public class CommandProcessor {
         else {
             Handle h = hashTable.getHandle(indexHash);
             hashTable.delete(name);
-            memoryManager.delete(h);
-            // delete name from hashTable
+            memoryManager.remove(h);
             System.out.println("|" + name
                 + "| has been deleted from the Name database.");
         }
@@ -182,7 +163,7 @@ public class CommandProcessor {
 
 
     /**
-     * This will add/update the field field_name to the field_value
+     * This method will add/update the field_name to the field_value
      * 
      * @param name
      *            the name of the object to be updated
@@ -192,7 +173,6 @@ public class CommandProcessor {
      *            value to be updated/inserted
      */
     public static void updateAdd(
-        // this will only affect memManager not Hash
         String name,
         String fieldName,
         String fieldValue) {
@@ -204,21 +184,21 @@ public class CommandProcessor {
         else {
             Handle h = hashTable.getHandle(indexHash);
             byte[] recordByte = memoryManager.getData(h);
-            Record r = new Record(recordByte);
+            DBRecord r = new DBRecord(recordByte);
             r.updateDelete(fieldName);
             r.updateAdd(fieldName, fieldValue);
             recordByte = r.getData();
-            memoryManager.delete(h);
+            memoryManager.remove(h);
             Handle hNew = memoryManager.add(recordByte);
-            hashTable.sethandle(hNew, indexHash);
-            System.out.println("Updated Record: |" + r.getDataString() + "|");
+            hashTable.setHandle(hNew, indexHash);
+            System.out.println("Updated DBRecord: |" + r.getDataString() + "|");
         }
 
     }
 
 
     /**
-     * deleting the field from the record
+     * This method will update and delete record
      * 
      * @param name
      *            name of the object
@@ -226,8 +206,6 @@ public class CommandProcessor {
      *            field to be deleted
      */
     public static void updateDelete(String name, String fieldName) {
-        // this will only affect memManager not Hash
-        // find name in hashTable and remove its field_name
 
         int indexHash = hashTable.search(name);
         if (indexHash == -1) {
@@ -237,7 +215,7 @@ public class CommandProcessor {
         else {
             Handle h = hashTable.getHandle(indexHash);
             byte[] recordByte = memoryManager.getData(h);
-            Record r = new Record(recordByte);
+            DBRecord r = new DBRecord(recordByte);
             boolean deleted = r.updateDelete(fieldName);
             if (!deleted) {
                 System.out.println("|" + name + "| not updated "
@@ -246,10 +224,10 @@ public class CommandProcessor {
             }
             else {
                 recordByte = r.getData();
-                memoryManager.delete(h);
-                Handle hNew = memoryManager.add(recordByte);
-                hashTable.sethandle(hNew, indexHash);
-                System.out.println("Updated Record: |" + r.getDataString()
+                memoryManager.remove(h);
+                Handle newHandle = memoryManager.add(recordByte);
+                hashTable.setHandle(newHandle, indexHash);
+                System.out.println("Updated DBRecord: |" + r.getDataString()
                     + "|");
             }
         }
@@ -258,19 +236,17 @@ public class CommandProcessor {
 
 
     /**
-     * this will print the hashtable
+     * This method will print hash table
      */
     public static void printHashTable() {
-        // prints hashTable
         hashTable.print();
     }
 
 
     /**
-     * this will print the empty memory blocks
+     * This method will print free blocks
      */
     public static void printBlocks() {
-        // prints list of free blocks in memory pool
         memoryManager.dump();
     }
 

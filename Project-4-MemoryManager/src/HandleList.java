@@ -22,7 +22,7 @@
 /**
  * this class defines the list of objects for the handles
  * 
- * @author {shreyasb and veerad}
+ * @author {bshreyas and veerad}
  * @version 2021-04-20
  */
 public class HandleList {
@@ -30,7 +30,7 @@ public class HandleList {
     private Handle[] list;
 
     /**
-     * constructor
+     * This method will initialize HandleList
      * 
      * @param length
      *            the length of the list
@@ -42,7 +42,7 @@ public class HandleList {
 
 
     /**
-     * increases the size of the list by 1
+     * This method will increase the size of the list by 1
      */
     public void incrementSize() {
         Handle[] listCopy = list;
@@ -55,7 +55,7 @@ public class HandleList {
 
 
     /**
-     * adds a new handle at the position
+     * This method will add a new handle at the position
      * 
      * @param h
      *            the handle to be added to the list
@@ -86,7 +86,7 @@ public class HandleList {
 
 
     /**
-     * get the head of the list at position pos
+     * This method will get the head of the list at position pos
      * 
      * @param pos
      *            the position for which we want the head
@@ -98,7 +98,7 @@ public class HandleList {
 
 
     /**
-     * get the length of the list
+     * This method will get the length of the list
      * 
      * @return the length
      */

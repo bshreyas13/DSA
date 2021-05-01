@@ -1,24 +1,21 @@
-
-/**
- * On my honor:
- * - I have not used source code obtained from another student,
- * or any other unauthorized source, either modified or
- * unmodified.
- * 
- * - All source code and documentation used in my program is
- * either my original work, or was derived by me from the
- * source code published in the textbook for this course.
- *
- * - I have not discussed coding details about this project with
- * anyone other than my partner (in the case of a joint
- * submission), instructor, ACM/UPE tutors or the TAs assigned
- * to this course. I understand that I may discuss the concepts
- * of this program with other students, and that another student
- * may help me debug my program so long as neither of us writes
- * anything during the discussion or modifies any computer file
- * during the discussion. I have violated neither the spirit nor
- * letter of this restriction.
- */
+// On my honor:
+// - I have not used source code obtained from another student,
+//   or any other unauthorized source, either modified or
+//   unmodified.
+//
+// - All source code and documentation used in my program is
+//   either my original work, or was derived by me from the
+//   source code published in the textbook for this course.
+//
+// - I have not discussed coding details about this project
+//   with anyone other than my partner (in the case of a joint
+//   submission), instructor, ACM/UPE tutors or the TAs assigned
+//   to this course. I understand that I may discuss the concepts
+//   of this program with other students, and that another student
+//   may help me debug my program so long as neither of us writes
+//   anything during the discussion or modifies any computer file
+//   during the discussion. I have violated neither the spirit nor
+//   letter of this restriction.
 
 import java.util.Arrays;
 
@@ -26,9 +23,8 @@ import java.util.Arrays;
  * Code for the Memory manager class
  * this will handle the creation, addition,
  * deletion and updates for a given memory block
- * and
  * 
- * @author {shreyasb and veerad}
+ * @author {bshreyas and veerad}
  * @version 2021-04-20
  */
 public class MemManager {
@@ -77,11 +73,10 @@ public class MemManager {
         }
         Handle toUse = getFreeHandle(logSizeInput);
         if (toUse == null) {
-            // double size when there is no free block of size > logSize
             this.doubleSize();
             toUse = getFreeHandle(logSizeInput);
         }
-        // Copy String binary to the allocated memory spot.
+        // copy string to the allocated memory
         for (int i = 0; i < toBeInserted.length; i++) {
             dataBlock[toUse.getLocationStart() + i] = toBeInserted[i];
         }
@@ -91,7 +86,7 @@ public class MemManager {
 
 
     /**
-     * getFreeHandle method finds free blocks of the right size
+     * This method will find free blocks of the right size
      * 
      * @param logSizeInput
      *            the size needed for the item to be
@@ -103,21 +98,21 @@ public class MemManager {
             return freeBlocks.pop(logSizeInput);
         }
         else {
-            // make space by recursively spliting
+            // make space by splitting recursively
             int i = logSizeInput;
             while (i < freeBlocks.getLength() - 1) {
-                // Find the smallest freeblock greater than logSize
+                // Find the smallest free block greater than logSize
                 i++;
                 if (freeBlocks.gethead(i) != null) {
                     while (i > logSizeInput) {
-                        // recursively split until back to logsize
+                        // recursively split until back to logSize
                         Handle toSplit = freeBlocks.pop(i);
                         Handle[] splitted = split(toSplit);
                         freeBlocks.add(splitted[1], i - 1);
                         freeBlocks.add(splitted[0], i - 1);
                         i--;
                     }
-                    return freeBlocks.pop(i); // we should be back at the start
+                    return freeBlocks.pop(i);
                 }
             }
             return null;
@@ -126,7 +121,7 @@ public class MemManager {
 
 
     /**
-     * merge two adjacent and equal blocks of memory into one
+     * This method will merge two adjacent and equal blocks of memory into one
      * Note: the two handles must be mergeable (see Handle.isMergable)
      * 
      * @param handle1
@@ -146,7 +141,8 @@ public class MemManager {
 
 
     /**
-     * Splits a given block of free memory into two adjacent equal blocks
+     * This method will split a given block of free memory into two adjacent
+     * equal blocks
      * 
      * @param h
      *            the memory block to be split
@@ -162,7 +158,7 @@ public class MemManager {
 
 
     /**
-     * find the handle with a given string
+     * This method will find the handle with a given string
      * 
      * @param name
      *            is the name of the string being searched
@@ -171,12 +167,11 @@ public class MemManager {
      */
 
     /**
-     * doubles the size of our memory
+     * This method will double the size of our memory
      */
     private void doubleSize() {
         byte[] copy = dataBlock;
         dataBlock = new byte[copy.length * 2];
-        // logSize++;
         for (int i = 0; i < copy.length; i++) {
             dataBlock[i] = copy[i];
         }
@@ -197,23 +192,14 @@ public class MemManager {
 
 
     /**
-     * adds a string to the memory
-     * 
-     * @param name
-     *            is the string to be added
-     * @return the handle for the data
-     */
-
-    /**
      * deletes the string from memory and releases it for further use
      * 
      * @param h
      *            the handle for the memory to be deleted
      */
-    public void delete(Handle h) {
+    public void remove(Handle h) {
         int logLength = log2(h.getLength());
-        h.setLength(1 << logLength); // setting length to the highest possible
-                                     // for its size
+        h.setLength(1 << logLength);
         if (freeBlocks.gethead(logLength) == null) {
             freeBlocks.add(h, logLength);
             return;
@@ -236,7 +222,7 @@ public class MemManager {
 
 
     /**
-     * prints the freeblock list
+     * Dump a printout of the free block list
      */
     public void dump() {
         Handle curr;
