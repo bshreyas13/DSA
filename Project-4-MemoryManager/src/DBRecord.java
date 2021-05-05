@@ -31,7 +31,6 @@ public class DBRecord {
      * 
      * @param name
      *            of record
-     * 
      */
     public DBRecord(String name) {
         this.name = name;

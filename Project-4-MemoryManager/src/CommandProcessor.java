@@ -79,6 +79,13 @@ public class CommandProcessor {
 
     /**
      * Processes the command line
+     * 
+     * @param commands
+     *            index "0" - represents the method name such as
+     *            "add","delete","update add" or "print"
+     *            index "1" - represents the name such hashtable or blocks
+     *            index "2" - represents either "update add" and "delete"
+     *            index "3" - represents "update add"
      *
      * @return true if the command is correct, false otherwise
      */
