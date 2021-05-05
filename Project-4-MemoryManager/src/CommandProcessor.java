@@ -191,7 +191,7 @@ public class CommandProcessor {
             memoryManager.remove(h);
             Handle hNew = memoryManager.add(recordByte);
             hashTable.setHandle(hNew, indexHash);
-            System.out.println("Updated DBRecord: |" + r.getDataString() + "|");
+            System.out.println("Updated Record: |" + r.getDataString() + "|");
         }
 
     }
@@ -227,7 +227,7 @@ public class CommandProcessor {
                 memoryManager.remove(h);
                 Handle newHandle = memoryManager.add(recordByte);
                 hashTable.setHandle(newHandle, indexHash);
-                System.out.println("Updated DBRecord: |" + r.getDataString()
+                System.out.println("Updated Record: |" + r.getDataString()
                     + "|");
             }
         }

@@ -34,7 +34,7 @@ public class MemmanTest extends TestCase
     @Test
     public void test() throws IllegalArgumentException, IllegalAccessException, InvocationTargetException, IOException
     {
-        String[] str = {"10", "32", "input.txt"};
+        String[] str = {"10", "32", "sampleInput.txt"};
         Memman.main(str);
     }
 

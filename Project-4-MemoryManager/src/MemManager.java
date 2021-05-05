@@ -235,7 +235,7 @@ public class MemManager {
             System.out.print((1 << i) + ": ");
             while (curr != null) {
                 isempty = false;
-                System.out.print(curr.getLocationStart() + " ");
+                System.out.print(curr.getLocationStart());
                 curr = curr.getNext();
             }
             System.out.print("\n");
