@@ -112,13 +112,8 @@ public class CommandProcessor {
                 else if (commands[1].equals("blocks")) {
                     CommandProcessor.printBlocks();
                 }
-                else {
-                    System.out.println("Error: no code found");
-                    return false;
-                }
                 return true;
             default:
-                System.out.println("Error: no code found");
                 return false;
         }
     }

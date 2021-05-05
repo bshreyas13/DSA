@@ -15,32 +15,6 @@ public class DBRecord {
     /**
      * Constructor
      * 
-     * @param name
-     *            of record
-     * @param f
-     *            field and value part of string
-     */
-    public DBRecord(String name, String f) {
-        this.name = name;
-        this.fieldandValues = f;
-    }
-
-
-    /**
-     * Constructor
-     * 
-     * @param name
-     *            of record
-     */
-    public DBRecord(String name) {
-        this.name = name;
-
-    }
-
-
-    /**
-     * Constructor
-     * 
      * @param data
      *            - String
      */
@@ -123,14 +97,7 @@ public class DBRecord {
             fieldandValues = fieldandValues + DELIMITER + field + DELIMITER
                 + value;
         }
-        else {
-            StringBuilder b = new StringBuilder();
-            for (int i1 = 1; i1 < splitted.length; i1++) {
-                b.append(DELIMITER);
-                b.append(splitted[i1]);
-            }
-            fieldandValues = b.toString();
-        }
+
     }
 
 

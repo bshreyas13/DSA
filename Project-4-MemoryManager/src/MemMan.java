@@ -42,31 +42,12 @@ public class MemMan {
      */
     public static Parser getParser(String[] args) {
 
-        String inputFormat =
-            "The program expects the input in this format:/n "
-            + "java MemMan <initial-memory-size> "
-            + "<initial-hash-size> <command-file>\r";
-        if (args == null || args.length != 3) {
-            System.out.println("Error: Input not as expected");
-            System.out.println(
-                "This program expects three parameters: "
-                + "the initial memory size, the initial hash size, "
-                + "and the command file."
-                + " Please make sure you supply the necessary arguments.");
-            System.out.println(inputFormat);
-            System.out.println("Program Out!! *mike drop*");
-            return null;
-        }
         Parser parser = null;
         try {
             parser = Parser.getInstance(args[2]);
         }
         catch (FileNotFoundException e) {
-            System.out.println(
-                "Error: Command file could not be found, please "
-                + "make sure the file is in the same directory "
-                + "and the spelling is correct");
-            System.out.println(inputFormat);
+            System.out.println(e);
             return null;
         }
         return parser;
@@ -89,13 +70,7 @@ public class MemMan {
                 Integer.parseInt(args[0]));
         }
         catch (NumberFormatException e) {
-            System.out.println(
-                "Error Invalid input: Memory size and "
-                + "hash size should be an integer");
-            System.out.println(
-                "The program expects the input in this format:/n "
-                + "java MemMan <initial-memory-size> <initial-hash-size> "
-                + "<command-file>\r\n");
+            System.out.println(e);
             return;
         }
         String[] nextline = parser.readNextLine();

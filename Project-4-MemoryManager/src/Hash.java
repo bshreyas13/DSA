@@ -217,18 +217,6 @@ public class Hash {
 
 
     /**
-     * This will return key for the passed index
-     * 
-     * @param index
-     *            index of the hash
-     * @return String key at index
-     */
-    public String getKey(int index) {
-        return data[index];
-    }
-
-
-    /**
      * This method will return handle for the passed index
      * 
      * @param index

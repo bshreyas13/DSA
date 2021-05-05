@@ -1,3 +1,4 @@
+delete Spirited Away
   print           hashtable
 print blocks  
 delete    Death    Note
@@ -25,6 +26,7 @@ add  Fullmetal Alchemist
 add Spirited Away
 add death note
 add Castle in the Sky
+add Orange
 print hashtable
 
 
