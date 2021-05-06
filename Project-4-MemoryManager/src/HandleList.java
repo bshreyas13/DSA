@@ -90,7 +90,7 @@ public class HandleList {
      *            the position for which we want the head
      * @return the head at the position(null if the list is empty)
      */
-    public Handle gethead(int pos) {
+    public Handle getHead(int pos) {
         return list[pos];
     }
 

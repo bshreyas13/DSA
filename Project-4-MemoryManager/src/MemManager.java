@@ -94,7 +94,7 @@ public class MemManager {
      * @return freeblocks of the needed size
      */
     private Handle getFreeHandle(int logSizeInput) {
-        if (freeBlocks.gethead(logSizeInput) != null) {
+        if (freeBlocks.getHead(logSizeInput) != null) {
             return freeBlocks.pop(logSizeInput);
         }
         else {
@@ -103,7 +103,7 @@ public class MemManager {
             while (i < freeBlocks.getLength() - 1) {
                 // Find the smallest free block greater than logSize
                 i++;
-                if (freeBlocks.gethead(i) != null) {
+                if (freeBlocks.getHead(i) != null) {
                     while (i > logSizeInput) {
                         // recursively split until back to logSize
                         Handle toSplit = freeBlocks.pop(i);
@@ -178,7 +178,7 @@ public class MemManager {
         freeBlocks.incrementSize();
         Handle newBlock = new Handle(dataBlock.length / 2, dataBlock.length / 2,
             false);
-        if (freeBlocks.gethead(log2(dataBlock.length / 2)) != null) {
+        if (freeBlocks.getHead(log2(dataBlock.length / 2)) != null) {
             Handle h1 = freeBlocks.pop(log2(dataBlock.length / 2));
             h1 = mergeBlocks(h1, newBlock);
             freeBlocks.add(h1, log2(h1.getLength()));
@@ -200,18 +200,18 @@ public class MemManager {
     public void remove(Handle h) {
         int logLength = log2(h.getLength());
         h.setLength(1 << logLength);
-        if (freeBlocks.gethead(logLength) == null) {
+        if (freeBlocks.getHead(logLength) == null) {
             freeBlocks.add(h, logLength);
             return;
         }
         else {
-            Handle currMergeCandidate = freeBlocks.gethead(logLength);
+            Handle currMergeCandidate = freeBlocks.getHead(logLength);
             while (currMergeCandidate != null) {
                 if (h.isMergable(currMergeCandidate)) {
                     freeBlocks.remove(logLength, currMergeCandidate);
                     h = mergeBlocks(currMergeCandidate, h);
                     logLength = log2(h.getLength());
-                    currMergeCandidate = freeBlocks.gethead(logLength);
+                    currMergeCandidate = freeBlocks.getHead(logLength);
                     continue;
                 }
                 currMergeCandidate = currMergeCandidate.getNext();
@@ -228,7 +228,7 @@ public class MemManager {
         Handle curr;
         boolean isempty = true;
         for (int i = 0; i < freeBlocks.getLength(); i++) {
-            curr = freeBlocks.gethead(i);
+            curr = freeBlocks.getHead(i);
             if (curr == null) {
                 continue;
             }
