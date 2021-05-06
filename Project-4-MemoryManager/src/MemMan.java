@@ -47,7 +47,7 @@ public class MemMan {
             parser = Parser.getInstance(args[2]);
         }
         catch (FileNotFoundException e) {
-            System.out.println(e);
+            System.out.println("Error: bad syntax");
             return null;
         }
         return parser;
@@ -65,14 +65,9 @@ public class MemMan {
             return;
         }
         CommandProcessor cProcessor = null;
-        try {
-            cProcessor = CommandProcessor.getInstance(Integer.parseInt(args[1]),
-                Integer.parseInt(args[0]));
-        }
-        catch (NumberFormatException e) {
-            System.out.println(e);
-            return;
-        }
+        cProcessor = CommandProcessor.getInstance(Integer.parseInt(args[1]),
+            Integer.parseInt(args[0]));
+
         String[] nextline = parser.readNextLine();
         while (nextline != null) {
             if (((String)nextline[0]).equals("")) {

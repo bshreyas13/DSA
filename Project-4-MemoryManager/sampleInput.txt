@@ -6,7 +6,9 @@ delete    Death    Note
   
      add  Death Note
 print hashtable
-add   Death     Note    
+add   Death     Note  
+
+  
    print blocks
     update delete   Death   Note<SEP>  Genre
     update add   Death   Note<SEP>  Genre  <SEP> Anime

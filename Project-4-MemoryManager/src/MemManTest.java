@@ -24,4 +24,21 @@ public class MemManTest extends TestCase {
         Parser.delete();
         CommandProcessor.delete();
     }
+
+
+    /**
+     * test case for no file exists case
+     */
+    public void testFileNotExist() {
+        String[] args = new String[3];
+        args = new String[3];
+        args[0] = "30";
+        args[1] = "30";
+        args[2] = "nofile.txt";
+        MemMan.main(args);
+        assertEquals(true, systemOut().getHistory().contains("Error"));
+        systemOut().clearHistory();
+        Parser.delete();
+        CommandProcessor.delete();
+    }
 }
